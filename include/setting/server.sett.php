@@ -16,13 +16,13 @@ defined('PHPFOX') or exit('NO DICE!');
  * 
  * @example mysql
  */
-$_CONF['db']['driver'] = 'DATABASE_DRIVER';
-$_CONF['db']['host'] = 'DATABASE_HOST'; 
-$_CONF['db']['user'] = 'DATABASE_USER';
-$_CONF['db']['pass'] = 'DATABASE_PASS';
-$_CONF['db']['name'] = 'DATABASE_NAME';
-$_CONF['db']['prefix'] = 'DATABASE_PREFIX';
-$_CONF['db']['port'] = 'DATABASE_PORT';
+$_CONF['db']['driver'] = 'mysqli';
+$_CONF['db']['host'] = 'localhost'; 
+$_CONF['db']['user'] = 'root';
+$_CONF['db']['pass'] = 'ksp983HSG#j8*s8';
+$_CONF['db']['name'] = 'buzz_db';
+$_CONF['db']['prefix'] = 'phpfox_';
+$_CONF['db']['port'] = '';
 
 $_CONF['db']['slave'] = false;
 $_CONF['db']['slave_servers'] = array();
@@ -30,13 +30,13 @@ $_CONF['db']['slave_servers'] = array();
 $_CONF['balancer']['enabled'] = false;
 $_CONF['balancer']['servers'] = array();
 
-$_CONF['core.host'] = 'HOST_NAME';
+$_CONF['core.host'] = 'localhost';
 
-$_CONF['core.folder'] = 'SUB_FOLDER';
+$_CONF['core.folder'] = '/';
 
-$_CONF['core.url_rewrite'] = 'URL_REWRITE';
+$_CONF['core.url_rewrite'] = '2';
 
-$_CONF['core.salt'] = 'RANDOM_SALT';
+$_CONF['core.salt'] = '57d128fe0f51371729bd938760d4437a';
 
 // Storage Engine (file, memcache)
 $_CONF['core.cache_storage'] = 'file';
@@ -57,7 +57,7 @@ $_CONF['core.memcache_persistent'] = false;
 $_CONF['core.cache_skip'] = false;
 
 // Check we run to find out if the script has been installed
-$_CONF['core.is_installed'] = false;
+$_CONF['core.is_installed'] = true;
 
 // Check we run when the database tables have been installed
 $_CONF['core.db_table_installed'] = false;
