@@ -372,4 +372,17 @@
     ),
     'url_name' => 'video',
   ),
+  20 => 
+  array (
+    'module_id' => 'younetcore',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'younetcore.admin_menu_manage_younet_plugins' => 
+      array (
+        'url' => 'younetcore',
+      ),
+    ),
+    'url_name' => 'younetcore',
+  ),
 ); ?>

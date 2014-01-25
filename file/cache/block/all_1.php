@@ -366,6 +366,13 @@
       'tag.cloud' => NULL,
     ),
   ),
+  'younetcore.admincp.index' => 
+  array (
+    1 => 
+    array (
+      'younetcore.newsrss' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 

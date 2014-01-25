@@ -39,4 +39,17 @@
     'url' => NULL,
     'url_version_check' => NULL,
   ),
+  'younetcore' => 
+  array (
+    'product_id' => 'younetcore',
+    'is_core' => '0',
+    'title' => 'YouNet Core',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p2',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
 ); ?>

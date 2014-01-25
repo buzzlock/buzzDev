@@ -198,6 +198,10 @@
     'video.featured' => '3',
     'tag.cloud' => '3',
   ),
+  'younetcore.admincp.index' => 
+  array (
+    'younetcore.newsrss' => '1',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',

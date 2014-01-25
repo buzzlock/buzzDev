@@ -61,6 +61,8 @@
   'pages.template_controller_widget_ajax_onsubmit' => 'pages.template_controller_widget_ajax_onsubmit',
   'parse_input__removeevilattributes' => 'parse_input__removeevilattributes',
   'validator_check_routine_default' => 'validator_check_routine_default',
+  'admincp.component_controller_index_clean' => 'admincp.component_controller_index_clean',
+  'admincp.component_controller_index_process_menu' => 'admincp.component_controller_index_process_menu',
   'video.service_video_getvideo' => 'video.service_video_getvideo',
   'video.service_video_verify' => 'video.service_video_verify',
 ); ?>
