@@ -1,0 +1,21 @@
+#location_left
+{
+	float: left;
+	margin-left: 100px;
+	width: 42%;
+}
+
+#mapHolder
+{
+	float: left;
+	width: 40%;
+	height: 300px;
+	clear: right;
+    border:1px #999 solid;
+}
+
+#location_left .table_left
+{
+	float: left;
+	position: relative;
+}

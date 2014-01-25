@@ -1,7 +1,7 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php $aContent = 'if ($sFriendModuleId == \'event\')
+<?php $aContent = 'if ($sFriendModuleId == \'fevent\')
 {
-	$aInviteCache = Phpfox::getService(\'event\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
+	$aInviteCache = Phpfox::getService(\'fevent\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
 	if (is_array($aInviteCache))
 	{
 		foreach ($aFriends as $iKey => $aFriend)

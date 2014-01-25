@@ -52,4 +52,17 @@
     'url' => NULL,
     'url_version_check' => NULL,
   ),
+  'younetevent' => 
+  array (
+    'product_id' => 'younetevent',
+    'is_core' => '0',
+    'title' => 'Advanced Event',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p9',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox.younetco.com/',
+    'url_version_check' => NULL,
+  ),
 ); ?>

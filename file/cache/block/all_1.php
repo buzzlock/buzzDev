@@ -157,24 +157,6 @@
       'user.register-top' => NULL,
     ),
   ),
-  'group.view' => 
-  array (
-    0 => 
-    array (
-      'event.parent' => NULL,
-      'shoutbox.display' => NULL,
-    ),
-    1 => 
-    array (
-      'forum.parent' => NULL,
-    ),
-    2 => 
-    array (
-      'video.parent' => NULL,
-      'photo.parent' => NULL,
-      'feed.display' => NULL,
-    ),
-  ),
   'forum' => 
   array (
     4 => 
@@ -187,13 +169,6 @@
     3 => 
     array (
       'friend.birthday' => NULL,
-      'event.invite' => NULL,
-      'event.sponsored' => NULL,
-      'event.featured' => NULL,
-    ),
-    1 => 
-    array (
-      'event.category' => NULL,
     ),
   ),
   'mail.index' => 
@@ -373,6 +348,55 @@
       'younetcore.newsrss' => NULL,
     ),
   ),
+  'fevent.view' => 
+  array (
+    4 => 
+    array (
+      'fevent.info' => NULL,
+      'fevent.display' => NULL,
+    ),
+    3 => 
+    array (
+      'fevent.rsvp' => NULL,
+      'fevent.upcoming' => NULL,
+    ),
+    1 => 
+    array (
+      'fevent.map' => NULL,
+      'fevent.image' => NULL,
+      'fevent.attending' => NULL,
+      'fevent.category' => NULL,
+    ),
+  ),
+  'fevent.profile' => 
+  array (
+    1 => 
+    array (
+      'fevent.pic' => NULL,
+    ),
+    3 => 
+    array (
+      'fevent.sponsored' => NULL,
+    ),
+  ),
+  'fevent.index' => 
+  array (
+    3 => 
+    array (
+      'fevent.birthday' => NULL,
+      'fevent.invite' => NULL,
+      'fevent.sponsored' => NULL,
+      'fevent.featured' => NULL,
+      'fevent.search' => NULL,
+      'fevent.calendar' => NULL,
+      'fevent.past' => NULL,
+      'fevent.upcoming' => NULL,
+    ),
+    1 => 
+    array (
+      'fevent.category' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -392,6 +416,23 @@
     1 => 
     array (
       'blog.new-blogs' => NULL,
+    ),
+  ),
+  'group.view' => 
+  array (
+    1 => 
+    array (
+      'forum.parent' => NULL,
+    ),
+    2 => 
+    array (
+      'video.parent' => NULL,
+      'photo.parent' => NULL,
+      'feed.display' => NULL,
+    ),
+    0 => 
+    array (
+      'shoutbox.display' => NULL,
     ),
   ),
   'marketplace.view' => 
@@ -471,24 +512,6 @@
       'track.recent-views' => NULL,
     ),
   ),
-  'event.view' => 
-  array (
-    4 => 
-    array (
-      'event.info' => NULL,
-      'feed.display' => NULL,
-    ),
-    3 => 
-    array (
-      'event.rsvp' => NULL,
-    ),
-    1 => 
-    array (
-      'event.map' => NULL,
-      'event.image' => NULL,
-      'event.attending' => NULL,
-    ),
-  ),
   'pages.index' => 
   array (
     1 => 
@@ -516,6 +539,13 @@
     array (
       'log.active-users' => NULL,
       'forum.stat' => NULL,
+    ),
+  ),
+  'event.view' => 
+  array (
+    4 => 
+    array (
+      'feed.display' => NULL,
     ),
   ),
 ); ?>

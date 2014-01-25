@@ -85,15 +85,6 @@
   array (
     'user.register-top' => '11',
   ),
-  'group.view' => 
-  array (
-    'event.parent' => '0',
-    'forum.parent' => '1',
-    'video.parent' => '2',
-    'photo.parent' => '2',
-    'shoutbox.display' => '0',
-    'feed.display' => '2',
-  ),
   'forum' => 
   array (
     'forum.timezone' => '4',
@@ -101,10 +92,6 @@
   'event.index' => 
   array (
     'friend.birthday' => '3',
-    'event.invite' => '3',
-    'event.sponsored' => '3',
-    'event.category' => '1',
-    'event.featured' => '3',
   ),
   'mail.index' => 
   array (
@@ -202,6 +189,34 @@
   array (
     'younetcore.newsrss' => '1',
   ),
+  'fevent.view' => 
+  array (
+    'fevent.info' => '4',
+    'fevent.display' => '4',
+    'fevent.rsvp' => '3',
+    'fevent.map' => '1',
+    'fevent.image' => '1',
+    'fevent.attending' => '1',
+    'fevent.category' => '1',
+    'fevent.upcoming' => '3',
+  ),
+  'fevent.profile' => 
+  array (
+    'fevent.pic' => '1',
+    'fevent.sponsored' => '3',
+  ),
+  'fevent.index' => 
+  array (
+    'fevent.birthday' => '3',
+    'fevent.invite' => '3',
+    'fevent.sponsored' => '3',
+    'fevent.featured' => '3',
+    'fevent.category' => '1',
+    'fevent.search' => '3',
+    'fevent.calendar' => '3',
+    'fevent.past' => '3',
+    'fevent.upcoming' => '3',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',
@@ -213,6 +228,14 @@
   'core.index' => 
   array (
     'blog.new-blogs' => '1',
+  ),
+  'group.view' => 
+  array (
+    'forum.parent' => '1',
+    'video.parent' => '2',
+    'photo.parent' => '2',
+    'shoutbox.display' => '0',
+    'feed.display' => '2',
   ),
   'marketplace.view' => 
   array (
@@ -254,15 +277,6 @@
     'blog.top' => '3',
     'track.recent-views' => '3',
   ),
-  'event.view' => 
-  array (
-    'event.info' => '4',
-    'event.rsvp' => '3',
-    'event.map' => '1',
-    'event.image' => '1',
-    'event.attending' => '1',
-    'feed.display' => '4',
-  ),
   'pages.index' => 
   array (
     'pages.category' => '1',
@@ -279,5 +293,9 @@
   array (
     'log.active-users' => '1',
     'forum.stat' => '1',
+  ),
+  'event.view' => 
+  array (
+    'feed.display' => '4',
   ),
 ); ?>

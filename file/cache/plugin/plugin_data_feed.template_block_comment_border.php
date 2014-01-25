@@ -1,7 +1,7 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php $aContent = 'if (Phpfox::getLib(\'module\')->getFullControllerName() == \'event.index\')
+<?php $aContent = 'if (Phpfox::getLib(\'module\')->getFullControllerName() == \'fevent.index\')
 {
-	Phpfox::getBlock(\'event.rsvp-entry\');
+	Phpfox::getBlock(\'fevent.rsvp-entry\');
 }  $aCore = Phpfox::getLib(\'request\')->get(\'core\');
 if (((Phpfox::getLib(\'module\')->getFullControllerName() == \'photo.view\' && !PHPFOX_IS_AJAX) && Phpfox::isUser() && !Phpfox::isMobile())
 	|| (PHPFOX_IS_AJAX && $aCore[\'call\'] == \'feed.loadDelayedComments\')

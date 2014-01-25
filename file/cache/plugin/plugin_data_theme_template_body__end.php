@@ -2,6 +2,20 @@
 <?php $aContent = 'if (Phpfox::getParam(\'facebook.enable_facebook_connect\'))
 {
 	// echo \'<div id="fb-root"></div>\';
+} if(Phpfox::isAdminPanel())
+{
+    ?>
+    <script type="text/javascript">
+    $Behavior.fixFeventMenu = function(){
+        $("div.main_sub_menu_holder_header").each(function(i,e){
+            if(e.innerHTML == \'Fevent\'){
+                e.innerHTML = \'Advanced Event\';
+                return;
+            }
+        });
+    }
+    </script>
+    <?php
 } if (Phpfox::getParam(\'janrain.enable_janrain_login\'))
 {
 	echo "

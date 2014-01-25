@@ -1,0 +1,47 @@
+.fevent_image_holder
+{
+    padding-bottom:20px;
+}
+
+.fevent_image
+{
+    text-align:center;    
+}
+
+.fevent_image_extra
+{
+    padding-top:5px;
+    text-align:center;
+}
+
+.fevent_image_extra ul
+{
+    margin:0px 0px 0px 5px;
+    padding:0px;
+    list-style-type:none;
+}
+
+.fevent_image_extra ul li
+{
+    margin: 0px 0px 3px 0px;
+    float:left;
+    padding-right:5px;
+}
+
+.fevent_image_extra img
+{
+    border:1px #DFDFDF solid;
+    background:#fff;    
+}
+
+.fevent_view_image
+{
+    padding:5px 0px 0px 0px;    
+    text-align:center;
+}
+
+.fevent_view_image a,
+.fevent_view_image a:hover
+{
+    color:#808080;
+}

@@ -85,15 +85,6 @@
   array (
     'user.register-top' => false,
   ),
-  'group.view' => 
-  array (
-    'event.parent' => true,
-    'forum.parent' => true,
-    'video.parent' => true,
-    'photo.parent' => true,
-    'shoutbox.display' => true,
-    'feed.display' => false,
-  ),
   'forum' => 
   array (
     'forum.timezone' => false,
@@ -101,10 +92,6 @@
   'event.index' => 
   array (
     'friend.birthday' => false,
-    'event.invite' => false,
-    'event.sponsored' => false,
-    'event.category' => false,
-    'event.featured' => false,
   ),
   'mail.index' => 
   array (
@@ -202,6 +189,34 @@
   array (
     'younetcore.newsrss' => false,
   ),
+  'fevent.view' => 
+  array (
+    'fevent.info' => false,
+    'fevent.display' => false,
+    'fevent.rsvp' => false,
+    'fevent.map' => false,
+    'fevent.image' => false,
+    'fevent.attending' => false,
+    'fevent.category' => false,
+    'fevent.upcoming' => false,
+  ),
+  'fevent.profile' => 
+  array (
+    'fevent.pic' => false,
+    'fevent.sponsored' => false,
+  ),
+  'fevent.index' => 
+  array (
+    'fevent.birthday' => false,
+    'fevent.invite' => false,
+    'fevent.sponsored' => false,
+    'fevent.featured' => false,
+    'fevent.category' => false,
+    'fevent.search' => false,
+    'fevent.calendar' => false,
+    'fevent.past' => false,
+    'fevent.upcoming' => false,
+  ),
   'apps.index' => 
   array (
     'apps.categories' => true,
@@ -213,6 +228,14 @@
   'core.index' => 
   array (
     'blog.new-blogs' => false,
+  ),
+  'group.view' => 
+  array (
+    'forum.parent' => true,
+    'video.parent' => true,
+    'photo.parent' => true,
+    'shoutbox.display' => true,
+    'feed.display' => false,
   ),
   'marketplace.view' => 
   array (
@@ -254,15 +277,6 @@
     'blog.top' => false,
     'track.recent-views' => false,
   ),
-  'event.view' => 
-  array (
-    'event.info' => false,
-    'event.rsvp' => false,
-    'event.map' => false,
-    'event.image' => false,
-    'event.attending' => false,
-    'feed.display' => false,
-  ),
   'pages.index' => 
   array (
     'pages.category' => true,
@@ -279,5 +293,9 @@
   array (
     'log.active-users' => false,
     'forum.stat' => false,
+  ),
+  'event.view' => 
+  array (
+    'feed.display' => false,
   ),
 ); ?>

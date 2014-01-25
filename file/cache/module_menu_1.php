@@ -120,20 +120,40 @@
   ),
   6 => 
   array (
-    'module_id' => 'event',
+    'module_id' => 'fevent',
     'is_menu' => '1',
     'menu' => 
     array (
-      'event.admin_menu_add_category' => 
+      'fevent.admin_menu_add_category' => 
       array (
-        'url' => 'event/add',
+        'url' => 'fevent/add',
       ),
-      'event.admin_menu_manage_categories' => 
+      'fevent.admin_menu_manage_categories' => 
       array (
-        'url' => 'event',
+        'url' => 'fevent',
+      ),
+      'fevent.admin_menu_add_custom_field' => 
+      array (
+        'url' => 'fevent/custom/add',
+      ),
+      'fevent.admin_menu_manage_custom_fields' => 
+      array (
+        'url' => 'fevent/custom',
+      ),
+      'fevent.admin_menu_manage_location' => 
+      array (
+        'url' => 'fevent/location',
+      ),
+      'fevent.admin_menu_google_api_settings' => 
+      array (
+        'url' => 'fevent/settinggapi',
+      ),
+      'fevent.admin_menu_migration_events' => 
+      array (
+        'url' => 'fevent/migrations',
       ),
     ),
-    'url_name' => 'event',
+    'url_name' => 'fevent',
   ),
   7 => 
   array (
