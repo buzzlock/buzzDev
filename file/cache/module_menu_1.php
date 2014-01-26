@@ -140,13 +140,21 @@
     'is_menu' => '1',
     'menu' => 
     array (
-      'admincp.admin_menu_manage_categories' => 
+      'blog.admin_menu_manage_categories' => 
       array (
         'url' => 'blog',
       ),
-      'admincp.admin_menu_add_category' => 
+      'blog.admin_menu_add_new_category' => 
       array (
         'url' => 'blog/add',
+      ),
+      'blog.admin_menu_install_blog_importer' => 
+      array (
+        'url' => 'blog/installer/install',
+      ),
+      'blog.admin_menu_uninstall_blog_importer_v3_02' => 
+      array (
+        'url' => 'blog/installer/uninstall',
       ),
     ),
     'url_name' => 'blog',

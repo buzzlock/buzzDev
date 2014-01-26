@@ -10,6 +10,7 @@
   'like.service_process_delete__1' => 'like.service_process_delete__1',
   'profile.component_controller_index_clean' => 'profile.component_controller_index_clean',
   'user.component_controller_index_clean' => 'user.component_controller_index_clean',
+  'blog.component_controller_index_clean' => 'blog.component_controller_index_clean',
   'comment.component_ajax_ajax_add_passed' => 'comment.component_ajax_ajax_add_passed',
   'comment.component_ajax_ajax_add_start' => 'comment.component_ajax_ajax_add_start',
   'request.template_controller_index' => 'request.template_controller_index',
