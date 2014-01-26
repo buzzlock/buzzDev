@@ -15,6 +15,7 @@
   'comment' => 'comment',
   'contact' => 'contact',
   'contactimporter' => 'contactimporter',
+  'contest' => 'contest',
   'core' => 'core',
   'custom' => 'custom',
   'egift' => 'egift',
@@ -65,4 +66,5 @@
   'video' => 'video',
   'wall' => 'wall',
   'younetcore' => 'younetcore',
+  'younetpaymentgateways' => 'younetpaymentgateways',
 ); ?>

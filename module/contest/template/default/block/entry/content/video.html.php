@@ -1,0 +1,2 @@
+
+{$aVideoEntry.embed_code}

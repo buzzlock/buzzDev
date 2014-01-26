@@ -143,4 +143,30 @@
     'url' => NULL,
     'url_version_check' => NULL,
   ),
+  'younet_contest' => 
+  array (
+    'product_id' => 'younet_contest',
+    'is_core' => '0',
+    'title' => 'YouNet Contest',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p2',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/contest',
+    'url_version_check' => 'http://phpfox3.demo.younetco.com/',
+  ),
+  'Younet_Payment_Gateway' => 
+  array (
+    'product_id' => 'Younet_Payment_Gateway',
+    'is_core' => '0',
+    'title' => 'YouNet Payment Gateway',
+    'description' => 'Payment gateways integration by YouNet Company',
+    'version' => '3.02',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
 ); ?>

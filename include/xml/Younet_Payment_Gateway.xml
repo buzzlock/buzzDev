@@ -1,0 +1,75 @@
+<product>
+	<data>
+		<product_id>Younet_Payment_Gateway</product_id>
+		<is_core>0</is_core>
+		<title>YouNet Payment Gateway</title>
+		<description>Payment gateways integration by YouNet Company</description>
+		<version>3.02</version>
+		<latest_version></latest_version>
+		<last_check>1352817919</last_check>
+		<is_active>1</is_active>
+		<url></url>
+		<url_version_check></url_version_check>
+	</data>
+	<installs>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[$this->database()->query("CREATE TABLE IF NOT EXISTS ".Phpfox::getT('younetpaymentgateways_gateway_log'). "(
+  `log_id` int(1) NOT NULL AUTO_INCREMENT,
+  `gateway_id` varchar(75) DEFAULT NULL,
+  `log_data` mediumtext NOT NULL,
+  `ip_address` varchar(15) DEFAULT NULL,
+  `time_stamp` int(10) NOT NULL,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB   AUTO_INCREMENT=3 ;");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS ".Phpfox::getT('younetpaymentgateways_gatewayapi'). " (
+  `gateway_id` varchar(45) NOT NULL DEFAULT '',
+  `title` varchar(150) NOT NULL,
+  `description` mediumtext,
+  `is_active` tinyint(1) DEFAULT NULL,
+  `is_test` tinyint(2) DEFAULT NULL,
+  `setting` mediumtext,
+  PRIMARY KEY (`gateway_id`)
+) ENGINE=InnoDB ;");
+
+$this->database()->query("
+INSERT IGNORE INTO ".Phpfox::getT('younetpaymentgateways_gatewayapi'). " (`gateway_id`, `title`, `description`, `is_active`, `is_test`, `setting`) VALUES
+('2checkout', '2checkout', 'Add some information about 2checkout gateway', 0, 0, NULL),
+('paypal', 'Paypal', 'Add some information about Paypal gateway', 1, 1, NULL);
+");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01p1</version>
+			<install_code><![CDATA[$this->database()->query("CREATE TABLE IF NOT EXISTS ".Phpfox::getT('younetpaymentgateways_gateway_log'). "(
+  `log_id` int(1) NOT NULL AUTO_INCREMENT,
+  `gateway_id` varchar(75) DEFAULT NULL,
+  `log_data` mediumtext NOT NULL,
+  `ip_address` varchar(15) DEFAULT NULL,
+  `time_stamp` int(10) NOT NULL,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB   AUTO_INCREMENT=3 ;");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS ".Phpfox::getT('younetpaymentgateways_gatewayapi'). " (
+  `gateway_id` varchar(45) NOT NULL DEFAULT '',
+  `title` varchar(150) NOT NULL,
+  `description` mediumtext,
+  `is_active` tinyint(1) DEFAULT NULL,
+  `is_test` tinyint(2) DEFAULT NULL,
+  `setting` mediumtext,
+  PRIMARY KEY (`gateway_id`)
+) ENGINE=InnoDB ;");
+
+$this->database()->query("
+INSERT IGNORE INTO ".Phpfox::getT('younetpaymentgateways_gatewayapi'). " (`gateway_id`, `title`, `description`, `is_active`, `is_test`, `setting`) VALUES
+('2checkout', '2checkout', 'Add some information about 2checkout gateway', 0, 0, NULL),
+('paypal', 'Paypal', 'Add some information about Paypal gateway', 1, 1, NULL);
+");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>younetpaymentgateways</module_id>
+	</modules>
+</product>

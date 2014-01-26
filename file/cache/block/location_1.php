@@ -288,6 +288,34 @@
     'contactimporter.top-inviter' => '1',
     'contactimporter.statistics' => '1',
   ),
+  'contest.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'contest.index' => 
+  array (
+    'contest.category' => '1',
+    'contest.statistic' => '1',
+    'contest.premium-contest' => '3',
+    'contest.popular-contest' => '3',
+    'contest.top-contest' => '3',
+  ),
+  'contest.view' => 
+  array (
+    'contest.contest.contest-photo' => '1',
+    'contest.contest.statistics' => '1',
+    'contest.contest.duration' => '1',
+    'contest.contest.winning-entry' => '3',
+    'contest.contest.participant' => '3',
+    'contest.entry.most-voted' => '3',
+    'contest.entry.most-viewed' => '3',
+  ),
+  'contest.entry.index' => 
+  array (
+    'contest.premium-contest' => '3',
+    'contest.top-contest' => '3',
+    'contest.popular-contest' => '3',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',

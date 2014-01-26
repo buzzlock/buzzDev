@@ -1,0 +1,10 @@
+@import url("../../default/default/yncontest.css");
+
+.yc.large_item{
+	margin-right: 4px;
+	width: 162px;
+}
+
+.yc.large_item .large_item_image{
+	width: 162px;
+}

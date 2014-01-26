@@ -203,6 +203,35 @@
   ),
   9 => 
   array (
+    'module_id' => 'contest',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'contest.admin_menu_manage_category' => 
+      array (
+        'url' => 'contest/category',
+      ),
+      'contest.admin_menu_add_category' => 
+      array (
+        'url' => 'contest/category/add',
+      ),
+      'contest.admin_menu_manage_contest' => 
+      array (
+        'url' => 'contest',
+      ),
+      'contest.admin_menu_manage_email_templates' => 
+      array (
+        'url' => 'contest/email',
+      ),
+      'contest.admin_menu_manage_transactions' => 
+      array (
+        'url' => 'contest/transaction',
+      ),
+    ),
+    'url_name' => 'contest',
+  ),
+  10 => 
+  array (
     'module_id' => 'egift',
     'is_menu' => '1',
     'menu' => 
@@ -222,7 +251,7 @@
     ),
     'url_name' => 'egift',
   ),
-  10 => 
+  11 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -259,7 +288,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -276,7 +305,7 @@
     ),
     'url_name' => 'forum',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -293,7 +322,7 @@
     ),
     'url_name' => 'input',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -310,7 +339,7 @@
     ),
     'url_name' => 'music',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -327,7 +356,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -348,7 +377,7 @@
     ),
     'url_name' => 'pages',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -361,7 +390,7 @@
     ),
     'url_name' => 'photo',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -382,7 +411,7 @@
     ),
     'url_name' => 'report',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -407,7 +436,7 @@
     ),
     'url_name' => 'rss',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -424,7 +453,7 @@
     ),
     'url_name' => 'share',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -449,7 +478,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -462,7 +491,7 @@
     ),
     'url_name' => 'user',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -479,7 +508,7 @@
     ),
     'url_name' => 'video',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -491,5 +520,18 @@
       ),
     ),
     'url_name' => 'younetcore',
+  ),
+  25 => 
+  array (
+    'module_id' => 'younetpaymentgateways',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'younetpaymentgateways.admin_menu_manage_payment_gateway' => 
+      array (
+        'url' => 'younetpaymentgateways',
+      ),
+    ),
+    'url_name' => 'younetpaymentgateways',
   ),
 ); ?>

@@ -1,0 +1,35 @@
+<module>
+	<data>
+		<module_id>younetpaymentgateways</module_id>
+		<product_id>Younet_Payment_Gateway</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:1:{s:55:"younetpaymentgateways.admin_menu_manage_payment_gateway";a:1:{s:3:"url";a:1:{i:0;s:21:"younetpaymentgateways";}}}]]></menu>
+		<phrase_var_name>module_younetpaymentgateways</phrase_var_name>
+	</data>
+	<phrases>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="module_younetpaymentgateways" added="1338795541">Integrating payment gateways into a module</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="gateways" added="1338879895">Gateways</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="name" added="1338880620">Name</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="active" added="1338880632">Active</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="edit_gateway_setting" added="1338881081">Edit Gateway Setting</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="test_mode" added="1338881943">Test Mode</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="disable_test_mode" added="1338882053">Disable Test Mode</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="enable_test_mode" added="1338882093">Enable Test Mode</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="payment_gateways" added="1338882189">Payment Gateways</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="editing" added="1338882790">Editing</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="gateway_details" added="1338882955">Gateway Details</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="title" added="1338882980">Title</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="description" added="1338883013">Description</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="update" added="1338883125">Update</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="gateway_successfully_updated" added="1338883395">Gateway successfully updated.</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="provide_a_name" added="1338883514">Provide a name</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="provide_a_description" added="1338883540">Provide a description</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="select_if_the_gateway_is_in_test_mode" added="1338883594">Select if the gateway is in test mode</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="select_if_the_gateway_is_active_or_not" added="1338883613">Select if the gateway is active or not</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="admin_menu_manage_payment_gateway" added="1338883824">Manage Payment Gateway</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="user_setting_can_add_donation_on_own_page" added="1338948757">Can add donation on own page?</phrase>
+		<phrase module_id="younetpaymentgateways" version_id="3.2.0" var_name="user_setting_can_donate" added="1338948791">Can donate?</phrase>
+	</phrases>
+</module>

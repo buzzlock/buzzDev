@@ -4287,4 +4287,102 @@ Site Name',
     'value_actual' => false,
     'module_name' => 'contactimporter',
   ),
+  595 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'subcategories_to_show_at_first',
+    'value_actual' => 12,
+    'module_name' => 'contest',
+  ),
+  596 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'ending_soon_setting',
+    'value_actual' => 'End of Contest',
+    'module_name' => 'contest',
+  ),
+  597 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'admin_paypal_email',
+    'value_actual' => '',
+    'module_name' => 'contest',
+  ),
+  598 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'ending_soon_before',
+    'value_actual' => 30,
+    'module_name' => 'contest',
+  ),
+  599 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_contest_block_home_page',
+    'value_actual' => 3,
+    'module_name' => 'contest',
+  ),
+  600 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_contest_featured_block_home_page',
+    'value_actual' => 5,
+    'module_name' => 'contest',
+  ),
+  601 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_entries_block_most_voted_most_viewed',
+    'value_actual' => 4,
+    'module_name' => 'contest',
+  ),
+  602 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'contest_buttons_bgcolor_1',
+    'value_actual' => '#50A1FF',
+    'module_name' => 'contest',
+  ),
+  603 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'contest_buttons_bgcolor_2',
+    'value_actual' => '#2289FF',
+    'module_name' => 'contest',
+  ),
+  604 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'contest_buttons_text_color',
+    'value_actual' => '#FFFFFF',
+    'module_name' => 'contest',
+  ),
+  605 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'contest_autorun_featured_slideshow',
+    'value_actual' => true,
+    'module_name' => 'contest',
+  ),
+  606 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'contest_featured_slideshow_speed',
+    'value_actual' => 7000,
+    'module_name' => 'contest',
+  ),
+  607 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'contest_short_date_time_format',
+    'value_actual' => 'm-j, Y',
+    'module_name' => 'contest',
+  ),
+  608 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'contest_time_stamp_announcement',
+    'value_actual' => 'F j, Y',
+    'module_name' => 'contest',
+  ),
 ); ?>

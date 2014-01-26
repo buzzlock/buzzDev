@@ -519,6 +519,52 @@
       'contactimporter.statistics' => NULL,
     ),
   ),
+  'contest.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'contest.index' => 
+  array (
+    1 => 
+    array (
+      'contest.category' => NULL,
+      'contest.statistic' => NULL,
+    ),
+    3 => 
+    array (
+      'contest.premium-contest' => NULL,
+      'contest.popular-contest' => NULL,
+      'contest.top-contest' => NULL,
+    ),
+  ),
+  'contest.view' => 
+  array (
+    1 => 
+    array (
+      'contest.contest.contest-photo' => NULL,
+      'contest.contest.statistics' => NULL,
+      'contest.contest.duration' => NULL,
+    ),
+    3 => 
+    array (
+      'contest.contest.winning-entry' => NULL,
+      'contest.contest.participant' => NULL,
+      'contest.entry.most-voted' => NULL,
+      'contest.entry.most-viewed' => NULL,
+    ),
+  ),
+  'contest.entry.index' => 
+  array (
+    3 => 
+    array (
+      'contest.premium-contest' => NULL,
+      'contest.top-contest' => NULL,
+      'contest.popular-contest' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
