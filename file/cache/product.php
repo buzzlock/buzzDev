@@ -117,4 +117,17 @@
     'url' => 'http://phpfox3.demo.younetco.com/',
     'url_version_check' => NULL,
   ),
+  'younet_birthdayreminder' => 
+  array (
+    'product_id' => 'younet_birthdayreminder',
+    'is_core' => '0',
+    'title' => 'YouNet Birthday Reminder',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p1',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
 ); ?>

@@ -1,0 +1,30 @@
+<module>
+	<data>
+		<module_id>birthdayreminder</module_id>
+		<product_id>younet_birthdayreminder</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:38:"birthdayreminder.admin_menu_edit_email";a:1:{s:3:"url";a:2:{i:0;s:16:"birthdayreminder";i:1;s:4:"edit";}}s:38:"birthdayreminder.admin_global_settings";a:1:{s:3:"url";a:2:{i:0;s:16:"birthdayreminder";i:1;s:6:"global";}}}]]></menu>
+		<phrase_var_name>module_birthdayreminder</phrase_var_name>
+	</data>
+	<components>
+		<component module_id="birthdayreminder" component="global" m_connection="birthdayreminder.admincp.global" module="birthdayreminder" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="birthdayreminder" component="edit" m_connection="birthdayreminder.admincp.edit" module="birthdayreminder" is_controller="1" is_block="0" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_menu_edit_email" added="0">Edit Email</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_global_settings" added="0">Global Settings</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="create_event_when_sending_reminder" added="0">Create event for user birthday?</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="the_number_of_day_before_birthday_to_send_mail" added="0">Time to send email before user birthdays</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="the_number_of_day_before_birthday_to_create_event" added="0">Time to create event before user birthdays</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="the_create_event_date_must_be_greater_than_send_mail_date" added="0">The create event date must be greater than send email date</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_email" added="0">Email</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_subject" added="0">Subject</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_text" added="0">Text</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_settings" added="0">Settings</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="admin_days" added="0">day(s)</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="event_not_available" added="0">Event is not available</phrase>
+		<phrase module_id="birthdayreminder" version_id="3.2.0" var_name="happy_birthday" added="0">Happy birthday</phrase>
+	</phrases>
+</module>

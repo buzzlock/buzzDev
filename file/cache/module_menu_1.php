@@ -119,6 +119,23 @@
   ),
   5 => 
   array (
+    'module_id' => 'birthdayreminder',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'birthdayreminder.admin_menu_edit_email' => 
+      array (
+        'url' => 'birthdayreminder/edit',
+      ),
+      'birthdayreminder.admin_global_settings' => 
+      array (
+        'url' => 'birthdayreminder/global',
+      ),
+    ),
+    'url_name' => 'birthdayreminder',
+  ),
+  6 => 
+  array (
     'module_id' => 'blog',
     'is_menu' => '1',
     'menu' => 
@@ -134,7 +151,7 @@
     ),
     'url_name' => 'blog',
   ),
-  6 => 
+  7 => 
   array (
     'module_id' => 'contact',
     'is_menu' => '1',
@@ -147,7 +164,7 @@
     ),
     'url_name' => 'contact',
   ),
-  7 => 
+  8 => 
   array (
     'module_id' => 'egift',
     'is_menu' => '1',
@@ -168,7 +185,7 @@
     ),
     'url_name' => 'egift',
   ),
-  8 => 
+  9 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -205,7 +222,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  9 => 
+  10 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -222,7 +239,7 @@
     ),
     'url_name' => 'forum',
   ),
-  10 => 
+  11 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -239,7 +256,7 @@
     ),
     'url_name' => 'input',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -256,7 +273,7 @@
     ),
     'url_name' => 'music',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -273,7 +290,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -294,7 +311,7 @@
     ),
     'url_name' => 'pages',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -307,7 +324,7 @@
     ),
     'url_name' => 'photo',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -328,7 +345,7 @@
     ),
     'url_name' => 'report',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -353,7 +370,7 @@
     ),
     'url_name' => 'rss',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -370,7 +387,7 @@
     ),
     'url_name' => 'share',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -395,7 +412,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -408,7 +425,7 @@
     ),
     'url_name' => 'user',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -425,7 +442,7 @@
     ),
     'url_name' => 'video',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',

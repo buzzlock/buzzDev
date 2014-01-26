@@ -9,6 +9,7 @@
   'apps' => 'apps',
   'attachment' => 'attachment',
   'ban' => 'ban',
+  'birthdayreminder' => 'birthdayreminder',
   'blog' => 'blog',
   'captcha' => 'captcha',
   'comment' => 'comment',
