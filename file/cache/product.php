@@ -39,6 +39,19 @@
     'url' => 'http://phpfox.younetco.com',
     'url_version_check' => NULL,
   ),
+  'fanot' => 
+  array (
+    'product_id' => 'fanot',
+    'is_core' => '0',
+    'title' => 'Advanced Feed Notification',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p3',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox.younetco.com',
+    'url_version_check' => NULL,
+  ),
   'flowplayer' => 
   array (
     'product_id' => 'flowplayer',

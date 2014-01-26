@@ -18,6 +18,7 @@
   'emoticon' => 'emoticon',
   'error' => 'error',
   'facebook' => 'facebook',
+  'fanot' => 'fanot',
   'favorite' => 'favorite',
   'feed' => 'feed',
   'fevent' => 'fevent',

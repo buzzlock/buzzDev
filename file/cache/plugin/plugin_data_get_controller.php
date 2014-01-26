@@ -221,7 +221,7 @@ else
 									window.location.hash = \\\'\\\';
 								}
 							}	
-*/ if (Phpfox::getParam(\'core.wysiwyg\') == \'tiny_mce\')
+*/  if (Phpfox::getParam(\'core.wysiwyg\') == \'tiny_mce\')
 {	
 		if (Phpfox::getParam(\'core.site_wide_ajax_browsing\'))
 		{

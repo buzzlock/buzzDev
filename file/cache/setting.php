@@ -3992,4 +3992,46 @@ Site Name',
     'value_actual' => 0,
     'module_name' => 'advancedmarketplace',
   ),
+  554 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'display_notification_seconds',
+    'value_actual' => 10,
+    'module_name' => 'fanot',
+  ),
+  555 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enable_advanced_feed_notification_for_friend_request',
+    'value_actual' => true,
+    'module_name' => 'fanot',
+  ),
+  556 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'notification_refresh_time',
+    'value_actual' => 10,
+    'module_name' => 'fanot',
+  ),
+  557 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'notification_bgcolor',
+    'value_actual' => '#CAD1DE',
+    'module_name' => 'fanot',
+  ),
+  558 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_photo_in_notification',
+    'value_actual' => true,
+    'module_name' => 'fanot',
+  ),
+  559 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'how_many_notifications_to_show',
+    'value_actual' => 5,
+    'module_name' => 'fanot',
+  ),
 ); ?>
