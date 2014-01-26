@@ -1,0 +1,152 @@
+div#jhslider ul {
+    display: block;
+    height: 220px;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+div#jhslider a {
+    text-decoration: none;
+}
+
+div#jhslider a:hover {
+	text-decoration: underline;
+}
+
+div#jhslider a h3 {
+    border-bottom: none;
+	font-size: 13px;
+	font-weight: bold;
+	color: #3B5998;
+	padding: 0px;
+	margin: 0px;
+}
+
+div#jhslider div.rowitem {
+    clear: both;
+}
+
+div#jhslider div.color777 {
+    color: #777777;
+}
+
+div#jhslider ul>li{
+    float: left;
+	width: 360px;
+	text-align: center;
+	height: 220px;
+	overflow: hidden;
+	display: block;
+}
+
+div#jhslider ul>li img{
+    max-width: 360px;
+	max-height: 220px;
+}
+
+div#jhslider {
+    width: 520px;
+    height: 340px;
+    position: relative;
+	margin-bottom: 15px;
+}
+
+div#jhslider div.jhslider-window {
+    width: 360px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+div#jhslider div.jhslider-window div.jhslider-slider {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div#jhslider div.jhslider-thumbnail {
+    overflow: hidden;
+    position: absolute;
+    height: 340px;
+    top: 0px;
+    right: 0px;
+    width: 160px;
+}
+
+div#jhslider div.jhslider-thumbnail div.jhslider-thumbnail-div {
+    overflow: hidden;
+    width: 156px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    height: 83px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+div#jhslider div.jhslider-thumbnail div.jhslider-thumbnail-div {
+    background-color: #ECECEC;
+}
+
+div#jhslider div.jhslider-thumbnail div.active {
+    background-color: #D6D6D6;
+}
+
+div#jhslider div.jhslider-thumbnail div.jhslider-thumbnail-div div.jhslider-buff {
+
+}
+
+div#jhslider div.jhslider-thumbnail div.jhslider-thumbnail-div div.jhslider-buff table {
+    width: 156px;
+    height: 83px;
+}
+
+div#jhslider div.jhslider-thumbnail div.jhslider-thumbnail-div div.jhslider-buff table td {
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+div#jhslider div.jhslider-content {
+    overflow: hidden;
+    position: absolute;
+    height: 120px;
+    bottom: 0px;
+    left: 0px;
+    width: 360px;
+}
+
+div#jhslider div.jhslider-content div.jhslider-content-div {
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+    position: absolute;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+	background-color: #ECECEC;
+    width: 340px;
+}
+
+div#jhslider div.jhslider-content div.jhslider-content-div  .price {
+	font-size:10px;
+	font-weight:bold;
+}
+
+div.jhslider-content-div {
+	
+}
+
+div.jhslider-content-div td {
+	text-align: left;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+div.jhslider-content-div div.rowitem {
+	clear: both;
+}
+
+div.jhslider-content-div div.color363636 {
+	color: #363636;
+}

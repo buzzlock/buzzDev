@@ -109,13 +109,6 @@
   array (
     'mail.folder' => false,
   ),
-  'marketplace.index' => 
-  array (
-    'marketplace.sponsored' => false,
-    'marketplace.category' => false,
-    'marketplace.invite' => false,
-    'marketplace.featured' => false,
-  ),
   'music.view-album' => 
   array (
     'music.photo-album' => false,
@@ -217,6 +210,54 @@
     'fevent.past' => false,
     'fevent.upcoming' => false,
   ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => false,
+    'advancedmarketplace.category' => false,
+    'advancedmarketplace.search' => true,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.sponsored' => false,
+    'advancedmarketplace.invite' => false,
+    'advancedmarketplace.mostreviewedlisting' => false,
+    'advancedmarketplace.recentviewlisting' => false,
+  ),
+  'advancedmarketplace.detail' => 
+  array (
+    'advancedmarketplace.detailview' => false,
+    'advancedmarketplace.owner' => false,
+    'advancedmarketplace.detailslideshow' => false,
+    'advancedmarketplace.price' => false,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.tag' => false,
+    'advancedmarketplace.interestedlisting' => false,
+    'advancedmarketplace.morefromseller' => false,
+  ),
+  'advancedmarketplace.search' => 
+  array (
+    'advancedmarketplace.search' => true,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.sponsored' => false,
+    'advancedmarketplace.invite' => false,
+    'advancedmarketplace.mostviewlisting' => false,
+    'advancedmarketplace.mostreviewedlisting' => false,
+    'advancedmarketplace.recentviewlisting' => false,
+    'advancedmarketplace.category' => true,
+    'advancedmarketplace.tag' => false,
+  ),
+  'advancedmarketplace.index' => 
+  array (
+    'advancedmarketplace.search' => true,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.sponsored' => false,
+    'advancedmarketplace.invite' => false,
+    'advancedmarketplace.mostviewlisting' => false,
+    'advancedmarketplace.mostreviewedlisting' => false,
+    'advancedmarketplace.recentviewlisting' => true,
+    'advancedmarketplace.category' => false,
+    'advancedmarketplace.tag' => false,
+    'advancedmarketplace.listingslideshow' => false,
+    'advancedmarketplace.recentlisting' => false,
+  ),
   'apps.index' => 
   array (
     'apps.categories' => true,
@@ -237,12 +278,6 @@
     'shoutbox.display' => true,
     'feed.display' => false,
   ),
-  'marketplace.view' => 
-  array (
-    'marketplace.image' => false,
-    'marketplace.my' => false,
-    'marketplace.price' => false,
-  ),
   'music.index' => 
   array (
     'music.list' => false,
@@ -261,6 +296,12 @@
   array (
     'track.recent-views' => false,
     'profile.pic' => false,
+  ),
+  'advancedmarketplace.view' => 
+  array (
+    'advancedmarketplace.image' => false,
+    'advancedmarketplace.my' => false,
+    'advancedmarketplace.price' => false,
   ),
   'friend.profile' => 
   array (
@@ -297,5 +338,10 @@
   'event.view' => 
   array (
     'feed.display' => false,
+  ),
+  'advancedmarketplace.mylisting' => 
+  array (
+    'advancedmarketplace.category' => false,
+    'advancedmarketplace.tag' => false,
   ),
 ); ?>

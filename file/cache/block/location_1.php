@@ -109,13 +109,6 @@
   array (
     'mail.folder' => '1',
   ),
-  'marketplace.index' => 
-  array (
-    'marketplace.sponsored' => '3',
-    'marketplace.category' => '1',
-    'marketplace.invite' => '3',
-    'marketplace.featured' => '3',
-  ),
   'music.view-album' => 
   array (
     'music.photo-album' => '1',
@@ -217,6 +210,54 @@
     'fevent.past' => '3',
     'fevent.upcoming' => '3',
   ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => '1',
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.search' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.sponsored' => '3',
+    'advancedmarketplace.invite' => '3',
+    'advancedmarketplace.mostreviewedlisting' => '3',
+    'advancedmarketplace.recentviewlisting' => '3',
+  ),
+  'advancedmarketplace.detail' => 
+  array (
+    'advancedmarketplace.detailview' => '1',
+    'advancedmarketplace.owner' => '1',
+    'advancedmarketplace.detailslideshow' => '2',
+    'advancedmarketplace.price' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.tag' => '1',
+    'advancedmarketplace.interestedlisting' => '3',
+    'advancedmarketplace.morefromseller' => '3',
+  ),
+  'advancedmarketplace.search' => 
+  array (
+    'advancedmarketplace.search' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.sponsored' => '3',
+    'advancedmarketplace.invite' => '3',
+    'advancedmarketplace.mostviewlisting' => '3',
+    'advancedmarketplace.mostreviewedlisting' => '3',
+    'advancedmarketplace.recentviewlisting' => '3',
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.tag' => '1',
+  ),
+  'advancedmarketplace.index' => 
+  array (
+    'advancedmarketplace.search' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.sponsored' => '3',
+    'advancedmarketplace.invite' => '3',
+    'advancedmarketplace.mostviewlisting' => '3',
+    'advancedmarketplace.mostreviewedlisting' => '3',
+    'advancedmarketplace.recentviewlisting' => '3',
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.tag' => '1',
+    'advancedmarketplace.listingslideshow' => '2',
+    'advancedmarketplace.recentlisting' => '2',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',
@@ -237,12 +278,6 @@
     'shoutbox.display' => '0',
     'feed.display' => '2',
   ),
-  'marketplace.view' => 
-  array (
-    'marketplace.image' => '1',
-    'marketplace.my' => '1',
-    'marketplace.price' => '3',
-  ),
   'music.index' => 
   array (
     'music.list' => '1',
@@ -261,6 +296,12 @@
   array (
     'track.recent-views' => '1',
     'profile.pic' => '1',
+  ),
+  'advancedmarketplace.view' => 
+  array (
+    'advancedmarketplace.image' => '1',
+    'advancedmarketplace.my' => '1',
+    'advancedmarketplace.price' => '3',
   ),
   'friend.profile' => 
   array (
@@ -297,5 +338,10 @@
   'event.view' => 
   array (
     'feed.display' => '4',
+  ),
+  'advancedmarketplace.mylisting' => 
+  array (
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.tag' => '1',
   ),
 ); ?>

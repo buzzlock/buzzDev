@@ -2,6 +2,7 @@
 <?php $aContent = array (
   'ad' => 'ad',
   'admincp' => 'admincp',
+  'advancedmarketplace' => 'advancedmarketplace',
   'announcement' => 'announcement',
   'api' => 'api',
   'apps' => 'apps',
@@ -32,7 +33,6 @@
   'link' => 'link',
   'log' => 'log',
   'mail' => 'mail',
-  'marketplace' => 'marketplace',
   'mobile' => 'mobile',
   'music' => 'music',
   'newsletter' => 'newsletter',

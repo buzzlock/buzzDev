@@ -35,6 +35,43 @@
   ),
   1 => 
   array (
+    'module_id' => 'advancedmarketplace',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'advancedmarketplace.admin_menu_add_category' => 
+      array (
+        'url' => 'advancedmarketplace/add',
+      ),
+      'advancedmarketplace.admin_menu_manage_categories' => 
+      array (
+        'url' => 'advancedmarketplace',
+      ),
+      'advancedmarketplace.admin_menu_today_listing' => 
+      array (
+        'url' => 'advancedmarketplace/todaylisting',
+      ),
+      'advancedmarketplace.admin_menu_manage_listings' => 
+      array (
+        'url' => 'advancedmarketplace/advancedmarketplace',
+      ),
+      'advancedmarketplace.admin_menu_listings_statistics' => 
+      array (
+        'url' => 'advancedmarketplace/listingstatistics',
+      ),
+      'advancedmarketplace.admin_menu_migration' => 
+      array (
+        'url' => 'advancedmarketplace/migration',
+      ),
+      'advancedmarketplace.admin_menu_settings' => 
+      array (
+        'url' => 'advancedmarketplace/setting',
+      ),
+    ),
+    'url_name' => 'advancedmarketplace',
+  ),
+  2 => 
+  array (
     'module_id' => 'announcement',
     'is_menu' => '1',
     'menu' => 
@@ -50,7 +87,7 @@
     ),
     'url_name' => 'announcement',
   ),
-  2 => 
+  3 => 
   array (
     'module_id' => 'attachment',
     'is_menu' => '1',
@@ -67,7 +104,7 @@
     ),
     'url_name' => 'attachment',
   ),
-  3 => 
+  4 => 
   array (
     'module_id' => 'blog',
     'is_menu' => '1',
@@ -84,7 +121,7 @@
     ),
     'url_name' => 'blog',
   ),
-  4 => 
+  5 => 
   array (
     'module_id' => 'contact',
     'is_menu' => '1',
@@ -97,7 +134,7 @@
     ),
     'url_name' => 'contact',
   ),
-  5 => 
+  6 => 
   array (
     'module_id' => 'egift',
     'is_menu' => '1',
@@ -118,7 +155,7 @@
     ),
     'url_name' => 'egift',
   ),
-  6 => 
+  7 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -155,7 +192,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  7 => 
+  8 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -172,7 +209,7 @@
     ),
     'url_name' => 'forum',
   ),
-  8 => 
+  9 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -188,23 +225,6 @@
       ),
     ),
     'url_name' => 'input',
-  ),
-  9 => 
-  array (
-    'module_id' => 'marketplace',
-    'is_menu' => '1',
-    'menu' => 
-    array (
-      'marketplace.admin_menu_add_category' => 
-      array (
-        'url' => 'marketplace/add',
-      ),
-      'marketplace.admin_menu_manage_categories' => 
-      array (
-        'url' => 'marketplace',
-      ),
-    ),
-    'url_name' => 'marketplace',
   ),
   10 => 
   array (

@@ -1,0 +1,77 @@
+.user_profile_link_span a {
+	/* font-weight: bold; */
+	/* color: #3B5998!important; */
+}
+
+.username_listing a {
+	font-weight: bold;
+	color: #3B5998!important;
+}
+
+.listing_rate {
+	background: none;
+}
+
+.listing_rate_detail {
+	background: none;
+}
+
+div.row_title_image_header_body {
+    margin-left: 138px;
+    min-height: 128px !important;
+}
+
+a.advlink {
+	font-weight: bold;
+}
+
+.content .row_title_info .extra_info {
+	margin: 0px!important;
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}
+.recent_listing > div
+{
+	padding-top: 10px;
+	width:100%;
+}
+.recent_listing > div + div
+{
+	border-top: 1px solid #ccc;
+}
+#content #js_block_border_advancedmarketplace_recentlisting .title
+{
+	background: #ECECEC;
+	line-height: 25px;
+	padding: 0 8px;
+}
+#content #js_block_border_advancedmarketplace_recentlisting .content
+{
+	padding: 0 5px;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+}
+
+.row_title_image_header_body .js_user_name_link_admin a,.user_profile_link_span a, .js_hover_title {
+	color: #808080;
+}
+/** Mobile css*/
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	div.row_title_image_header{
+		width:100px;
+	}
+	div.row_title_image_header_body{
+		margin-left:105px;
+	}
+	.row_title_image_header img{
+		max-width:100px;
+	}
+	.slideblock .bigimg img{
+		max-width:310px;
+	}
+	.large_listing_image{
+		text-align:center;
+	}
+}

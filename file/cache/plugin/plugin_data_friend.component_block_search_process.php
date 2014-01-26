@@ -1,7 +1,7 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php $aContent = 'if ($sFriendModuleId == \'fevent\')
+<?php $aContent = 'if ($sFriendModuleId == \'advancedmarketplace\')
 {
-	$aInviteCache = Phpfox::getService(\'fevent\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
+	$aInviteCache = Phpfox::getService(\'advancedmarketplace\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
 	if (is_array($aInviteCache))
 	{
 		foreach ($aFriends as $iKey => $aFriend)
@@ -17,9 +17,9 @@
 			)
 		);	
 	}
-} if ($sFriendModuleId == \'marketplace\')
+} if ($sFriendModuleId == \'fevent\')
 {
-	$aInviteCache = Phpfox::getService(\'marketplace\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
+	$aInviteCache = Phpfox::getService(\'fevent\')->isAlreadyInvited($this->getParam(\'friend_item_id\', \'0\'), $aFriends);
 	if (is_array($aInviteCache))
 	{
 		foreach ($aFriends as $iKey => $aFriend)
