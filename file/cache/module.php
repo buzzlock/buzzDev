@@ -61,5 +61,6 @@
   'track' => 'track',
   'user' => 'user',
   'video' => 'video',
+  'wall' => 'wall',
   'younetcore' => 'younetcore',
 ); ?>

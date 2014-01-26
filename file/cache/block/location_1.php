@@ -9,10 +9,10 @@
     'friend.suggestion' => '3',
     'poke.display' => '3',
     'shoutbox.display' => '3',
-    'feed.display' => '2',
     'core.welcome' => '7',
     'announcement.index' => '7',
     'tag.cloud' => '3',
+    'wall.display' => '2',
   ),
   'admincp.index' => 
   array (
@@ -27,11 +27,11 @@
     'profile.pic' => '1',
     'friend.profile.small' => '1',
     'report.profile' => '1',
-    'feed.time' => '3',
     'friend.mutual-friend' => '3',
+    'wall.time' => '3',
     'track.recent-views' => '3',
-    'feed.display' => '2',
     'friend.remove' => '1',
+    'wall.display' => '2',
   ),
   'profile.info' => 
   array (

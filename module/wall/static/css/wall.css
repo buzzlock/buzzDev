@@ -1,0 +1,197 @@
+/**
+ * 	css
+ */
+.textareaNoResize {
+	resize: none;
+}
+
+._uiMentionTypeAheadContainer {
+	position: relative;
+}
+._uiMentionHighlighterArea {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	margin: 0;
+	word-wrap: break-word;
+}
+._uiMentionHighlighter {
+	display: inline-block;
+	max-width: 100%;
+	color: none;
+	color: transparent;
+	white-space: pre-wrap;
+}
+
+._uiTypeaheaMentiondArea {
+	position: relative;
+	margin: 0;
+}
+._uiMentionHighlighterArea .innerWrap {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+._uiTypeaheaMentiondArea .innerWrap {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+textarea._uiMentionTypeahead {
+	margin: 0;
+	padding: 0;
+	border: none;
+	resize: none;
+	outline: none;
+	overflow: hidden;
+	background: transparent;
+	width: 100%;
+}
+._uiMentionHighlighter b {
+	background: rgb(216, 223, 234);
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px rgb(163, 188, 234);
+}
+
+/**
+ * 	comment composter format
+ */
+._uiCommentComposer {
+
+}
+._uiCommentComposer ._uiMentionTypeAheadContainer {
+	background: white;
+	border: 1px solid rgb(189, 199, 216);
+}
+._uiCommentComposer ._uiMentionHighlighterArea {
+	padding: 3px;
+	display:block;
+	width: 98%;
+}
+._uiCommentComposer ._uiTypeaheaMentiondArea {
+	padding: 3px;
+}
+
+._uiMentionHighlighter, ._uiMentionTypeahead, ._uiMentionHighlighter b {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-weight: normal;
+
+}
+._uiCommentComposer ._uiMentionHighlighter, ._uiCommentComposer ._uiMentionTypeahead, ._uiCommentComposer ._uiMentionHighlighter b {
+	font-size: 11px;
+	line-height: 17px;
+}
+._uiCommentComposer ._uiMentionTypeahead {
+	height: 17px;
+}
+
+._uiPostComposer ._uiMentionTypeAheadContainer {
+	background: white;
+	border: 1px solid rgb(189, 199, 216);
+}
+/**
+ * 	post composer format.
+ */
+._uiPostComposer ._uiMentionTypeAheadContainer {
+	background: white;
+	border: 1px solid rgb(189, 199, 216);
+}
+._uiPostComposer ._uiMentionHighlighterArea {
+	padding: 4px;
+	width: 98%;
+}
+._uiPostComposer ._uiTypeaheaMentiondArea {
+	padding: 4px;
+}
+._uiPostComposer ._uiMentionHighlighter, ._uiPostComposer ._uiMentionTypeahead, ._uiPostComposer ._uiMentionHighlighter b {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.58;
+}
+._uiPostComposer ._uiMentionTypeahead {
+
+}
+
+._uiPostComposer ._uiMentionTypeAheadContainer {
+	background: white;
+	border: 1px solid rgb(189, 199, 216);
+}
+
+/**
+ * 	auto complete list
+ */
+._uiFlyLayer {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+._uiAcList {
+	background: #ffffff;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+._uiAcList .clearfix {
+
+}
+._uiAcList .clearfix {
+	clear: both;
+}
+._uiAcList .lfloat {
+	float: left;
+}
+._uiAcList .mright5 {
+	margin-right: 5px;
+}
+._uiAcList li {
+	padding: 5px 20px 5px 5px;
+}
+._uiAcList li+ li {
+	border-top: 1px solid #ddd;
+}
+._uiAcList .active {
+	background: #ddd;
+}
+._uiAcList .clearfix::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*fix for */
+#js_preview_link_attachment_custom_form_sub {
+	position: relative;
+}
+#js_status_attachment_link_cancel {
+	display: none;
+}
+.div_emotions_wraper {
+	position: absolute;
+	padding: 4px;
+	right: 0;
+	top: 0;
+}
+.div_emotions_list {
+	background: #ddd;
+	padding: 4px;
+	cursor: default;
+	display: none;
+	white-space: nowrap;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left:auto;
+	top:auto;
+}
+.div_emotions_wraper:hover .div_emotions_list{
+	display:block;
+}
+.emotion_items{
+	display:inline-block;
+	padding: 3px;
+}
+div.comment_mini_content_holder_icon{
+	margin-top:0;	
+}

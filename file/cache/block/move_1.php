@@ -9,10 +9,10 @@
     'friend.suggestion' => true,
     'poke.display' => true,
     'shoutbox.display' => true,
-    'feed.display' => false,
     'core.welcome' => false,
     'announcement.index' => false,
     'tag.cloud' => false,
+    'wall.display' => false,
   ),
   'admincp.index' => 
   array (
@@ -27,11 +27,11 @@
     'profile.pic' => false,
     'friend.profile.small' => true,
     'report.profile' => false,
-    'feed.time' => false,
     'friend.mutual-friend' => true,
+    'wall.time' => false,
     'track.recent-views' => true,
-    'feed.display' => false,
     'friend.remove' => false,
+    'wall.display' => false,
   ),
   'profile.info' => 
   array (

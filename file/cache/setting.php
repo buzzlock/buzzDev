@@ -4252,4 +4252,11 @@ Site Name',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
+  590 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'is_display',
+    'value_actual' => true,
+    'module_name' => 'wall',
+  ),
 ); ?>

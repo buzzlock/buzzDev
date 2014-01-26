@@ -1,0 +1,84 @@
+<module>
+	<data>
+		<module_id>wall</module_id>
+		<product_id>younetwall</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_wall</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="" module_id="wall" is_hidden="0" type="boolean" var_name="is_display" phrase_var_name="setting_is_display" ordering="1" version_id="3.0.0rc3">1</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="profile.index" module_id="wall" component="display" location="2" is_active="1" ordering="9" disallow_access="" can_move="0">
+			<title>Advanced Wall</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="wall" component="display" location="2" is_active="1" ordering="27" disallow_access="" can_move="0">
+			<title>Advanced Wall</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="profile.index" module_id="wall" component="time" location="3" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title>Timeline</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="wall" component="display" m_connection="" module="wall" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="wall" component="time" m_connection="" module="wall" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="admin_menu_global_settings" added="1322203746">Global Settings</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="module_wall" added="1322203746">Advanced Wall</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="setting_is_display" added="1322204294"><![CDATA[<title>Display Wall</title><info>Allow user friends to use user's Advance Wall. If set to no, some other features may not be applied.</info>]]></phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_number_auto_refresh" added="1322204475">Auto refresh feeds on wall after number of seconds (If set to 0, it will not auto refresh).</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_is_dashboard" added="1322204616">Can the users post content on their Dashboard.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_is_profile" added="1322204798">Can the users post content on their Profile.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_view_link" added="1322204955">Can the users post link on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_view_photo" added="1322205004">Can the users post photo on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_view_music" added="1322205038">Can the users post music on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_view_video" added="1322205150">Can the users post video on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_view_ecomotion" added="1322205226">Can the users post emoticon on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_create_blog" added="1322205313">Can the users create blog on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_create_event" added="1322205360">Can the users create event on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_create_musicsharing" added="1322205527">Can the users use MusicSharing on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_create_document" added="1322205584">Can the users post document on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="user_setting_can_create_poll" added="1322204955">Can the users create poll on their wall.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="hide_this_feed" added="1322278937">Hide this feed</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="show_this_feed" added="1322305259">Show this feed</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="hidden_feed" added="1322446814">Hidden Feed</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="this_feed_is_currently_hidden" added="1322446854">This feed is currently hidden on this page.</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="someone_has_tagged_you_in_hisher_post" added="1323245148">{someone} has tagged you in his/her post</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="someone_has_tagged_you_in_hisher_comment" added="1323245148">{someone} has tagged you in his/her comment</phrase>
+		<phrase module_id="wall" version_id="3.0.0rc3" var_name="has_tagged_someone_in_his_her_post" added="1323760887"><![CDATA[has tagged {someone} in his/her <a href="{link}">post</a>]]></phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="all_feeds" added="1326339132">All feeds</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="user_status" added="1326339176">User status</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="friends" added="1326339243">Friends</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="photos" added="1326339267">Photos</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="links" added="1326339282">Links</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="events" added="1326339302">Events</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="comments" added="1326339322">Comments</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="marketplace" added="1326339351">Marketplace</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="polls" added="1326339377">Polls</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="blogs" added="1326339390">Blogs</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="videos" added="1326339412">Videos</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="music_songs" added="1326339431">Music songs</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="documents" added="1326339448">Documents</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="musicstore_albums" added="1326339470">MusicStore albums</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="musicstore_playlists" added="1326339488">MusicStore playlists</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="musicsharing_albums" added="1326339517">MusicSharing albums</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="musicsharing_playlists" added="1326339542">MusicSharing playlists</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="status_update" added="1326339618">Status Update</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="link" added="1326339665">Link</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="poke" added="1326339701">Poke</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="wall_comment" added="1326339727">Wall Comment</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="feed" added="1326339769">Feed</phrase>
+		<phrase module_id="wall" version_id="3.0.0" var_name="filter" added="1326342935">Filter</phrase>
+		<phrase module_id="wall" version_id="3.5.0" var_name="network_only" added="1363663960">Network only</phrase>
+	</phrases>
+</module>

@@ -104,4 +104,17 @@
     'url' => 'http://phpfox.younetco.com/',
     'url_version_check' => NULL,
   ),
+  'younetwall' => 
+  array (
+    'product_id' => 'younetwall',
+    'is_core' => '0',
+    'title' => 'Advanced Wall',
+    'description' => 'by YouNet Company',
+    'version' => '3.04p3',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/',
+    'url_version_check' => NULL,
+  ),
 ); ?>

@@ -16,14 +16,14 @@
       'shoutbox.display' => NULL,
       'tag.cloud' => NULL,
     ),
-    2 => 
-    array (
-      'feed.display' => NULL,
-    ),
     7 => 
     array (
       'core.welcome' => NULL,
       'announcement.index' => NULL,
+    ),
+    2 => 
+    array (
+      'wall.display' => NULL,
     ),
   ),
   'admincp.index' => 
@@ -54,13 +54,13 @@
     ),
     3 => 
     array (
-      'feed.time' => NULL,
       'friend.mutual-friend' => NULL,
+      'wall.time' => NULL,
       'track.recent-views' => NULL,
     ),
     2 => 
     array (
-      'feed.display' => NULL,
+      'wall.display' => NULL,
     ),
   ),
   'profile.info' => 
