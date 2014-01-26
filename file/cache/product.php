@@ -52,6 +52,19 @@
     'url' => 'http://phpfox.younetco.com',
     'url_version_check' => NULL,
   ),
+  'contactimporter' => 
+  array (
+    'product_id' => 'contactimporter',
+    'is_core' => '0',
+    'title' => 'Contact Importer',
+    'description' => 'by YouNet Company',
+    'version' => '3.05p4',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/contactimporter/',
+    'url_version_check' => NULL,
+  ),
   'fanot' => 
   array (
     'product_id' => 'fanot',

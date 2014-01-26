@@ -174,6 +174,35 @@
   ),
   8 => 
   array (
+    'module_id' => 'contactimporter',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'contactimporter.admin_menu_global_settings' => 
+      array (
+        'url' => 'contactimporter/settings',
+      ),
+      'contactimporter.admin_menu_providers' => 
+      array (
+        'url' => 'contactimporter/providers',
+      ),
+      'contactimporter.admin_menu_invitations_list' => 
+      array (
+        'url' => 'contactimporter/invitations',
+      ),
+      'contactimporter.admin_menu_statistics_by_date' => 
+      array (
+        'url' => 'contactimporter/statisticsbydate',
+      ),
+      'contactimporter.admin_menu_statistics_by_provider' => 
+      array (
+        'url' => 'contactimporter/statisticsbyprovider',
+      ),
+    ),
+    'url_name' => 'contactimporter',
+  ),
+  9 => 
+  array (
     'module_id' => 'egift',
     'is_menu' => '1',
     'menu' => 
@@ -193,7 +222,7 @@
     ),
     'url_name' => 'egift',
   ),
-  9 => 
+  10 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -230,7 +259,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  10 => 
+  11 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -247,7 +276,7 @@
     ),
     'url_name' => 'forum',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -264,7 +293,7 @@
     ),
     'url_name' => 'input',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -281,7 +310,7 @@
     ),
     'url_name' => 'music',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -298,7 +327,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -319,7 +348,7 @@
     ),
     'url_name' => 'pages',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -332,7 +361,7 @@
     ),
     'url_name' => 'photo',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -353,7 +382,7 @@
     ),
     'url_name' => 'report',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -378,7 +407,7 @@
     ),
     'url_name' => 'rss',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -395,7 +424,7 @@
     ),
     'url_name' => 'share',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -420,7 +449,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -433,7 +462,7 @@
     ),
     'url_name' => 'user',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -450,7 +479,7 @@
     ),
     'url_name' => 'video',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',

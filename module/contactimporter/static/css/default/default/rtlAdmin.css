@@ -1,0 +1,51 @@
+/*
+ * Setting
+ */
+[dir="rtl"] div.public_message, 
+[dir="rtl"] div.message,
+[dir="rtl"] .table_header,
+[dir="rtl"] .table,
+[dir="rtl"] table,
+[dir="rtl"] ul#breadcrumb_menu{
+	text-align:right;
+}
+[dir="rtl"] .table_clear, 
+[dir="rtl"] .table_bottom{
+	text-align:left;
+}
+[dir="rtl"] .table_left{
+	left:auto;
+	right:0;
+}
+[dir="rtl"] .table_right{
+	margin-left:0;
+	margin-right:300px;
+}
+/*
+ * Invitations
+ */
+[dir="rtl"] .pager{
+	right:auto;
+	left:0;
+}
+[dir="rtl"] .pager li{
+	float:right;
+}
+/*
+ * Statitics by date
+ */
+[dir="rtl"] .js_datepicker_image{
+	right: 150px;
+	left:auto;
+}
+.js_datepicker_image 
+{
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	overflow: hidden;
+	background: url('../../../image/calendar.gif') no-repeat;
+	z-index: 1;
+	top: 7px;
+	left: 150px;
+}

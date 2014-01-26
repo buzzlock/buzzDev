@@ -2,6 +2,11 @@
 <?php $aContent = array (
   'core.index-member' => 
   array (
+    2 => 
+    array (
+      'contactimporter.home_contact' => NULL,
+      'wall.display' => NULL,
+    ),
     1 => 
     array (
       'apps.menu' => NULL,
@@ -20,10 +25,6 @@
     array (
       'core.welcome' => NULL,
       'announcement.index' => NULL,
-    ),
-    2 => 
-    array (
-      'wall.display' => NULL,
     ),
   ),
   'admincp.index' => 
@@ -510,6 +511,14 @@
       'advancedphoto.statistic' => NULL,
     ),
   ),
+  'contactimporter' => 
+  array (
+    1 => 
+    array (
+      'contactimporter.top-inviter' => NULL,
+      'contactimporter.statistics' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -630,6 +639,10 @@
     11 => 
     array (
       'user.register' => NULL,
+    ),
+    2 => 
+    array (
+      'contactimporter.home_contact_visiter' => NULL,
     ),
   ),
   'blog.index' => 

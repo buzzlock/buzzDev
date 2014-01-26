@@ -14,6 +14,7 @@
   'captcha' => 'captcha',
   'comment' => 'comment',
   'contact' => 'contact',
+  'contactimporter' => 'contactimporter',
   'core' => 'core',
   'custom' => 'custom',
   'egift' => 'egift',

@@ -4259,4 +4259,32 @@ Site Name',
     'value_actual' => true,
     'module_name' => 'wall',
   ),
+  591 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'cron_send_mail',
+    'value_actual' => 1,
+    'module_name' => 'contactimporter',
+  ),
+  592 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'cron_send_invite',
+    'value_actual' => '20',
+    'module_name' => 'contactimporter',
+  ),
+  593 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'how_many_pendings_to_show_per_page',
+    'value_actual' => 20,
+    'module_name' => 'contactimporter',
+  ),
+  594 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'require_invite',
+    'value_actual' => false,
+    'module_name' => 'contactimporter',
+  ),
 ); ?>

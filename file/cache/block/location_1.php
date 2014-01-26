@@ -2,6 +2,7 @@
 <?php $aContent = array (
   'core.index-member' => 
   array (
+    'contactimporter.home_contact' => '2',
     'apps.menu' => '1',
     'friend.mini' => '1',
     'log.login' => '1',
@@ -282,6 +283,11 @@
     'advancedphoto.topmembers' => '3',
     'advancedphoto.statistic' => '3',
   ),
+  'contactimporter' => 
+  array (
+    'contactimporter.top-inviter' => '1',
+    'contactimporter.statistics' => '1',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',
@@ -344,6 +350,7 @@
   'core.index-visitor' => 
   array (
     'user.register' => '11',
+    'contactimporter.home_contact_visiter' => '2',
   ),
   'blog.index' => 
   array (
