@@ -1273,7 +1273,7 @@ Site Name',
   array (
     'type_id' => 'integer',
     'var_name' => 'css_edit_id',
-    'value_actual' => 1,
+    'value_actual' => 10,
     'module_name' => 'core',
   ),
   174 => 
