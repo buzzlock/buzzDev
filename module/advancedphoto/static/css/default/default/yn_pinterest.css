@@ -1,0 +1,28 @@
+/* 
+    Document   : yn_pinterest.css
+    Created on : Sep 7, 2012, 6:07:22 PM
+    Author     : minhta
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#yn_wookmark_main {
+	background-color: #EEE;
+	width: 790px
+}
+
+#yn_wookmark li {
+	width: 150px;
+	background-color: white;
+	border: 1px solid #DEDEDE;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: none;
+	cursor: pointer;
+	padding: 4px;
+}

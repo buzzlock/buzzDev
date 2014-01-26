@@ -1,0 +1,36 @@
+#main_footer_holder {
+	display: none;
+}
+
+#header {
+	display: none;
+}
+
+#tourcontrols {
+	display: none;
+}
+
+.holder {
+	width: auto;
+}
+
+#main_content_padding {
+	padding: 0px;
+	margin: 0px;
+}
+
+#left {
+	display: none;
+}
+
+#right {
+	display: none;
+}
+
+#header_user_register_holder {
+	display: none;
+}
+
+#content {
+	width: 100%!important;
+}

@@ -4034,4 +4034,222 @@ Site Name',
     'value_actual' => 5,
     'module_name' => 'fanot',
   ),
+  560 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'photo_image_details_time_stamp',
+    'value_actual' => 'F j, Y',
+    'module_name' => 'advancedphoto',
+  ),
+  561 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'photo_battle_image_cache',
+    'value_actual' => 10,
+    'module_name' => 'advancedphoto',
+  ),
+  562 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'protect_photos_from_public',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
+  563 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'can_rate_on_photos',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  564 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'total_photo_input_bars',
+    'value_actual' => 5,
+    'module_name' => 'advancedphoto',
+  ),
+  565 => 
+  array (
+    'type_id' => 'array',
+    'var_name' => 'photo_pic_sizes',
+    'value_actual' => 
+    array (
+      0 => '75',
+      1 => '100',
+      2 => '150',
+      3 => '240',
+      4 => '500',
+      5 => '1024',
+    ),
+    'module_name' => 'advancedphoto',
+  ),
+  566 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'rating_total_photos_cache',
+    'value_actual' => 10,
+    'module_name' => 'advancedphoto',
+  ),
+  567 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'total_tags_on_photos',
+    'value_actual' => 40,
+    'module_name' => 'advancedphoto',
+  ),
+  568 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enabled_watermark_on_photos',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
+  569 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'photo_meta_description',
+    'value_actual' => 'Check out our photo gallery.',
+    'module_name' => 'advancedphoto',
+  ),
+  570 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'photo_upload_process',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  571 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'allow_photo_category_selection',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
+  572 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'rename_uploaded_photo_names',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
+  573 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enable_photo_battle',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  574 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'display_profile_photo_within_gallery',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  575 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'view_photos_in_theater_mode',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  576 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enable_mass_uploader',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  577 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'auto_crop_photo',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
+  578 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'ajax_refresh_on_featured_photos',
+    'value_actual' => true,
+    'module_name' => 'advancedphoto',
+  ),
+  579 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'how_many_categories_to_show_in_title',
+    'value_actual' => 0,
+    'module_name' => 'advancedphoto',
+  ),
+  580 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'photo_meta_keywords',
+    'value_actual' => 'photo, photos, albums, gallery',
+    'module_name' => 'advancedphoto',
+  ),
+  581 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'total_tags_on_albums',
+    'value_actual' => 40,
+    'module_name' => 'advancedphoto',
+  ),
+  582 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_photos_display_on_featured_slide',
+    'value_actual' => 12,
+    'module_name' => 'advancedphoto',
+  ),
+  583 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_photos_displayed_on_top_blocks_on_homepage',
+    'value_actual' => 9,
+    'module_name' => 'advancedphoto',
+  ),
+  584 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_photos_displayed_on_blocks_newrandom_on_homepage',
+    'value_actual' => 9,
+    'module_name' => 'advancedphoto',
+  ),
+  585 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'member_on_top_member_block',
+    'value_actual' => 9,
+    'module_name' => 'advancedphoto',
+  ),
+  586 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_photos_each_click',
+    'value_actual' => 24,
+    'module_name' => 'advancedphoto',
+  ),
+  587 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_albums_in_other_album_block',
+    'value_actual' => 5,
+    'module_name' => 'advancedphoto',
+  ),
+  588 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_user_on_in_photos_of_this_album_block',
+    'value_actual' => 9,
+    'module_name' => 'advancedphoto',
+  ),
+  589 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'rating_randomize_photos',
+    'value_actual' => false,
+    'module_name' => 'advancedphoto',
+  ),
 ); ?>

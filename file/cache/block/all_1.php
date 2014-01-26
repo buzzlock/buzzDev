@@ -462,6 +462,54 @@
       'advancedmarketplace.recentlisting' => NULL,
     ),
   ),
+  'advancedphoto.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'advancedphoto.rate' => 
+  array (
+    3 => 
+    array (
+      'advancedphoto.stat' => NULL,
+    ),
+    1 => 
+    array (
+      'advancedphoto.category' => NULL,
+    ),
+  ),
+  'advancedphoto.battle' => 
+  array (
+    1 => 
+    array (
+      'advancedphoto.category' => NULL,
+    ),
+  ),
+  'advancedphoto.index' => 
+  array (
+    3 => 
+    array (
+      'advancedphoto.sponsored' => NULL,
+    ),
+    1 => 
+    array (
+      'advancedphoto.category' => NULL,
+    ),
+  ),
+  'advancedphoto.albums' => 
+  array (
+    2 => 
+    array (
+      'advancedphoto.featured-album' => NULL,
+    ),
+    3 => 
+    array (
+      'advancedphoto.topmembers' => NULL,
+      'advancedphoto.statistic' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -493,6 +541,7 @@
     array (
       'video.parent' => NULL,
       'photo.parent' => NULL,
+      'advancedphoto.parent' => NULL,
       'feed.display' => NULL,
     ),
     0 => 
@@ -550,6 +599,25 @@
       'advancedmarketplace.price' => NULL,
     ),
   ),
+  'advancedphoto.view' => 
+  array (
+    0 => 
+    array (
+      'advancedphoto.detail' => NULL,
+    ),
+    3 => 
+    array (
+      'advancedphoto.detail' => NULL,
+    ),
+  ),
+  'advancedphoto.album' => 
+  array (
+    3 => 
+    array (
+      'advancedphoto.album-tag' => NULL,
+      'advancedphoto.otheralbum' => NULL,
+    ),
+  ),
   'friend.profile' => 
   array (
     1 => 
@@ -582,6 +650,25 @@
     1 => 
     array (
       'pages.category' => NULL,
+    ),
+  ),
+  'advancedphoto.homepage' => 
+  array (
+    2 => 
+    array (
+      'advancedphoto.featured' => NULL,
+      'advancedphoto.viewcommentshare' => NULL,
+      'advancedphoto.newrandom' => NULL,
+      'advancedphoto.weekmonthtoday' => NULL,
+    ),
+    3 => 
+    array (
+      'advancedphoto.topmembers' => NULL,
+      'advancedphoto.statistic' => NULL,
+    ),
+    1 => 
+    array (
+      'advancedphoto.category' => NULL,
     ),
   ),
   'music.browse.album' => 

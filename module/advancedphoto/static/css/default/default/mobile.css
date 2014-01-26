@@ -1,0 +1,39 @@
+/* Mobile view */
+.mobile-bg-img{
+	height:80px;
+	overflow:hidden;
+	border: none;
+	vertical-align: top;
+	float:left;
+	text-align:center;
+	max-width: 73px;
+	margin-right:2px;
+}
+.mobile-bg-img img{
+	box-shadow: 2px 2px 8px #000;
+	-webkit-box-shadow: 2px 2px 8px black;
+	-moz-box-shadow: 2px 2px 8px #000;
+	
+}
+.small-action.mobile-action{
+	right:0;
+}
+.view-gird.view-comment-mobile #js_album_description{
+	float:none;
+	clear:both;
+}
+@media only screen and (max-width : 320px) {
+	.view-gird .js_feed_comment_border, 
+	.view-gird .item_tag_holder, 
+	.view-gird .attachment_holder_view
+	{
+		width:290px!important;
+	}
+	.view-gird #js_album_description{
+		width:300px!important;
+		float:none;
+		margin-top:5px;
+	}
+}
+
+

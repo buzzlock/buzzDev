@@ -1,0 +1,1 @@
+{template file='feed.block.comment'}

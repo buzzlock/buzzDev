@@ -258,6 +258,30 @@
     'advancedmarketplace.listingslideshow' => '2',
     'advancedmarketplace.recentlisting' => '2',
   ),
+  'advancedphoto.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'advancedphoto.rate' => 
+  array (
+    'advancedphoto.stat' => '3',
+    'advancedphoto.category' => '1',
+  ),
+  'advancedphoto.battle' => 
+  array (
+    'advancedphoto.category' => '1',
+  ),
+  'advancedphoto.index' => 
+  array (
+    'advancedphoto.sponsored' => '3',
+    'advancedphoto.category' => '1',
+  ),
+  'advancedphoto.albums' => 
+  array (
+    'advancedphoto.featured-album' => '2',
+    'advancedphoto.topmembers' => '3',
+    'advancedphoto.statistic' => '3',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',
@@ -275,6 +299,7 @@
     'forum.parent' => '1',
     'video.parent' => '2',
     'photo.parent' => '2',
+    'advancedphoto.parent' => '2',
     'shoutbox.display' => '0',
     'feed.display' => '2',
   ),
@@ -303,6 +328,15 @@
     'advancedmarketplace.my' => '1',
     'advancedmarketplace.price' => '3',
   ),
+  'advancedphoto.view' => 
+  array (
+    'advancedphoto.detail' => '3',
+  ),
+  'advancedphoto.album' => 
+  array (
+    'advancedphoto.album-tag' => '3',
+    'advancedphoto.otheralbum' => '3',
+  ),
   'friend.profile' => 
   array (
     'profile.pic' => '1',
@@ -321,6 +355,16 @@
   'pages.index' => 
   array (
     'pages.category' => '1',
+  ),
+  'advancedphoto.homepage' => 
+  array (
+    'advancedphoto.featured' => '2',
+    'advancedphoto.topmembers' => '3',
+    'advancedphoto.viewcommentshare' => '2',
+    'advancedphoto.newrandom' => '2',
+    'advancedphoto.weekmonthtoday' => '2',
+    'advancedphoto.statistic' => '3',
+    'advancedphoto.category' => '1',
   ),
   'music.browse.album' => 
   array (

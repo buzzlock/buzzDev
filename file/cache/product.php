@@ -26,6 +26,19 @@
     'url' => '',
     'url_version_check' => '',
   ),
+  'advancedphoto' => 
+  array (
+    'product_id' => 'advancedphoto',
+    'is_core' => '0',
+    'title' => 'YouNet Advanced Photo',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p10',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/',
+    'url_version_check' => 'http://phpfox3.demo.younetco.com/',
+  ),
   'advanced_marketplace' => 
   array (
     'product_id' => 'advanced_marketplace',

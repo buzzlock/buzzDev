@@ -3,6 +3,7 @@
   'ad' => 'ad',
   'admincp' => 'admincp',
   'advancedmarketplace' => 'advancedmarketplace',
+  'advancedphoto' => 'advancedphoto',
   'announcement' => 'announcement',
   'api' => 'api',
   'apps' => 'apps',

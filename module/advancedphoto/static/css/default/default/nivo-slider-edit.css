@@ -1,0 +1,147 @@
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.slider-twrapper {
+	/*float: left;*/
+	display:block;
+	overflow:hidden;
+}
+.slider-twrapper .effects {
+	float: left;
+	width: 410px;
+	padding: 8px;
+	margin-left: 10px;
+	border: 1px solid #BABABA;
+}
+.slider-twrapper .nivoSlider {
+	position:relative;
+	width:500px;
+	height:auto;
+	overflow: hidden;
+}
+.slider-twrapper .slider-wrapper {
+	width: 500px;
+	height: 360px;
+	float: left;
+}
+.slider-twrapper .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.slider-twrapper .nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.slider-twrapper .nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.slider-twrapper  .nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.slider-twrapper  .nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.slider-twrapper .nivo-box img { display:block; }
+
+/* Caption styles */
+.slider-twrapper .nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.slider-twrapper .nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.slider-twrapper .nivo-caption a {
+	display:inline !important;
+}
+.slider-twrapper .nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.slider-twrapper .nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.slider-twrapper .nivo-prevNav {
+	left:0px;
+}
+.slider-twrapper .nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.slider-twrapper .nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.slider-twrapper .nivo-controlNav a {
+	cursor:pointer;
+}
+.slider-twrapper .nivo-controlNav a.active {
+	font-weight:bold;
+}
+.effects-slide{float:left;}
+.effects a {
+	display: block;
+	float: left;
+	margin: 5px;
+	border: 1px solid #BABABA;
+	width: 50px;
+	height: 38px;
+	overflow: hidden;
+	padding:10px;
+	text-align:center;
+}
+.effects a:hover
+{
+	background:#FF6600;
+}
+.effects a.active
+{
+	background:#FF6600;
+}

@@ -72,6 +72,19 @@
   ),
   2 => 
   array (
+    'module_id' => 'advancedphoto',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'advancedphoto.admin_menu_categories' => 
+      array (
+        'url' => 'advancedphoto',
+      ),
+    ),
+    'url_name' => 'advancedphoto',
+  ),
+  3 => 
+  array (
     'module_id' => 'announcement',
     'is_menu' => '1',
     'menu' => 
@@ -87,7 +100,7 @@
     ),
     'url_name' => 'announcement',
   ),
-  3 => 
+  4 => 
   array (
     'module_id' => 'attachment',
     'is_menu' => '1',
@@ -104,7 +117,7 @@
     ),
     'url_name' => 'attachment',
   ),
-  4 => 
+  5 => 
   array (
     'module_id' => 'blog',
     'is_menu' => '1',
@@ -121,7 +134,7 @@
     ),
     'url_name' => 'blog',
   ),
-  5 => 
+  6 => 
   array (
     'module_id' => 'contact',
     'is_menu' => '1',
@@ -134,7 +147,7 @@
     ),
     'url_name' => 'contact',
   ),
-  6 => 
+  7 => 
   array (
     'module_id' => 'egift',
     'is_menu' => '1',
@@ -155,7 +168,7 @@
     ),
     'url_name' => 'egift',
   ),
-  7 => 
+  8 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -192,7 +205,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  8 => 
+  9 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -209,7 +222,7 @@
     ),
     'url_name' => 'forum',
   ),
-  9 => 
+  10 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -226,7 +239,7 @@
     ),
     'url_name' => 'input',
   ),
-  10 => 
+  11 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -243,7 +256,7 @@
     ),
     'url_name' => 'music',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -260,7 +273,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -281,7 +294,7 @@
     ),
     'url_name' => 'pages',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -294,7 +307,7 @@
     ),
     'url_name' => 'photo',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -315,7 +328,7 @@
     ),
     'url_name' => 'report',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -340,7 +353,7 @@
     ),
     'url_name' => 'rss',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -357,7 +370,7 @@
     ),
     'url_name' => 'share',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -382,7 +395,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -395,7 +408,7 @@
     ),
     'url_name' => 'user',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -412,7 +425,7 @@
     ),
     'url_name' => 'video',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
