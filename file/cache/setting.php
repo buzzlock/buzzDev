@@ -4581,4 +4581,67 @@ Site Name',
     'value_actual' => 200,
     'module_name' => 'fundraising',
   ),
+  637 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'subcategories_to_show_at_first',
+    'value_actual' => '5',
+    'module_name' => 'jobposting',
+  ),
+  638 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_items_block_top_mostfollowed_employers',
+    'value_actual' => 4,
+    'module_name' => 'jobposting',
+  ),
+  639 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_items_block_recent_youmay',
+    'value_actual' => 4,
+    'module_name' => 'jobposting',
+  ),
+  640 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'fee_feature_job',
+    'value_actual' => 5,
+    'module_name' => 'jobposting',
+  ),
+  641 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'company_job_view',
+    'value_actual' => 'Thumbnail',
+    'module_name' => 'jobposting',
+  ),
+  642 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'jobposting_maximum_upload_size',
+    'value_actual' => 1000,
+    'module_name' => 'jobposting',
+  ),
+  643 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'jobposting_maximum_upload_size_photo',
+    'value_actual' => 1000,
+    'module_name' => 'jobposting',
+  ),
+  644 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'jobposting_fee_to_sponsor_company',
+    'value_actual' => 5,
+    'module_name' => 'jobposting',
+  ),
+  645 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'jobposting_admin_paypal_email',
+    'value_actual' => '',
+    'module_name' => 'jobposting',
+  ),
 ); ?>

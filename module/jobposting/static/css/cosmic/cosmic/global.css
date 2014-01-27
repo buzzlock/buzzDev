@@ -1,0 +1,10 @@
+@import url("../../default/default/global.css");
+
+#ync_slides{
+	width: 500px;
+}
+
+.slides_container.ync_featured_slides_container
+{
+	width: 500px;
+}

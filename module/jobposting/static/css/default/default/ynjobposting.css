@@ -1,0 +1,26 @@
+.ync-item-content
+{
+	margin:5px;
+	padding:5px;
+}
+.ync-item-content + .ync-item-content
+{
+	/*border-top: 1px solid #CCC;*/
+}
+
+.js_date_picker{
+    width: 98px;		
+}
+div.main_break{
+    padding-top: 0px;
+}
+
+.title_add_job{
+    border-bottom:1px solid #DFDFDF;
+    margin-bottom:10px;
+    padding-bottom:36px;
+}
+
+.title_add_job_create{
+    float:left;
+}

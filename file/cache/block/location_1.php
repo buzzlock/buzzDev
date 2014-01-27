@@ -339,6 +339,32 @@
     'fundraising.campaign.side-campaign-goal' => '3',
     'fundraising.campaign.side-thankyou-donors' => '3',
   ),
+  'jobposting.index' => 
+  array (
+    'jobposting.job.search' => '3',
+    'jobposting.job.recent' => '3',
+    'jobposting.job.maybeinterested' => '3',
+    'jobposting.job.subscribe' => '3',
+    'jobposting.job.hotposting' => '3',
+    'jobposting.category' => '1',
+  ),
+  'jobposting.company' => 
+  array (
+    'jobposting.company.search' => '3',
+    'jobposting.company.topemployer' => '3',
+    'jobposting.company.mostfollow' => '3',
+    'jobposting.category' => '1',
+  ),
+  'jobposting.company.view' => 
+  array (
+    'jobposting.company.image' => '1',
+    'jobposting.company.employee' => '1',
+  ),
+  'jobposting.view' => 
+  array (
+    'jobposting.company.image' => '1',
+    'jobposting.job.buttonapply' => '1',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',

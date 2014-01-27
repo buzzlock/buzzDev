@@ -606,6 +606,50 @@
       'fundraising.campaign.side-thankyou-donors' => NULL,
     ),
   ),
+  'jobposting.index' => 
+  array (
+    3 => 
+    array (
+      'jobposting.job.search' => NULL,
+      'jobposting.job.recent' => NULL,
+      'jobposting.job.maybeinterested' => NULL,
+      'jobposting.job.subscribe' => NULL,
+      'jobposting.job.hotposting' => NULL,
+    ),
+    1 => 
+    array (
+      'jobposting.category' => NULL,
+    ),
+  ),
+  'jobposting.company' => 
+  array (
+    3 => 
+    array (
+      'jobposting.company.search' => NULL,
+      'jobposting.company.topemployer' => NULL,
+      'jobposting.company.mostfollow' => NULL,
+    ),
+    1 => 
+    array (
+      'jobposting.category' => NULL,
+    ),
+  ),
+  'jobposting.company.view' => 
+  array (
+    1 => 
+    array (
+      'jobposting.company.image' => NULL,
+      'jobposting.company.employee' => NULL,
+    ),
+  ),
+  'jobposting.view' => 
+  array (
+    1 => 
+    array (
+      'jobposting.company.image' => NULL,
+      'jobposting.job.buttonapply' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 

@@ -36,6 +36,7 @@
   'input' => 'input',
   'invite' => 'invite',
   'janrain' => 'janrain',
+  'jobposting' => 'jobposting',
   'language' => 'language',
   'like' => 'like',
   'link' => 'link',

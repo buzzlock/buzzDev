@@ -1,0 +1,40 @@
+@import url("../../default/default/global.css");
+
+#ync_slides{
+	width: 500px;
+}
+
+.slides_container.ync_featured_slides_container
+{
+	width: 500px;
+}
+
+
+.image_hover_holder {
+    height: 91px !important;
+    width: 117px !important;
+}
+
+.ync-feature .ync-feature-info .ync-feature-content{
+   width: 300px;
+}
+
+.slides_container.ync_featured_slides_container {
+     width: 590px;
+}
+
+#ync_slides {
+    width: 590px;
+}
+
+.ync-feature {
+    width: 590px;
+}
+
+a.ynjp_viewmore, .ynjp_featureDesc {
+    margin: 0 11px 0 10px;
+}
+
+.moderation_holder ul{
+    left: 0px !important;
+}

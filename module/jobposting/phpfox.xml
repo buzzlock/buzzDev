@@ -1,0 +1,726 @@
+<module>
+	<data>
+		<module_id>jobposting</module_id>
+		<product_id>younet_jobposting</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:7:{s:38:"jobposting.admin_menu_add_new_industry";a:1:{s:3:"url";a:3:{i:0;s:10:"jobposting";i:1;s:8:"category";i:2;s:3:"add";}}s:39:"jobposting.admin_menu_manage_industries";a:1:{s:3:"url";a:2:{i:0;s:10:"jobposting";i:1;s:8:"category";}}s:37:"jobposting.admin_menu_add_new_package";a:1:{s:3:"url";a:3:{i:0;s:10:"jobposting";i:1;s:7:"package";i:2;s:3:"add";}}s:37:"jobposting.admin_menu_manage_packages";a:1:{s:3:"url";a:2:{i:0;s:10:"jobposting";i:1;s:7:"package";}}s:33:"jobposting.admin_menu_manage_jobs";a:1:{s:3:"url";a:1:{i:0;s:10:"jobposting";}}s:28:"jobposting.admin_menu_sdfsdf";a:1:{s:3:"url";a:2:{i:0;s:10:"jobposting";i:1;s:3:"job";}}s:27:"jobposting.admin_menu_sdfsd";a:1:{s:3:"url";a:2:{i:0;s:10:"jobposting";i:1;s:11:"transaction";}}}]]></menu>
+		<phrase_var_name>module_jobposting</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="jobposting" parent_var_name="" m_connection="main" var_name="menu_jobposting_jobposting_fad58de7366495db4650cfefac2fcd61" ordering="131" url_value="jobposting" version_id="3.3.0" disallow_access="" module="jobposting" />
+	</menus>
+	<settings>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="string" var_name="subcategories_to_show_at_first" phrase_var_name="setting_subcategories_to_show_at_first" ordering="1" version_id="3.5.0">5</setting>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="integer" var_name="number_of_items_block_top_mostfollowed_employers" phrase_var_name="setting_number_of_items_block_top_mostfollowed_employers" ordering="2" version_id="3.5.0">4</setting>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="integer" var_name="number_of_items_block_recent_youmay" phrase_var_name="setting_number_of_items_block_recent_youmay" ordering="3" version_id="3.5.0">4</setting>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="integer" var_name="fee_feature_job" phrase_var_name="setting_fee_feature_job" ordering="4" version_id="3.5.0">5</setting>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="drop" var_name="company_job_view" phrase_var_name="setting_company_job_view" ordering="6" version_id="3.5.0"><![CDATA[a:2:{s:7:"default";s:9:"Thumbnail";s:6:"values";a:2:{i:0;s:9:"Thumbnail";i:1;s:4:"List";}}]]></setting>
+		<setting group="development" module_id="jobposting" is_hidden="0" type="integer" var_name="jobposting_maximum_upload_size" phrase_var_name="setting_jobposting_maximum_upload_size" ordering="7" version_id="3.5.0">1000</setting>
+		<setting group="" module_id="jobposting" is_hidden="0" type="integer" var_name="jobposting_maximum_upload_size_photo" phrase_var_name="setting_jobposting_maximum_upload_size_photo" ordering="1" version_id="3.5.0">1000</setting>
+		<setting group="" module_id="jobposting" is_hidden="0" type="integer" var_name="jobposting_fee_to_sponsor_company" phrase_var_name="setting_jobposting_fee_to_sponsor_company" ordering="1" version_id="3.5.0">5</setting>
+		<setting group="" module_id="jobposting" is_hidden="0" type="string" var_name="jobposting_admin_paypal_email" phrase_var_name="setting_jobposting_admin_paypal_email" ordering="1" version_id="3.5.0" />
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection=" " module_id="jobposting" component=" " location="0" is_active="0" ordering="0" disallow_access=" " can_move="0">
+			<title>
+</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="job.recent" location="3" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Recent Job Posting</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="job.maybeinterested" location="3" is_active="1" ordering="3" disallow_access="" can_move="0">
+			<title>Jobs You May Be Interested In</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="job.search" location="3" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Search</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company" module_id="jobposting" component="company.topemployer" location="3" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Top Employers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company" module_id="jobposting" component="company.mostfollow" location="3" is_active="1" ordering="3" disallow_access="" can_move="0">
+			<title>Most Followed Employers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company" module_id="jobposting" component="company.search" location="3" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="category" location="1" is_active="1" ordering="6" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company" module_id="jobposting" component="category" location="1" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="job.hotposting" location="3" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.index" module_id="jobposting" component="job.subscribe" location="3" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company.view" module_id="jobposting" component="company.image" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.view" module_id="jobposting" component="company.image" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.view" module_id="jobposting" component="job.buttonapply" location="1" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="jobposting.company.view" module_id="jobposting" component="company.employee" location="1" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="jobposting" component="index" m_connection="jobposting.index" module="jobposting" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="jobposting" component="job.recent" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="job.maybeinterested" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="job.search" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="company" m_connection="jobposting.company" module="jobposting" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="jobposting" component="company.topemployer" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="company.mostfollow" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="company.search" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="category" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="job.hotposting" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="job.subscribe" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="company.image" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="view" m_connection="jobposting.company.view" module="jobposting" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="jobposting" component="view" m_connection="jobposting.view" module="jobposting" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="jobposting" component="job.buttonapply" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="company.employee" m_connection="" module="jobposting" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="jobposting" component="profile" m_connection="jobposting.profile" module="jobposting" is_controller="1" is_block="0" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="menu_jobposting_jobposting_fad58de7366495db4650cfefac2fcd61" added="1350926319">Job Posting</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="module_jobposting" added="1350926125">by YouNet Company</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="category_order_successfully_updated" added="1350926125">Category order successfully updated</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="category_successfully_deleted" added="1350926125">Industry successfully deleted</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="manage_categories" added="1350926125">Manage Categories</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="are_you_sure_this_will_delete_all_item_that_belong_to_this_category_and_cannot_be_undone" added="1350926125">Are you sure? This will delete all items that belong to this category and cannot be undone.</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="edit" added="1350926125">Edit</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="delete" added="1350926125">Delete</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="categories" added="1350926125">Categories</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="category_successfully_updated" added="1350926125">Category successfully updated</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="category_successfully_added" added="1350926125">Category successfully added</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="edit_a_category" added="1350926125">Edit a Category</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="create_a_new_category" added="1350926125">Create a New Category</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="campaign_category_details" added="1350926125">Industry Detail</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="name" added="1350926125">Name</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="parent_category" added="1350926125">Parent Category</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="select_form_select" added="1350926125">Select</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="submit" added="1350926125">Submit</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="select" added="1350926125">Select</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="select_a_sub_category" added="1350926125">Select a Sub-Category</phrase>
+		<phrase module_id="jobposting" version_id="3.3.0" var_name="update_order" added="1350926125">Update Order</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_add_new_industry" added="1366686429">Add New Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_manage_industries" added="1366686429">Manage Industries</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="are_you_sure_this_will_delete_all_items_that_belong_to_this_category_and_cannot_be_undone" added="1366699257">Are you sure?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="all_jobs" added="1366703908">All Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="all_companies" added="1366703961">All Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_posting" added="1366704097">Job Posting</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="search_companies" added="1366704576">Search Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="latest" added="1366704676">Latest</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="most_viewed" added="1366704727">Most Viewed</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="most_favorited" added="1366704753">Most Favorited</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="recent_job_posting" added="1366706269">Recent Job Posting</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="jobs_you_may_be_interested_in" added="1366706861">Jobs You May Be Interested In</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="search" added="1366707338">Search</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="keyword" added="1366707719">Keyword</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company" added="1366707755">Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="location" added="1366707789">Location</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="industry" added="1366707983">Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="language_prefer" added="1366708029">Language Prefer</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="education_prefer" added="1366708100">Education Prefer</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="working_place" added="1366708232">Working Place</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expire_before" added="1366708289">Expire Before</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="top_employers" added="1366710360">Top Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="most_followed_employers" added="1366710541">Most Followed Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_name" added="1366711013">Company Name</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_size" added="1366711221">Company Size</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_favorite_jobs" added="1366711477">My Favorite Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_following_jobs" added="1366711545">My Following Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_favorite_companies" added="1366711590">My Favorite Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_following_companies" added="1366711697">My Following Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_applied_jobs" added="1366711762">My Applied Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_company" added="1366711825">My Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_subcategories_to_show_at_first" added="1366712610"><![CDATA[<title>How many sub-industry to show at first</title><info>This setting tells how many sub-industry are to be shown at first. If the list of sub-industry is longer than this value the extra ones will be hidden and a "View More" option will be shown instead, allowing the user to display the hidden sub-industry.
+
+a "View Less" option will be available to provide the full "accordion" effect.
+
+If you set it to zero ("0" without quotes) it will hide every sub-industry and a plus sign will show next to the industry name, clicking the plus sign will show that industry&#039;s sub-industry.</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_number_of_items_block_top_mostfollowed_employers" added="1366773302"><![CDATA[<title>Number of items on Block "Top Companies", "Most Followed Companies"</title><info>Number of items on Block "Top Companies", "Most Followed Companies"</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_number_of_items_block_recent_youmay" added="1366773461"><![CDATA[<title>Number of items on block "Recent Job Posting", "Job You May Be Interested In", "Hot Job Posting"</title><info>Number of items on block "Recent Job Posting", "Job You May Be Interested In", "Hot Job Posting"</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_fee_feature_job" added="1366773524"><![CDATA[<title>Fee to feature Job</title><info>Fee to feature Job</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_company_job_view" added="1366773750"><![CDATA[<title>Company and job view</title><info>Company and job view</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_jobposting_maximum_upload_size" added="1366773859"><![CDATA[<title>Maximum upload size (KB)</title><info>Maximum upload size (KB)</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="create_your_company" added="1366777870">Create Your Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="create_a_new_job" added="1366778619">Create a New Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="publish_job" added="1366789721">Publish Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="create_new_job" added="1366796649">Create New Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_title" added="1366796668">Job title</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_description" added="1366796682">Job Description</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="desired_skills_experience" added="1366796699"><![CDATA[Desired Skills & Experience]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="time" added="1366796757">Time</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expired_on" added="1366796769">Expired on</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_privacy" added="1366796783">Job Privacy</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="save_as_draft" added="1366796798">Save as Draft</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="publish" added="1366796810">Publish</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_added" added="1366798538">Job successfully added.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_updated" added="1366865430">Job successfully updated.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="actions" added="1366873139">Actions</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_name_is_required" added="1366939653">Company name is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="description_is_required" added="1366939670">Description is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="headquaters_location_is_required" added="1366939687">Headquaters location is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="industry_is_required" added="1366939762">Industry is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="contact_name_is_required" added="1366939777">Contact name is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="contact_phone_is_required" added="1366939795">Contact phone is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="contact_email_is_required" added="1366939812">Contact email is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="managing_company" added="1366939831">Managing Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_company" added="1366939846">Add Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="description" added="1366939989">Description</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="headquaters_location" added="1366940015">Headquaters Location</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="city" added="1366940028">City</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="zip_postal_code" added="1366940064">Zip/Postal Code</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="country" added="1366940078">Country</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="refresh_map" added="1366940103">Refresh Map</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="website" added="1366940117">Website</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="from" added="1366940156">From</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="to" added="1366940164">To</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="contact_information" added="1366940191">Contact Information</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="phone" added="1366940212">Phone</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="email" added="1366940221">Email</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="fax" added="1366940231">Fax</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_privacy" added="1366940248">Company Privacy</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="share_privacy" added="1366940262">Share Privacy</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="save" added="1366940276">Save</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sponsor_company" added="1366940287">Sponsor Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_city_zip_country" added="1366940602">Add city/zip/country</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="hide_city_zip_country" added="1366940620">Hide city/zip/country</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="control_who_can_see_your_company_information" added="1366940988">Control who can see your company information.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="control_who_can_share_on_your_company" added="1366941009">Control who can share on your company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="employees" added="1366941221">employees</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_add_new_package" added="1366941988">Add New Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_manage_packages" added="1366941988">Manage Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="edit_a_package" added="1366942446">Edit a Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="from_field_of_company_size_is_required" added="1366942896"><![CDATA["From" field of Company size is required.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="to_field_of_company_size_is_required" added="1366942922"><![CDATA["To" field of Company size is required.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="create_a_new_package" added="1366943172">Create a New Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package_successfully_added" added="1366945306">Package successfully added.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package_successfully_updated" added="1366946285">Package successfully updated.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="name_of_package_cannot_be_empty" added="1366947370">Name of package cannot be empty.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="select_a_sub_industry" added="1366966360">Select a Sub-Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_add_up_to_3_industries" added="1366966649">You can add up to 3 industries.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="website_format_is_not_valid" added="1367029829">Website format is not valid.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_size_is_not_valid" added="1367030669"><![CDATA[Company size is not valid. "From" field must be greater than 0 and "To" field must be greater than "From" field.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="two_industries_must_be_different" added="1367033222">Two industries must be different.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="email_format_is_not_valid" added="1367034295">Email format is not valid.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="hot_job_posting" added="1367034488">Hot Job Posting</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_jobposting_maximum_upload_size_photo" added="1367038408"><![CDATA[<title>Maximum upload size for photos (KB)</title><info>Maximum upload size for company photos and form logo.</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="select_images" added="1367048186">Select Image(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_upload_a_jpg_gif_or_png_file" added="1367048210">You can upload a JPG, GIF or PNG file.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="the_file_size_limit_is_filesize_if_your_upload_does_not_work_try_uploading_a_smaller_picture" added="1367048399">The file size limit is {filesize}. If your upload does not work, try uploading a smaller picture.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="upload_photos" added="1367048441">Upload Photo(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_add_company" added="1367048866">Can add a company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="photos" added="1367051457">Photos</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_this_image" added="1367051955">Delete this image</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="are_you_sure" added="1367051971">Are you sure?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="click_to_set_as_default_image" added="1367051998">Click to set as default image</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_added" added="1367056155">Company successfully added.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_information_successfully_updated" added="1367057029">Company information successfully updated.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_company" added="1367458924">View Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_information" added="1367463474">Company Information</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="my_bought_packages" added="1367463492">My Bought Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="submission_form" added="1367463505">Submission Form</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="manage_job_posted" added="1367463522">Manage Job Posted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admins" added="1367463529">Admins</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_image" added="1367485591">Unable to find the image.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="upload_photos_process_has_finished" added="1367488396">Upload photo(s) process has finished.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_more" added="1367489895">view more</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="form_title" added="1367544465">Form Title</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enter_the_title_for_the_submission_form" added="1367544510">Enter the title for the submission form.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="form_description" added="1367544530">Form Description</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enter_the_description_for_the_form_this_will_appear_below_the_form_title" added="1367544569">Enter the description for the form. This will appear below the form title.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_logo" added="1367545141">Company Logo</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="show_job_title" added="1367546073">Show job title</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_your_name_field" added="1367546325"><![CDATA[Enable "Your Name" field. System will get Full Name of the candidate to fill to. Candidate can change value for this field.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="required_field" added="1367546402">Required field</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="candidate_name" added="1367546441">Candidate Name</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_your_photo_field" added="1367546619"><![CDATA[Enable "Your Photo" field]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="candidate_photo" added="1367546658">Candidate Photo</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="candidate_email" added="1367546748">Candidate Email</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="candidate_telephone" added="1367546767">Candidate Telephone</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_your_email_field" added="1367546811"><![CDATA[Enable "Your Email" field]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_your_telephone_field" added="1367546841"><![CDATA[Enable "Your Telephone" field]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="resume" added="1367546874">Resume</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="allow_candidate_to_apply_this_job_by_using_his_her_resume_on_module_resume" added="1367546972">Allow candidate to apply this job by using his/her resume on module Resume</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="ms_word_pdf_zip_size_maximum" added="1367547490">Ms Word, PDF, ZIP ({size} maximum)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="resume_format" added="1367547547">Resume Format</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="subscribe_job" added="1367549277">Subscribe Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="submission_form_successfully_updated" added="1367549514">Submission form successfully updated.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="form_title_is_required" added="1367550965">Form title is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_logo_is_not_valid" added="1367596114">Company logo is not valid. You can upload a maximum {size} JPG, GIF or PNG file.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="type" added="1367828847">Type</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="values" added="1367828870">Values</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_new_option" added="1367828953">Add new option</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add" added="1367828967">Add</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="search_jobs" added="1367863050">Search Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_manage_jobs" added="1367921916">Manage Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="are_you_sure_you_want_to_delete_this_custom_option" added="1367924047">Are you sure you want to delete this custom option?
+
+Note that anyone using this option will revert to using the default option set for this custom field.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="could_not_delete" added="1367924580">Could not delete</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="result_s" added="1367924696">Result(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_custom_field_you_want_to_delete" added="1367924723">Unable to find the custom field you want to delete.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_custom_option_you_plan_on_deleting" added="1367925475">Unable to find the custom option you plan on deleting.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="total_upper" added="1367925559">Total</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_sdfsdf" added="1367926630">Manage Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="admin_menu_sdfsd" added="1367926688">Manage Transactions</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_field_will_be_hidden_until_it_has_at_least_one_option" added="1367927877">This field will be hidden until it has at least one option!</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_admins_successfully_updated" added="1367937061">Company admins successfully updated.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_not_create_more_than_one_company" added="1367940254">You can not create more than one company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_jobposting_fee_to_sponsor_company" added="1367942665"><![CDATA[<title>Fee to sponsor company ($)</title><info>Fee to sponsor company (USD)</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="setting_jobposting_admin_paypal_email" added="1368013229"><![CDATA[<title>Admin Paypal email</title><info>Paypal email of admin to receive money from member</info>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="invite_friends" added="1368026574">Invite Friends</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="follow" added="1368026596">Follow</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="favorite" added="1368026612">Favorite</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="promote_job" added="1368026635">Promote Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="apply_job" added="1368028345">Apply Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_packages" added="1368096868">Pay Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_wrote_a_comment_on_your_jobposting_name" added="1368097426"><![CDATA[{full_name} wrote a comment on your company "{title}".]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_wrote_a_comment_on_your_jobposting_message" added="1368097484"><![CDATA[{full_name} wrote a comment on your company "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_a_comment_you_posted_on_the_jobposting_title" added="1368107408"><![CDATA[{full_name} liked a comment you posted on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_your_comment_message_jobposting" added="1368107481"><![CDATA[{full_name} liked your comment "<a href="{link}">{content}</a>" that you posted on the company "<a href="{item_link}">{title}</a>".
+To view this company follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_your_company_title" added="1368107758"><![CDATA[{full_name} liked your company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_your_company_message" added="1368107812"><![CDATA[{full_name} liked your company "<a href="{link}">{title}</a>"
+To view this company follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_gender_own_company_title" added="1368107943"><![CDATA[{users} liked {gender} own company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_your_company_title" added="1368107988"><![CDATA[{users} liked your company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_company_title" added="1368108039"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="created_an_company" added="1368108257">created an company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_post_a_comment_on_this_item_due_to_privacy_settings" added="1368110211">Unable to post a comment on this item due to privacy settings.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_a_comment_posted_on_the_company_title" added="1368110497"><![CDATA[{full_name} commented on a comment posted on the company "{title}".]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_one_of_your_comments_you_posted_on_the_company" added="1368110552"><![CDATA[{full_name} commented on one of your comments you posted on the company "<a href="{item_link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_one_of_gender_company_comments" added="1368110604">{full_name} commented on one of {gender} company comments.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_one_of_gender_own_comments_on_the_company" added="1368110649"><![CDATA[{full_name} commented on one of {gender} own comments on the company "<a href="{item_link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name_s_span_comment_on_the_company_title" added="1368110799"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> comment on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_gender_own_comment_on_the_company_title" added="1368110847"><![CDATA[{users} commented on {gender} own comment on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_one_of_your_comments_on_the_company_title" added="1368110892"><![CDATA[{users} commented on one of your comments on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_one_of_span_class_drop_data_user_row_full_name_s_span_comments_on_the_company_tit" added="1368110943"><![CDATA[{users} commented on one of <span class="drop_data_user">{row_full_name}&#039;s</span> comments on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="item_phrase" added="1368118022">jobposting</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="initialized" added="1368179258">Initialized</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pending" added="1368179270">Pending</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="completed" added="1368179279">Completed</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="denied" added="1368179289">Denied</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="passed" added="1368439777">Passed</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="rejected" added="1368439790">Rejected</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_one_of_your_comments_on_the_company_title" added="1368454426"><![CDATA[{users} liked one of your comments on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_one_on_span_class_drop_data_user_row_full_name_s_span_comments_on_the_company_title" added="1368454531"><![CDATA[{users} liked one on <span class="drop_data_user">{row_full_name}&#039;s</span> comments on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_comment_on_the_company_title" added="1368454597"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> comment on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_your_company_title" added="1368454651"><![CDATA[{users} commented on your company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name_s_span_company_title" added="1368454746"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_gender_own_company_title" added="1368454896"><![CDATA[{users} commented on {gender} own company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_gender_own_comment_on_the_company_title" added="1368455011"><![CDATA[{users} liked {gender} own comment on the company "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_one_of_row_full_name_s_company_comments" added="1368455164"><![CDATA[{full_name} commented on one of {row_full_name}&#039;s company comments.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_one_of_row_full_name_s" added="1368455301"><![CDATA[{full_name} commented on one of {row_full_name}&#039;s comments on the company "<a href="{item_link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="report_this_job" added="1368457430">Report this job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted_a_comment_on_gender_job_a_href_link_title_a" added="1368459335"><![CDATA[posted a comment on {gender} job <a href="{link}"> {title}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted_a_comment_on_user_name_s_job_a_href_link_title_a" added="1368459408"><![CDATA[posted a comment on {user_name}&#039;s job "<a href="{link}">{title}</a>"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted_a_job" added="1368459769">posted a job.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_your_job_title" added="1368460598"><![CDATA[{full_name} liked your blog "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_liked_your_job_link_title" added="1368460711"><![CDATA[{full_name} liked your job "<a href="{link}">{title}</a>"
+To view this job follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_gender_own_event_title" added="1368462315"><![CDATA[{users} liked {gender} own job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_your_event_title" added="1368462362"><![CDATA[{users} liked your job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_job_title" added="1368462402"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_gender_job" added="1368462812">{full_name} commented on {gender} job.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_gender_job_message" added="1368463013"><![CDATA[{full_name} commented on {gender} job "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_job_full_name_s_job" added="1368463076"><![CDATA[{full_name} commented on {blog_full_name}&#039;s job.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_job_full_name_s_job_message" added="1368463139"><![CDATA[{full_name} commented on {blog_full_name}&#039;s job "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_your_job_title" added="1368463273"><![CDATA[{full_name} commented on your job "{title}".]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_commented_on_your_job_message" added="1368463317"><![CDATA[{full_name} commented on your job "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_gender_job_title" added="1368463658"><![CDATA[{users} commented on {gender} blog "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_your_job_title" added="1368463692"><![CDATA[{users} commented on your job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name" added="1368463729"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_wrote_a_comment_on_your_job_job_title" added="1368463852"><![CDATA[<a href="{user_link}">{full_name}</a> wrote a comment on your job "<a href="{job_link}">{job_title}</a>".]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_name_tagged_you_in_a_comment_in_a_job" added="1368463989">{user_name} tagged you in a comment in a job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="custom_field_is_required" added="1368540057"><![CDATA["{custom_field}" is required.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_company_photo" added="1368724659">Enable company photo</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="enable_description" added="1368724671">Enable description</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="embed_code" added="1368724745">Embed code</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_company_information" added="1368782143">Can edit own company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_delete_company_other_user" added="1368782231">Can delete company information created by other users?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_approved_company_before_displayed" added="1368782285">Approved company before displayed?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_add_job" added="1368782329">Can add job?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_own_job" added="1368782438">Can edit own job?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_job_created_by_other_users" added="1368782489">Can edit job created by other users?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_browse_view_job" added="1368783149">Can view jobs?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_feature_jobs" added="1368783188">Can feature jobs?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_sponsor_jobs" added="1368783213">Can sponsor company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_approved_job_before_displayed" added="1368783283"><![CDATA[Don&#039;t approved jobs before publish displayed.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_point_add_job" added="1368783363">How many points do the users get when they add new job?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pending_jobs" added="1368784731">Pending Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pending_company" added="1368787118">Pending Companies</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="are_you_sure_info" added="1368788501">Are you sure?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_not_perform_this_action" added="1368788901">You can not perform this action!</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_deleted" added="1368789296">Company successfully deleted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_this_company" added="1368789570">Delete This Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="invite_people_via_email" added="1368797732">Invite People via Email</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="separate_multiple_emails_with_a_comma" added="1368797769">Separate multiple emails with a comma.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_a_personal_message" added="1368797801">Add a personal message</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="send_invitations" added="1368797831">Send Invitations</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="new_guest_list" added="1368797859">New Guest List</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_invited_you_to_the_type_title" added="1368799400"><![CDATA[{full_name} invited you to the {type} &#039;{title}&#039;]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="full_name_invited_you_to_the_type_title_link" added="1368799825"><![CDATA[{full_name} invited you to the {type} "{title}".
+
+To check out this {type}, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_delete_job_other_user" added="1368801912">Can delete job created by other users?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_deleted" added="1368802557">Job successfully deleted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_company_created_by_other_users" added="1368803596">Can edit company created by other users?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_approved" added="1368812720">Company successfully approved</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_approved" added="1368813288">Job successfully approved</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unfavorite" added="1368870985">Unfavorite</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unfollow" added="1369038223">Unfollow</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="update" added="1369038234">Update</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_saved" added="1369038248">Company successfully saved.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_published" added="1369038262">Company successfully published.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_approve_company_before_displayed" added="1369038350"><![CDATA[Don&#039;t approve companies before they are publicy displayed.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_post_comment_on_company" added="1369038450">Can post comment on companies?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_approve_company" added="1369038484">Can approve companies?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_view_company" added="1369038526">Can view companies?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_user_company" added="1369038592">Can edit companies added by other users?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_delete_own_company" added="1369038651">Can delete own company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_sponsor_company" added="1369038738">Can sponsor company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_edit_own_company" added="1369039161">Can edit own company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_approve_job" added="1369042518">Can approve jobs?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="post_job_number" added="1369044449">Post Job Number (Number of Job this user can post. 0 means unlimited)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="valid_period" added="1369044480">Valid period</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="day" added="1369044847">Day</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="week" added="1369044878">Week</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="month" added="1369044902">Month</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="never_expires" added="1369044928">Never Expires</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package_fee" added="1369044998">Package Fee</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="search_filter" added="1369045053">Search Filter</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="employer" added="1369045091">Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="representative" added="1369045108">Representative</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sponsor" added="1369046373">Sponsor</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_to_sponsor" added="1369046444">Pay to Sponsor</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="valid_packages" added="1369046527">Valid Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="action" added="1369046539">Action</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="n_a" added="1369046608">N/A</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_companies_found" added="1369046648">No Companies found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_jobs" added="1369046991">View Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job" added="1369047657">Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_to_feature" added="1369047930">Pay to Feature</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature" added="1369048039">Feature</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="number_of_application" added="1369048097">Number of Application</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_jobs_found" added="1369048129">No Jobs found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="paid" added="1369048186">Paid</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package" added="1369048461">Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="fee" added="1369048839">Fee</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="payment_status" added="1369048857">Payment Status</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="purchased_date" added="1369048881">Purchased Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="total_fee" added="1369048914">Total Fee</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_transaction_found" added="1369049071">No Transaction found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="jobs" added="1369049087">Jobs</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package_name" added="1369049346">Package Name</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="remaining_job_posts" added="1369050085">Remaining Job Posts</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="valid_time" added="1369050226">Valid Time</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_package_found" added="1369050268">No package found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_can_purchase_additional_packages" added="1369050285">Your can purchase additional packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted_from" added="1369050337">Posted From</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="status" added="1369050357">Status</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="all" added="1369050372">All</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="show" added="1369050436">Show</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="hide" added="1369050449">Hide</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted_date" added="1369050476">Posted Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expired_date" added="1369050488">Expired Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="option" added="1369050546">Option</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_applications" added="1369050588">View Applications</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="download_all_resumes" added="1369050603">Download All Resumes</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_job_found" added="1369050626">No job found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="candidate" added="1369050897">Candidate</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="submitted_date" added="1369050916">Submitted Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_application_found" added="1369050956">No application found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="reject" added="1369050971">Reject</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pass" added="1369050983">Pass</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view" added="1369051005">View</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="download" added="1369051051">Download</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="general_information" added="1369051135">General Information</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="headquaters" added="1369051176">Headquaters</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="addition_information" added="1369057893">Addition Information</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="subject" added="1369058048">Subject</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="message" added="1369058059">Message</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="approve" added="1369058128">Approve</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_name" added="1369058167">Your Name</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_photo" added="1369058178">Your Photo</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_email" added="1369058189">Your Email</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_telephone" added="1369058201">Your Telephone</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="use_my_resume" added="1369058240">Use My Resume</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="format_ms_word_pdf_zip_500kb_maximum" added="1369058256">Format: Ms Word, PDF, Zip (500KB maximum)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sorry_you_don_t_have_any_resume_click" added="1369058301"><![CDATA[Sorry, you don&#039;t have any Resume, Click <a href="{link}">here</a> to create new Resume.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="apply" added="1369058394">Apply</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="posted" added="1369058445">Posted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_job" added="1369058497">View Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expire_on" added="1369058560">Expire on</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="previous" added="1369058633">Previous</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="next" added="1369058644">Next</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="moderate" added="1369058771">Moderate</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_application" added="1369058799">View Application</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="edit_job" added="1369058813">Edit Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_job" added="1369058828">Delete Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_blog" added="1369058879">Delete Blog</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="review" added="1369058984">Review</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="select_you_existing_packages" added="1369059163">Select you existing packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="or_select_the_one_of_following_packages" added="1369059177">Or select the one of following packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature_this_job_with" added="1369059320">Feature this Job with ${featurefee}</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_s" added="1369059489">Job(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="follower_s" added="1369059501">follower(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="followers" added="1369059562">followers</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sponsored" added="1369059592">Sponsored</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="n_a_industry" added="1369059613">N/A (Industry)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="working_at_this_company" added="1369059714">Working at this company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="leave_this_company" added="1369059731">Leave this company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="no_employees_found" added="1369059774">No Employees found</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="telephone" added="1369059878">Telephone</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="created_a_company" added="1369153337">created a company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_favorited_your_job_title" added="1369153714"><![CDATA[{users} favorited your job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_favorited_your_followed_job_title" added="1369153750"><![CDATA[{users} favorited your followed job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_favorited_your_company_name" added="1369153786"><![CDATA[{users} favorited your company "{name}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_favorited_your_followed_company_name" added="1369153830"><![CDATA[{users} favorited your followed company "{name}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_followed_your_job_title" added="1369153908"><![CDATA[{users} followed your job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_followed_your_company_name" added="1369153934"><![CDATA[{users} followed your company "{name}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_applied_your_job_title" added="1369153960"><![CDATA[{users} applied your job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_joined_your_company_name" added="1369153988"><![CDATA[{users} joined your company "{name}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="users_joined_your_followed_company_name" added="1369154014"><![CDATA[{users} joined your followed company "{name}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_job_title_has_been_featured" added="1369154048"><![CDATA[Your followed job "{title}" has been featured]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_company_name_has_been_sponsored" added="1369154076"><![CDATA[Your followed company "{name}" has been sponsored]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_company_name_posted_a_job_title" added="1369154118"><![CDATA[Your followed company "{name}" posted a job "{title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_job_title_has_been_deleted" added="1369154155"><![CDATA[Your followed job "{title}" has been deleted]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_applied_job_title_has_been_deleted" added="1369154184"><![CDATA[Your applied job "{title}" has been deleted]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_company_name_has_been_deleted" added="1369154209"><![CDATA[Your followed company "{name}" has been deleted]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_applied_company_name_has_been_deleted" added="1369154233"><![CDATA[Your applied company "{name}" has been deleted]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="the_company_of_your_followed_job_name_has_been_deleted" added="1369154287"><![CDATA[The company of your followed job "{name}" has been deleted]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_job_title_is_expired" added="1369154311"><![CDATA[Your job "{title}" is expired]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_followed_job_title_is_expired" added="1369154332"><![CDATA[Your followed job "{title}" is expired]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_applied_job_title_is_expired" added="1369154355"><![CDATA[Your applied job "{title}" is expired]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_job_title_has_been_approved" added="1369154378"><![CDATA[Your job "{title}" has been approved]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_company_name_has_been_approved" added="1369154402"><![CDATA[Your company "{name}" has been approved]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="apply_job_email_subject" added="1369155373"><![CDATA[Thanks for applying the job at "{site_title}"]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="apply_job_email_message" added="1369155614"><![CDATA[Thanks for applying the job "{title}" at "{site_title}". For more information, please visit our website: <a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sponsor_company_email_subject" added="1369156836">Your company has been successfully sponsored</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="sponsor_company_email_message" added="1369156926"><![CDATA[Your company "<a href="{link}">{title}</a>" has been successfully sponsored.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature_job_email_subject" added="1369157892">Your job has been successfully featured</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature_job_email_message" added="1369157964"><![CDATA[Your job "<a href="{link}">{title}</a>" has been successfully featured.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_job_email_subject" added="1369158027">A job has been successfully posted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_job_email_message" added="1369158193"><![CDATA[Your job "{title}" has been successfully posted. The job details are in the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_company_email_subject" added="1369158224">Your company has been successfully created</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_company_email_message" added="1369158347"><![CDATA[Your company "{title}" has been successfully created. Please find all information at the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_company_email_subject" added="1369158449">Your company has been successfully deleted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_company_email_message" added="1369158497"><![CDATA[Your company "{title}" has been successfully deleted.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_job_email_subject" added="1369158717">A job has been successfully deleted</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_job_email_message" added="1369158773"><![CDATA[The job "{title}" has been successfully deleted.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expire_job_email_subject" added="1369158942">A job is expired</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expire_job_email_message" added="1369159001"><![CDATA[The job "<a href="{link}">{title}</a>" is expired.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="do_you_want_to_sponsor_your_company_width" added="1369220863">Do you want to sponsor your company with ${fee}?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_only_delete_empty_industry" added="1369231808">You can only delete empty industry!</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_fee_to_sponsor_this_company" added="1369239031">Pay {fee}$ to sponsor this company?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="processing" added="1369239073">Processing</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="save_and_pay_fee_for_selected_package" added="1369241327">Save and pay {fee}$ for selected packages?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_fee_for_selected_packages" added="1369244746">Pay {fee}$ for selected packages?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="updating" added="1369297064">Updating</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="adding" added="1369297074">Adding</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="category" added="1369322541">Category</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="edit_company_info" added="1369383890">Edit Company Info</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_bought_packages" added="1369383909">View Bought Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="edit_submission_form" added="1369383926">Edit Submission Form</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_s_successfully_approved" added="1369386437">Job(s) successfully approved.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_s_successfully_deleted" added="1369386455">Job(s) successfully deleted.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_s_successfully_approved" added="1369386643">Company(s) successfully approved.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_s_successfully_deleted" added="1369386677">Company(s) successfully deleted.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="the_company_you_are_looking_for_cannot_be_found" added="1369398663">The company you are looking for cannot be found.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="the_job_you_are_looking_for_cannot_be_found" added="1369398685">The job you are looking for cannot be found.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="user_setting_can_view_job" added="1369399733">Can view jobs?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="un_feature" added="1369412354">Un-feature</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="un_sponsor" added="1369413003">Un-sponsor</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_not_created_a_company" added="1369644953">You have not created a company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_any_package" added="1369644992">Unable to find any package. Please contact site administrator to add some packages first.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_any_industry" added="1369645061">Unable to find any industry. Please contact site administrator to add some industries first.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_size_is_not_valid_adding" added="1369647331"><![CDATA[Company size is not valid. "From" field and "To" field must be a numeric.]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_job_you_want_to_publish" added="1369662508">Unable to find the job you want to publish.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="please_select_a_package_to_publish_this_job" added="1369662532">Please select a package to publish this job.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="redirecting_to_paypal" added="1369662568">Redirecting to Paypal</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_do_not_have_permission_to_sponsor_company" added="1369662672">You do not have permission to sponsor company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_company_you_want_to_sponsor" added="1369662690">Unable to find the company you want to sponsor.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_company_is_pending_for_approve" added="1369662708">This company is pending for approve.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_company_has_been_sponsored" added="1369662727">This company has been sponsored.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_sponsored" added="1369662766">Company successfully sponsored.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_do_not_have_permission_to_un_sponsor_company" added="1369662915">You do not have permission to Un-sponsor company.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_company_has_been_un_sponsored" added="1369664465">This company has been Un-sponsored.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="company_successfully_un_sponsore" added="1369664485">Company successfully Un-sponsore.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="un_sponsor_company" added="1369664508">Un-sponsor Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_packages_successfully" added="1369664535">Pay packages successfully.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="application_successfully_deleted" added="1369664646">Application successfully deleted.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_favorited_this" added="1369664792">You have favorited this</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="favorite_successfully" added="1369664807">Favorite successfully.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unfavorite_successfully" added="1369664826">Unfavorite successfully.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_followed_this" added="1369664847">You have followed this</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="follow_successfully" added="1369664863">Follow successfully.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unfollow_successfully" added="1369664891">Unfollow successfully.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_left_to_the_compnay_successfully" added="1369664955">You have left to the company successfully</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_joined_to_the_compnay_successfully" added="1369664983">You have joined to the company successfully</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="delete_company" added="1369665066">Delete Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_job_has_been_featured" added="1369665161">This job has been featured.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature_job" added="1369665174">Feature Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_featured" added="1369665194">Job successfully featured.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_job_has_been_un_featured" added="1369665336">This job has been un-featured.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="un_feature_job" added="1369665355">Un-Feature Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_successfully_un_feature" added="1369665377">Job successfully un-feature.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="approve_company" added="1369665416">Approve Company</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="approve_job" added="1369665535">Approve Job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="moderation" added="1369665580">Moderation</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_not_found" added="1369665798">Job not found.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="post_job_number_have_to_be_a_number" added="1369665865">Post Job Number have to be a number</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="valid_peried_have_to_be_a_number" added="1369665881">Valid period have to be a number</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="package_fee_have_to_be_a_number" added="1369665975">Package Fee have to be a number</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="manage_package" added="1369666005">Manage Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="not_sponsor" added="1369666053">Not Sponsor</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="fill_in_a_title_for_your_job" added="1369666236">Fill in a title for your job</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_some_content_to_your_description" added="1369666251">Add some content to your description</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_some_content_to_your_skills" added="1369666263">Add some content to your skills</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="apply_job_successfully" added="1369666359">Apply Job successfully</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_name_is_required" added="1369666397">Your name is required</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_email_is_required" added="1369666410">Your email is required</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_telephone_is_required" added="1369666426">Your telephone is required</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_photo_is_required" added="1369666440">Your photo is required</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="update_subscribe_job_successfully" added="1369666524">Update Subscribe Job successfully</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="name_isn_t_allowed_empty" added="1369666556"><![CDATA[Name isn&#039;t allowed empty]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_application_you_want_to_delete" added="1369666673">Unable to find the application you want to delete.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="administrator_does_not_have_paypal_email_please_contact_him_her_to_update_it" added="1369666778">Administrator does not have paypal email. Please contact him (her) to update it.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="can_not_load_payment_gateways_please_try_again_later" added="1369666799">Can not load Payment Gateways. Please try again later.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="view_applications_0_download_all_resumes" added="1369666892">View Applications (0) | Download All Resumes</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unlimited" added="1369667230">Unlimited</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="remaining" added="1369667244">Remaining</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_new_package" added="1369841631">Add New Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_posting_package_name" added="1369841647">Job Posting Package Name</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="week_s" added="1369841753">week(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="month_s" added="1369841781">month(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="never_expired" added="1369841808">Never Expired</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="day_s" added="1369841827">day(s)</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="manage_packages" added="1369841883">Manage Packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="link" added="1369842610">Link</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="to_use_this_option_please_install_module_a_href_link_resume_a" added="1370364434"><![CDATA[(To use this option, please install module <a href="{link}">Resume</a>)]]></phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="manage_transactions" added="1370429778">Manage Transactions</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="search_from" added="1370429888">From Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="post_job_number_admincp" added="1370595279">Post Job Number</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="to_date" added="1370596023">To Date</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="title" added="1370596159">Title</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="parent_industry" added="1370596205">Parent Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="feature_package" added="1370597918">Feature + Package</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="your_existing_packages" added="1370872850">Your existing packages</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="upload_file" added="1370941482">Upload File</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="published" added="1370941843">Published</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="draft" added="1370941917">Draft</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="job_posts" added="1370942780">job posts</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="period" added="1370943181">Period</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="day_singular" added="1370943831">day</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="day_plural" added="1370943849">days</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="week_singular" added="1370943907">week</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="week_plural" added="1370943926">weeks</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="month_singular" added="1370943946">month</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="month_plural" added="1370943965">months</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="add_field_question" added="1370944670">Add field/question</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="require_field" added="1370944792">Require field</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="edit_field_question" added="1370944969">Edit field/question</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_have_already_applied_this_job" added="1370958530">You have already applied this job.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="resume_is_required" added="1370961710">Resume is required.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="you_can_not_create_a_job_your_company_has_not_been_published" added="1370969096">You can not create a job. Your company has not been published</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="not_feature" added="1371027172">Not Feature</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="expired" added="1371027695">Expired</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="working_at" added="1371035823">Working at</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="pay_fee_to_feature_this_job" added="1371054323">Pay {fee}$ to feature this job?</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="created_by" added="1371141336">Created by:</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_resume_you_want_to_download" added="1371467103">Unable to find the resume you want to download.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_the_job_you_want_to_download_resumes" added="1371467268">Unable to find the job you want to download resumes.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="this_job_does_not_have_application" added="1371467296">This job does not have application.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="unable_to_find_any_resume_for_download" added="1371467341">Unable to find any resume for download.</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="comment_privacy" added="1371467341">Comment Privacy</phrase>
+		<phrase module_id="jobposting" version_id="3.5.0" var_name="control_who_can_comment_on_this_job" added="1371467341">Control who can comment on this job.</phrase>
+		<phrase module_id="jobposting" version_id="3.6.0" var_name="add_new_industry" added="1377674175">Add New Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.6.0" var_name="edit_an_industry" added="1377674279">Edit an Industry</phrase>
+		<phrase module_id="jobposting" version_id="3.6.0" var_name="manage_industries" added="1377674311">Manage Industries</phrase>
+		<phrase module_id="jobposting" version_id="3.5.1" var_name="company_description" added="1379046715">Company Information</phrase>
+		<phrase module_id="jobposting" version_id="3.7.1" var_name="language_preference" added="1383042567">Language Preference</phrase>
+		<phrase module_id="jobposting" version_id="3.7.1" var_name="education_preference" added="1383042682">Education Preference</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="false" staff="true" module="jobposting" ordering="0">can_add_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="false" staff="true" module="jobposting" ordering="0">can_edit_own_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="0" guest="0" staff="0" module="jobposting" ordering="0">can_delete_company_other_user</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="false" user="false" guest="false" staff="false" module="jobposting" ordering="0">approve_company_before_displayed</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="1" guest="0" staff="1" module="jobposting" ordering="0">can_add_job</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="1" guest="0" staff="1" module="jobposting" ordering="0">can_edit_own_job</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="0" guest="0" staff="0" module="jobposting" ordering="0">can_edit_job_created_by_other_users</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="1" guest="1" staff="1" module="jobposting" ordering="0">can_browse_view_job</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="1" guest="0" staff="1" module="jobposting" ordering="0">can_feature_jobs</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="false" staff="true" module="jobposting" ordering="0">can_sponsor_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="0" guest="0" staff="0" module="jobposting" ordering="0">approved_job_before_displayed</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="integer" admin="1" user="1" guest="1" staff="1" module="jobposting" ordering="0">point_add_job</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="1" user="0" guest="0" staff="0" module="jobposting" ordering="0">can_delete_job_other_user</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="false" staff="true" module="jobposting" ordering="0">can_post_comment_on_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="false" guest="false" staff="false" module="jobposting" ordering="0">can_approve_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="true" staff="true" module="jobposting" ordering="0">can_view_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="false" guest="false" staff="false" module="jobposting" ordering="0">can_edit_user_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="true" guest="false" staff="true" module="jobposting" ordering="0">can_delete_own_company</setting>
+		<setting is_admin_setting="0" module_id="jobposting" type="boolean" admin="true" user="false" guest="false" staff="false" module="jobposting" ordering="0">can_approve_job</setting>
+	</user_group_settings>
+</module>

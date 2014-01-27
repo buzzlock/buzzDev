@@ -195,6 +195,19 @@
     'url' => 'http://phpfox3.demo.younetco.com/',
     'url_version_check' => 'http://phpfox3.demo.younetco.com/',
   ),
+  'younet_jobposting' => 
+  array (
+    'product_id' => 'younet_jobposting',
+    'is_core' => '0',
+    'title' => 'Jobposting',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p9',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/',
+    'url_version_check' => 'http://phpfox3.demo.younetco.com/',
+  ),
   'Younet_Payment_Gateway' => 
   array (
     'product_id' => 'Younet_Payment_Gateway',
