@@ -4469,4 +4469,116 @@ Site Name',
     'value_actual' => 250,
     'module_name' => 'fblike',
   ),
+  621 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_donors_in_highlight_campaign_block',
+    'value_actual' => 6,
+    'module_name' => 'fundraising',
+  ),
+  622 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'currency_display_type',
+    'value_actual' => 3,
+    'module_name' => 'fundraising',
+  ),
+  623 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'fundraising_time_stamp',
+    'value_actual' => 'F j, Y',
+    'module_name' => 'fundraising',
+  ),
+  624 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_campaigns_on_featured_slideshow',
+    'value_actual' => 12,
+    'module_name' => 'fundraising',
+  ),
+  625 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_donors_on_top_donors_block',
+    'value_actual' => 12,
+    'module_name' => 'fundraising',
+  ),
+  626 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_supporters_on_top_suporters_block',
+    'value_actual' => 12,
+    'module_name' => 'fundraising',
+  ),
+  627 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'is_use_shorten_form',
+    'value_actual' => false,
+    'module_name' => 'fundraising',
+  ),
+  628 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'default_signature_goal',
+    'value_actual' => 1000,
+    'module_name' => 'fundraising',
+  ),
+  629 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'default_min_fundraising',
+    'value_actual' => 0,
+    'module_name' => 'fundraising',
+  ),
+  630 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'fundraising_meta_keywords',
+    'value_actual' => 'fundraising, fundraisings, goal',
+    'module_name' => 'fundraising',
+  ),
+  631 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'fundraising_meta_description',
+    'value_actual' => 'Read up on the latest fundraisings on Site Name.',
+    'module_name' => 'fundraising',
+  ),
+  632 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'subcategories_to_show_at_first',
+    'value_actual' => 10,
+    'module_name' => 'fundraising',
+  ),
+  633 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'short_date_time_format',
+    'value_actual' => 'm-j, Y',
+    'module_name' => 'fundraising',
+  ),
+  634 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_donors_per_campaigns_on_featured_slideshow',
+    'value_actual' => 18,
+    'module_name' => 'fundraising',
+  ),
+  635 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'maximum_number_of_photos_on_campaign_gallery',
+    'value_actual' => 10,
+    'module_name' => 'fundraising',
+  ),
+  636 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'help_icon_file_size_limit',
+    'value_actual' => 200,
+    'module_name' => 'fundraising',
+  ),
 ); ?>

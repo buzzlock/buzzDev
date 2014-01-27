@@ -1,0 +1,24 @@
+@import url("../../default/default/ynfundraising.css");
+#right{
+	width:230px;
+}
+.content3{
+	width:530px!important;
+}
+.ynfr-highligh-detail .meter-wrap-l{
+	margin-left:3px;
+}
+.ynfr-user p{
+	color:#fff;
+}
+.ynfr-highlight-image span {
+	width: 220px !important;	
+}
+
+.ynfr-donate a {
+	color: #3B5998 !important;
+}
+
+.ynfr-time {
+	margin-left:30px !important;
+}

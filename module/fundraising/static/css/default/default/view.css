@@ -1,0 +1,255 @@
+/*CSS for campaign's information */
+div#content #js_block_border_fundraising_detail div.menu ul li.active
+{
+	background:url(../../../image/mn-l.png) no-repeat left;
+	padding-left: 6px;
+	margin-top: -4px;
+}
+div#content #js_block_border_fundraising_detail div.menu ul li.active a
+{
+	background:url(../../../image/mn-r.png) no-repeat right;
+	display: block;
+	line-height: 36px;
+	padding-right: 14px;
+	font-weight:bold;
+}
+div#content #js_block_border_fundraising_detail div.menu
+{
+	height:31px;
+	background: #F5F5F5;
+	border-bottom: 1px solid #BABABA;
+	margin-top:20px;
+}
+div#content #js_block_border_fundraising_detail div.menu ul
+{
+	padding-left: 10px;
+}
+div#content #js_block_border_fundraising_detail div.menu ul li a
+{
+	line-height: 33px;
+	font-size: 12px;
+	color: #000;
+}
+div#content #js_block_border_fundraising_detail div.menu ul li a
+{
+	border:none;
+	border-radius:0;
+	background: none;
+}
+.short_description
+{       
+	font-size: 12px;
+	margin:10px 0 5px 13px;
+    word-wrap: break-word;
+}
+
+.short_description p
+{
+	font-size: 12px;
+}
+.ynfr-detail-info h2.ynfr-title-block span
+{
+	font-size:12px;
+	font-weight:normal;
+}
+/*CSS for images */
+.fundraising_large_image img{max-width: 172px;max-height: 300px;}
+.fundraising_small_image ul li{
+	display: inline-block;
+	padding: 3px;
+}
+.detail_link ul li{padding:4px;}
+.detail_link ul li a
+{
+	background: url(../../../image/fr.png) no-repeat 0 -220px;        
+	padding-left: 14px;
+	font-size: 14px;
+}
+.fundraising_large_image{
+	
+	padding-left: 2px;
+	text-align:center;
+	min-height:110px;
+}
+.fundraising_large_image > a{
+	position: relative;
+}
+.fundraising_large_image .ynfr_pending_link,
+.fundraising_large_image .ynfr_close_link, 
+.fundraising_large_image .ynfr_reached_link
+{
+	left: -3px;
+    width: 177px;
+	bottom:3px;
+}
+.fundraising_large_image .ynfr_close_link
+{
+	background-position: 0 -285px;
+}
+.fundraising_large_image .ynfr_reached_link
+{
+	 background-position: 0 -262px;
+}
+.pet_sign table{width:100%;}
+.pet_sign table tr:hover{background:#ffffdf}
+.pet_sign table td{vertical-align:top;padding:4px 0;border-bottom:1px solid #dfdfdf;}
+.ynfr-about table
+{
+    width: 100%;
+}
+.ynfr-about table td
+{
+	padding:4px;
+}
+.ynfr-about table td:first-child
+{
+	font-weight: bold;
+    padding: 4px 24px 4px 4px;
+    width: 40%;
+}
+.ynfr-about table
+{
+	margin-bottom: 20px;
+}
+/*CSS for Campaign owner*/
+.ynfr-owner img
+{
+    max-height: 115px;
+    max-width: 175px;
+}
+.ynfr-owner p
+{
+	margin:5px 0;
+	font-size:12px;
+}
+.ynfr-owner a{font-weight:bold;}
+/*CSS for Campaign Goal*/
+.ynfr-campaign-goal
+{
+	background: none repeat scroll 0 0 #216CA1;
+    padding: 30px 0;
+	color:#fff;
+	text-align:center;
+}
+.ynfr-campaign-goal p{font-size:12px;font-weight:bold;}
+.ynfr-campaign-goal .ynfr-mn
+{
+	font-size:33px;
+}
+.ynfr-campaign-goal .ynfr-highligh-detail
+{
+	background:none;
+	width:217px;
+	margin:17px auto 10px;
+}
+.ynfr-time
+{
+	background:url(../../../image/fr.png) no-repeat 0 -467px;
+	height: 30px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding-left: 30px;
+    text-align: left;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:5px;
+}
+.ynfr-campaign-goal .ynfr-info
+{
+	background: none repeat scroll 0 0 #174B70;
+    padding: 7px 0;
+}
+/*CSS for Sponsor levels*/
+.ynfr-sponsor
+{
+	font-weight:bold;
+	color:#333333;
+	font-size:12px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.ynfr-sponsor-title
+{
+	 background: none repeat scroll 0 0 #8DD7FF;
+    border-bottom: 2px solid #8595A0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 54px;
+    padding-top: 6px;
+    text-align: center;
+	font-size:18px;
+}
+.ynfr-sponsor-content a
+{
+	border-bottom:1px solid #dfdfdf;
+	line-height:40px;
+	display:block;
+}
+.ynfr-sponsor-content > a:hover
+{
+	background:#b6ccdc;
+	color:#fff;
+}
+
+.ynfr-sponsor-entry {
+	height: 40px
+}
+
+.ynfr-sponsor-level-amount{
+	/*float:left;*/
+	/*width: 77px;*/
+	text-align:center;
+	font-size: 18px;
+}
+
+.ynfr-sponsor-level-name {
+	float:left;
+}
+
+/*CSS for Add this*/
+.ynfr-addthis
+{
+	color:#fff;
+	font-weight:bold;
+	font-size:13px;
+	padding:5px;
+	margin-bottom:5px;
+	position:relative;
+}
+.ynfr-addthis span.ynfr-question
+{
+	 background: url(../../../image/fr.png) no-repeat scroll 0 -499px transparent;
+    display: inline-block;
+    height: 17px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.ynfr-addthis span.ynfr-value
+{
+	position:absolute;
+	right:5px;
+}
+.ynfr-share
+{
+	background:#f75c39;
+}
+.ynfr-click
+{
+	background:#0077cc;
+}
+.viral
+{
+	background:#424242;
+}
+/*NEWS*/
+.discussion_id{padding:5px;}
+.pet_dis_tit{color:#333;font-weight: bold;font-size: 14px;}
+.discussion_id{border-bottom: 1px solid #dfdfdf; position: relative;}
+.discussion_id .actions{position: absolute; top: 0; right: 10px;}
+.discussion_id .actions li{display: inline;}
+/* about */
+
+
+.ynfr-about-us {
+	margin:10px 0 5px 13px;	
+}

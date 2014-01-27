@@ -1,0 +1,18 @@
+@import url("../../default/default/ynfundraising.css");
+#right{
+	width:233px;
+}
+.content3{
+	width:530px!important;
+}
+.ynfr-highligh-detail .meter-wrap-l{
+	margin-left:4px;
+}
+
+.ynfr-highlight-image span {
+	width: 225px !important;	
+}
+
+.ynfr-time {
+	margin-left:30px !important;
+}

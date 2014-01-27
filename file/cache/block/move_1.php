@@ -97,6 +97,10 @@
   array (
     'profile.pic' => false,
   ),
+  'fundraising.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
   'user.browse' => 
   array (
     'user.filter' => false,
@@ -317,6 +321,23 @@
     'contest.premium-contest' => false,
     'contest.top-contest' => false,
     'contest.popular-contest' => false,
+  ),
+  'fundraising.index' => 
+  array (
+    'fundraising.category' => false,
+    'fundraising.stats' => false,
+    'fundraising.highlight-campaign' => false,
+    'fundraising.top-donors' => false,
+    'fundraising.top-supporters' => false,
+  ),
+  'fundraising.view' => 
+  array (
+    'fundraising.images' => false,
+    'fundraising.campaign.side-add-this' => false,
+    'fundraising.campaign.side-campaign-owner' => false,
+    'fundraising.campaign.side-supporters' => false,
+    'fundraising.campaign.side-campaign-goal' => false,
+    'fundraising.campaign.side-thankyou-donors' => false,
   ),
   'apps.index' => 
   array (

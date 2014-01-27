@@ -1,0 +1,279 @@
+.ynfr.term,
+.ynfr.donor-info,
+.ynfr.donate.campaign_info,
+.ynfr.donate.select-amount {
+	border: 1px solid #DFDFDF;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+    padding: 10px;
+	margin-bottom:10px;
+	width: 60%;
+}
+@media only screen and (max-width : 320px) {
+	.mobile-donate .ynfr.term,
+	.mobile-donate .ynfr.donor-info,
+	.mobile-donate .ynfr.donate.campaign_info,
+	.mobile-donate .ynfr.donate.select-amount{	
+		width:94%;
+	}
+}
+@media only screen and (min-width : 321px) {
+.mobile-donate .ynfr.term,
+	.mobile-donate .ynfr.donor-info,
+	.mobile-donate .ynfr.donate.campaign_info,
+	.mobile-donate .ynfr.donate.select-amount{	
+		width:96%;
+	}
+}
+
+
+
+.ynfr.donate.image_header {
+	width: 252px;
+	text-align: center;
+	border-right: 1px #DFDFDF solid;
+	margin-right:10px
+}
+.mobile-donate .ynfr.donate.image_header{
+	width:auto;
+	border:none;
+	margin:0;
+	float:none;
+}
+
+.ynfr.donate.description.text {
+	font-size: 12px;
+}
+
+
+.ynfr.donate.donate.amount_entry {
+	font-size: 15pt;
+	 -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+	background-color: #409DDC;
+	float: left;
+	margin-left: 10px;
+	line-height:50px;
+	text-align: center;
+	cursor: pointer;
+	padding:0 15px;
+	color:#fff; 
+	font-weight:bold;
+	width: 60px;
+	margin-bottom:10px;
+}
+.ynfr-button
+{
+	background:url(../../../image/fr.png) no-repeat;
+	width: 150px;
+	height: 33px;
+	background-position: 0 -523px;
+	text-indent: -9999px;
+	border: none;
+	cursor:pointer;
+	margin-top:15px;
+}
+.ynfr.profile.image.large_profile_image img{
+	max-width: 96%;
+	max-height: 300px;
+}
+
+.ynfr.profile.detail_link ul li{
+	padding:4px;
+	list-style: none;
+}
+
+.ynfr.profile.detail_link ul li a{
+	background: url(../../../image/view_more.png) scroll 0 50% transparent no-repeat;        
+	padding-left: 14px;
+	font-size: 13px;
+}
+
+.ynfr.profile.fundraising_rate_body{
+	position:relative;
+	margin-top: 10px;
+}
+.ynfr.profile.fundraising_rate_body form > div .js_rating_total
+{
+	position: absolute;
+	right: 5px;
+	top: 2px;
+}
+.ynfr.campaign_owner.full_name{
+	font-size: 14px;
+	padding: 6px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+
+.ynfr.promote_campaign.donate_box{
+	width:300px;
+	height:620px;
+	margin-left: 338px;
+	margin-top: -280px;
+}
+.ynfr .select-amount
+{
+	font-size:18px;
+}
+.ynfr .amount-total
+{
+	overflow:hidden;
+	margin:10px 0;
+}
+.ynfr.extra_info
+{
+	font-weight:bold;
+	padding-right:10px;
+}
+.ynfr.donate.select-amount p
+{
+	margin-bottom:15px;
+	font-size:12px;
+}
+.ynfr.donor-info p
+{
+	font-size:12px;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+.ynfr.term
+{
+	font-size:12px;
+}
+.ynfr.term-agree
+{
+	margin:10px 0;
+	font-size:12px;
+}
+/*CSS for statistic */
+.ynfr .table {
+    border-bottom: 1px solid #DFDFDF;
+    padding: 10px 0;
+    position: relative;
+	padding-right:44px;
+}
+.ynfr .table_left {
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0;
+    padding: 2px 0 6px;
+    position: absolute;
+    width: 290px;
+}
+.ynfr .table_right {
+    margin-left: 300px;
+}
+.ynfr .table_clear{
+    padding: 10px 0 0;
+    position: relative;
+    text-align: right;
+}
+table.ynfr {
+	width: 100%;
+	background: #F1F1F1;
+	border-bottom: 1px #DFDFDF solid;
+	margin-bottom: 10px;
+}
+.ynfr th{
+	color: #9F9F9F;
+	padding: 10px 0px 10px 4px;
+	border-bottom: 1px #DFDFDF solid;
+	font-weight: bold;
+	background: white;
+	text-align:left;
+	font-size:12px;
+}
+.ynfr td {
+	padding: 6px 4px 10px 4px;
+	vertical-align: top;
+	font-size:12px;
+}
+.ynfr .tr
+{
+	background:#fff;
+}
+.ynfr tr:hover {
+background: #FFFFDF;
+}
+.ynfr .statistic-left
+{
+	float: left;
+    width: 75%;
+}
+.ynfr .statistic-right
+{
+	float: right;
+    width: 20%;
+}
+.ynfr .statistic-right li a
+{
+	padding: 7px 5px;
+	
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	display:block;
+	text-decoration:none;
+}
+.ynfr .statistic-right li a.active
+{
+	background: #CCC;
+	text-decoration:none;
+}
+.ynfr-admin-statistic .ynfr .table_right
+{
+	margin-left:160px;
+}
+
+.ynfr-donate-currency
+{
+	font-weight: bold;
+	font-size:16px;
+}
+
+.ynfr-table
+{
+    font-size: 15px;
+    background: none;
+    border-bottom: none;
+    margin-top: 30px;
+}
+
+.ynfr-table td
+{
+    padding-top: 5px;
+    width: 180px;
+}
+.statitic-mobile .table{
+	padding-right:0;
+}
+.statitic-mobile .table_left{
+	position:inherit;
+	width:auto;
+}
+.statitic-mobile  .ynfr-static-key input{
+	width:200px!important;
+}
+.statitic-mobile .table_right{
+	margin-left:0
+}
+.ynfr donate amount_input
+{
+	margin-left: 128px;
+}
+
+.ynfr-question-tooltip
+{
+    background: url('../../../image/fr.png') no-repeat 0 -570px !important;
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+	cursor: pointer;
+}

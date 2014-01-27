@@ -30,6 +30,7 @@
   'fevent' => 'fevent',
   'forum' => 'forum',
   'friend' => 'friend',
+  'fundraising' => 'fundraising',
   'help' => 'help',
   'im' => 'im',
   'input' => 'input',

@@ -328,6 +328,35 @@
   ),
   14 => 
   array (
+    'module_id' => 'fundraising',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'fundraising.admin_menu_manage_categories' => 
+      array (
+        'url' => 'fundraising/category',
+      ),
+      'fundraising.admin_menu_add_new_category' => 
+      array (
+        'url' => 'fundraising/category/add',
+      ),
+      'fundraising.admin_menu_manage_campaign' => 
+      array (
+        'url' => 'fundraising/statistic',
+      ),
+      'fundraising.admin_menu_manage_help' => 
+      array (
+        'url' => 'fundraising/email',
+      ),
+      'fundraising.admin_menu_manage_campaigns' => 
+      array (
+        'url' => 'fundraising',
+      ),
+    ),
+    'url_name' => 'fundraising',
+  ),
+  15 => 
+  array (
     'module_id' => 'input',
     'is_menu' => '1',
     'menu' => 
@@ -343,7 +372,7 @@
     ),
     'url_name' => 'input',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -360,7 +389,7 @@
     ),
     'url_name' => 'music',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -377,7 +406,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -398,7 +427,7 @@
     ),
     'url_name' => 'pages',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -411,7 +440,7 @@
     ),
     'url_name' => 'photo',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -432,7 +461,7 @@
     ),
     'url_name' => 'report',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -457,7 +486,7 @@
     ),
     'url_name' => 'rss',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -474,7 +503,7 @@
     ),
     'url_name' => 'share',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -499,7 +528,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -512,7 +541,7 @@
     ),
     'url_name' => 'user',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -529,7 +558,7 @@
     ),
     'url_name' => 'video',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -542,7 +571,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',
