@@ -232,6 +232,27 @@
   ),
   10 => 
   array (
+    'module_id' => 'donation',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'donation.admin_menu_manage_donation' => 
+      array (
+        'url' => 'donation',
+      ),
+      'donation.admin_menu_add_button_image' => 
+      array (
+        'url' => 'donation/addbuttonimage',
+      ),
+      'donation.admin_menu_manage_currencies' => 
+      array (
+        'url' => 'donation/managecurrencies',
+      ),
+    ),
+    'url_name' => 'donation',
+  ),
+  11 => 
+  array (
     'module_id' => 'egift',
     'is_menu' => '1',
     'menu' => 
@@ -251,7 +272,7 @@
     ),
     'url_name' => 'egift',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -288,7 +309,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -305,7 +326,7 @@
     ),
     'url_name' => 'forum',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -322,7 +343,7 @@
     ),
     'url_name' => 'input',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'music',
     'is_menu' => '1',
@@ -339,7 +360,7 @@
     ),
     'url_name' => 'music',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -356,7 +377,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -377,7 +398,7 @@
     ),
     'url_name' => 'pages',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -390,7 +411,7 @@
     ),
     'url_name' => 'photo',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -411,7 +432,7 @@
     ),
     'url_name' => 'report',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -436,7 +457,7 @@
     ),
     'url_name' => 'rss',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -453,7 +474,7 @@
     ),
     'url_name' => 'share',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -478,7 +499,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -491,7 +512,7 @@
     ),
     'url_name' => 'user',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -508,7 +529,7 @@
     ),
     'url_name' => 'video',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -521,7 +542,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

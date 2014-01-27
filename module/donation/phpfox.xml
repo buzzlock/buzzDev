@@ -1,0 +1,119 @@
+<module>
+	<data>
+		<module_id>donation</module_id>
+		<product_id>donation_pages</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:3:{s:35:"donation.admin_menu_manage_donation";a:1:{s:3:"url";a:1:{i:0;s:8:"donation";}}s:36:"donation.admin_menu_add_button_image";a:1:{s:3:"url";a:2:{i:0;s:8:"donation";i:1;s:14:"addbuttonimage";}}s:37:"donation.admin_menu_manage_currencies";a:1:{s:3:"url";a:2:{i:0;s:8:"donation";i:1;s:16:"managecurrencies";}}}]]></menu>
+		<phrase_var_name>module_donation</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="admin_control_panel" module_id="donation" is_hidden="0" type="integer" var_name="number_of_fetched_donors" phrase_var_name="setting_number_of_fetched_donors" ordering="1" version_id="3.2.0">21</setting>
+		<setting group="image_processing" module_id="donation" is_hidden="0" type="integer" var_name="max_size_for_donation_image_button" phrase_var_name="setting_max_size_for_donation_image_button" ordering="1" version_id="3.2.0">500</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="core.index-member" module_id="donation" component="donate" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Donate</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="donation" component="donate" m_connection="" module="donation" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="donation" version_id="3.0.1" var_name="module_donation" added="1329277108">Donation Pages</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donation" added="1329278335">Donation</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="enable_donation_on_this_page" added="1329279325">Enable Donation on this page?</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="yes" added="1329279559">Yes</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="no" added="1329279572">No</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="update_completed" added="1329287744">Update completed.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="do_you_want_to_donate_page_name_page" added="1329292141">Do you want to donate for page: {page_name}</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="please_login_to_donate" added="1329292738">Please login to donate.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donate" added="1329293145">Donate</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="please_input_number_delimiter_by" added="1329296315">Please input valid decimal number (Ex: 10.01$)</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="input_your_paypal_email_account" added="1329296745">Your paypal email account</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="update" added="1329296881">Update</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="please_input_valid_email_address" added="1329298088">Please input valid email address.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="thanks_you_for_your_donation" added="1329361162">Thanks you for your donation.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="remove_from_list" added="1329375454">Remove from list</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donation_for_page_page_name" added="1329378048">Donation for page: {page_name}</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="there_is_no_donation" added="1329547148">There is no donor.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donation_lists" added="1329711158">Donors</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="are_you_sure" added="1329711170">Are you sure want to remove this donor?</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="please_waiting_for_redirect_to_paypal" added="1329711817">Please waiting for redirect to paypal</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="purpose_of_donation" added="1329721185">Purpose of Donation</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="problem_found_can_not_update_donation_configuration" added="1329723840">Problem found can not update donation configuration</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donation_setting" added="1329727363">Donation Setting</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donation_for_name_page" added="1329809851">Donation for {page_name} page</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="donations" added="1332124104">Donations</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="user_setting_points_donation" added="1332124698">Specify how many points the user will receive when user donates a page.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="fullname_donates_a_page" added="1332227985"><![CDATA[donated to "<a href="{link}">{page_name}</a>".]]></phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="terms_and_conditions" added="1332235794">Terms and Conditions</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="subject" added="1332236166">Subject</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="content" added="1332236184">Content</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="read_and_agree_to_the_terms_and_conditions" added="1332468742">I have read and agree to the terms and conditions.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="confirm" added="1332468775">Confirm</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="must_agree_to_the_terms_and_conditions_to_continue" added="1332469941">You must agree to the terms and conditions to continue.</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="email_template" added="1332473312">Email Template</phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="123_full_name_125_recipient_s_full_name" added="1332484429"><![CDATA[{FULL_NAME} => recipient&#039;s full name]]></phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="123_user_name_125_recipient_s_user_name" added="1332484462"><![CDATA[{USER_NAME} => recipient&#039;s user name]]></phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="123_site_name_125_site_s_name" added="1332484491"><![CDATA[{SITE_NAME} => site&#039;s name]]></phrase>
+		<phrase module_id="donation" version_id="3.0.1" var_name="keyword_substitutions" added="1332484527">Keyword substitutions</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="setting_paypal_is_test_mode" added="1338172467"><![CDATA[<title>Is in Paypal test mode ?</title><info>If this setting is true, we will use Paypal sandbox to simulate transaction.
+
+If it is false, we will use Paypal live mode to execute real transaction</info>]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="setting_paypal_admin_email" added="1338172580"><![CDATA[<title>Paypal email</title><info>The email that represents your PayPal account.</info>]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="admin_menu_manage_donation" added="1338256933">Manage Donation</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="page_donation_title_homepage" added="1338364176">Donating for us is for you</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="fullname_donated_to_our_website" added="1338523309">donated for our web site.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="user_setting_can_add_donation_on_own_page" added="1338949058">Can add donation on own page?</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="user_setting_can_donate" added="1338949090">Can donate?</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donation_privacy" added="1338954879">Donation Privacy (Optional)</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="do_not_show_name_on_donor_list" added="1338955904">Do not show name on donor list.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="do_not_show_donation_amount_on_donor_list" added="1338956369">Do not show donated money on donors list.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="do_not_show_feed" added="1338957152">Do not show feed.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="anonymous" added="1338970436">Anonymous</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="currency_type" added="1338973804">USD</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="generously" added="1338974014">generously</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donated" added="1338974933">donated</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="your_name" added="1338981281">Your name</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="guest_name_hint" added="1339053033">You can use letters, numbers, and spaces. At least 6 characters.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="wrong_name_format" added="1339055602">Wrong name format (You can use letters, numbers, and spaces. At least 6 characters).</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="load_more" added="1339121347">Load more</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="admin_menu_add_button_image" added="1339124932">Add Button Image</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="manage_donation" added="1339125662">Manage Donation</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="add_donation_button_image" added="1339125863">Add Donation Button Image</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donation_image" added="1339126730">Donation Image</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="click_to_delete_this_image" added="1339126946"><![CDATA[Click <a href="#" onclick="{on_delete_image}">here</a> to delete this image and upload a new one in its place.]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="you_can_upload_a_jpg_gif_or_png_file" added="1339127005">You can upload a JPG, GIF or PNG file.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="the_file_size_limit_is" added="1339127104">The file size limit is {iMaxFileSize_filesize}. If your upload does not work, try uploading a smaller picture.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="save" added="1339127284">Save</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="setting_max_size_for_donation_image_button" added="1339215205"><![CDATA[<title>Maximum donation button image file size</title><info>Maximum file size for uploaded donation button image in kilobits (kb). 
+(1000 kb = 1 mb) 
+For unlimited add "0" without quotes.</info>]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donation_default_image" added="1339217639">Donation Default Image</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="use_this_image_as_default" added="1339225934">Use this image as default</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="display_current_number_of_total_donors" added="1339396879">Displaying {current_number} of {total} donors.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="setting_number_of_fetched_donors" added="1339403070"><![CDATA[<title>Number of donors to fetch each time.</title><info>Define number of donors which will be fetched when click on &#039;show more&#039;.</info>]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donation_image_successfully_updated" added="1339411139">Donation button image successfully updated.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donation_guest_information" added="1339485781"><![CDATA[Donor&#039;s information]]></phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="problem_this_gateway_is_temporary_disabled" added="1339491306">We are so sorry. This payment gateway is temporary disabled.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="do_not_have_permission_to_perform_this_action" added="1339553432">You do not have permission to perform this action.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="must_fill_your_name" added="1340255020">We are sorry! Your name is empty or it is too long (over 100 characters).</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="enable_donation_on_this_site" added="1329279325">Enable Donation on this site?</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="notice_about_sending_email" added="1340338968">If you leave both subject and content empty, email will not be sent.</phrase>
+		<phrase module_id="donation" version_id="3.2.0" var_name="donors_list" added="1341397113">Donors</phrase>
+		<phrase module_id="donation" version_id="3.3.0rc1" var_name="admin_menu_manage_currencies" added="1343632028">Manage Currencies</phrase>
+		<phrase module_id="donation" version_id="3.3.0rc1" var_name="manage_currencies" added="1343635052">Manage Currencies</phrase>
+		<phrase module_id="donation" version_id="3.3.0rc1" var_name="currencies_are_updated_successfully" added="1343637492">Currencies are updated successfully.</phrase>
+		<phrase module_id="donation" version_id="3.3.0rc1" var_name="if_no_currency_is_chosen_usd_will_be_used_as_default_currency" added="1343701379">If no currency is chosen, USD will be used as default currency.</phrase>
+		<phrase module_id="donation" version_id="3.3.0rc1" var_name="notice_multi_currency_conversion" added="1343705880"><![CDATA[Notice: if your currency is different from the receiver&#039;s currency, your donation may have to wait for a period of time before appearing in donors list!]]></phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="donation" type="integer" admin="1" user="1" guest="0" staff="1" module="donation" ordering="0">points_donation</setting>
+		<setting is_admin_setting="0" module_id="donation" type="boolean" admin="true" user="true" guest="false" staff="false" module="donation" ordering="0">can_add_donation_on_own_page</setting>
+		<setting is_admin_setting="0" module_id="donation" type="boolean" admin="true" user="true" guest="true" staff="true" module="donation" ordering="0">can_donate</setting>
+	</user_group_settings>
+</module>

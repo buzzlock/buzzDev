@@ -18,6 +18,7 @@
   'contest' => 'contest',
   'core' => 'core',
   'custom' => 'custom',
+  'donation' => 'donation',
   'egift' => 'egift',
   'emoticon' => 'emoticon',
   'error' => 'error',

@@ -65,6 +65,19 @@
     'url' => 'http://phpfox3.demo.younetco.com/contactimporter/',
     'url_version_check' => NULL,
   ),
+  'donation_pages' => 
+  array (
+    'product_id' => 'donation_pages',
+    'is_core' => '0',
+    'title' => 'YouNet Donation',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p10',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3demo.modules2buy.com/suggestion/',
+    'url_version_check' => 'http://phpfox3demo.modules2buy.com',
+  ),
   'fanot' => 
   array (
     'product_id' => 'fanot',

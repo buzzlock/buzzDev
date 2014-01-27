@@ -4,6 +4,7 @@
   array (
     'contactimporter.home_contact' => '2',
     'apps.menu' => '1',
+    'donation.donate' => '1',
     'friend.mini' => '1',
     'log.login' => '1',
     'friend.birthday' => '3',

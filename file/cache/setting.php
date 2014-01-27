@@ -4385,4 +4385,18 @@ Site Name',
     'value_actual' => 'F j, Y',
     'module_name' => 'contest',
   ),
+  609 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_fetched_donors',
+    'value_actual' => 21,
+    'module_name' => 'donation',
+  ),
+  610 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'max_size_for_donation_image_button',
+    'value_actual' => 500,
+    'module_name' => 'donation',
+  ),
 ); ?>

@@ -10,6 +10,7 @@
     1 => 
     array (
       'apps.menu' => NULL,
+      'donation.donate' => NULL,
       'friend.mini' => NULL,
       'log.login' => NULL,
     ),

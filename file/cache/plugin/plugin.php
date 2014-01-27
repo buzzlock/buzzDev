@@ -38,6 +38,8 @@
   'ajax_process' => 'ajax_process',
   'core.template_block_comment_border_new' => 'core.template_block_comment_border_new',
   'get_controller' => 'get_controller',
+  'pages.component_controller_add_clean' => 'pages.component_controller_add_clean',
+  'pages.component_controller_index_clean' => 'pages.component_controller_index_clean',
   'friend.template_block_congratulate_form' => 'friend.template_block_congratulate_form',
   'parse_input_construct' => 'parse_input_construct',
   'blog.component_controller_view_process_end' => 'blog.component_controller_view_process_end',

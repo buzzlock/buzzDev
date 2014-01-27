@@ -4,6 +4,7 @@
   array (
     'contactimporter.home_contact' => true,
     'apps.menu' => true,
+    'donation.donate' => false,
     'friend.mini' => true,
     'log.login' => true,
     'friend.birthday' => true,
