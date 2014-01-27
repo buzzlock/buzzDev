@@ -91,6 +91,19 @@
     'url' => 'http://phpfox.younetco.com',
     'url_version_check' => NULL,
   ),
+  'fblike' => 
+  array (
+    'product_id' => 'fblike',
+    'is_core' => '0',
+    'title' => 'Facebook Social Like',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p1',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'flowplayer' => 
   array (
     'product_id' => 'flowplayer',

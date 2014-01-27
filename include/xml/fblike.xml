@@ -1,0 +1,36 @@
+<product>
+	<data>
+		<product_id>fblike</product_id>
+		<is_core>0</is_core>
+		<title>Facebook Social Like</title>
+		<description>by YouNet Company</description>
+		<version>3.01p1</version>
+		<latest_version></latest_version>
+		<last_check>1326947539</last_check>
+		<is_active>1</is_active>
+		<url></url>
+		<url_version_check></url_version_check>
+	</data>
+	<dependencies>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+	</dependencies>
+	<installs>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[$isExits = $this->database()->select('count(*)')->from(Phpfox::getT('block'))->where('module_id LIKE "fblike" AND product_id LIKE "fblike" AND component LIKE "fblike"')->limit(1)->execute('getField');
+if(!$isExits)
+{
+$this->database()->query('INSERT INTO `'.Phpfox::getT('block').'` (`title`, `type_id`, `m_connection`, `module_id`, `product_id`, `component`, `location`, `is_active`, `ordering`, `disallow_access`, `can_move`, `version_id`) VALUES
+('Facebook Social Like', 0, '', 'fblike', 'fblike', 'fblike', '3', 1, 17, NULL, 1, NULL);');}]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>fblike</module_id>
+	</modules>
+</product>

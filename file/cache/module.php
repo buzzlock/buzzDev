@@ -25,6 +25,7 @@
   'facebook' => 'facebook',
   'fanot' => 'fanot',
   'favorite' => 'favorite',
+  'fblike' => 'fblike',
   'feed' => 'feed',
   'fevent' => 'fevent',
   'forum' => 'forum',

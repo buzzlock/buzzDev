@@ -1,0 +1,61 @@
+<module>
+	<data>
+		<module_id>fblike</module_id>
+		<product_id>fblike</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_fblike</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="is_enable" phrase_var_name="setting_is_enable" ordering="1" version_id="3.0.0">1</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="string" var_name="fb_url" phrase_var_name="setting_fblike_url" ordering="1" version_id="3.0.0">http://www.facebook.com/YouNetCompany</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="drop" var_name="color" phrase_var_name="setting_color" ordering="1" version_id="3.0.0"><![CDATA[a:2:{s:7:"default";s:5:"light";s:6:"values";a:2:{i:0;s:5:"light";i:1;s:4:"dark";}}]]></setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="show_face" phrase_var_name="setting_show_face" ordering="1" version_id="3.0.0">1</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="show_stream" phrase_var_name="setting_show_stream" ordering="1" version_id="3.0.0">0</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="force_wall" phrase_var_name="setting_force_wall" ordering="1" version_id="3.0.0">0</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="header" phrase_var_name="setting_header" ordering="1" version_id="3.0.0">0</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="boolean" var_name="block_header" phrase_var_name="setting_block_header" ordering="1" version_id="3.0.0">1</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="integer" var_name="height" phrase_var_name="setting_height" ordering="1" version_id="3.0.0">0</setting>
+		<setting group="" module_id="fblike" is_hidden="0" type="integer" var_name="width" phrase_var_name="setting_width" ordering="1" version_id="3.0.0">0</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="" module_id="fblike" component="fblike" location="3" is_active="1" ordering="17" disallow_access="" can_move="1">
+			<title>Facebook Social Like</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="fblike" component="fblike" m_connection="" module="fblike" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="admin_menu_setting" added="1326871006">Setting</phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="module_fblike" added="1326871006">Facebook Social Like box</phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_fblike_url" added="1326872240"><![CDATA[<title>Facebook Page URL</title><info>The URL of the Facebook Page</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_is_enable" added="1326872329"><![CDATA[<title>Enable Facebook Social Like</title><info>Enable Facebook Social Like Module</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_color" added="1326883139"><![CDATA[<title>Color Scheme</title><info>The color scheme of the plugin.
+Note: The background is always transparent to match your background color. This setting changes the foreground colors to work well on light or dark backgrounds.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_show_face" added="1326883755"><![CDATA[<title>Show Faces</title><info>Show profile photos in the plugin.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_show_stream" added="1326884251"><![CDATA[<title>Show Stream</title><info>Show the profile stream for the public profile.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="must_set_the_facebook_page_url_in_admincp" added="1326886131">Must set the Facebook Page URL in AdminCP.</phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_force_wall" added="1326936581"><![CDATA[<title>Force Wall</title><info>For Places, specifies whether the stream contains posts from the Place's wall or just checkins from friends.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_header" added="1326936810"><![CDATA[<title>Show Header</title><info>Show the 'Find us on Facebook' bar at top. Only shown when either stream or faces are present.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_block_header" added="1326937068"><![CDATA[<title>Block Header</title><info>Show the 'Facebook social like' block header.</info>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="facebook_social_like" added="1326941095">Facebook Social Like</phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_height" added="1326943459"><![CDATA[<title>Block Height</title><info>The height of the plugin in pixels.<br/>
+The height varies based on number of faces to display, and whether the stream is displayed. <br/>
+<em>
+For auto height add "0" without quotes:<br/>
+&nbsp;&nbsp;+ With no stream, and 8 faces the height is 258px. <br/>
+&nbsp;&nbsp;+ With no faces, and no stream the auto height is 63px.</info>
+</em>]]></phrase>
+		<phrase module_id="fblike" version_id="3.0.0" var_name="setting_width" added="1326943459"><![CDATA[<title>Block Width</title><info>The width of the plugin in pixels.<br/>
+The width varies based on number of faces to display, and whether the stream is displayed. <br/>
+<em>
+For auto width add "0" without quotes.
+</info>
+</em>]]></phrase>
+	</phrases>
+</module>

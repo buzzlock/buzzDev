@@ -78,6 +78,25 @@
   array (
     'profile.pic' => '1',
   ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => '1',
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.search' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.sponsored' => '3',
+    'advancedmarketplace.invite' => '3',
+    'advancedmarketplace.mostreviewedlisting' => '3',
+    'advancedmarketplace.recentviewlisting' => '3',
+  ),
+  'advancedphoto.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'contest.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
   'user.browse' => 
   array (
     'user.filter' => '1',
@@ -86,6 +105,7 @@
   '' => 
   array (
     'user.register-top' => '11',
+    'fblike.fblike' => '3',
   ),
   'forum' => 
   array (
@@ -212,17 +232,6 @@
     'fevent.past' => '3',
     'fevent.upcoming' => '3',
   ),
-  'advancedmarketplace.all' => 
-  array (
-    'profile.pic' => '1',
-    'advancedmarketplace.category' => '1',
-    'advancedmarketplace.search' => '3',
-    'advancedmarketplace.todaylisting' => '3',
-    'advancedmarketplace.sponsored' => '3',
-    'advancedmarketplace.invite' => '3',
-    'advancedmarketplace.mostreviewedlisting' => '3',
-    'advancedmarketplace.recentviewlisting' => '3',
-  ),
   'advancedmarketplace.detail' => 
   array (
     'advancedmarketplace.detailview' => '1',
@@ -260,10 +269,6 @@
     'advancedmarketplace.listingslideshow' => '2',
     'advancedmarketplace.recentlisting' => '2',
   ),
-  'advancedphoto.profile' => 
-  array (
-    'profile.pic' => '1',
-  ),
   'advancedphoto.rate' => 
   array (
     'advancedphoto.stat' => '3',
@@ -288,10 +293,6 @@
   array (
     'contactimporter.top-inviter' => '1',
     'contactimporter.statistics' => '1',
-  ),
-  'contest.profile' => 
-  array (
-    'profile.pic' => '1',
   ),
   'contest.index' => 
   array (

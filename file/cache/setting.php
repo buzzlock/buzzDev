@@ -4399,4 +4399,74 @@ Site Name',
     'value_actual' => 500,
     'module_name' => 'donation',
   ),
+  611 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'is_enable',
+    'value_actual' => true,
+    'module_name' => 'fblike',
+  ),
+  612 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'fb_url',
+    'value_actual' => 'http://www.facebook.com/buzzlock',
+    'module_name' => 'fblike',
+  ),
+  613 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'color',
+    'value_actual' => 'light',
+    'module_name' => 'fblike',
+  ),
+  614 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_face',
+    'value_actual' => true,
+    'module_name' => 'fblike',
+  ),
+  615 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_stream',
+    'value_actual' => false,
+    'module_name' => 'fblike',
+  ),
+  616 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'force_wall',
+    'value_actual' => false,
+    'module_name' => 'fblike',
+  ),
+  617 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'header',
+    'value_actual' => false,
+    'module_name' => 'fblike',
+  ),
+  618 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'block_header',
+    'value_actual' => false,
+    'module_name' => 'fblike',
+  ),
+  619 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'height',
+    'value_actual' => 0,
+    'module_name' => 'fblike',
+  ),
+  620 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'width',
+    'value_actual' => 250,
+    'module_name' => 'fblike',
+  ),
 ); ?>
