@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<control>
+		<album_name>Album Name</album_name>
+		<created_by>Created By</created_by>
+		<song_name>Song Name</song_name>
+		<tool_tip>
+			<play_button>Play</play_button>
+			<pause_button>Pause</pause_button>
+			<mute_button>Mute</mute_button>
+			<volume_button>Volume</volume_button>
+			<seek_button>Seek</seek_button>
+			<next_button>Next</next_button>
+			<previous_button>Previuos</previous_button>
+			<repeat_on_button>Repeat On</repeat_on_button>
+			<repeat_off_button>Repeat Off</repeat_off_button>
+			<hide_list_button>Hide</hide_list_button>
+			<show_list_button>Show</show_list_button>
+		</tool_tip>		
+		<message>
+			<loading_mp3>loading mp3...</loading_mp3>
+			<login_to_add>Please login to add.</login_to_add>
+			<add_success>Add Success</add_success>
+			<check_login>Check login...</check_login>
+			<voted>You voted it before.</voted>
+			<login_to_vote>Please login to vote.</login_to_vote>
+			<vote_success>Vote success</vote_success>
+			<voting>Voting...</voting>
+		</message>
+	</control>
+	<list_song>
+		<artist>Artist</artist>
+		<play_count>Plays</play_count>
+		<download_count>Downloads</download_count>
+	</list_song>
+</data>

@@ -1,0 +1,36 @@
+ul.action li a {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-color: -moz-use-text-color -moz-use-text-color #BFC7C8;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #2D2E30;
+}
+div#sidebar ul.action li a {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-color: -moz-use-text-color -moz-use-text-color #BFC7C8;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #2D2E30;
+}
+div#sidebar .action li a {
+    position: relative;
+}
+ul.action li a {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #F1F1F1;
+    color: #0D8AE1;
+    display: block;
+    margin-bottom: 2px;
+    padding: 4px;
+    text-decoration: none;
+    width: 96%;
+}
+a {
+    color: #0D8AE1;
+    outline: 0 none;
+    text-decoration: none;
+}
+body {
+    font-family: Arial,sans-serif;
+    font-size: 9pt;
+}

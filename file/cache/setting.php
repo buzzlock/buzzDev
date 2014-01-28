@@ -3042,82 +3042,47 @@ Site Name',
   ),
   421 => 
   array (
-    'type_id' => 'integer',
-    'var_name' => 'music_user_group_id',
-    'value_actual' => 0,
-    'module_name' => 'music',
-  ),
-  422 => 
-  array (
-    'type_id' => 'string',
-    'var_name' => 'music_release_date_time_stamp',
-    'value_actual' => 'F j, Y',
-    'module_name' => 'music',
-  ),
-  423 => 
-  array (
-    'type_id' => 'integer',
-    'var_name' => 'sponsored_songs_to_show',
-    'value_actual' => 5,
-    'module_name' => 'music',
-  ),
-  424 => 
-  array (
-    'type_id' => 'boolean',
-    'var_name' => 'music_enable_mass_uploader',
-    'value_actual' => true,
-    'module_name' => 'music',
-  ),
-  425 => 
-  array (
-    'type_id' => 'drop',
-    'var_name' => 'music_index_controller',
-    'value_actual' => 'song',
-    'module_name' => 'music',
-  ),
-  426 => 
-  array (
     'type_id' => 'boolean',
     'var_name' => 'notify_on_new_request',
     'value_actual' => true,
     'module_name' => 'notification',
   ),
-  427 => 
+  422 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'notify_ajax_refresh',
     'value_actual' => 2,
     'module_name' => 'notification',
   ),
-  428 => 
+  423 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_notification_title_length',
     'value_actual' => 100,
     'module_name' => 'notification',
   ),
-  429 => 
+  424 => 
   array (
     'type_id' => 'string',
     'var_name' => 'notification_browse_messages',
     'value_actual' => 'F d',
     'module_name' => 'notification',
   ),
-  430 => 
+  425 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'admin_in_charge_of_page_claims',
     'value_actual' => 0,
     'module_name' => 'pages',
   ),
-  431 => 
+  426 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_page_admins',
     'value_actual' => false,
     'module_name' => 'pages',
   ),
-  432 => 
+  427 => 
   array (
     'type_id' => 'array',
     'var_name' => 'photo_pic_sizes',
@@ -3132,546 +3097,546 @@ Site Name',
     ),
     'module_name' => 'photo',
   ),
-  433 => 
+  428 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_photo_input_bars',
     'value_actual' => 5,
     'module_name' => 'photo',
   ),
-  434 => 
+  429 => 
   array (
     'type_id' => 'string',
     'var_name' => 'photo_image_details_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'photo',
   ),
-  435 => 
+  430 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'protect_photos_from_public',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  436 => 
+  431 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'can_rate_on_photos',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  437 => 
+  432 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'rating_total_photos_cache',
     'value_actual' => 10,
     'module_name' => 'photo',
   ),
-  438 => 
+  433 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'photo_battle_image_cache',
     'value_actual' => 10,
     'module_name' => 'photo',
   ),
-  439 => 
+  434 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_tags_on_photos',
     'value_actual' => 40,
     'module_name' => 'photo',
   ),
-  440 => 
+  435 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'photo_meta_description',
     'value_actual' => 'Check out our photo gallery.',
     'module_name' => 'photo',
   ),
-  441 => 
+  436 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'photo_meta_keywords',
     'value_actual' => 'photo, photos, albums, gallery',
     'module_name' => 'photo',
   ),
-  442 => 
+  437 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'ajax_refresh_on_featured_photos',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  443 => 
+  438 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'how_many_categories_to_show_in_title',
     'value_actual' => 0,
     'module_name' => 'photo',
   ),
-  444 => 
+  439 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_mass_uploader',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  445 => 
+  440 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'auto_crop_photo',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  446 => 
+  441 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'view_photos_in_theater_mode',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  447 => 
+  442 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_photo_battle',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  448 => 
+  443 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'display_profile_photo_within_gallery',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  449 => 
+  444 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'allow_photo_category_selection',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  450 => 
+  445 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'rename_uploaded_photo_names',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  451 => 
+  446 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'photo_upload_process',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  452 => 
+  447 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'delete_original_after_resize',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  453 => 
+  448 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'in_main_photo_section_show',
     'value_actual' => 'photos',
     'module_name' => 'photo',
   ),
-  454 => 
+  449 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_info_on_mouseover',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  455 => 
+  450 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'html5_upload_photo',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  456 => 
+  451 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enabled_watermark_on_photos',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  457 => 
+  452 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'pre_load_header_view',
     'value_actual' => true,
     'module_name' => 'photo',
   ),
-  458 => 
+  453 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'rating_randomize_photos',
     'value_actual' => false,
     'module_name' => 'photo',
   ),
-  459 => 
+  454 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'add_to_feed',
     'value_actual' => false,
     'module_name' => 'poke',
   ),
-  460 => 
+  455 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'is_image_required',
     'value_actual' => false,
     'module_name' => 'poll',
   ),
-  461 => 
+  456 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'poll_max_image_pic_size',
     'value_actual' => 75,
     'module_name' => 'poll',
   ),
-  462 => 
+  457 => 
   array (
     'type_id' => 'string',
     'var_name' => 'poll_view_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'poll',
   ),
-  463 => 
+  458 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'polls_to_show',
     'value_actual' => 10,
     'module_name' => 'poll',
   ),
-  464 => 
+  459 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'show_x_users_who_took_poll',
     'value_actual' => 10,
     'module_name' => 'poll',
   ),
-  465 => 
+  460 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'poll_meta_description',
     'value_actual' => 'New polls on Site Name daily.',
     'module_name' => 'poll',
   ),
-  466 => 
+  461 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'poll_meta_keywords',
     'value_actual' => 'poll, polls',
     'module_name' => 'poll',
   ),
-  467 => 
+  462 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'quizzes_to_show',
     'value_actual' => 10,
     'module_name' => 'quiz',
   ),
-  468 => 
+  463 => 
   array (
     'type_id' => 'string',
     'var_name' => 'quiz_view_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'quiz',
   ),
-  469 => 
+  464 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'default_answers_count',
     'value_actual' => 4,
     'module_name' => 'quiz',
   ),
-  470 => 
+  465 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_percentage_in_track',
     'value_actual' => true,
     'module_name' => 'quiz',
   ),
-  471 => 
+  466 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_percentage_in_results',
     'value_actual' => true,
     'module_name' => 'quiz',
   ),
-  472 => 
+  467 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'takers_to_show',
     'value_actual' => 5,
     'module_name' => 'quiz',
   ),
-  473 => 
+  468 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'quiz_max_image_pic_size',
     'value_actual' => 75,
     'module_name' => 'quiz',
   ),
-  474 => 
+  469 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'quiz_meta_keywords',
     'value_actual' => 'quiz, test, online, quizzes, tests, free, cool, fun',
     'module_name' => 'quiz',
   ),
-  475 => 
+  470 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'quiz_meta_description',
     'value_actual' => 'Take Free Fun Quizzes & Tests. Cool Online Fun Quiz & Test. Fun Quizzes and Fun Tests by Site Name.',
     'module_name' => 'quiz',
   ),
-  476 => 
+  471 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'display_request_box_on_empty',
     'value_actual' => false,
     'module_name' => 'request',
   ),
-  477 => 
+  472 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_rss_display',
     'value_actual' => 15,
     'module_name' => 'rss',
   ),
-  478 => 
+  473 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'display_rss_count_on_profile',
     'value_actual' => true,
     'module_name' => 'rss',
   ),
-  479 => 
+  474 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_social_bookmarking',
     'value_actual' => true,
     'module_name' => 'share',
   ),
-  480 => 
+  475 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'share_facebook_like',
     'value_actual' => true,
     'module_name' => 'share',
   ),
-  481 => 
+  476 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'share_twitter_link',
     'value_actual' => true,
     'module_name' => 'share',
   ),
-  482 => 
+  477 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'share_google_plus_one',
     'value_actual' => true,
     'module_name' => 'share',
   ),
-  483 => 
+  478 => 
   array (
     'type_id' => 'string',
     'var_name' => 'twitter_consumer_key',
     'value_actual' => '',
     'module_name' => 'share',
   ),
-  484 => 
+  479 => 
   array (
     'type_id' => 'string',
     'var_name' => 'twitter_consumer_secret',
     'value_actual' => '',
     'module_name' => 'share',
   ),
-  485 => 
+  480 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'share_on_facebook',
     'value_actual' => false,
     'module_name' => 'share',
   ),
-  486 => 
+  481 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'share_on_twitter',
     'value_actual' => false,
     'module_name' => 'share',
   ),
-  487 => 
+  482 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'shoutbox_is_live',
     'value_actual' => false,
     'module_name' => 'shoutbox',
   ),
-  488 => 
+  483 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'shoutbox_flood_limit',
     'value_actual' => 5,
     'module_name' => 'shoutbox',
   ),
-  489 => 
+  484 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'shoutbox_refresh',
     'value_actual' => 4,
     'module_name' => 'shoutbox',
   ),
-  490 => 
+  485 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'shoutbox_display_limit',
     'value_actual' => 5,
     'module_name' => 'shoutbox',
   ),
-  491 => 
+  486 => 
   array (
     'type_id' => 'string',
     'var_name' => 'shoutbox_time_stamp',
     'value_actual' => 'M j, g:i a',
     'module_name' => 'shoutbox',
   ),
-  492 => 
+  487 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'shoutbox_wordwrap',
     'value_actual' => 25,
     'module_name' => 'shoutbox',
   ),
-  493 => 
+  488 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'shoutbox_total',
     'value_actual' => 100,
     'module_name' => 'shoutbox',
   ),
-  494 => 
+  489 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'load_content_ajax',
     'value_actual' => false,
     'module_name' => 'shoutbox',
   ),
-  495 => 
+  490 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_subscription_packages',
     'value_actual' => false,
     'module_name' => 'subscribe',
   ),
-  496 => 
+  491 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'subscribe_is_required_on_sign_up',
     'value_actual' => false,
     'module_name' => 'subscribe',
   ),
-  497 => 
+  492 => 
   array (
     'type_id' => 'string',
     'var_name' => 'trending_topics_timestamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'tag',
   ),
-  498 => 
+  493 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_tag_display',
     'value_actual' => 25,
     'module_name' => 'tag',
   ),
-  499 => 
+  494 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'tag_trend_total_display',
     'value_actual' => 10,
     'module_name' => 'tag',
   ),
-  500 => 
+  495 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'tag_cache_tag_cloud',
     'value_actual' => 180,
     'module_name' => 'tag',
   ),
-  501 => 
+  496 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'tag_min_display',
     'value_actual' => 1,
     'module_name' => 'tag',
   ),
-  502 => 
+  497 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'tag_days_treading',
     'value_actual' => 7,
     'module_name' => 'tag',
   ),
-  503 => 
+  498 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_hashtag_support',
     'value_actual' => false,
     'module_name' => 'tag',
   ),
-  504 => 
+  499 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'tinymce_button_1',
     'value_actual' => 'bold,italic,underline,separator,bullist,numlist,separator,link,unlink,separator,fontselect,fontsizeselect,forecolor',
     'module_name' => 'tinymce',
   ),
-  505 => 
+  500 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'tinymce_button_2',
     'value_actual' => '',
     'module_name' => 'tinymce',
   ),
-  506 => 
+  501 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'tinymce_button_3',
     'value_actual' => '',
     'module_name' => 'tinymce',
   ),
-  507 => 
+  502 => 
   array (
     'type_id' => 'string',
     'var_name' => 'tinymce_toolbar_location',
     'value_actual' => 'top',
     'module_name' => 'tinymce',
   ),
-  508 => 
+  503 => 
   array (
     'type_id' => 'string',
     'var_name' => 'tinymce_toolbar_alignment',
     'value_actual' => 'left',
     'module_name' => 'tinymce',
   ),
-  509 => 
+  504 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'tinymce_plugins',
     'value_actual' => '',
     'module_name' => 'tinymce',
   ),
-  510 => 
+  505 => 
   array (
     'type_id' => 'array',
     'var_name' => 'tinymce_load_on_pages',
@@ -3691,385 +3656,385 @@ Site Name',
     ),
     'module_name' => 'tinymce',
   ),
-  511 => 
+  506 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'cache_recently_viewed_by_timeout',
     'value_actual' => 0,
     'module_name' => 'track',
   ),
-  512 => 
+  507 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'cache_allow_recurrent_visit',
     'value_actual' => 0,
     'module_name' => 'track',
   ),
-  513 => 
+  508 => 
   array (
     'type_id' => 'string',
     'var_name' => 'video_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'video',
   ),
-  514 => 
+  509 => 
   array (
     'type_id' => 'string',
     'var_name' => 'ffmpeg_path',
     'value_actual' => 'ffmpeg',
     'module_name' => 'video',
   ),
-  515 => 
+  510 => 
   array (
     'type_id' => 'string',
     'var_name' => 'mencoder_path',
     'value_actual' => 'mencoder',
     'module_name' => 'video',
   ),
-  516 => 
+  511 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'allow_video_uploading',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  517 => 
+  512 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'embed_auto_play',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  518 => 
+  513 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_related_videos',
     'value_actual' => 10,
     'module_name' => 'video',
   ),
-  519 => 
+  514 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'video_meta_keywords',
     'value_actual' => 'video, sharing, free, upload',
     'module_name' => 'video',
   ),
-  520 => 
+  515 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'video_meta_description',
     'value_actual' => 'Share your videos with friends, family, and the world on Site Name.',
     'module_name' => 'video',
   ),
-  521 => 
+  516 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'full_screen_with_youtube',
     'value_actual' => true,
     'module_name' => 'video',
   ),
-  522 => 
+  517 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'disable_youtube_related_videos',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  523 => 
+  518 => 
   array (
     'type_id' => 'string',
     'var_name' => 'params_for_ffmpeg',
     'value_actual' => '-i {source}  -s {width}x{height} {destination}',
     'module_name' => 'video',
   ),
-  524 => 
+  519 => 
   array (
     'type_id' => 'string',
     'var_name' => 'params_for_mencoder',
     'value_actual' => '{source} -o {destination} -of lavf -oac mp3lame -lameopts abr:br=56 -ovc lavc -lavcopts vcodec=flv:vbitrate=800:mbd=2:mv0:trell:v4mv:cbp:last_pred=3 -vf scale={width}:{height}',
     'module_name' => 'video',
   ),
-  525 => 
+  520 => 
   array (
     'type_id' => 'string',
     'var_name' => 'params_for_mencoder_fallback',
     'value_actual' => '{source} -o {destination} -of lavf -oac pcm -ovc lavc -lavcopts vcodec=flv:vbitrate=800:mbd=2:mv0:trell:v4mv:cbp:last_pred=3 -srate 22050 -ofps 24 -vf scale={width}:{height}',
     'module_name' => 'video',
   ),
-  526 => 
+  521 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_flvtool2',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  527 => 
+  522 => 
   array (
     'type_id' => 'string',
     'var_name' => 'params_for_flvtool2',
     'value_actual' => '-U {destination}',
     'module_name' => 'video',
   ),
-  528 => 
+  523 => 
   array (
     'type_id' => 'string',
     'var_name' => 'flvtool2_path',
     'value_actual' => 'flvtool2',
     'module_name' => 'video',
   ),
-  529 => 
+  524 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'close_sql_connection_while_converting',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  530 => 
+  525 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'video_enable_mass_uploader',
     'value_actual' => true,
     'module_name' => 'video',
   ),
-  531 => 
+  526 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'allow_youtube_iframe',
     'value_actual' => true,
     'module_name' => 'video',
   ),
-  532 => 
+  527 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enabled_embedly_import',
     'value_actual' => true,
     'module_name' => 'video',
   ),
-  533 => 
+  528 => 
   array (
     'type_id' => 'string',
     'var_name' => 'embedly_api_key',
     'value_actual' => '',
     'module_name' => 'video',
   ),
-  534 => 
+  529 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'use_youtube_iframe',
     'value_actual' => true,
     'module_name' => 'video',
   ),
-  535 => 
+  530 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'vidly_support',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  536 => 
+  531 => 
   array (
     'type_id' => 'string',
     'var_name' => 'vidly_user_key',
     'value_actual' => '',
     'module_name' => 'video',
   ),
-  537 => 
+  532 => 
   array (
     'type_id' => 'string',
     'var_name' => 'vidly_api_key',
     'value_actual' => '',
     'module_name' => 'video',
   ),
-  538 => 
+  533 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'show_share_and_upload_video_on_dashboard',
     'value_actual' => 'share',
     'module_name' => 'video',
   ),
-  539 => 
+  534 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_my_videos',
     'value_actual' => 10,
     'module_name' => 'video',
   ),
-  540 => 
+  535 => 
   array (
     'type_id' => 'string',
     'var_name' => 'video_upload_private_key',
     'value_actual' => '',
     'module_name' => 'video',
   ),
-  541 => 
+  536 => 
   array (
     'type_id' => 'string',
     'var_name' => 'video_upload_public_key',
     'value_actual' => '',
     'module_name' => 'video',
   ),
-  542 => 
+  537 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'video_upload_service',
     'value_actual' => false,
     'module_name' => 'video',
   ),
-  543 => 
+  538 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fevent_basic_information_time',
     'value_actual' => 'l, F j, Y g:i a',
     'module_name' => 'fevent',
   ),
-  544 => 
+  539 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fevent_basic_information_time_short',
     'value_actual' => 'g:i a',
     'module_name' => 'fevent',
   ),
-  545 => 
+  540 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fevent_browse_time_stamp',
     'value_actual' => 'l, F j',
     'module_name' => 'fevent',
   ),
-  546 => 
+  541 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fevent_view_time_stamp_profile',
     'value_actual' => 'F j, Y',
     'module_name' => 'fevent',
   ),
-  547 => 
+  542 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'how_many_sponsored_listings',
     'value_actual' => 5,
     'module_name' => 'advancedmarketplace',
   ),
-  548 => 
+  543 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'can_follow_listings',
     'value_actual' => true,
     'module_name' => 'advancedmarketplace',
   ),
-  549 => 
+  544 => 
   array (
     'type_id' => 'string',
     'var_name' => 'advancedmarketplace_view_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'advancedmarketplace',
   ),
-  550 => 
+  545 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'can_print_a_listing',
     'value_actual' => true,
     'module_name' => 'advancedmarketplace',
   ),
-  551 => 
+  546 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_listing_more_from',
     'value_actual' => 3,
     'module_name' => 'advancedmarketplace',
   ),
-  552 => 
+  547 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'days_to_expire_listing',
     'value_actual' => 0,
     'module_name' => 'advancedmarketplace',
   ),
-  553 => 
+  548 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'days_to_notify_expire',
     'value_actual' => 0,
     'module_name' => 'advancedmarketplace',
   ),
-  554 => 
+  549 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'display_notification_seconds',
     'value_actual' => 10,
     'module_name' => 'fanot',
   ),
-  555 => 
+  550 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_advanced_feed_notification_for_friend_request',
     'value_actual' => true,
     'module_name' => 'fanot',
   ),
-  556 => 
+  551 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'notification_refresh_time',
     'value_actual' => 10,
     'module_name' => 'fanot',
   ),
-  557 => 
+  552 => 
   array (
     'type_id' => 'string',
     'var_name' => 'notification_bgcolor',
     'value_actual' => '#CAD1DE',
     'module_name' => 'fanot',
   ),
-  558 => 
+  553 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_photo_in_notification',
     'value_actual' => true,
     'module_name' => 'fanot',
   ),
-  559 => 
+  554 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'how_many_notifications_to_show',
     'value_actual' => 5,
     'module_name' => 'fanot',
   ),
-  560 => 
+  555 => 
   array (
     'type_id' => 'string',
     'var_name' => 'photo_image_details_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'advancedphoto',
   ),
-  561 => 
+  556 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'photo_battle_image_cache',
     'value_actual' => 10,
     'module_name' => 'advancedphoto',
   ),
-  562 => 
+  557 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'protect_photos_from_public',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  563 => 
+  558 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'can_rate_on_photos',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  564 => 
+  559 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_photo_input_bars',
     'value_actual' => 5,
     'module_name' => 'advancedphoto',
   ),
-  565 => 
+  560 => 
   array (
     'type_id' => 'array',
     'var_name' => 'photo_pic_sizes',
@@ -4084,564 +4049,599 @@ Site Name',
     ),
     'module_name' => 'advancedphoto',
   ),
-  566 => 
+  561 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'rating_total_photos_cache',
     'value_actual' => 10,
     'module_name' => 'advancedphoto',
   ),
-  567 => 
+  562 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_tags_on_photos',
     'value_actual' => 40,
     'module_name' => 'advancedphoto',
   ),
-  568 => 
+  563 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enabled_watermark_on_photos',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  569 => 
+  564 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'photo_meta_description',
     'value_actual' => 'Check out our photo gallery.',
     'module_name' => 'advancedphoto',
   ),
-  570 => 
+  565 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'photo_upload_process',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  571 => 
+  566 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'allow_photo_category_selection',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  572 => 
+  567 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'rename_uploaded_photo_names',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  573 => 
+  568 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_photo_battle',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  574 => 
+  569 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'display_profile_photo_within_gallery',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  575 => 
+  570 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'view_photos_in_theater_mode',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  576 => 
+  571 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_mass_uploader',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  577 => 
+  572 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'auto_crop_photo',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  578 => 
+  573 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'ajax_refresh_on_featured_photos',
     'value_actual' => true,
     'module_name' => 'advancedphoto',
   ),
-  579 => 
+  574 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'how_many_categories_to_show_in_title',
     'value_actual' => 0,
     'module_name' => 'advancedphoto',
   ),
-  580 => 
+  575 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'photo_meta_keywords',
     'value_actual' => 'photo, photos, albums, gallery',
     'module_name' => 'advancedphoto',
   ),
-  581 => 
+  576 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'total_tags_on_albums',
     'value_actual' => 40,
     'module_name' => 'advancedphoto',
   ),
-  582 => 
+  577 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_photos_display_on_featured_slide',
     'value_actual' => 12,
     'module_name' => 'advancedphoto',
   ),
-  583 => 
+  578 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_photos_displayed_on_top_blocks_on_homepage',
     'value_actual' => 9,
     'module_name' => 'advancedphoto',
   ),
-  584 => 
+  579 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_photos_displayed_on_blocks_newrandom_on_homepage',
     'value_actual' => 9,
     'module_name' => 'advancedphoto',
   ),
-  585 => 
+  580 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'member_on_top_member_block',
     'value_actual' => 9,
     'module_name' => 'advancedphoto',
   ),
-  586 => 
+  581 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_photos_each_click',
     'value_actual' => 24,
     'module_name' => 'advancedphoto',
   ),
-  587 => 
+  582 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_albums_in_other_album_block',
     'value_actual' => 5,
     'module_name' => 'advancedphoto',
   ),
-  588 => 
+  583 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_user_on_in_photos_of_this_album_block',
     'value_actual' => 9,
     'module_name' => 'advancedphoto',
   ),
-  589 => 
+  584 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'rating_randomize_photos',
     'value_actual' => false,
     'module_name' => 'advancedphoto',
   ),
-  590 => 
+  585 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'is_display',
     'value_actual' => true,
     'module_name' => 'wall',
   ),
-  591 => 
+  586 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'cron_send_mail',
     'value_actual' => 1,
     'module_name' => 'contactimporter',
   ),
-  592 => 
+  587 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'cron_send_invite',
     'value_actual' => '20',
     'module_name' => 'contactimporter',
   ),
-  593 => 
+  588 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'how_many_pendings_to_show_per_page',
     'value_actual' => 20,
     'module_name' => 'contactimporter',
   ),
-  594 => 
+  589 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'require_invite',
     'value_actual' => false,
     'module_name' => 'contactimporter',
   ),
-  595 => 
+  590 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'subcategories_to_show_at_first',
     'value_actual' => 12,
     'module_name' => 'contest',
   ),
-  596 => 
+  591 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'ending_soon_setting',
     'value_actual' => 'End of Contest',
     'module_name' => 'contest',
   ),
-  597 => 
+  592 => 
   array (
     'type_id' => 'string',
     'var_name' => 'admin_paypal_email',
     'value_actual' => '',
     'module_name' => 'contest',
   ),
-  598 => 
+  593 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'ending_soon_before',
     'value_actual' => 30,
     'module_name' => 'contest',
   ),
-  599 => 
+  594 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_contest_block_home_page',
     'value_actual' => 3,
     'module_name' => 'contest',
   ),
-  600 => 
+  595 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_contest_featured_block_home_page',
     'value_actual' => 5,
     'module_name' => 'contest',
   ),
-  601 => 
+  596 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_entries_block_most_voted_most_viewed',
     'value_actual' => 4,
     'module_name' => 'contest',
   ),
-  602 => 
+  597 => 
   array (
     'type_id' => 'string',
     'var_name' => 'contest_buttons_bgcolor_1',
     'value_actual' => '#50A1FF',
     'module_name' => 'contest',
   ),
-  603 => 
+  598 => 
   array (
     'type_id' => 'string',
     'var_name' => 'contest_buttons_bgcolor_2',
     'value_actual' => '#2289FF',
     'module_name' => 'contest',
   ),
-  604 => 
+  599 => 
   array (
     'type_id' => 'string',
     'var_name' => 'contest_buttons_text_color',
     'value_actual' => '#FFFFFF',
     'module_name' => 'contest',
   ),
-  605 => 
+  600 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'contest_autorun_featured_slideshow',
     'value_actual' => true,
     'module_name' => 'contest',
   ),
-  606 => 
+  601 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'contest_featured_slideshow_speed',
     'value_actual' => 7000,
     'module_name' => 'contest',
   ),
-  607 => 
+  602 => 
   array (
     'type_id' => 'string',
     'var_name' => 'contest_short_date_time_format',
     'value_actual' => 'm-j, Y',
     'module_name' => 'contest',
   ),
-  608 => 
+  603 => 
   array (
     'type_id' => 'string',
     'var_name' => 'contest_time_stamp_announcement',
     'value_actual' => 'F j, Y',
     'module_name' => 'contest',
   ),
-  609 => 
+  604 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_fetched_donors',
     'value_actual' => 21,
     'module_name' => 'donation',
   ),
-  610 => 
+  605 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'max_size_for_donation_image_button',
     'value_actual' => 500,
     'module_name' => 'donation',
   ),
-  611 => 
+  606 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'is_enable',
     'value_actual' => true,
     'module_name' => 'fblike',
   ),
-  612 => 
+  607 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fb_url',
     'value_actual' => 'http://www.facebook.com/buzzlock',
     'module_name' => 'fblike',
   ),
-  613 => 
+  608 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'color',
     'value_actual' => 'light',
     'module_name' => 'fblike',
   ),
-  614 => 
+  609 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_face',
     'value_actual' => true,
     'module_name' => 'fblike',
   ),
-  615 => 
+  610 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_stream',
     'value_actual' => false,
     'module_name' => 'fblike',
   ),
-  616 => 
+  611 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'force_wall',
     'value_actual' => false,
     'module_name' => 'fblike',
   ),
-  617 => 
+  612 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'header',
     'value_actual' => false,
     'module_name' => 'fblike',
   ),
-  618 => 
+  613 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'block_header',
     'value_actual' => false,
     'module_name' => 'fblike',
   ),
-  619 => 
+  614 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'height',
     'value_actual' => 0,
     'module_name' => 'fblike',
   ),
-  620 => 
+  615 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'width',
     'value_actual' => 250,
     'module_name' => 'fblike',
   ),
-  621 => 
+  616 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_donors_in_highlight_campaign_block',
     'value_actual' => 6,
     'module_name' => 'fundraising',
   ),
-  622 => 
+  617 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'currency_display_type',
     'value_actual' => 3,
     'module_name' => 'fundraising',
   ),
-  623 => 
+  618 => 
   array (
     'type_id' => 'string',
     'var_name' => 'fundraising_time_stamp',
     'value_actual' => 'F j, Y',
     'module_name' => 'fundraising',
   ),
-  624 => 
+  619 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_campaigns_on_featured_slideshow',
     'value_actual' => 12,
     'module_name' => 'fundraising',
   ),
-  625 => 
+  620 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_donors_on_top_donors_block',
     'value_actual' => 12,
     'module_name' => 'fundraising',
   ),
-  626 => 
+  621 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_supporters_on_top_suporters_block',
     'value_actual' => 12,
     'module_name' => 'fundraising',
   ),
-  627 => 
+  622 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'is_use_shorten_form',
     'value_actual' => false,
     'module_name' => 'fundraising',
   ),
-  628 => 
+  623 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'default_signature_goal',
     'value_actual' => 1000,
     'module_name' => 'fundraising',
   ),
-  629 => 
+  624 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'default_min_fundraising',
     'value_actual' => 0,
     'module_name' => 'fundraising',
   ),
-  630 => 
+  625 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'fundraising_meta_keywords',
     'value_actual' => 'fundraising, fundraisings, goal',
     'module_name' => 'fundraising',
   ),
-  631 => 
+  626 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'fundraising_meta_description',
     'value_actual' => 'Read up on the latest fundraisings on Site Name.',
     'module_name' => 'fundraising',
   ),
-  632 => 
+  627 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'subcategories_to_show_at_first',
     'value_actual' => 10,
     'module_name' => 'fundraising',
   ),
-  633 => 
+  628 => 
   array (
     'type_id' => 'string',
     'var_name' => 'short_date_time_format',
     'value_actual' => 'm-j, Y',
     'module_name' => 'fundraising',
   ),
-  634 => 
+  629 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_donors_per_campaigns_on_featured_slideshow',
     'value_actual' => 18,
     'module_name' => 'fundraising',
   ),
-  635 => 
+  630 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'maximum_number_of_photos_on_campaign_gallery',
     'value_actual' => 10,
     'module_name' => 'fundraising',
   ),
-  636 => 
+  631 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'help_icon_file_size_limit',
     'value_actual' => 200,
     'module_name' => 'fundraising',
   ),
-  637 => 
+  632 => 
   array (
     'type_id' => 'string',
     'var_name' => 'subcategories_to_show_at_first',
     'value_actual' => '5',
     'module_name' => 'jobposting',
   ),
-  638 => 
+  633 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_items_block_top_mostfollowed_employers',
     'value_actual' => 4,
     'module_name' => 'jobposting',
   ),
-  639 => 
+  634 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'number_of_items_block_recent_youmay',
     'value_actual' => 4,
     'module_name' => 'jobposting',
   ),
-  640 => 
+  635 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'fee_feature_job',
     'value_actual' => 5,
     'module_name' => 'jobposting',
   ),
-  641 => 
+  636 => 
   array (
     'type_id' => 'drop',
     'var_name' => 'company_job_view',
     'value_actual' => 'Thumbnail',
     'module_name' => 'jobposting',
   ),
-  642 => 
+  637 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'jobposting_maximum_upload_size',
     'value_actual' => 1000,
     'module_name' => 'jobposting',
   ),
-  643 => 
+  638 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'jobposting_maximum_upload_size_photo',
     'value_actual' => 1000,
     'module_name' => 'jobposting',
   ),
-  644 => 
+  639 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'jobposting_fee_to_sponsor_company',
     'value_actual' => 5,
     'module_name' => 'jobposting',
   ),
-  645 => 
+  640 => 
   array (
     'type_id' => 'string',
     'var_name' => 'jobposting_admin_paypal_email',
     'value_actual' => '',
     'module_name' => 'jobposting',
+  ),
+  641 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'musicsharing_max_image_pic_size',
+    'value_actual' => 75,
+    'module_name' => 'musicsharing',
+  ),
+  642 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'mobile_view_amount_of_item_per_page_in_top_albums',
+    'value_actual' => 10,
+    'module_name' => 'musicsharing',
+  ),
+  643 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'mobile_view_amount_of_item_per_page_in_top_playlists',
+    'value_actual' => 10,
+    'module_name' => 'musicsharing',
+  ),
+  644 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'mobile_view_amount_of_item_per_page_in_new_albums',
+    'value_actual' => 10,
+    'module_name' => 'musicsharing',
+  ),
+  645 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'mobile_view_amount_of_item_per_page_in_new_playlist',
+    'value_actual' => 10,
+    'module_name' => 'musicsharing',
   ),
 ); ?>

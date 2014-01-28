@@ -32,6 +32,7 @@
     'friend.mutual-friend' => true,
     'wall.time' => false,
     'track.recent-views' => true,
+    'musicsharing.profileplayer' => true,
     'friend.remove' => false,
     'wall.display' => false,
   ),
@@ -134,21 +135,6 @@
   'mail.compose' => 
   array (
     'mail.folder' => false,
-  ),
-  'music.view-album' => 
-  array (
-    'music.photo-album' => false,
-    'music.album-info' => false,
-    'music.track' => false,
-  ),
-  'music.browse.song' => 
-  array (
-    'music.sponsored-song' => false,
-    'music.list' => false,
-  ),
-  'music.album' => 
-  array (
-    'music.track' => false,
   ),
   'pages.view' => 
   array (
@@ -365,6 +351,106 @@
     'jobposting.company.image' => false,
     'jobposting.job.buttonapply' => false,
   ),
+  'musicsharing.index' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.topartist-front-end' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.newalbums' => true,
+    'musicsharing.newplaylists' => true,
+    'musicsharing.stat' => true,
+    'musicsharing.topdownloads' => true,
+    'musicsharing.newsongs-front-end' => true,
+    'musicsharing.topalbumshome' => true,
+    'musicsharing.mobile.mobile-homepage' => false,
+    'musicsharing.mobile.newblock-homepage' => false,
+  ),
+  'musicsharing.upload' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.uploadedsong' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.topalbums' => true,
+    'musicsharing.stat' => true,
+  ),
+  'musicsharing.artist' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.topartistside' => true,
+    'musicsharing.stat' => true,
+  ),
+  'musicsharing.album' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.topalbums' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.newalbums' => true,
+  ),
+  'musicsharing.createalbum' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.createplaylist' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.playlist' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.topplaylists2' => true,
+    'musicsharing.newplaylists2' => true,
+  ),
+  'musicsharing.editalbum' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.listen' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.relatealbumside' => true,
+  ),
+  'musicsharing.playlistsongs' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.editplaylist' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.myalbums' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.myplaylists' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.song' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+    'musicsharing.topsongs' => true,
+    'musicsharing.newsongs' => true,
+  ),
+  'musicsharing.albumsongs' => 
+  array (
+    'musicsharing.categories' => true,
+    'musicsharing.singers' => true,
+  ),
+  'musicsharing.profile' => 
+  array (
+    'musicsharing.pic' => false,
+  ),
   'apps.index' => 
   array (
     'apps.categories' => true,
@@ -385,12 +471,6 @@
     'advancedphoto.parent' => true,
     'shoutbox.display' => true,
     'feed.display' => false,
-  ),
-  'music.index' => 
-  array (
-    'music.list' => false,
-    'music.new-album' => false,
-    'music.featured' => false,
   ),
   'photo.view' => 
   array (
@@ -449,10 +529,6 @@
     'advancedphoto.weekmonthtoday' => false,
     'advancedphoto.statistic' => false,
     'advancedphoto.category' => false,
-  ),
-  'music.browse.album' => 
-  array (
-    'music.featured-album' => false,
   ),
   'video.view' => 
   array (

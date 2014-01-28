@@ -117,6 +117,19 @@
     'url' => NULL,
     'url_version_check' => NULL,
   ),
+  'musicsharing' => 
+  array (
+    'product_id' => 'musicsharing',
+    'is_core' => '0',
+    'title' => 'Music Sharing',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p5',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3demo.modules2buy.com/musicsharing/',
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

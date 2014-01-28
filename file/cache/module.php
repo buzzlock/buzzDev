@@ -44,7 +44,7 @@
   'mail' => 'mail',
   'mobile' => 'mobile',
   'mobiletemplate' => 'mobiletemplate',
-  'music' => 'music',
+  'musicsharing' => 'musicsharing',
   'newsletter' => 'newsletter',
   'notification' => 'notification',
   'page' => 'page',

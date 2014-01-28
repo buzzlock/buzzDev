@@ -1,0 +1,360 @@
+<product>
+	<data>
+		<product_id>musicsharing</product_id>
+		<is_core>0</is_core>
+		<title>Music Sharing</title>
+		<description>by YouNet Company</description>
+		<version>3.03p5</version>
+		<latest_version></latest_version>
+		<last_check>1367568309</last_check>
+		<is_active>1</is_active>
+		<url>http://phpfox3demo.modules2buy.com/musicsharing/</url>
+		<url_version_check></url_version_check>
+	</data>
+	<dependencies>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+	</dependencies>
+	<installs>
+		<install>
+			<version>2.01</version>
+			<install_code><![CDATA[$this->database()->query("
+				CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_album')."`(
+					`album_id` int(11) NOT NULL AUTO_INCREMENT,
+					`user_id` int(11) NOT NULL DEFAULT '0',
+					`title` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+					`title_url` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+					`description` text,
+					`album_image` varchar(255) DEFAULT NULL,
+					`search` tinyint(1) NOT NULL DEFAULT '1',
+					`creation_date` datetime NOT NULL,
+					`modified_date` datetime NOT NULL,
+					`play_count` int(11) NOT NULL DEFAULT '0',
+					`download_count` int(11) NOT NULL DEFAULT '0',
+					`is_featured` tinyint(1) NOT NULL DEFAULT '0',
+					`is_download` tinyint(1) NOT NULL DEFAULT '1',
+					`privacy_comment` tinyint(1) unsigned NOT NULL DEFAULT '1',
+					PRIMARY KEY (`album_id`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_album_song')."`(
+			  `song_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `title` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+			  `title_url` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+			  `album_id` int(11) NOT NULL,
+			  `filesize` int(10) DEFAULT '0',
+			  `url` varchar(255) DEFAULT NULL,
+			  `ext` varchar(10) DEFAULT NULL,
+			  `lyric` text,
+			  `cat_id` int(11) NOT NULL DEFAULT '0',
+			  `singer_id` int(11) NOT NULL DEFAULT '0',
+			  `other_singer` varchar(200) DEFAULT NULL,
+			  `other_singer_title_url` varchar(200) DEFAULT NULL,
+			  `comment_count` int(10) NOT NULL DEFAULT '0',
+			  `play_count` int(10) NOT NULL DEFAULT '0',
+			  `download_count` int(10) NOT NULL DEFAULT '0',
+			  PRIMARY KEY (`song_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_category')."`(
+				`cat_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `title` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+			  `title_url` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+			  PRIMARY KEY (`cat_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			INSERT IGNORE INTO `".phpfox::getT('m2bmusic_category')."` (`cat_id`, `title`, `title_url`) VALUES
+				(1, 'Pop', 'pop'),
+				(2, 'Dance', 'dance'),
+				(3, 'Jazz', 'jazz');
+			");
+			$this->database()->query("
+				CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_playlist')."`(
+					`playlist_id` int(11) NOT NULL AUTO_INCREMENT,
+					`title` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+					`title_url` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+					`user_id` int(11) NOT NULL DEFAULT '0',
+					`description` text,
+					`playlist_image` varchar(100) DEFAULT NULL,
+					`search` tinyint(1) NOT NULL DEFAULT '1',
+					`is_download` tinyint(1) NOT NULL DEFAULT '1',
+					`profile` tinyint(1) NOT NULL DEFAULT '0',
+					`creation_date` datetime NOT NULL,
+					`modified_date` datetime NOT NULL,
+					`privacy_comment` tinyint(1) unsigned NOT NULL DEFAULT '1',
+				  PRIMARY KEY (`playlist_id`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_playlist_song')."`(
+			  `song_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `playlist_id` int(11) NOT NULL DEFAULT '0',
+			  `album_song_id` int(11) NOT NULL DEFAULT '0',
+			  PRIMARY KEY (`song_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_singer')."`(
+			  `singer_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `title` varchar(60) DEFAULT NULL,
+			  `title_url` varchar(60) DEFAULT NULL,
+			  `singer_type` int(11) NOT NULL DEFAULT '0',
+			  `singer_image` varchar(100) DEFAULT NULL,
+			  PRIMARY KEY (`singer_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			INSERT IGNORE INTO `".phpfox::getT('m2bmusic_singer')."` (`singer_id`, `title`, `title_url`, `singer_type`, `singer_image`) VALUES
+				(1, 'Kelly Clarkson', 'kelly clarkson', 1, ''),
+				(2, 'Jonas Brothers', 'jonas Brothers', 1, ''),
+				(3, 'Katy Perry', 'Katy Perry', 1, ''),
+				(4, 'Carrie Underwood', 'Carrie Underwood', 1, ''),
+				(5, 'Britney Spears', 'britney spears', 1, ''),
+				(6, 'Beyonce', 'Beyonce', 1, ''),
+				(7, 'Madonna', 'Madonna', 1, '');
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_singer_type')."`(
+			`singertype_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `title` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+			  PRIMARY KEY (`singertype_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");
+			$this->database()->query("
+			INSERT IGNORE INTO `".phpfox::getT('m2bmusic_singer_type')."` (`singertype_id`, `title`) VALUES
+			(1, 'Singer');
+			");
+			$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_song_rating')."`(
+			`rate_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `item_id` int(11) DEFAULT NULL,
+			  `user_id` int(11) DEFAULT NULL,
+			  `rating` int(10) DEFAULT NULL,
+			  PRIMARY KEY (`rate_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+			");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>2.02</version>
+			<install_code><![CDATA[$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_settings')."`(
+			 `setting_id` int(11) NOT NULL AUTO_INCREMENT,
+			  `user_group_id` int(11) NOT NULL,
+			  `module_id` varchar(25) NOT NULL,
+			  `name` varchar(33) NOT NULL,
+			  `default_value` int(11) NOT NULL,
+			  PRIMARY KEY (`setting_id`)
+			) ENGINE=MyISAM  AUTO_INCREMENT=1 ;
+
+			");
+$this->database()->query("ALTER TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN order_id int(6) DEFAULT 0 ");
+$this->database()->query("ALTER TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN order_id int(6) DEFAULT 0 ");
+$this->database()->query("UPDATE `" . Phpfox::getT('m2bmusic_playlist') . "` set order_id = -playlist_id where order_id = 0 ");
+$this->database()->query("UPDATE `" . Phpfox::getT('m2bmusic_album') . "` set order_id = -album_id where order_id = 0 ");
+$this->database()->query("
+			CREATE TABLE IF NOT EXISTS `".phpfox::getT('m2bmusic_song_playlist_order')."`(			   `order_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `playlist_id` int(11) NOT NULL,
+   `album_id` int(11) NOT NULL,
+  `song_id` int(11) NOT NULL,
+  `value` int(11) NOT NULL,
+  PRIMARY KEY (`order_id`)
+) ENGINE=MyISAM   AUTO_INCREMENT=1 ;
+			");
+$this->database()->query("
+			INSERT IGNORE INTO `".phpfox::getT('m2bmusic_settings')."` (`setting_id`, `user_group_id`, `module_id`, `name`, `default_value`) VALUES
+(1, 0, 'musicsharing', 'is_public_permission', 0),
+(2, 0, 'musicsharing', 'number_song_per_page', 10),
+(3, 1, 'musicsharing', 'can_view_album', 1),
+(4, 1, 'musicsharing', 'can_post_on_profile', 1),
+(5, 1, 'musicsharing', 'can_edit_album', 1),
+(6, 1, 'musicsharing', 'can_post_comment_on_song', 1),
+(7, 1, 'musicsharing', 'max_songs', 10),
+(8, 1, 'musicsharing', 'max_file_size_upload', 30000),
+(9, 1, 'musicsharing', 'max_storage_size', 100000),
+(10, 1, 'musicsharing', 'max_playlist_created', 5),
+(11, 1, 'musicsharing', 'max_album_created', 5),
+(12, 1, 'musicsharing', 'can_create_album', 1),
+(13, 1, 'musicsharing', 'can_download_song', 1),
+(14, 2, 'musicsharing', 'can_view_album', 1),
+(15, 2, 'musicsharing', 'can_post_on_profile', 1),
+(16, 2, 'musicsharing', 'can_edit_album', 1),
+(17, 2, 'musicsharing', 'can_post_comment_on_song', 1),
+(18, 2, 'musicsharing', 'max_songs', 10),
+(19, 2, 'musicsharing', 'max_file_size_upload', 30000),
+(20, 2, 'musicsharing', 'max_storage_size', 100000),
+(21, 2, 'musicsharing', 'max_playlist_created', 5),
+(22, 2, 'musicsharing', 'max_album_created', 5),
+(23, 2, 'musicsharing', 'can_create_album', 1),
+(24, 2, 'musicsharing', 'can_download_song', 1),
+(25, 3, 'musicsharing', 'can_view_album', 0),
+(26, 3, 'musicsharing', 'can_post_on_profile', 0),
+(27, 3, 'musicsharing', 'can_edit_album', 0),
+(28, 3, 'musicsharing', 'can_post_comment_on_song', 0),
+(29, 3, 'musicsharing', 'max_songs', 10),
+(30, 3, 'musicsharing', 'max_file_size_upload', 30000),
+(31, 3, 'musicsharing', 'max_storage_size', 100000),
+(32, 3, 'musicsharing', 'max_playlist_created', 5),
+(33, 3, 'musicsharing', 'max_album_created', 5),
+(34, 3, 'musicsharing', 'can_create_album', 0),
+(35, 3, 'musicsharing', 'can_download_song', 0),
+(36, 4, 'musicsharing', 'can_view_album', 1),
+(37, 4, 'musicsharing', 'can_post_on_profile', 1),
+(38, 4, 'musicsharing', 'can_edit_album', 1),
+(39, 4, 'musicsharing', 'can_post_comment_on_song', 1),
+(40, 4, 'musicsharing', 'max_songs', 10),
+(41, 4, 'musicsharing', 'max_file_size_upload', 30000),
+(42, 4, 'musicsharing', 'max_storage_size', 100000),
+(43, 4, 'musicsharing', 'max_playlist_created', 5),
+(44, 4, 'musicsharing', 'max_album_created', 5),
+(45, 4, 'musicsharing', 'can_create_album', 1),
+(46, 4, 'musicsharing', 'can_download_song', 1);
+			");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>2.04</version>
+			<install_code><![CDATA[$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_album_song') . "` ADD COLUMN 	privacy TINYINT(1) NOT NULL Default 1 ");
+				$this->database()->query("ALTER IGNORE  TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN 	privacy TINYINT(1) NOT NULL Default 1 ");
+				$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN 	privacy TINYINT(1) NOT NULL Default 1 ");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN total_like INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN total_comment INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN play_count INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN total_like INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN total_comment INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN item_id INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_album') . "` ADD COLUMN module_id VARCHAR(24) NULL ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN item_id INT NOT NULL Default 0 ");
+$this->database()->query("ALTER IGNORE TABLE `" . Phpfox::getT('m2bmusic_playlist') . "` ADD COLUMN module_id VARCHAR(24) NULL ");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01p10</version>
+			<install_code><![CDATA[Phpfox::getLib('database')->query("ALTER TABLE " . Phpfox::getT('m2bmusic_category') . " CONVERT TO CHARACTER SET utf8;");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01p3</version>
+			<install_code><![CDATA[$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('product_dependency') . "`(`product_id`,`type_id`, `check_id`, `dependency_start`) VALUES('musicsharing','product', 'younetcore', '3.01')");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01rc1</version>
+			<install_code><![CDATA[$this->database()->query("
+	INSERT IGNORE INTO `".phpfox::getT('m2bmusic_settings')."` (`user_group_id`, `module_id`, `name`, `default_value`) VALUES
+	(0, 'musicsharing', 'number_artist_per_page', 20),
+	(0, 'musicsharing', 'number_playlist_per_page', 5),
+	(0, 'musicsharing', 'number_album_per_page', 5);
+");
+    if (Phpfox::isModule('socialpublishers'))
+    {
+        $aRow = $this->database()->select('*')
+            ->from(Phpfox::getT('socialpublishers_modules'))
+            ->where('product_id = "musicsharing" AND module_id = "musicsharing"')
+            ->execute('getRow');
+
+        if(!isset($aRow) && !$aRow)
+        {
+            $this->database()->insert(Phpfox::getT('socialpublishers_modules'),
+                array(
+                    'product_id' => 'musicsharing',
+                    'module_id' => 'musicsharing',
+                    'title' => 'musicsharing.publishers_musicsharing',
+                    'is_active' => 1,
+                    'facebook' => 1,
+                    'twitter' => 1,
+                    'linkedin' => 1,
+                )
+            );
+        }
+    }]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.03</version>
+			<install_code><![CDATA[$oDb = Phpfox::getLib('database');
+if (!$oDb->isField(Phpfox::getT('m2bmusic_album'), 'server_id'))
+{
+    $oDb->query('ALTER TABLE `' . Phpfox::getT('m2bmusic_album') . '` ADD COLUMN `server_id` INT(11) UNSIGNED NOT NULL AFTER `album_id`;');
+}
+if (!$oDb->isField(Phpfox::getT('m2bmusic_playlist'), 'server_id'))
+{
+    $oDb->query('ALTER TABLE `' . Phpfox::getT('m2bmusic_playlist') . '` ADD COLUMN `server_id` INT(11) UNSIGNED NOT NULL AFTER `playlist_id`;');
+}
+if (!$oDb->isField(Phpfox::getT('m2bmusic_singer'), 'server_id'))
+{
+    $oDb->query('ALTER TABLE `' . Phpfox::getT('m2bmusic_singer') . '` ADD COLUMN `server_id` INT(11) UNSIGNED NOT NULL AFTER `singer_id`;');
+}
+if (!$oDb->isField(Phpfox::getT('m2bmusic_album_song'), 'server_id'))
+{
+    $oDb->query('ALTER TABLE `' . Phpfox::getT('m2bmusic_album_song') . '` ADD COLUMN `server_id` INT(11) UNSIGNED NOT NULL AFTER `song_id`;');
+}
+
+$oDb->delete(Phpfox::getT('setting'), "module_id = 'musicsharing' AND product_id = 'musicsharing' AND var_name = 'use_flash_player'");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>musicsharing</module_id>
+	</modules>
+</product>

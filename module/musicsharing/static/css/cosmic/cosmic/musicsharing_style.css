@@ -1,0 +1,691 @@
+/*
+    Document   : musicsharing_style.css
+    Created on : Oct 25, 2011, 11:06:25 AM
+    Author     : nhanlt
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+div.album-select {
+    padding-bottom: 26px;
+}
+
+div.album-select label {
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#ms-musicupload-wrapper {
+
+}
+
+.hidden {
+    display: none;
+}
+
+div.uploadedsong-wrapper {
+
+}
+
+div.uploadedsong-wrapper {
+
+}
+
+div.uploadedsong-wrapper ul#uploaded_song_msf {
+
+}
+
+div.uploadedsong-wrapper ul#uploaded_song_msf li {
+    border: medium none;
+    color: red;
+    font-family: verdana;
+    font-size: 13px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+div.uploadedsong-wrapper ul#uploaded_song_msf li a {
+    color: #5088D0;
+    border: none;
+}
+
+div.uploadedsong-wrapper ul#uploaded_song_msf li span {
+    color: #000000;
+}
+
+.song-list .song-title {
+	color: #3B5998;
+	font-size: 13px;
+	font-family: verdana, tahoma, arial;
+	font-weight: bold;
+}
+
+.song-list .singer {
+	color: #66B0DF;
+}
+
+.song-list .profile_blogentry_date {
+	color: #A5A5A5;
+}
+
+div.artist-list {
+	float: left;
+}
+
+div.artist-list {
+	/* float: left;
+*/
+	width: 100%;
+}
+
+div.artist-list .artist-info {
+	float: left;
+	width: 113px;
+	background-image: url("../../../image/m_size_avatar_css.gif");
+	background-repeat: no-repeat;
+	margin-right: 16px;
+	margin-bottom: 15px;
+}
+
+div.artist-list .artist-info .artist-img {
+    height: 100px;
+    padding: 5px;
+    width: 100px;
+}
+
+div.artist-list .artist-info .artist-img img {
+    /* border: 1px solid #B4A8AC;
+*/
+}
+
+div.artist-list .artist-info .artist-info-block {
+    padding-top: 12px;
+}
+
+div.artist-list .artist-info .artist-info-block a {
+    color: #2E76C2;
+}
+
+div.artist-list .paginator {
+    margin-top: 0px;
+}
+
+td.song-info-items {
+    background-image: url("../../../image/listen.jpg");
+    background-position: 5px 8px/* 50% */;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 7px 7px 7px 50px;
+}
+
+td.song-info-items .profile_blogentry_date {
+    padding-top: 6px;
+}
+
+td.song-info-items .song-title {
+    font-weight: bold;
+}
+
+#ms-musicupload-wrapper {
+}
+
+#ms-musicupload-wrapper .top-message {
+	font-size: 11pt;
+}
+
+#ms-musicupload-wrapper .max-file-size {
+	font-weight: bold;
+}
+
+#ms-musicupload-wrapper .file-type {
+	font-weight: bold;
+}
+
+#ms-musicupload-wrapper .num-song {
+	font-weight: bold;
+}
+
+#ms-musicupload-wrapper .total-space {
+	font-weight: bold;
+}
+
+#tb_msf_s tr td
+{
+	vertical-align: middle;
+}
+
+a.add-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	background-position: -86px -38px;
+	overflow: hidden;
+}
+
+a.add-icon:hover {
+	background-position: -86px -67px;
+}
+
+a.download-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 18px;
+	width: 18px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	background-position: -47px -38px;
+	overflow: hidden;
+}
+
+a.download-icon:hover {
+	background-position: -47px -67px;
+}
+
+a.addcart-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 19px;
+	width: 20px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	display: none;
+	background-position: -125px -38px;
+	overflow: hidden;
+}
+
+a.addcart-icon:hover {
+	background-position: -125px -67px;
+}
+
+a.remove-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 19px;
+	width: 20px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	display: none;
+	background-position: -7px -38px;
+	overflow: hidden;
+}
+
+a.remove-icon:hover {
+	background-position: -7px -67px;
+}
+
+a.delete-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 19px;
+	width: 20px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	background-position: -8px -38px;
+	overflow: hidden;
+}
+
+a.delete-icon:hover {
+	background-position: -8px -67px;
+}
+
+a.edit-icon {
+	background-image: url("../../../image/music/buttons.png");
+	display: block;
+	height: 19px;
+	width: 20px;
+	text-indent: 999em;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	background-position: -7px -8px;
+	overflow: hidden;
+}
+
+a.edit-icon:hover {
+	background-position: -30px -8px;
+}
+
+.msong-paginator {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.song-list .song-main-item {
+	padding: 7px;
+	border-bottom: 1px solid #D9D9D9;
+	/* border-right:1px solid #D9D9D9;
+*/
+}
+
+.song-list .song-main-item .profile_blogentry_date {
+	padding-top:5px;
+}
+
+.song-list .action-group {
+	padding:7px;
+	padding-right: 0px;
+	border-bottom:1px solid #D9D9D9;
+	/*border-right:1px solid #D9D9D9*/
+}
+
+/* Playlist */
+
+.list .pic_album .overlay
+{
+	background: url("../../../image/m_size.png") no-repeat scroll 0 0 transparent;
+}
+.list div#js_content_container
+{
+	overflow: hidden;
+}
+
+.list .table_left
+{
+	float:left;
+}
+.list .table_right
+{
+	margin-left:128px;
+}
+.list .gray12{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.list .border_top{
+	border-top: 1px solid #DFDFDF;
+	margin-bottom: 10px;
+}
+
+.list .item {
+	border-bottom: 0px !important;
+}
+
+.list .play-playlist {
+	text-decoration: none;
+/* 	{if $playlist_info.description|clean}{else}margin-top: 6px;
+{/if} */
+	display: inline-block;
+	margin-top: 7px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	border: 1px solid rgb(143, 143, 143);
+	background: url('../../../image/music/playbtn.png') no-repeat scroll 5px 50% transparent;
+	padding-left: 20px;
+	clear: both;
+	display: inline-block;
+}
+
+.list .play-playlist:hover {
+	background-color: #DADADA;
+	text-decoration: none;
+}
+
+.list .listen_playlist {
+	padding: 5px 11px 3px 2px;
+}
+
+/* my playlist */
+.background-header {
+	font-weight:bold;
+	background: url("../../../image/music/header_bg.gif")  repeat-x;
+}
+
+.background-header-2 {
+	width: 100%;
+	font-weight:bold;
+	height:30px;
+	background: url("../../../image/music/header_bg.gif")  repeat-x;
+}
+
+.myplaylist-cellid {
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 1px;
+	border-style: solid none solid solid;
+	padding-left: 10px
+}
+
+.myplaylist-delete_album_check_all {
+	text-align: left;
+	padding: 0;
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myplaylist-playlist_name {
+	text-align: left;
+	padding: 0;
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myplaylist-number_of_songs {
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myplaylist-actions {
+	border-color: #CCCCCC;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid solid solid none;
+}
+
+.myplaylist-paginator {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* my albums */
+
+.myalbums-background-header {
+	font-weight: bold;
+	background: url("../../../image/music/header_bg.gif")  repeat-x;
+}
+
+.myalbums-background-header-2 {
+	font-weight: bold;
+	height:30px;
+	background: url("../../../image/music/header_bg.gif")  repeat-x;
+}
+
+.myalbums-tablecell-id {
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 1px;
+	border-style: solid none solid solid;
+	padding-left: 10px;
+}
+
+.myalbums-delete_album_check_all {
+	text-align: left;
+	padding: 0;
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myalbums-album_name {
+	text-align: left;
+	padding: 0;
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myalbums-plays {
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myalbums-number_of_songs {
+	border-color: #CCCCCC;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid none solid none;
+}
+
+.myalbums-actions {
+	border-color: #CCCCCC;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid solid solid none;
+}
+
+.myalbums-paginator {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* listen page */
+.listen-page {
+	width: 92%;
+}
+
+.listen-page #currentAlbum {
+	visibility: visible; opacity: 1; display: block;
+}
+
+.listen-page #share {
+	margin-left:10px
+}
+.listen-page #currentAlbum #currentAlbumHeader
+{
+	background: url("../../../image/shadow_header.gif") no-repeat scroll 0 bottom transparent;
+}
+
+
+.listen-page #currentAlbumImg
+{
+	background: url("../../../image/vertical.gif") no-repeat scroll 100% 50% transparent;
+}
+.listen-page #currentAlbumImg .wantItButton
+{
+	background: url("../../../image/bt.gif")  no-repeat scroll 0 0 transparent;
+}
+.listen-page .pic_album .overlay
+{
+	background: url("../../../image/m_size.png") no-repeat scroll 0 0 transparent;
+}
+.listen-page .border_top{
+	border-top: 1px solid #DFDFDF;
+	margin-bottom: 10px;
+}
+
+/* playlist page */
+div.author_play_track .top-descript {
+	min-height: 64px;
+}
+
+/* my albums page */
+.ncpaginator .table_bottom {
+	float: left;
+	padding-top: 10px;
+}
+
+.ncpaginator .js_pager_view_more_link {
+    float: left;
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* url("../../../image/m_size_avatar_css.gif");
+*/
+/* margin */
+.margin-top-10 {
+	margin-top: 10px!important;
+}
+
+/* padding */
+.padding-top-10 {
+	padding-top: 10px!important;
+}
+
+.padding-top-5 {
+	padding-top: 5px!important;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px!important;
+}
+
+.margin-top-10 {
+	margin-top: 10px!important;
+}
+
+.margin-left-10 {
+	margin-left: 10px!important;
+}
+
+.margin-right-10 {
+	margin-right: 10px!important;
+}
+
+.margin-bottom-15 {
+	margin-bottom: 15px!important;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px!important;
+}
+
+.margin-top-0 {
+	margin-top: 0px!important;
+}
+
+.float-right {
+	float: right!important;
+}
+
+.float-left {
+	float: left!important;
+}
+
+.div-clear {
+	clear:both!important;
+}
+
+.red{
+	color: #FF0000;
+}
+
+th {
+	vertical-align: middle;
+}
+
+td {
+	vertical-align: middle;
+}
+
+.album_list .border_top {
+	border-top: 1px solid #DFDFDF;
+	margin-bottom: 10px;
+}
+
+.album_list .table {
+	padding-bottom: 0px;
+}
+
+div#left .content {
+	padding: 0px!important;
+}
+
+.line-middle {
+	vertical-align: middle;
+}
+
+#js_block_border_musicsharing_singers li.active a, .sub_section_menu li.active a:hover {
+    background: url("../../../../../../theme/frontend/default/style/default/image/layout/sub_section_menu_active.png") repeat-x scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#right {
+    float: right;
+    overflow: hidden;
+    width: 222px;
+}
+
+#js_block_border_musicsharing_newplaylists .menu ul li {
+	width: 50%!important;
+}
+
+#js_block_border_musicsharing_newplaylists {
+	width: 530px;
+}
+
+#js_newtopplaylist .playlist_musicsharing {
+	width: 50%!important;
+}
+
+#js_block_border_musicsharing_newsongs-front-end .menu ul li {
+	width: 50%!important;
+}
+
+#js_block_border_musicsharing_newsongs-front-end {
+	width: 530px!important;
+}
+#js_block_border_musicsharing_singers li.active a, .sub_section_menu li.active a:hover {
+    background: url("../../../../../../theme/frontend/default/style/default/image/layout/sub_section_menu_active.png") repeat-x scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#js_rating_holder_musicsharing div.star-rating, 
+#js_rating_holder_musicsharing div.star-rating a{
+    background: url("../../../../../../theme/frontend/default/style/default/image/jquery/musicsharing-star-off.png") no-repeat;
+    width:13px;
+}
+#js_rating_holder_musicsharing div.star-rating-on a,
+#js_rating_holder_musicsharing div.star-rating-hover a{
+     background: url("../../../../../../theme/frontend/default/style/default/image/jquery/musicsharing-star-onl.png") no-repeat!important;
+} 

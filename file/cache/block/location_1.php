@@ -32,6 +32,7 @@
     'friend.mutual-friend' => '3',
     'wall.time' => '3',
     'track.recent-views' => '3',
+    'musicsharing.profileplayer' => '1',
     'friend.remove' => '1',
     'wall.display' => '2',
   ),
@@ -134,21 +135,6 @@
   'mail.compose' => 
   array (
     'mail.folder' => '1',
-  ),
-  'music.view-album' => 
-  array (
-    'music.photo-album' => '1',
-    'music.album-info' => '1',
-    'music.track' => '3',
-  ),
-  'music.browse.song' => 
-  array (
-    'music.sponsored-song' => '1',
-    'music.list' => '1',
-  ),
-  'music.album' => 
-  array (
-    'music.track' => '3',
   ),
   'pages.view' => 
   array (
@@ -365,6 +351,106 @@
     'jobposting.company.image' => '1',
     'jobposting.job.buttonapply' => '1',
   ),
+  'musicsharing.index' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.topartist-front-end' => '3',
+    'musicsharing.singers' => '1',
+    'musicsharing.newalbums' => '3',
+    'musicsharing.newplaylists' => '4',
+    'musicsharing.stat' => '3',
+    'musicsharing.topdownloads' => '1',
+    'musicsharing.newsongs-front-end' => '4',
+    'musicsharing.topalbumshome' => '2',
+    'musicsharing.mobile.mobile-homepage' => '2',
+    'musicsharing.mobile.newblock-homepage' => '2',
+  ),
+  'musicsharing.upload' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.uploadedsong' => '3',
+    'musicsharing.singers' => '1',
+    'musicsharing.topalbums' => '1',
+    'musicsharing.stat' => '3',
+  ),
+  'musicsharing.artist' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+    'musicsharing.topartistside' => '3',
+    'musicsharing.stat' => '3',
+  ),
+  'musicsharing.album' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.topalbums' => '3',
+    'musicsharing.singers' => '1',
+    'musicsharing.newalbums' => '3',
+  ),
+  'musicsharing.createalbum' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.createplaylist' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.playlist' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+    'musicsharing.topplaylists2' => '3',
+    'musicsharing.newplaylists2' => '3',
+  ),
+  'musicsharing.editalbum' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.listen' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+    'musicsharing.relatealbumside' => '1',
+  ),
+  'musicsharing.playlistsongs' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.editplaylist' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.myalbums' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.myplaylists' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.song' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+    'musicsharing.topsongs' => '3',
+    'musicsharing.newsongs' => '3',
+  ),
+  'musicsharing.albumsongs' => 
+  array (
+    'musicsharing.categories' => '1',
+    'musicsharing.singers' => '1',
+  ),
+  'musicsharing.profile' => 
+  array (
+    'musicsharing.pic' => '1',
+  ),
   'apps.index' => 
   array (
     'apps.categories' => '1',
@@ -385,12 +471,6 @@
     'advancedphoto.parent' => '2',
     'shoutbox.display' => '0',
     'feed.display' => '2',
-  ),
-  'music.index' => 
-  array (
-    'music.list' => '1',
-    'music.new-album' => '3',
-    'music.featured' => '3',
   ),
   'photo.view' => 
   array (
@@ -449,10 +529,6 @@
     'advancedphoto.weekmonthtoday' => '2',
     'advancedphoto.statistic' => '3',
     'advancedphoto.category' => '1',
-  ),
-  'music.browse.album' => 
-  array (
-    'music.featured-album' => '3',
   ),
   'video.view' => 
   array (

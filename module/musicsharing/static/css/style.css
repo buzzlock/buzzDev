@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+.lof-slidecontent{
+	position:relative;
+	overflow:hidden;
+	width:530px;
+	height:250px;
+}
+.lof-slidecontent .preload{
+	height:100%;
+	width:100%;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	color:#FFF;
+	text-align:center
+}
+
+.lof-main-outer{
+	position:relative;
+	height:100%;
+	width:530px;
+	z-index:3px;
+	overflow:hidden;
+}
+
+
+/*******************************************************/
+
+.lof-main-item-desc p{
+	color:#FFF;
+	margin:0 8px;
+	padding:8px 0
+}
+
+.lof-main-item-desc h3 a{
+	color:#FFF;	
+	margin:0;
+	font-size:140%;
+	padding:20px 8px 2px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+.lof-main-item-desc h3
+{
+    margin:0;
+    padding:0;
+}
+.lof-main-item-desc h3 a:hover{
+	/* color:#FF6;
+	text-decoration:underline; */
+}
+
+
+/* main flash */
+
+
+ul.lof-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	height:100%;
+	width:530px;
+	float:left;
+}
+.lof-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+}
+ul.lof-main-wapper li img{
+	padding:0px;	
+	width:348px;
+}
+
+
+li-desc p{
+	color:#FFF;
+	margin:0 8px;
+	padding:8px 0
+}
+li-desc h3 a{
+	color:#FFF;	
+	margin:0;
+	font-size:140%;
+	padding:20px 8px 2px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+li-desc h3 a:hover{
+	color:#FF6;
+	text-decoration:underline;
+}
+
+/* item navigator */
+ul.lof-navigator{
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	width:100%;
+}
+ul.lof-navigator li{
+	cursor:hand; 
+	cursor:pointer;
+	list-style:none;
+	width:100%;
+	padding:0 2px 0 0;
+	margin:0;
+	overflow:hidden;
+}
+.lof-navigator-outer{
+	position:absolute;
+	right:0;
+	top:00px;
+	z-index:100;
+	height:250px;
+	width:310px;
+	overflow:hidden;
+	color:#FFF
+}
+
+.lof-navigator li:hover{
+	
+}
+
+
+.lof-navigator li h3{
+	color:#FFF;
+	font-size:100%;
+	padding:15px 0 0 !important;
+	margin:0;
+        border:none;
+}
+.lof-main-item-desc h3
+{
+    border:none;
+}
+
+
+.lof-navigator li img{
+	height:50px;
+	width:50px;
+	margin:15px 15px 10px 0px;
+	float:left;
+	padding:3px;
+	border:#C5C5C5 solid 1px;
+}
+.lof-navigator li.active img{
+	border:#6C8E5C  solid 1px;
+}
+.lof-navigator li.active h3{
+	color:#FFF;
+}

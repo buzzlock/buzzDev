@@ -436,20 +436,44 @@
   ),
   18 => 
   array (
-    'module_id' => 'music',
+    'module_id' => 'musicsharing',
     'is_menu' => '1',
     'menu' => 
     array (
-      'music.admin_menu_add_genre' => 
+      'musicsharing.admin_menu_manage_albums' => 
       array (
-        'url' => 'music/add',
+        'url' => 'musicsharing/managealbum',
       ),
-      'music.admin_menu_manage_genres' => 
+      'musicsharing.admin_menu_manage_songs' => 
       array (
-        'url' => 'music',
+        'url' => 'musicsharing/managesong',
+      ),
+      'musicsharing.admin_menu_manage_playlists' => 
+      array (
+        'url' => 'musicsharing/manageplaylist',
+      ),
+      'musicsharing.admin_menu_manage_categories' => 
+      array (
+        'url' => 'musicsharing/category',
+      ),
+      'musicsharing.admin_menu_music_settings' => 
+      array (
+        'url' => 'musicsharing/singer',
+      ),
+      'musicsharing.admin_menu_ws' => 
+      array (
+        'url' => 'musicsharing/singertype',
+      ),
+      'musicsharing.admin_menu_global_settings' => 
+      array (
+        'url' => 'musicsharing/settings',
+      ),
+      'musicsharing.admin_menu_import_music' => 
+      array (
+        'url' => 'musicsharing/migrations',
       ),
     ),
-    'url_name' => 'music',
+    'url_name' => 'musicsharing',
   ),
   19 => 
   array (

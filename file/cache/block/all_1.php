@@ -52,6 +52,7 @@
       'profile.pic' => NULL,
       'friend.profile.small' => NULL,
       'report.profile' => NULL,
+      'musicsharing.profileplayer' => NULL,
       'friend.remove' => NULL,
     ),
     3 => 
@@ -241,33 +242,6 @@
     1 => 
     array (
       'mail.folder' => NULL,
-    ),
-  ),
-  'music.view-album' => 
-  array (
-    1 => 
-    array (
-      'music.photo-album' => NULL,
-      'music.album-info' => NULL,
-    ),
-    3 => 
-    array (
-      'music.track' => NULL,
-    ),
-  ),
-  'music.browse.song' => 
-  array (
-    1 => 
-    array (
-      'music.sponsored-song' => NULL,
-      'music.list' => NULL,
-    ),
-  ),
-  'music.album' => 
-  array (
-    3 => 
-    array (
-      'music.track' => NULL,
     ),
   ),
   'pages.view' => 
@@ -650,6 +624,178 @@
       'jobposting.job.buttonapply' => NULL,
     ),
   ),
+  'musicsharing.index' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+      'musicsharing.topdownloads' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.topartist-front-end' => NULL,
+      'musicsharing.newalbums' => NULL,
+      'musicsharing.stat' => NULL,
+    ),
+    4 => 
+    array (
+      'musicsharing.newplaylists' => NULL,
+      'musicsharing.newsongs-front-end' => NULL,
+    ),
+    2 => 
+    array (
+      'musicsharing.topalbumshome' => NULL,
+      'musicsharing.mobile.mobile-homepage' => NULL,
+      'musicsharing.mobile.newblock-homepage' => NULL,
+    ),
+  ),
+  'musicsharing.upload' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+      'musicsharing.topalbums' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.uploadedsong' => NULL,
+      'musicsharing.stat' => NULL,
+    ),
+  ),
+  'musicsharing.artist' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.topartistside' => NULL,
+      'musicsharing.stat' => NULL,
+    ),
+  ),
+  'musicsharing.album' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.topalbums' => NULL,
+      'musicsharing.newalbums' => NULL,
+    ),
+  ),
+  'musicsharing.createalbum' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.createplaylist' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.playlist' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.topplaylists2' => NULL,
+      'musicsharing.newplaylists2' => NULL,
+    ),
+  ),
+  'musicsharing.editalbum' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.listen' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+      'musicsharing.relatealbumside' => NULL,
+    ),
+  ),
+  'musicsharing.playlistsongs' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.editplaylist' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.myalbums' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.myplaylists' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.song' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+    3 => 
+    array (
+      'musicsharing.topsongs' => NULL,
+      'musicsharing.newsongs' => NULL,
+    ),
+  ),
+  'musicsharing.albumsongs' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.categories' => NULL,
+      'musicsharing.singers' => NULL,
+    ),
+  ),
+  'musicsharing.profile' => 
+  array (
+    1 => 
+    array (
+      'musicsharing.pic' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -687,18 +833,6 @@
     0 => 
     array (
       'shoutbox.display' => NULL,
-    ),
-  ),
-  'music.index' => 
-  array (
-    1 => 
-    array (
-      'music.list' => NULL,
-    ),
-    3 => 
-    array (
-      'music.new-album' => NULL,
-      'music.featured' => NULL,
     ),
   ),
   'photo.view' => 
@@ -813,13 +947,6 @@
     1 => 
     array (
       'advancedphoto.category' => NULL,
-    ),
-  ),
-  'music.browse.album' => 
-  array (
-    3 => 
-    array (
-      'music.featured-album' => NULL,
     ),
   ),
   'video.view' => 

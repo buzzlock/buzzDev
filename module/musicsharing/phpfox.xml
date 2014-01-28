@@ -1,0 +1,743 @@
+<module>
+	<data>
+		<module_id>musicsharing</module_id>
+		<product_id>musicsharing</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:8:{s:37:"musicsharing.admin_menu_manage_albums";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:11:"managealbum";}}s:36:"musicsharing.admin_menu_manage_songs";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:10:"managesong";}}s:40:"musicsharing.admin_menu_manage_playlists";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:14:"manageplaylist";}}s:41:"musicsharing.admin_menu_manage_categories";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:8:"category";}}s:38:"musicsharing.admin_menu_music_settings";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:6:"singer";}}s:26:"musicsharing.admin_menu_ws";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:10:"singertype";}}s:39:"musicsharing.admin_menu_global_settings";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:8:"settings";}}s:36:"musicsharing.admin_menu_import_music";a:1:{s:3:"url";a:2:{i:0;s:12:"musicsharing";i:1;s:10:"migrations";}}}]]></menu>
+		<phrase_var_name>module_musicsharing</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="musicsharing" parent_var_name="" m_connection="musicsharing" var_name="menu_musicsharing_upload_a_song_c03da3e15a602da11909b01af4d6f9d7" ordering="114" url_value="musicsharing.upload" version_id="3.0.0beta4" disallow_access="a:1:{i:0;s:1:&quot;3&quot;;}" module="musicsharing" />
+		<menu module_id="musicsharing" parent_var_name="" m_connection="main" var_name="menu_musicsharing_music_sharing_fad58de7366495db4650cfefac2fcd61" ordering="104" url_value="musicsharing" version_id="2.0.5" disallow_access="" module="musicsharing" />
+		<menu module_id="musicsharing" parent_var_name="" m_connection="musicsharing" var_name="menu_musicsharing_create_an_album_c03da3e15a602da11909b01af4d6f9d7" ordering="115" url_value="musicsharing.createalbum" version_id="3.0.0beta4" disallow_access="a:1:{i:0;s:1:&quot;3&quot;;}" module="musicsharing" />
+		<menu module_id="musicsharing" parent_var_name="" m_connection="mobile" var_name="menu_musicsharing_musicsharing_532c28d5412dd75bf975fb951c740a30" ordering="130" url_value="musicsharing" version_id="3.5.0" disallow_access="" module="musicsharing" mobile_icon="small_music.png" />
+	</menus>
+	<settings>
+		<setting group="" module_id="musicsharing" is_hidden="0" type="integer" var_name="musicsharing_max_image_pic_size" phrase_var_name="setting_musicsharing_max_image_pic_size" ordering="1" version_id="3.4.0">75</setting>
+		<setting group="" module_id="musicsharing" is_hidden="0" type="integer" var_name="mobile_view_amount_of_item_per_page_in_top_albums" phrase_var_name="setting_mobile_view_amount_of_item_per_page_in_top_albums" ordering="1" version_id="3.5.0">10</setting>
+		<setting group="" module_id="musicsharing" is_hidden="0" type="integer" var_name="mobile_view_amount_of_item_per_page_in_top_playlists" phrase_var_name="setting_mobile_view_amount_of_item_per_page_in_top_playlists" ordering="1" version_id="3.5.0">10</setting>
+		<setting group="" module_id="musicsharing" is_hidden="0" type="integer" var_name="mobile_view_amount_of_item_per_page_in_new_albums" phrase_var_name="setting_mobile_view_amount_of_item_per_page_in_new_albums" ordering="1" version_id="3.5.0">10</setting>
+		<setting group="" module_id="musicsharing" is_hidden="0" type="integer" var_name="mobile_view_amount_of_item_per_page_in_new_playlist" phrase_var_name="setting_mobile_view_amount_of_item_per_page_in_new_playlist" ordering="1" version_id="3.5.0">10</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="topdownloads" location="1" is_active="1" ordering="4" disallow_access="" can_move="1">
+			<title>Top Download</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="profile.index" module_id="musicsharing" component="profileplayer" location="1" is_active="1" ordering="7" disallow_access="" can_move="1">
+			<title>Default Playlist</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="stat" location="3" is_active="1" ordering="3" disallow_access="" can_move="1">
+			<title>Statistics</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="topalbumshome" location="2" is_active="1" ordering="10" disallow_access="" can_move="1">
+			<title>Top Albums</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="newalbums" location="3" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>New Albums</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="newplaylists" location="4" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>New Playlists</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="topartist-front-end" location="3" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Top Artists</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="newsongs-front-end" location="4" is_active="1" ordering="9" disallow_access="" can_move="1">
+			<title>New Songs</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.upload" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.upload" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.upload" module_id="musicsharing" component="topalbums" location="1" is_active="1" ordering="3" disallow_access="" can_move="1">
+			<title>Top Albums</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.artist" module_id="musicsharing" component="topartistside" location="3" is_active="1" ordering="7" disallow_access="" can_move="1">
+			<title>topartistside - playlist page</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.upload" module_id="musicsharing" component="stat" location="3" is_active="1" ordering="8" disallow_access="" can_move="1">
+			<title>Statistics</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.upload" module_id="musicsharing" component="uploadedsong" location="3" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.artist" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.artist" module_id="musicsharing" component="stat" location="3" is_active="1" ordering="8" disallow_access="" can_move="1">
+			<title>Statistics</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.artist" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.album" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.album" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.album" module_id="musicsharing" component="topalbums" location="3" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Top Albums</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.album" module_id="musicsharing" component="newalbums" location="3" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>New Albums</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.createalbum" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.createalbum" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.createplaylist" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.createplaylist" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlist" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlist" module_id="musicsharing" component="newplaylists2" location="3" is_active="1" ordering="3" disallow_access="" can_move="1">
+			<title>New Playlist</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlist" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.editalbum" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.editalbum" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlist" module_id="musicsharing" component="topplaylists2" location="3" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Top Playlist</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.editplaylist" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.listen" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.listen" module_id="musicsharing" component="relatealbumside" location="1" is_active="1" ordering="4" disallow_access="" can_move="1">
+			<title>Related Album</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlistsongs" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.editplaylist" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.listen" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.myplaylists" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.myalbums" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.myalbums" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.myplaylists" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.albumsongs" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.playlistsongs" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.song" module_id="musicsharing" component="topsongs" location="3" is_active="1" ordering="8" disallow_access="" can_move="1">
+			<title>Top Songs</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.song" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.song" module_id="musicsharing" component="newsongs" location="3" is_active="1" ordering="9" disallow_access="" can_move="1">
+			<title>New Songs</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.albumsongs" module_id="musicsharing" component="categories" location="1" is_active="1" ordering="1" disallow_access="" can_move="1">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.song" module_id="musicsharing" component="singers" location="1" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Singers</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="mobile.mobile-homepage" location="2" is_active="1" ordering="11" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.index" module_id="musicsharing" component="mobile.newblock-homepage" location="2" is_active="1" ordering="12" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="musicsharing.profile" module_id="musicsharing" component="pic" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title><![CDATA[Profile Photo &amp; Menu]]></title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="musicsharing" component="relatealbumside" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="artistalbum" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="profileplayer" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="playlist" m_connection="musicsharing.playlist" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="newsongs" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topsongs" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="singers" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topplaylists" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="categories" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="newplaylists2" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topplaylists2" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="newplaylists" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topdownloads" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="createplaylist" m_connection="musicsharing.createplaylist" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="createalbum" m_connection="musicsharing.createalbum" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="myplaylists" m_connection="musicsharing.myplaylists" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="search" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="myalbums" m_connection="musicsharing.myalbums" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="topalbums" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="listen" m_connection="musicsharing.listen" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="data" m_connection="musicsharing.data" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="newalbums" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="index" m_connection="musicsharing.index" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="song" m_connection="musicsharing.song" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="upload" m_connection="musicsharing.upload" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="uploadedsong" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="stat" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topalbums-front-end" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="artist" m_connection="musicsharing.artist" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="album" m_connection="musicsharing.album" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="topsongs-front-end" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="User Profile" m_connection="user.profile" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="song_navigator" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topartistside" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="topartist-front-end" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="mobile.mobile-homepage" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="mobile.newblock-homepage" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="musicsharing" component="profile" m_connection="musicsharing.profile" module="musicsharing" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="musicsharing" component="pic" m_connection="" module="musicsharing" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_manage_albums" added="1293764893">Manage Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_manage_songs" added="1293764893">Manage Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_manage_playlists" added="1293764893">Manage Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_manage_categories" added="1293764893">Categories</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_music_settings" added="1293764893">Singers</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="module_musicsharing" added="1293764893">Music Sharing</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="menu_musicsharing_music_sharing_fad58de7366495db4650cfefac2fcd61" added="1293766389">Music Sharing</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="admin_menu_ws" added="1293781608">Singer Types</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="a_href_user_link_full_name_a_added_a_new_comment_on_their_own_a_href_title_link_song" added="1294715047"><![CDATA[<a href="{user_link}">{full_name}</a> added a new comment on their own <a href="{title_link}">song</a>.]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="a_href_user_link_full_name_a_added_a_new_comment_on_your_a_href_title_link_song_a" added="1294715205"><![CDATA[<a href="{user_link}">{full_name}</a> added a new comment on your <a href="{title_link}">song</a>.]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="a_href_user_link_full_name_a_added_a_new_comment_on" added="1294715433"><![CDATA[<a href="{user_link}">{full_name}</a> added a new comment on <a href="{item_user_link}">{item_user_name}'s</a> <a href="{title_link}">song</a>.]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="full_name_created_a_new_album" added="1294721400"><![CDATA[<a href="{profile_link}">{full_name}</a> created a new album "<a href="{album_link}">{album_title}</a>".]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.5" var_name="full_name_created_a_new_playlist" added="1294731739"><![CDATA[<a href="{profile_link}">{full_name}</a> created a new playlist "<a href="{playlist_link}">{playlist_title}</a>".]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="user_setting_can_post_on_musicsharing" added="1296208753">Can post on music</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="admin_menu_global_settings" added="1296267119">Global Settings</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="admin_menu_migrations" added="1297306290">Import Music</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="a_href_user_link_full_name_a_wrote_a_comment_on_your_song_a_href_song_link_title" added="1297673052"><![CDATA[<a href="{user_link}">{full_name}</a> wrote a comment on your song"<a href="{item_link}">{title}</a>".]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="home" added="1298514963">Home</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="songs" added="1298515001">Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="albums" added="1298515040">Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="artists" added="1298515307">Artists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="playlists" added="1298515377">Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="carts" added="1298516124">Carts</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="download_lists" added="1298516794">Download Lists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="song" added="1298521241">Song</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singer" added="1298521606">Singer</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singers" added="1298532998">Singers</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="artist" added="1298533260">Artist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="music_sharing" added="1298863860">Music Sharing</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="no_name" added="1298865707">No Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="not_updated" added="1298865796">Not updated</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="mb" added="1298865840">Mb</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="n_a" added="1298865880">N/A</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="top" added="1298865949">Top</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="file_type" added="1298866003">File Type</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="author" added="1298866082">Author</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="play" added="1298866137">Play</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="add" added="1298866210">Add</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="download" added="1298866251">Download</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="view_more" added="1298866296">View More</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="invalid_album" added="1298866593">Invalid album.Please select album before upload music songs.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_do_not_have_permission_to_upload_songs" added="1298866643">You do not have permission to upload songs.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_have_reach_to_limit_for_number_of_songs_for_this_album" added="1298866697">You have reach to limit for number of songs for this album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_contact_admin_to_get_more_information" added="1298866735">Please contact admin to get more information</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="back_to_current_album" added="1298866774">Back to Current Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="back_to_my_albums" added="1298866805">Back to My Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="total_used_space" added="1298866879">Total used space</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_may_upload" added="1298866912">You may upload</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_may_upload_files_of_the_following_types" added="1298866975">You may upload files of the following type:</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_may_upload_files_with_sizes_up_to" added="1298867008">You may upload files with sizes up to</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="browse_for_music_files_on_your_computer_and_upload_them_to_your_album" added="1298867050">Browse for music files on your computer and upload them to your album.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album" added="1298867217">Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="for_this" added="1298867247">for this</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="info" added="1298867536">Info</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="view" added="1298867585">View</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_add_a_song_to_this_playlist" added="1298867617">Please add a song to this playlist!</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_is_no_any_songs_yet" added="1298867653">There is no song yet</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="the_following_is_songs_you_have_added_to_your_playlists" added="1298867709">The following is songs you have added to your playlists.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="total" added="1298867771">Total</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="name" added="1298867862">Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="category" added="1298867914">Category</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="filesize" added="1298867972">File Size</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="options" added="1298867991">Options</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="back_to_my_playlists" added="1298868064">Back to My</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="listen" added="1298868147">Listen</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="created_by" added="1298868315">Created by</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_is_no_any" added="1298868407">There is no</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="yet" added="1298868451">Yet</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="create_new_playlist" added="1298868604">Maximum Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="create_new_playlist2" added="1298868604">Create Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_create_a_playlist" added="1298868636">Please create a playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_have_reach_to_limit_for_number_of_playlists_please_contact_admin_to_get_more_information" added="1298868975">You have reach to limit for number of playlists. Please contact admin to get more information.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_is_no_any_playlists_yet" added="1298869004">There is no playlist yet.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="actions" added="1298869029">Actions</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="this_is_all_of_your_posted_albums" added="1298869114">List all your posted albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="total_albums" added="1298869137">Total albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_have_reach_to_limit_for_number_of_albums_please_contact_admin_to_get_more_information" added="1298869165">You have reached the maximum number of albums that you can post on this website. Please contact admin to get more information.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_is_no_any_albums_yet" added="1298869217">There is no album yet</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="create_new_album" added="1298869312">Create New Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_create_a_album" added="1298869335">Please create an album.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album_name" added="1298869363">Album Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="plays" added="1298869384">Plays</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_are_no_songs_uploaded_yet" added="1298871622">There are no songs uploaded yet.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_are_no_songs_added_yet" added="1298871647">There are no songs added yet.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="why_don_t_you_add_some" added="1298871671"><![CDATA[Why don't you add some?]]></phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_do_not_have_permission_to_view_this_album" added="1298871694">You do not have permission to view this album.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_can_edit_playlist_info_by_entering_some_information_in_this_box_below" added="1298871743">Update your playlist using the form below.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="playlist_info" added="1298871773">Playlist Info</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="playlist_description" added="1298871802">Playlist Description:</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="show_this_playlist_in_search_results" added="1298871829">Show this playlist in search results.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="edit_playlist" added="1298871978">Edit Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_can_edit_albums_info_by_entering_some_information_in_this_box_below" added="1298872017">Update your album using the form below.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="your_changes_have_been_saved" added="1298872057">Your changes have been saved.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album_info" added="1298872076">Album Info</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="view_upload_songs" added="1298872128">View/Upload Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album_description" added="1298872202">Album Description</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="show_this_album_in_search_results" added="1298872245">Show this album in search results.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_to_download_this_album" added="1298872276">Allow to download this album.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album_image" added="1298872315">Album Image</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_do_not_have_permission_to_edit_album" added="1298872343">You do not have permission to edit album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="add_new_playlist" added="1298874567">Add New Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="playlist_name" added="1298874587">Playlist Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="playlist_image" added="1298874685">Playlist Image</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_do_not_have_permission_to_create_album" added="1298874965">You do not have permission to create album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="create_album" added="1298875011">Create Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="edit_album" added="1298875054">Edit Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="the_following_is_songs_you_have_added_to_your_albums" added="1298875076">The following is songs you have added to your album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_have_reach_to_limit_for_number_of_songs_for_this_album_please_contact_admin_to_get_more_informat" added="1298875145">You have reach to limit for number of songs for this album. Please contact admin to get more information</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="upload_songs" added="1298883225">Upload Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singer_type_details" added="1298883463">Singer Type Details</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singer_type_name" added="1298883485">Singer Type Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="name_upper" added="1298883536">Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="details" added="1298885440">Details</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="type" added="1298885462">Type</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="global_settings" added="1298885595">Global Settings</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="public_permissions" added="1298885621">Public Permissions</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="select_whether_or_not_you_want_to_let_the_public_visitors_that_are_not_logged_in_to_view_the_follo" added="1298885647">Select whether or not you want to let the public (visitors that are not logged-in) to view the following sections of your social network</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="number_song_per_page" added="1298885669">Amount of Songs Per Page</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="user_group_settings" added="1298885695">User Group Settings</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="these_settings_are_applied_on_a_per_member_level_basis_start_by_selecting_the_member_level_you_want" added="1298885721">These settings are applied on a per member level basis. Start by selecting the member level you want to modify, then adjust the settings for that level below</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="backup_database" added="1298885764">BACKUP DATABASE</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="before_run_the_import_from_original_music_default_music_of_phpfox_to_music_sharing_module" added="1298885835">before running the import from original music (default music of PHPFOX ) to Music Sharing Module</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="musicsharing_does_not_import_activity_feeds_notifications_from_old_songs_albums" added="1298885865">Musicsharing does not import activity feeds, notifications from old songs,albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="following_the_instruction_below_to_import_music_from_phpfox_music_module" added="1298885885">Follow below introduction to import songs from Music module of phpFox to Music Sharing module</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="backup_database_lower" added="1298885945">Backup Database</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="click_import_button" added="1298885965">Click Import button</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="move_all_data_from_folder_file_music_to_folder_file_musicsharing" added="1298885994">Move all data from folder file/music to folder file/musicsharing</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="move_all_data_from_folder_file_pic_music_to_folder_file_pic_musicsharing" added="1298886013">Move all data from folder file/pic/music to folder file/pic/musicsharing</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="import_details" added="1298886040">Import Details</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="process" added="1298886156">Process</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="search_filter" added="1298887436">Search Filter</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="search_for_text" added="1298887456">Search For Text</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="sort_by" added="1298887482">Sort By</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="uploaded_by" added="1298887560">Uploaded By</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="created_date" added="1298887746">Created Date</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singer_name" added="1298890970">Singer Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="image" added="1298891018">Image</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="category_details" added="1298891065">Category Details</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="category_name" added="1298891087">Category Name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="total_playlists" added="1298891232">Total playlists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="album_upper" added="1298891289">Album</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="all" added="1298891367">All</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="link_url" added="1298891389">Link URL</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="html_code" added="1298891408">HTML Code</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="forum_code" added="1298891427">Forum Code</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="send_to_yahoo" added="1298891464">Send to Yahoo</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="add_to_playlist" added="1298891484">Add to Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="share" added="1298891505">Share</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="comment" added="1298891527">Comment</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="no_lyric" added="1298891551">No Lyric!</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="you_do_not_have_permission_to_comment_on_songs" added="1298891571">You do not have permission to comment on songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_viewing_of_albums" added="1298891605">Allow Viewing of Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="do_you_want_to_let_members_view_albums_if_set_to_no_some_other_settings_on_this_page_may_not_apply" added="1298891624">Do you want to let members view albums? If set to no, some other settings on this page may not apply ?</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_music_on_profile" added="1298891649">Allow Music on Profile</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="do_you_want_to_allow_users_to_upload_music_to_their_profile" added="1298891667">Do you want to allow users to upload music to their profile ?</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_editing_of_albums" added="1298891693">Allow Editing of Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="do_you_want_to_let_members_edit_albums_if_set_to_no_some_other_settings_on_this_page_may_not_apply" added="1298891719">Do you want to let members edit albums? If set to no, some other settings on this page may not apply ?</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_commenting_on" added="1298891740">Allow Commenting on</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="do_you_want_to_let_members_of_this_level_comment_on" added="1298891760">Do you want to let members of this level comment on</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_allowed" added="1298891780">Maximum Allowed</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="enter_the_maximum_number_of_allowed" added="1298891801">Enter the maximum number of allowed</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="for_1_album_the_field_must_contain_an_integer_between_1_and_999" added="1298891824">for 1 album. The field must contain an integer between 1 and 999 ?</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_allowed_filesize" added="1298891841">Maximum Allowed Filesize</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="enter_the_maximum_filesize_for_uploaded_files_in_kb_this_must_be_a_number_between_1_and_204800" added="1298891872">Maximum file size can be uploaded(KB).Enter a number between 1 and 204800.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_allowed_storage" added="1298891893">Maximum Allowed Storage</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="how_much_storage_space_in_kb_should_each_user_have_to_store_their_files" added="1298891916">Maximum file storage for each user(KB).</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_numbers_of_allowed_playlist_the_field_must_contain_an_integer_between_1_and_999" added="1298891956">Maximum numbers of allowed playlist. Enter a number which is equal or greater than 1.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_numbers_of_allowed_album_the_field_must_contain_an_integer_between_1_and_999" added="1298951345">Maximum number of allowed album. Enter a number between 1 and 999.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_users_to_create_albums" added="1298951413">Allow users to create Albums ?</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="music_downloads" added="1298951448">Music Downloads</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="allow_users_to_download" added="1298951475">Allow users to download</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="keywords" added="1298951501">Keywords</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_are_no" added="1298951529">There are no</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="added_yet" added="1298951546">Added Yet</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="there_are_no_playlist_set_default_yet" added="1298951566">There is no playlist set default yet</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="edit" added="1298951798">Edit</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="delete" added="1298951823">Delete</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="set_default" added="1298952034">Set Default</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="upload" added="1298952166">Upload</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="song_title" added="1298952274">Song Title</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="other" added="1298952413">Other</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="tracks" added="1298952680">Tracks</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_insert_new_playlist" added="1298952790">Please insert new playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="click_here_to_create_new" added="1298952820">Click here to create new</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="categories" added="1299315414">Categories</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="my_playlists" added="1299315546">My Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="most_recent" added="1299315591">Most Recent</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="play_count" added="1299315622">Plays</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="most_played" added="1299315653">Most Played</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="my_albums" added="1299315913">My Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_enter_album_name" added="1299316306">Please enter album name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="most_number_albums" added="1299316410">Most Number Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="add_singer" added="1299316897">Add Singer</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="manage_singer" added="1299316925">Manage Singer</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_enter_singer_name" added="1299316964">Please enter singer name!</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="singer_successfully_added" added="1299316996">Singer successfully added</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="manage_songs" added="1299317048">Manage Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="manage_albums" added="1299317088">Manage Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="edit_singer" added="1299317153">Edit Singer</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="manage_categories" added="1299317195">Manage Categories</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="add_category" added="1299317221">Add Category</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="please_enter_category_name" added="1299317248">Please enter category name</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="site_stats" added="1299317307">Site Stats</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="default_playlist" added="1299317492">Default Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="listen_playlist" added="1301732318">Play Now</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="listen_album" added="1301732318">Play Now</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="total_songs" added="1301732365">Total Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="description" added="1301738098">Description</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="list_of_songs" added="1301738127">List of songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="delete_selected_song" added="1305715975">Delete Selected Song(s)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="number_of_songs" added="1305717295">Number of Songs</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="delete_selected_album" added="1305717331">Delete Selected Album(s)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="delete_selected_playlist" added="1305717446">Delete Selected Playlist(s)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="group_membe" added="1305718483">Group Member :</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="option" added="1305776417">Option</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_number_of_songs_per_album_enter_a_number_between_1_and_999" added="1306895455">Maximum number of songs per Album. Enter a number between 1 and 999.</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="maximum_albums" added="1306896010">Maximum Albums</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="personal_playlist_will_only_be_displayed_your_playlist" added="1307346797">Personal (Playlist will only be displayed your playlist)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="personal_song_will_only_be_displayed_your_songs" added="1307346824">Personal (Song will only be displayed your songs)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="public_song_will_be_added_to_our_public_song_section" added="1307346848">Public (Song will be added to our public song section)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="public_playlist_will_be_added_to_our_public_playlist_section" added="1307346875">Public (Playlist will be added to our public playlist section)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="personal_album_will_only_be_displayed_on_your_album" added="1307346910">Personal (Album will only be displayed on your album)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="public_album_will_be_added_to_our_public_album_section" added="1307346929">Public (Album will be added to our public album section)</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="privacy" added="1307346949">Privacy</phrase>
+		<phrase module_id="musicsharing" version_id="2.0.7" var_name="songs_for_this_album" added="1307499064">songs for this Album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="menu_musicsharing_browse_all_c03da3e15a602da11909b01af4d6f9d7" added="1315819792">Browse All</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="upload_new_music" added="1315822392">Upload New Music</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="you_can_upload_a_mp3_file" added="1315883440">You only can upload MP3 file.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="invalid_file_type_we_only_accept_mp3_file" added="1315899678">Invalid File Type.We only accept Mp3 File.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="uploaded_song" added="1316372509">Uploaded Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_share_songs_with_music_sharing" added="1316601819">Who can share songs with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_view_browse_songs_with_music_sharing" added="1316601860">Who can view/browse songs with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_create_albums_with_music_sharing" added="1316602014">Who can create albums with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_create_playlists_with_music_sharing" added="1316602036">Who can create playlists with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_manage_albums_with_music_sharing" added="1316602073">Who can manage albums with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="who_can_manage_playlists_songs_with_music_sharing" added="1316602093">Who can manage playlists songs with Music Sharing?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta2" var_name="manage" added="1316602413">Manage</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="no_album_found" added="1318825976">No album found.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="no_playlist_found" added="1318826041">No playlist found.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="user_setting_can_control_comments_on_albums" added="1319426468">Music sharing policy: user can control who can comment in this album.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="user_setting_can_control_comments_on_playlists" added="1319426621">Music sharing policy: user can control who can comment in this playlist.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="user_setting_can_set_privacy_in_this_playlist" added="1319426676">Music sharing policy: user can control who can view in this playlist.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="comment_privacy" added="1319426944">Comment privacy</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="menu_musicsharing_upload_a_song_c03da3e15a602da11909b01af4d6f9d7" added="1319538177">Upload a Song</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="menu_musicsharing_create_an_album_c03da3e15a602da11909b01af4d6f9d7" added="1319538624">Create an Album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="all_songs" added="1319596512">All Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="my_songs" added="1319596524">My Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="friends_songs" added="1319596581"><![CDATA[Friend's Songs]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="posted_date" added="1319767120">Posted date</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="user_setting_can_set_privacy_in_this_album" added="1319856984">can set privacy in this album?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="related_albums" added="1320117727">Related Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="menu_musicsharing_my_albums_c03da3e15a602da11909b01af4d6f9d7" added="1320117727">My Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta4" var_name="menu_musicsharing_my_albums" added="1320117727">My Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="menu_musicsharing_my_playlists_c03da3e15a602da11909b01af4d6f9d7" added="1320117727">My Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="upload_song" added="1320117727">Upload Song</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="top_artists_whole_site" added="1320117727">Top Artists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="default" added="1320117727">Default</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="no_description_found" added="1320117727">No description found</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="this_is_all_song_of_singer" added="1320117727">All songs by singer</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="this_is_all_song_by_other_singer" added="1320117727">All songs by other singer</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="this_is_all_song_of_category" added="1320117727">All songs in category</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0beta5" var_name="others" added="1320117727">Others</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="play_s" added="1320117727">Plays</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="no_playlists_found" added="1320117727">No Playlists Found</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="there_is_no_album_yet" added="1320117727">There is no album yet</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="this_is_all_album_of_artist" added="1320117727">All albums by artist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="search_album" added="1320117727">Search Albums...</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="search_song" added="1320117727">Search Songs...</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="number_artist_per_page" added="1298885669">Amount of Artist Per Page</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="number_playlist_per_page" added="1298885669">Amount of Playlist Per Page</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="number_album_per_page" added="1298885669">Amount of Album Per Page</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="edit_playlist_view_upload_songs" added="1298885669">Edit Playlist - View Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="edit_album_view_upload_songs" added="1298885669">Edit Album - View/Upload Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="playlist" added="1298885669">Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="view_songs" added="1298872128">View Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="create_new_playlist_fp" added="1298868604">Create new Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="add_song_to_playlist" added="1298868604">Add song to playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc1" var_name="number_song_per_page_widget" added="1298868604">Amount of Songs Per Page (New Songs / Top Songs block)</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc3" var_name="update_song_success" added="1298868604">Update song successfully!</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.0rc3" var_name="there_is_no_artist_yet" added="1298868604">There is no artist yet.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="browse_all" added="1325841502">Browse All</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="all_albums" added="1325841561">All Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="all_playlists" added="1325841587">All Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="new_playlists" added="1325841608">New Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_playlists" added="1325841613">Top Playlists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="new_songs" added="1325841618">New Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_songs" added="1325841623">Top Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="song_name" added="1325841695">Song Name</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_artists" added="1325841728">Top Artists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="new_albums" added="1325841738">New Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="add_singer_type" added="1325841738">Add Singer Type</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_downloads" added="1326185089">Top Downloads</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="control_who_can_see_this_album" added="1326185360">Control who can see this album.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="select_file" added="1326185891">Select File</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="by" added="1326185967">by</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="released" added="1326186290">Released</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="control_who_can_see_this_playlist" added="1326186411">Control who can see this playlist.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="control_who_can_comment_on_this_playlist" added="1326186451">Control who can comment on this playlist.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="save_playlist" added="1326186541">Save Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="search_songs" added="1326186653">Search Songs...</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="per_page" added="1326186982">per page</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_albums" added="1326187387">Top Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="top_playlist" added="1326187410">Top Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="search_artists" added="1326188239">Search Artists...</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="search_albums" added="1326188422">Search Albums...</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="most_albums" added="1326188977">Most Albums</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="descending" added="1326189144">Descending</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="ascending" added="1326189170">Ascending</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="submit" added="1326189264">Submit</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="delete_selected" added="1326189345">Delete Selected</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="delete_this_song" added="1326189534">Delete this song</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="singer_s_image" added="1326190373"><![CDATA[Singer's image]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="are_you_sure" added="1326190373">Are You Sure?</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="choose_album" added="1326190373">Choose Album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="select_an_album" added="1326190373">Select an album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="control_who_can_comment_on_this_album" added="1326190373">Control who can comment on this album.</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="save_album" added="1326190373">Save Album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="created" added="1326190373">Created</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="list_all_your_posted_playlists" added="1326190373">List all your posted playlists</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="lyric" added="1326190373">Lyric</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="embed" added="1326190373">Embed</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="report_this_album" added="1326190373">Report this Album</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="save_changes" added="1326190373">Save Changes</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="edit_this_song" added="1326190373">Edit this song</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="to_add_songs_to_playlist_go_to" added="1326190373">To add songs to playlist, go to</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="song_list" added="1326190373">song list</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="and_use_the_button" added="1326190373">and use the button</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p5" var_name="import" added="1326190373">Import</phrase>
+		<phrase module_id="musicsharing" version_id="3.0.1p6" var_name="you_do_not_have_permission_to_download_this_song" added="1326190373">You do not have permission to download this song.</phrase>
+		<phrase module_id="musicsharing" version_id="3.1.0" var_name="user_name_tagged_you_in_a_comment_in_a_album" added="1333696545">{user_name} tagged you in a comment in a album</phrase>
+		<phrase module_id="musicsharing" version_id="3.1.0" var_name="user_name_tagged_you_in_a_comment_in_a_playlist" added="1333698515">{user_name} tagged you in a comment in a playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="thanks_for_rating" added="1353320716">Thanks for rating.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="poor" added="1353323041">Poor</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="nothing_special" added="1353323092">Nothing Special</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="worth_listening_too" added="1353323136">Worth Listening Too</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="pretty_cool" added="1353323155">Pretty Cool</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="awesome" added="1353323170">Awesome</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="you_have_already_voted" added="1353383141">You have already voted.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="you_cannot_rate_your_own_song" added="1353383179">You cannot rate your own song.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="warning_message_migrations" added="1353655828">Warning: You should backup your database before importing songs from Music module of phpFox to Music Sharing module.
+Music Sharing does not import activity feeds, notifications from Music module of phpFox.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="migrations_instruction_step_1" added="1353656013"><![CDATA[- Create folder file/musicsharing (if it doesn&#039;t exist).]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="migrations_instruction_step_2" added="1353656039"><![CDATA[- Create folder file/pic/musicsharing (if it doesn&#039;t exist).]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="migrations_instruction_step_3" added="1353656057">- Copy data from folder file/music to folder file/musicsharing.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="migrations_instruction_step_4" added="1353656076">- Copy data from folder file/pic/music to folder file/pic/musicsharing.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="migrations_instruction_step_5" added="1353656095">- Click Import button.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="publishers_musicsharing" added="1353656115">Music Sharing</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_enter_playlist_name" added="1355993770">Please enter playlist name.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="invalid_image_file_type" added="1355993858">Invalid image file type.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_enter_singer_type_name" added="1356409721">Please enter singer type name!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="singer_successfully_edited" added="1356431657">Singer successfully edited!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="song_is_not_valid" added="1356492471">Song is not valid!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="setting_musicsharing_max_image_pic_size" added="1356497363"><![CDATA[<title>Music Sharing Max Picture Size</title><info>Music Sharing Max Picture Size</info>]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="an_error_occured_and_your_image_could_not_be_deleted_please_try_again" added="1356504069">An error occurred and your image could not be deleted. Please try again.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="click_here_to_delete_this_image_and_upload_a_new_one_in_its_place" added="1356505585">Click here to delete this image and upload a new one in its place.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="select_singer_type" added="1356512051">--Select Singer Type--</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_select_singer_type" added="1356512174">Please select singer type!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="price_of_album_is_not_valid" added="1356514861">Price of album is not valid!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="imported_songs_of_album" added="1356515661">Imported songs of album {title}</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="default_album_for_all_songs_not_belongs_to_any_older_albums" added="1356515741">Default album for all songs not belongs to any older albums.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="there_is_no_song_to_import_for_this_album" added="1356515968">There is no song to import for this album!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="there_is_no_song_to_import" added="1356516000">There is no song to import!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="import_successfully" added="1356516028">Import Successfully</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="you_voted_successfully" added="1356516105">You voted successfully</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="you_voted_faild" added="1356516129">You voted faild!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="invalid_request_number" added="1356516331">Invalid request number!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_enter_finance_account" added="1356516656">Please enter finance account!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_enter_email" added="1356516680">Please enter email!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_enter_full_name" added="1356516704">Please enter full name!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="email_address_is_not_valid" added="1356516738">Email address is not valid!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="user_account_email_is_not_valid" added="1356516763">User account email is not valid!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="amount" added="1356517715">Amount</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="reason" added="1356517735">Reason</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="musicsharing" added="1356518807">musicsharing</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="please_hold_while_your_files_are_being_processed" added="1356519869">Please hold while your files are being processed.</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.0" var_name="remove_item" added="1356573548">Remove Item</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.1" var_name="you_do_not_have_permission_to_download_songs" added="1361417259">You do not have permission to download songs!</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.1" var_name="1_play" added="1361419444">1 play</phrase>
+		<phrase module_id="musicsharing" version_id="3.4.1" var_name="image_upload_is_not_valid" added="1361957937">Image upload is not valid!</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="commented_on" added="1362393661">commented on</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="commented_on_your_playlist" added="1362393694">commented on your playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="commented_on_your_album" added="1362393734">commented on your album</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="liked" added="1362644023">liked</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="liked_your_album" added="1362644043">liked your album</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0rc1" var_name="liked_your_playlist" added="1362644107">liked your playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="menu_musicsharing_musicsharing_532c28d5412dd75bf975fb951c740a30" added="1365500809">Music Sharing</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="there_are_no_new_results_to_view_at_this_time" added="1365563641">There are no new results to view at this time.</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="view_less" added="1365564816">View less</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="new_playlist" added="1365565355">New Playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="list_songs" added="1365565736">List Songs</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="report_this_playlist" added="1365664956">Report this playlist</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="setting_mobile_view_amount_of_item_per_page_in_top_albums" added="1366627604"><![CDATA[<title>Amount of item per page in Top Albums.</title><info>Amount of item per page in Top Albums.</info>]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="setting_mobile_view_amount_of_item_per_page_in_top_playlists" added="1366627943"><![CDATA[<title>Amount of item per page in Top Playlists.</title><info>Amount of item per page in Top Playlists.</info>]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="setting_mobile_view_amount_of_item_per_page_in_new_albums" added="1366628111"><![CDATA[<title>Amount of item per page in New Albums.</title><info>Amount of item per page in New Albums.</info>]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="setting_mobile_view_amount_of_item_per_page_in_new_playlist" added="1366628283"><![CDATA[<title>Amount of item per page in New Playlist.</title><info>Amount of item per page in New Playlist.</info>]]></phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="this_is_all_song_of_artist" added="1366706642">All songs by artist</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="uploader" added="1367565397">Uploader</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="top_uploader" added="1367565554">Top Uploader</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="uploaders" added="1367565810">Uploaders</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="top_uploaders" added="1367565866">Top Uploaders</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="admin_menu_import_music" added="1371801242">Import Music</phrase>
+		<phrase module_id="musicsharing" version_id="3.5.0" var_name="import_music_function_does_not_support_cdn" added="1372057996">Import Music function does not support CDN.</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="musicsharing" type="boolean" admin="true" user="true" guest="false" staff="true" module="musicsharing" ordering="0">can_set_privacy_in_this_playlist</setting>
+		<setting is_admin_setting="0" module_id="musicsharing" type="boolean" admin="true" user="true" guest="false" staff="true" module="musicsharing" ordering="0">can_control_comments_on_playlists</setting>
+		<setting is_admin_setting="0" module_id="musicsharing" type="boolean" admin="true" user="true" guest="false" staff="true" module="musicsharing" ordering="0">can_set_privacy_in_this_album</setting>
+		<setting is_admin_setting="0" module_id="musicsharing" type="boolean" admin="true" user="true" guest="false" staff="true" module="musicsharing" ordering="0">can_control_comments_on_albums</setting>
+		<setting is_admin_setting="0" module_id="musicsharing" type="boolean" admin="true" user="true" guest="false" staff="true" module="musicsharing" ordering="0">can_post_on_musicsharing</setting>
+	</user_group_settings>
+</module>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document jh*/
+div#left .sub_section_menu:first-child .active {
+	background: none!important;
+	font-weight: normal!important;
+}
+div#left .sub_section_menu:first-child li.active a{
+	background: none!important;
+	font-weight: normal!important;
+	color: #333333!important;
+}

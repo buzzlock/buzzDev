@@ -1,0 +1,265 @@
+#currentAlbum
+{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+#currentAlbum #currentAlbumHeader {
+    
+    padding-bottom: 16px;
+    padding-top: 2px;
+}
+#currentAlbum #currentAlbumHeader span.title
+{
+}
+#currentAlbum #currentAlbumHeader span.title 
+{
+    color: #6E6E6E;
+    font-size: 24px;
+    line-height: 1.25em;
+}
+#currentAlbum #currentAlbumHeader span.by 
+{
+    color: #6E6E6E;
+    font-size: 16px;
+    line-height: 1.25em;
+}
+#currentAlbum #currentAlbumHeader a.artist {
+    font-size: 16px;
+    line-height: 1.25em;
+}
+#currentAlbumImg
+{
+    float: left;
+    padding-right: 10px;
+    width: 215px;
+}
+#currentAlbumImg img
+{
+    border: 4px solid #E8E4E3;
+}
+#currentAlbumImg #albumDescription 
+{
+    color: #000000;
+    margin: 10px 0;
+    width: 212px;
+}
+#currentAlbumImg #wantItDiv 
+{
+    background: url("http://o.aolcdn.com/art/_media/ch_music2_images/lp_wantit_bg.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 212px;
+}
+#currentAlbumImg #wantItButtons
+{
+    float: right;
+    margin-top: 10px;
+}
+#currentAlbumImg .wantItButton 
+{
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 34px;
+    line-height: 2.8em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 117px;
+}
+#currentAlbumImg #wantItText 
+{
+    font-size: 24px;
+    height: 41px;
+    margin: 14px 0 0 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60px;
+}
+#songContainer {
+    float: left;
+    width: 500px;
+}
+.same-singer, .singer-album, .singer-video {
+    clear: both;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+}
+/*new album stype block*/
+.row_album{
+    padding: 10px 0;
+}
+.colAlbum {
+    
+    width: 128px;
+    margin:0px 12px 10px 15px; 
+    height:180px;
+}
+.fleft
+{
+    float: left !important;
+}
+.pic_album {
+    height: 120px;
+    position: relative !important;
+    width: 128px;
+}
+.pic_album a
+{
+    cursor:pointer;
+    text-decoration: none !important;
+}
+.pic_album .img {
+    display: block;
+    height: 120px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 4px;
+    width: 119px;
+}
+.pic_album .overlay {
+    background-position: -119px top;
+    display: block;
+    height: 130px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 119px;
+    z-index: 10;
+   
+}
+.album_list
+{
+    margin:auto;
+}
+.colAlbum .txtAlbum{
+    padding-top: 3px;
+    width: 120px;
+    padding: 0 0 0 2px !important;    
+}
+.colAlbum .txtAlbum h2
+{
+       border: 0 none !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+    padding: 0 0 0 0px !important;
+    text-transform: capitalize;
+}
+div.author_play_track
+{
+    font-size: 11px !important;
+    margin-bottom:10px;
+}
+.price
+{
+    vertical-align:center;
+}
+.item_cart
+{
+    height:14px;
+    margin-top: 4px;
+}
+.item_cart a img
+{
+    position:absolute;
+}
+.list .colAlbum
+{
+     width: 250px;
+      margin:10px 0px 0px 10px; 
+}
+.list .pic_album 
+{
+    float:left;
+}
+.list .txtAlbum
+{
+    float:left;
+}
+.list .colAlbum .txtAlbum
+{
+    width: 120px;
+    margin-top: 20px;
+}
+.list div.author_play_track
+{
+    margin-top:5px;
+}
+.list .author_play_track .item
+{
+    margin-top: 5px;
+    overflow:hidden;
+    border:none;
+    padding: 10px 0px 0px 0px;
+}
+.list .author_play_track .item .button 
+{
+    right:0px;
+    position: relative;
+    padding: 0;
+}
+.list div.odd
+{
+    background-color: #eeeeee;
+}
+.top_artist .pic_album .overlay
+{
+    width:80px;
+    height: 80px;
+  
+}
+.top_artist .colAlbum
+{
+    width:80px;
+}
+.top_artist .artist_img 
+{
+     height: 85px;
+    padding: 2px;
+    width: 83px;
+     
+}
+.artist_info
+{
+    margin:10px 10px 10px 2px;
+    width:90px;
+    float:left;
+    font-size: 11px;
+}
+
+.related_album
+{
+    border-top: 1px solid #DFDFDF; 
+    margin-top: 12px;
+    min-height: 180px;
+    padding:10px 0 10px 0;   
+     
+}
+
+ 
+/*END*/
+#albumDescription
+{
+    padding:10px;
+}
+#embed_music_song label
+{
+    float: left;
+    line-height: 26px;
+}
+#embed_music_song input
+{
+     float: right;
+    width: 600px;
+}
+#embed_music_song .clear
+{
+    margin-top:5px;
+}
+#embed_music_song .url
+{
+    margin:6px;
+}
