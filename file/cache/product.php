@@ -130,6 +130,19 @@
     'url' => 'http://phpfox3demo.modules2buy.com/musicsharing/',
     'url_version_check' => NULL,
   ),
+  'pagecontacts' => 
+  array (
+    'product_id' => 'pagecontacts',
+    'is_core' => '0',
+    'title' => 'YouNet Page Contact Form',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p3',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox.younetco.com/',
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

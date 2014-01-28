@@ -140,6 +140,7 @@
   array (
     'pages.photo' => true,
     'pages.like' => true,
+    'pagecontacts.page-button' => true,
     'pages.menu' => true,
     'pages.widget' => true,
     'pages.admin' => true,

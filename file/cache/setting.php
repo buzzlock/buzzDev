@@ -3072,14 +3072,14 @@ Site Name',
   array (
     'type_id' => 'integer',
     'var_name' => 'admin_in_charge_of_page_claims',
-    'value_actual' => 0,
+    'value_actual' => 1,
     'module_name' => 'pages',
   ),
   426 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'show_page_admins',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'pages',
   ),
   427 => 

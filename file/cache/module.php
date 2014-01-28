@@ -48,6 +48,7 @@
   'newsletter' => 'newsletter',
   'notification' => 'notification',
   'page' => 'page',
+  'pagecontacts' => 'pagecontacts',
   'pages' => 'pages',
   'photo' => 'photo',
   'poke' => 'poke',

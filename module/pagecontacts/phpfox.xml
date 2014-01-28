@@ -1,0 +1,56 @@
+<module>
+	<data>
+		<module_id>pagecontacts</module_id>
+		<product_id>pagecontacts</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu></menu>
+		<phrase_var_name>module_pagecontacts</phrase_var_name>
+	</data>
+	<blocks>
+		<block type_id="0" m_connection="pages.view" module_id="pagecontacts" component="page-button" location="3" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>Contacts Button</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="pagecontacts" component="page-button" m_connection="" module="pagecontacts" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="module_pagecontacts" added="1341537769">Page Contacts</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="email_contact_message" added="1341634721"><![CDATA["{full_name} ({email})" sent a message to "{topic}" <br/>
+{message}<br/>
+Message is sent from "{title}"<br/>
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="user_setting_can_create_page_contact" added="1341796470">Enable page contact?</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="topic_count" added="1341798783">Topic {count}</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="topic" added="1341799263">Topic</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="invalid_email" added="1341819956">Invalid Email</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_subject_to_your_contact" added="1341820722">Add subject to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_full_name_to_your_contact" added="1341821243">Add full name to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_message_to_your_contact" added="1341821285">Add message to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_description_to_your_contact" added="1341883708">Add description to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="description" added="1341884185">Description</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_topic_to_your_contact" added="1341925076">Add topic to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_email_to_your_contact" added="1341925101">Add email to your contact</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="enable_contact_form" added="1341925799">Enable Contact Form</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_another_topic" added="1341925849">Add another topic</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="yes" added="1341925886">Yes</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="no" added="1341925895">No</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="submit" added="1341926566">Submit</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="subject" added="1341926636">Subject</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="message" added="1341926658">Message</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="full_name" added="1341926919">Full Name</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="email" added="1341927062">Email</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="contact_us" added="1341939681">Contact Us</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="topic_name" added="1341939900">Topic Name</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="topic_name_count" added="1341939951">Topic Name {count}</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="add_email_to_your_topic" added="1341941311">Add email to your topic</phrase>
+		<phrase module_id="pagecontacts" version_id="3.2.0" var_name="topics" added="1342004799">Topics</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="pagecontacts" type="boolean" admin="true" user="true" guest="false" staff="false" module="pagecontacts" ordering="0">can_create_page_contact</setting>
+	</user_group_settings>
+</module>

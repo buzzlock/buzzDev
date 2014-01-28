@@ -254,6 +254,7 @@
     ),
     3 => 
     array (
+      'pagecontacts.page-button' => NULL,
       'pages.widget' => NULL,
       'pages.admin' => NULL,
       'shoutbox.display' => NULL,
