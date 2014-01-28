@@ -50,6 +50,7 @@
   'page' => 'page',
   'pagecontacts' => 'pagecontacts',
   'pages' => 'pages',
+  'petition' => 'petition',
   'photo' => 'photo',
   'poke' => 'poke',
   'poll' => 'poll',

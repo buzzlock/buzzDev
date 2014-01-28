@@ -1,0 +1,587 @@
+<module>
+	<data>
+		<module_id>petition</module_id>
+		<product_id>younet_petition</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:4:{s:37:"petition.admin_menu_manage_categories";a:1:{s:3:"url";a:2:{i:0;s:8:"petition";i:1;s:8:"category";}}s:36:"petition.admin_menu_add_new_category";a:1:{s:3:"url";a:3:{i:0;s:8:"petition";i:1;s:8:"category";i:2;s:3:"add";}}s:28:"petition.admin_menu_petition";a:1:{s:3:"url";a:1:{i:0;s:8:"petition";}}s:32:"petition.admin_menu_manage_helps";a:1:{s:3:"url";a:2:{i:0;s:8:"petition";i:1;s:4:"help";}}}]]></menu>
+		<phrase_var_name>module_petition</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="petition" parent_var_name="" m_connection="mobile" var_name="menu_petition_petition_532c28d5412dd75bf975fb951c740a30" ordering="139" url_value="petition" version_id="3.3.0" disallow_access="" module="petition" mobile_icon="small_petition.png" />
+		<menu module_id="petition" parent_var_name="" m_connection="petition.index" var_name="menu_petition_create_a_petition_364d3644588809a610f1a66d5d3ec427" ordering="114" url_value="petition.add" version_id="3.0.0" disallow_access="a:1:{i:0;s:1:&quot;3&quot;;}" module="petition" />
+		<menu module_id="petition" parent_var_name="" m_connection="main" var_name="menu_petition_petition_fad58de7366495db4650cfefac2fcd61" ordering="113" url_value="petition" version_id="3.0.1" disallow_access="" module="petition" />
+	</menus>
+	<settings>
+		<setting group="" module_id="petition" is_hidden="0" type="integer" var_name="default_signature_goal" phrase_var_name="setting_default_signature_goal" ordering="7" version_id="3.0.1">1000</setting>
+		<setting group="" module_id="petition" is_hidden="0" type="large_string" var_name="friend_letter_template" phrase_var_name="setting_friend_letter_template" ordering="1" version_id="3.0.1"><![CDATA[Friends,
+
+I just created a petition: [title], because I care deeply about this very important issue.
+
+I'm trying to collect [signature_goal] signatures, and I could really use your help.
+
+To read more about what I'm trying to do and to sign my petition, click here:
+[petition_url]
+
+It'll just take a minute!
+
+Once you're done, please ask your friends to sign the petition as well. Grassroots movements succeed because people like you are willing to spread the word!
+
+Thanks]]></setting>
+		<setting group="" module_id="petition" is_hidden="0" type="large_string" var_name="petition_meta_description" phrase_var_name="setting_petition_meta_description" ordering="4" version_id="3.0.1">Read up on the latest petitions on Site Name.</setting>
+		<setting group="" module_id="petition" is_hidden="0" type="large_string" var_name="petition_meta_keywords" phrase_var_name="setting_petition_meta_keywords" ordering="5" version_id="3.0.1">petition, petitions, signatures</setting>
+		<setting group="" module_id="petition" is_hidden="0" type="boolean" var_name="petition_digg_integration" phrase_var_name="setting_petition_digg_integration" ordering="3" version_id="3.0.1">1</setting>
+		<setting group="" module_id="petition" is_hidden="0" type="large_string" var_name="target_letter_template" phrase_var_name="setting_target_letter_template" ordering="2" version_id="3.0.1"><![CDATA[Greetings,
+
+[description]
+
+Sincerely,
+[full_name]]]></setting>
+		<setting group="" module_id="petition" is_hidden="0" type="integer" var_name="preview_length_in_index" phrase_var_name="setting_preview_length_in_index" ordering="6" version_id="3.0.1">200</setting>
+		<setting group="" module_id="petition" is_hidden="0" type="string" var_name="petition_time_stamp" phrase_var_name="setting_petition_time_stamp" ordering="8" version_id="3.0.1">F j, Y</setting>
+		<setting group="" module_id="petition" is_hidden="1" type="integer" var_name="help_icon_file_size_limit" phrase_var_name="setting_help_icon_file_size_limit" ordering="1" version_id="3.0.1">200</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="search" location="1" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Search</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.view" module_id="petition" component="signnow" location="3" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Sign Now</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.view" module_id="petition" component="images" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Images</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.help" module_id="petition" component="direct" location="3" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Direct Sign In Help</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.profile" module_id="petition" component="category" location="3" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="popular" location="3" is_active="1" ordering="5" disallow_access="" can_move="1">
+			<title>Most Popular</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.help" module_id="petition" component="category" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Category In Help</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="category" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Categories</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.help.view" module_id="petition" component="helplogo" location="1" is_active="1" ordering="3" disallow_access="" can_move="0">
+			<title>Help Logo</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="direct" location="3" is_active="1" ordering="4" disallow_access="" can_move="1">
+			<title>Direct Sign</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="signed" location="3" is_active="1" ordering="7" disallow_access="" can_move="1">
+			<title>Most Signed</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="recent" location="3" is_active="1" ordering="6" disallow_access="" can_move="1">
+			<title>Recent Petitions</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="petition.index" module_id="petition" component="stats" location="1" is_active="1" ordering="3" disallow_access="" can_move="0">
+			<title>Petitions stats</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="petition" component="index" m_connection="petition.index" module="petition" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="petition" component="popular" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="images" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="signed" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="signnow" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="help.view" m_connection="petition.help.view" module="petition" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="petition" component="help" m_connection="petition.help" module="petition" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="petition" component="helplogo" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="petition.profile" m_connection="petition.profile" module="petition" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="petition" component="featured" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="view" m_connection="petition.view" module="petition" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="petition" component="recent" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="category" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="description" m_connection="p" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="direct" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="search" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="petition" component="stats" m_connection="" module="petition" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="petition" version_id="3.0.1" var_name="admin_menu_manage_categories" added="1328236013">Manage Categories</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="admin_menu_add_new_category" added="1328236013">Add New Category</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="admin_menu_petition" added="1328236013">Manage Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="module_petition" added="1328236013">Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="menu_petition_petition_fad58de7366495db4650cfefac2fcd61" added="1328236253">Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="categories" added="1328236315">Categories</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="provide_petition_category" added="1328236833">Provide a petition category.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="category_successfully_added" added="1328236910">Category successfully added.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_category" added="1328236952">Add New Category</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="category_details" added="1328237109">Category Details</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="category" added="1328237154">Category</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_filter" added="1328237432">Search Filter</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_for_text" added="1328237461">Search For Text</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_for_user" added="1328237506">Search for User</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="created_user" added="1328237539">Created By</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="display" added="1328237584">Display</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="sort" added="1328237611">Sort By</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="tip_delete_category" added="1328237699">Deleting a category will delete all petitions that belong to that category.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no_petition_categories_have_been_created" added="1328237810">No petition categories have been created.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="create_one_now" added="1328237858">Create one now</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="name" added="1328238358">Name</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="system" added="1328238403">System</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="created" added="1328238434">Created By</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="total_petitions" added="1328238494">Total Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="none" added="1328238520">None</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="delete_selected" added="1328238544">Delete Selected</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="categories_successfully_deleted" added="1328238778">Categories successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_used" added="1328238809">Most Used</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="users" added="1328238897">Users</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition" added="1328239081">Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="all_petitions" added="1328242431">All Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="my_petitions" added="1328242496">My Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="friends_petitions" added="1328242571"><![CDATA[Friends&#039; Petitions]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="manager_categories" added="1328242761">Manager Categories</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_view_petitions" added="1328249255">Can browse and view the petition module? </phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_s_petitions" added="1328249486"><![CDATA[{full_name}&#039;s Petitions]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_title" added="1328249548">Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petitions" added="1328249699">Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_petition_dot" added="1328249818">Search Petitions...</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="latest" added="1328249952">Latest</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_viewed" added="1328250002">Most Viewed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_liked" added="1328250037">Most Liked</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_signed" added="1328250115">Most Signed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_discussed" added="1328250136">Most Discussed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_can_approve_petitions" added="1328250294">Can approve petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="posted_x_by_x_in_x" added="1328250896"><![CDATA[Posted {date} by <a href="{link}">{full_name}</a> in {categories}]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_petition_time_stamp" added="1328251003"><![CDATA[<title>Petition Time Stamp</title><info>Controls time stamps for petition entries.
+
+If using the default setting and the default template the time stamp will appear under each petition title and will look similar to:
+
+Posted June 22, 2008 by Raymond Benc</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="posted_x_by_x" added="1328251094"><![CDATA[Posted {date} by <a href="{link}">{full_name}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_petition_meta_keywords" added="1328251322"><![CDATA[<title>Petition Meta Keywords</title><info>Meta keywords that will be displayed on sections related to the Petition module.</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_petition_meta_description" added="1328251428"><![CDATA[<title>Petition Meta Description</title><info>Meta description added to pages related to the Petition module.</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_petitions_dot" added="1328251547">Search Petitions...</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_preview_length_in_index" added="1328251760"><![CDATA[<title>How Long is the Preview</title><info>How much of the petition to show on the main petition section?
+
+Value is in characters, i.e.:
+15 would show something like:
+"Lorem ipsum dol..."
+
+0 = No limit</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="delete" added="1328251926">Delete</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="approve" added="1328251966">Approve</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no_petitions_found" added="1328252456">No petitions found.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_edit_own_petition" added="1328252782">Can edit their own petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_edit_user_petition" added="1328252841">Can edit petitions added by other users?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_delete_own_petition" added="1328252914">Can delete their own petition?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_delete_user_petition" added="1328252960">Can delete petitions added by other users?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="are_you_sure_you_want_to_delete_this_petition" added="1328253192">Are you sure you want to delete this petition?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="delete_petition" added="1328253230">Delete Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="actions" added="1328253342">Actions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="moderate" added="1328253411">Moderate</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_petition_digg_integration" added="1328253658"><![CDATA[<title>Digg Intergration</title><info>Add Digg integration.</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="victory_info" added="1328253766"><![CDATA[[VICTORY]]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="by_full_name" added="1328253876">by {full_name}</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unable_to_edit_this_petition" added="1328255119">Unable to edit this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_add_new_petition" added="1328255317">Can add a new petition?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_title_for_petition" added="1328255372">Fill in a title for your petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_description_to_petition" added="1328255432">Add description to your petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_successfully_saved" added="1328255660">Petition successfully saved.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_petition_has_been_closed" added="1328255785">Your petition has been closed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_petition_has_been_added" added="1328255817">Your petition has been added</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_flood_control_petition" added="1328255909"><![CDATA[How many minutes should a user wait before they can submit another petition?
+
+Note: Setting it to "0" (without quotes) is default and users will not have to wait.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_are_posting_a_little_too_soon" added="1328255958">You are posting a little too soon.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_updated" added="1328256471">Petition Updated</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="editing_petition" added="1328256584">Editing Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="adding_a_new_petition" added="1328256630">Start a Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="view_petition" added="1328256942">View Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="title" added="1328257084">Title</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="description" added="1328257138">Description</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="all" added="1328257444">All</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="public" added="1328257508">Public</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="personal" added="1328257569">Personal</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no_categories_added" added="1328258452">No categories added.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_a_new_category" added="1328258551">Add a new category...</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="multiple_categories_with_commas" added="1328258649">Separate multiple categories with commas.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_can_add_tags_on_petitions" added="1328258753">Can add tags on petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_can_set_allow_list_on_petitions" added="1328258866"><![CDATA[Can set an "Allow List" when adding a new petition?
+
+Note: This setting will give the user the feature to add a list of users that can view their petition.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="privacy" added="1328258907">Privacy</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="control_who_can_see_this_petition" added="1328258956">Control who can see this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_can_control_comments_on_petitions" added="1328259265">Can control if a user can add a comment on their petition or simply disable comments?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="comment_privacy" added="1328259307">Comment Privacy</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="control_who_can_comment_on_this_petition" added="1328259354">Control who can comment on this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_status" added="1328259432">Petition Status</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="closed" added="1328259563">Closed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="victory" added="1328259583">Victory</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="update" added="1328259795">Update</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add" added="1328259841">Add</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="preview" added="1328259907">Preview</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_preview" added="1328259948">Petition Preview</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_not_found" added="1328260860">The petition you are looking for cannot be found.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="report_this_petition" added="1328261587">Report this petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petitions_title" added="1328261639">Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="by_user" added="1328261991">by {full_name}</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="this_petition_is_pending_an_admins_approval" added="1328262050">This petition is pending an Admins approval.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="the_petition_you_are_trying_to_approve_is_not_valid" added="1328263480">The petition you are trying to approve is not valid.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_approved" added="1328263615">Petition Approved</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_petition_has_been_approved_on_site_title" added="1328263716">Your petition has been approved on {site_title}.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_petition_has_been_approved_on_site_title_message" added="1328263766"><![CDATA[Your petition has been approved on {site_title}.
+
+To view this petition, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_is_approved" added="1328264471">Petition is approved</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_s_successfully_approved" added="1328264596">Petition(s) successfully approved.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_s_successfully_deleted" added="1328265188">Petition(s) successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_deleted" added="1328265469">Petition Deleted</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_have_reached_your_limit" added="1328265814">You have reached your limit.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="already_a_category" added="1328265950">This category already exists.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="added" added="1328266058">Added</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_has_been_approved" added="1328266281">Petition has been approved.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="pending_petitions" added="1328266584">Pending Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_points_petition" added="1328266820">Specify how many points the user will receive when adding a new petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_petition_has_been_marked_as_spam" added="1328267650">Your petition has been marked as spam. It will have to be approved by an Admin before it is displayed publicly.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="we_do_not_allow_links_in_titles" added="1328319966">We do not allow links in titles.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_approve_petitions" added="1328320417">Approve petitions before they are publicly displayed?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="create_a_petition" added="1328323298">Create a Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_target_for_petition" added="1328337748">Fill in a target for your petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="target" added="1328337903">Target</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="enter_the_name_of_an_individual_organization_who_you_want_to_petition" added="1328338288">enter the name of an individual, organization who you want to petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="target_emails" added="1328338433">Target Emails</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="separate_multiple_emails_with_a_comma" added="1328338521">Separate multiple emails with a comma</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="what_do_you_want_them_to_do" added="1328338576">what do you want them to do</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_goal" added="1328338867">Petition Goal</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="what_do_you_actually_want_the_target_to_do" added="1328338933">what do you actually want the target to do</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_in_a_petition_goal_for_your_petition" added="1328339026">Fill in a petition goal for your petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="short_description" added="1328339443">Short Description</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="provide_a_brief_info_about_this_petition" added="1328339502">provide a brief info about this petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="main_description" added="1328339722">Main Description</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="why_is_this_important" added="1328339766">why is this important</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="signature_goal" added="1328340038">Signature Goal</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_can_control_sign_on_petitions" added="1328341552">Can control if a user can sign on their petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="sign_privacy" added="1328341647">Sign Privacy</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="control_who_can_sign_on_this_petition" added="1328341816">Control who can sign on this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="create_petition" added="1328342079">Create Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_end_date" added="1328342919">Petition End Date</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="send_personal_thank_you_note_to_each_signer_of_this_petition_signature_goal" added="1328345527">Send personal thank-you note to each signer of this petition Signature goal</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="yes" added="1328345840">Yes</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no" added="1328345855">No</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="help" added="1328348718">Help</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="signature_goal_must_be_a_integer_number" added="1328353307">Signature Goal must be a integer number.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="posted_a_comment_on_gender_petition_a_href_link_title_a" added="1328412899"><![CDATA[posted a comment on {gender} petition <a href="{link}"> {title}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="posted_a_comment_on_user_name_s_petition_a_href_link_title_a" added="1328413021"><![CDATA[posted a comment on {user_name}'s petition "<a href="{link}">{title}</a>"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="posted_a_petition" added="1328413452">posted a petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_liked_your_petition_title" added="1328413644"><![CDATA[{full_name} liked your petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_liked_your_petition_link_title" added="1328413690"><![CDATA[{full_name} liked your petition "<a href="{link}">{title}</a>"
+To view this petition follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_liked_gender_own_petition_title" added="1328413818"><![CDATA[{users} liked {gender} own petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_liked_your_petition_title" added="1328413860"><![CDATA[{users} liked your petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_petition_title" added="1328413918"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}'s</span> petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="owner_full_name_added_a_new_petition_a_href_title_link_title_a" added="1328414004"><![CDATA[<a href="{user_link}">{owner_full_name}</a> added a new petition "<a href="{title_link}">{title}</a>".]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="user_added_a_new_comment_on_their_own_petition" added="1328414113"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on their own <a href="{title_link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="user_added_a_new_comment_on_your_petition" added="1328414159"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on your <a href="{title_link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="user_name_added_a_new_comment_on_item_user_name_petition" added="1328414200"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on <a href="{item_user_link}">{item_user_name}'s</a> <a href="{title_link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="user_setting_can_post_comment_on_petition" added="1328415532">Can post comments on petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_your_petition_title" added="1328415752"><![CDATA[{full_name} commented on your petition "{title}".]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_your_petition_message" added="1328415802"><![CDATA[{full_name} commented on your petition "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_gender_petition" added="1328415880">{full_name} commented on {gender} petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_gender_petition_message" added="1328415998"><![CDATA[{full_name} commented on {gender} petition "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_petition_full_name_s_petition_message" added="1328416098"><![CDATA[{full_name} commented on {petition_full_name}'s petition "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="a_href_link_on_name_s_petition_a" added="1328416215"><![CDATA[<a href="{link}">On {name}'s petition</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="unable_to_post_a_comment_on_this_item_due_to_privacy_settings" added="1328416326">Unable to post a comment on this item due to privacy settings.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="no_petitions_have_been_added_yet" added="1328416752">No petitions have been added yet.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="be_the_first_to_create_a_petition" added="1328416843">Be the First to Create a Petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="search_petitions" added="1328417203">Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="view_more_petitions" added="1328417248">View More Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="petition_created_on_time_stamp_by_full_name" added="1328417403"><![CDATA[<a href="{link}">Petition</a> created on {time_stamp} by <a href="{user_link}">{full_name}</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="manage_petitions" added="1328417811">Manage Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="your_petition_petition_title_has_been_approved" added="1328418109"><![CDATA[Your petition "{petition_title}" has been approved.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_commented_on_gender_petition_title" added="1328418357"><![CDATA[{users} commented on {gender} petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_commented_on_your_petition_title" added="1328418442"><![CDATA[{users} commented on your petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name" added="1328418522"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}'s</span> petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_wrote_a_comment_on_your_petition_petition_title" added="1328418661"><![CDATA[<a href="{user_link}">{full_name}</a> wrote a comment on your petition "<a href="{petition_link}">{petition_title}</a>".]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="petitions_text" added="1328418736">Petitions Text</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="a_href_user_link_full_name_a_likes_their_own_a_href_link_petition_a" added="1328418961"><![CDATA[<a href="{user_link}">{full_name}</a> likes {gender} own <a href="{link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="a_href_user_link_full_name_a_likes_a_href_view_user_link_view_full_name_a_s_a_href_link_petition_a" added="1328419071"><![CDATA[<a href="{user_link}">{full_name}</a> likes <a href="{view_user_link}">{view_full_name}</a>'s <a href="{link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="a_href_user_link_full_name_a_likes_your_a_href_link_petition_a" added="1328419137"><![CDATA[<a href="{user_link}">{full_name}</a> likes your <a href="{link}">petition</a>.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="users_petition_count" added="1328419255">Users Petition Count</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="update_tags_petitions" added="1328419325">Update Tags (Petitions)</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="update_users_activity_petition_points" added="1328419374">Update Users Activity Petition Points</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="your_petition_title_has_been_approved" added="1328420035"><![CDATA[Your petition "{title}" has been approved.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="full_name_commented_on_petition_full_name_s_petition" added="1328424012"><![CDATA[{full_name} commented on {petition_full_name}'s petition.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search" added="1328494990">Search</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="keywords" added="1328495132">Keywords</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="on_going" added="1328502059">On going</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="deadline" added="1328502388">Deadline</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="status" added="1328512911">Status</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="featured" added="1328512940">Featured</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="approved" added="1328512980">Approved</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="direct_sign" added="1328513014">Direct Sign</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="signature" added="1328513130">Signature</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="manage" added="1328513174">Manage</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="pending" added="1328514923">Pending</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="category_order_successfully_updated" added="1328522261">Category order successfully updated.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="category_successfully_deleted" added="1328522592">Category successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="manage_categories" added="1328522633">Manage Categories</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="are_you_sure_this_will_delete_all_petitions_that_belong_to_this_category_and_cannot_be_undone" added="1328522712">Are you sure? This will delete all petitions that belong to this category and cannot be undone.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="select_a_sub_category" added="1328523092">Select a Sub-Category</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="select" added="1328523155">Select</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="provide_a_category_name" added="1328523247">Provide a category name.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_category_details" added="1328523478">Petition Category Details</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="parent_category" added="1328523537">Parent Category</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="update_order" added="1328523649">Update Order</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="menu_petition_create_a_petition_364d3644588809a610f1a66d5d3ec427" added="1328541499">Create a petition</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="user_setting_can_feature_petition" added="1328543633">Can feature a petition?</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="the_petition_you_are_trying_to_feature_is_not_valid" added="1328543728">The petition you are trying to feature is not valid.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="edit" added="1328579854">Edit</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_successfully_approved" added="1328580252">Petition successfully approved.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_successfully_deleted" added="1328580509">Petition successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="un_feature_this_petition" added="1328582414">Un-Feature this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="un_feature" added="1328582465">Un-Feature</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="feature_this_petition" added="1328582495">Feature this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="feature" added="1328582559">Feature</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_successfully_featured" added="1328582704">Petition successfully featured.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_successfully_un_featured" added="1328582751">Petition successfully un-featured.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="created_date" added="1328584546">Created date</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unset_direct_sign" added="1328586050">Unset direct sign</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="set_direct_sign" added="1328586084">Set direct sign</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="view" added="1328586196">View</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="view_this_petition" added="1328587977">View This Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="main_info" added="1328588492">Main Info</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="photos" added="1328588658">Photos</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_letter" added="1328589110">Petition Letter</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_max_upload_size_petition" added="1328597029"><![CDATA[Max file size for petition photos in kilobits (kb).
+(1000 kb = 1 mb)
+For unlimited add "0" without quotes.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="select_image_s" added="1328597772">Select Image(s)</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_can_upload_a_jpg_gif_or_png_file" added="1328597805">You can upload a JPG, GIF or PNG file.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="the_file_size_limit_is_filesize_if_your_upload_does_not_work_try_uploading_a_smaller_picture" added="1328597834">The file size limit is {filesize} kb. If your upload does not work, try uploading a smaller picture.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="upload_photo" added="1328597873">Upload Photo</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="delete_this_image" added="1328600954">Delete this image.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="are_you_sure" added="1328601055">Are you sure?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_do_not_have_sufficient_permission_to_modify_this_petition" added="1328601576">You do not have sufficient permission to modify this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="click_to_set_as_default_image" added="1328603501">Click to set as default image</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unable_to_find_the_image" added="1328603667">Unable to find the image</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="most_popular" added="1328608110">Most Popular</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="from" added="1328608249">From</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="to" added="1328608263">To</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="popular_petitions" added="1328611319">Popular Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="by" added="1328612032">by</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="total_sign_signatures" added="1328626282">{total_sign} signature(s)</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="total_view_views" added="1328626762">{total_view} view(s)</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="total_like_likes" added="1328626836">{total_like} like(s)</phrase>
+		<phrase module_id="petition" version_id="3.0.0" var_name="recent_petitions" added="1328630452">Recent Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="created_by" added="1328667013">Created by</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="provide_a_valid_email_address" added="1328669845">Provide a valid email address.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="invite_friends" added="1328669993">Invite Friends</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="successfully_added_photo_s_to_your_petition" added="1328670592">Successfully added photo(s) to your petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="invite_people_via_email" added="1328671035">Invite People via Email</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_a_personal_message" added="1328671248">Add a personal message</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="send_invitations" added="1328671274">Send Invitations</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="new_guest_list" added="1328671304">New Guest List</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_invited_you_to_the_title" added="1328673065"><![CDATA[{full_name} invited you to "{title}".
+
+To check out this petition, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_added_the_following_personal_message" added="1328673103">{full_name} added the following personal message</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_invited_you_to_the_petition_title" added="1328673146"><![CDATA[{full_name} invited you to the petition "{title}".]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="invite_to_a_petition" added="1328673429">Invite to a Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="users_invited_you_to_the_petition_title" added="1328674360"><![CDATA[{users} invited you to the petition "{title}"]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_invited_you_to_an_petition" added="1328674407"><![CDATA[<a href="{user_link}">{full_name}</a> invited you to an petition.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="who_can_view_browse_petitions" added="1328675050">Who can view/browse petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="who_can_share_petitions" added="1328675266">Who can post a petitions?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unable_to_view_this_item_due_to_privacy_settings" added="1328675816">Unable to view this item due to privacy settings.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="want_to_support_this_petition" added="1329100261">Want to support this petition ?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="start_date" added="1329101233">Start date</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="end_date" added="1329101631">End date</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="in" added="1329103409">In</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_target_letter_template" added="1329105205"><![CDATA[<title>Petition Target Letter Template</title><info>
+You can add some special keyvars:<br/>
+<strong>[title]</strong>: Petition title<br/>
+<strong>[petition_url]</strong>: Petition URL<br/>
+<strong>[full_name]</strong>: Full name of petition owner<br/>
+<strong>[petition_goal]</strong>: Petition goal<br/>
+<strong>[short_description]</strong>: Petition main description<br/>
+<strong>[description]</strong>: Petition short description<br/>
+<strong>[start_time]</strong>: Petition start date<br/>
+<strong>[end_time]</strong>: Petition end date<br/>
+<strong>[total_sign]</strong>: Total signed<br/>
+<strong>[signature_goal]</strong>: Signature goal<br/>
+<strong>[target]</strong>: Target name<br/>
+</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_friend_letter_template" added="1330051426"><![CDATA[<title>Petition Friend Letter Template</title><info>
+		You can add some special keyvars:<br/>
+		<strong>[title]</strong>: Petition title<br/>
+		<strong>[petition_url]</strong>: Petition URL<br/>
+		<strong>[full_name]</strong>: Full name of petition owner<br/>
+		<strong>[petition_goal]</strong>: Petition goal<br/>
+		<strong>[short_description]</strong>: Petition main description<br/>
+		<strong>[description]</strong>: Petition short description<br/>
+		<strong>[start_time]</strong>: Petition start date<br/>
+		<strong>[end_time]</strong>: Petition end date<br/>
+		<strong>[total_sign]</strong>: Total signed<br/>
+		<strong>[signature_goal]</strong>: Signature goal<br/>
+		<strong>[target]</strong>: Target name<br/>
+		</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="subject" added="1329106243">Subject</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="message" added="1329106356">Message</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="send_petition_letter_online" added="1329107577">Send petition letter online?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="signatures" added="1329114106">Signatures</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="news" added="1329114142">News</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="your_location" added="1329128431">Your location</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_a_reason" added="1329128576">Add a reason</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="why_are_you_signing" added="1329128655">Why are you signing</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="sign_this_petition" added="1329128855">Sign this petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="sign_petition" added="1329128982">Sign Petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="sign_now" added="1329186226">Sign Now</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="thank_you_for_signing_the_petition" added="1329186316">Thank you for signing the petition</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="ok" added="1329187353">Ok</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_in_a_location" added="1329189060">Fill in a location.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_in_a_signature" added="1329189110">Fill in a signature.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="successfully_invited_users" added="1329191871">Successfully invited users.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_are_not_allowed_to_sign_this_petition" added="1329195093">You are not allowed to sign this petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="post_a_news_update" added="1329203839">Post a news update</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="news_headline" added="1329203879">News headline</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="link" added="1329203907">Link</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="content" added="1329203920">Content</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="post" added="1329203936">Post</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="cancel" added="1329207294">Cancel</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="news_successfully_deleted" added="1329208674">News successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="news_successfully_added" added="1329208791">News successfully added.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="news_successfully_updated" added="1329208885">News successfully updated.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petitions_stats" added="1329213678">Petitions stats</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="stats" added="1329214936">Stats</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="admin_menu_manage_helps" added="1329215631">Manage Helps</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="helps" added="1329215915">Helps</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="icon" added="1329215947">Icon</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="there_are_no_news_update" added="1329275720">There are no news update.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="there_are_no_petition_signatures" added="1329275884">There are no petition signatures.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="manage_helps" added="1329276493">Manage Helps</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="order" added="1329277094">Order</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="add_help" added="1329278096">Add Help</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no_helps_have_been_added_yet" added="1329278248">No helps have been added yet.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_in_a_title_for_help" added="1329279418">Fill in a title for help</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="fill_in_a_content_for_your_help" added="1329279461">Fill in a content for your help</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_help_has_been_updated" added="1329289419">Petition help has been updated.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_help_successfully_deleted" added="1329301435">Petition help successfully deleted.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="featured_petitions" added="1329303018">Featured Petitions</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_letter_successfully_updated" added="1329304078">Petition letter successfully updated.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="send_petition_to_target" added="1329358666">Send Petition to Target</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="members" added="1329361328">Members</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="why_they_are_signing" added="1329361344">Why they are signing</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="on" added="1329361392">on</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="at" added="1329361406">at</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="out_of" added="1329362617">out of</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="more_at" added="1329364601">More at</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="no_helps_found" added="1329368168">No helps found.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="please_add_a_reason" added="1329444242">Please add a reason.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="signed" added="1329446013">Signed</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="invited" added="1329446035">Invited</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_have_already_signed_this_petition" added="1329449778"><![CDATA[You have already "signed" this petition.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="are_you_sure_you_want_to_sent_petition_letter_to_target" added="1329452297">Are you sure you want to sent petition letter to target?</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_letter_was_successfully_sent_to_target" added="1329452591">Petition letter was successfully sent to target.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="an_error_occurred_and_petition_letter_could_not_be_sent_to_target_please_try_again" added="1329452942">An error occurred and petition letter could not be sent to target. Please try again.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="just_signed_this_petition_and_i_want_to_send_the_letter_again" added="1329464512">just signed this petition and I want to send the letter again.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_can_add_some_special_keyvars" added="1329471447">You can add some special keyvars</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="special_keyvars" added="1329471559"><![CDATA[[title],[full_name], [petition_goal], [short_description], [description], [start_time], [end_time], [total_sign], [signature_goal], [target]]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="full_name_s_petitions_on_site_title" added="1329559773"><![CDATA[{full_name}&#039;s petitions on {site_title}.]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unable_to_find_the_petition_you_are_trying_to_edit" added="1329711533">Unable to find the petition you are trying to edit.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="an_error_occurred_and_petition_letter_could_not_be_sent_to_target_petition_letter_may_be_blank" added="1329727586">An error occurred and petition letter could not be sent to target. Petition letter may be blank.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="please_edit_petition_end_date_before_update_petition_status" added="1329792169">End Date must be equal or later than current date.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="set_direct_sign_successfully" added="1329793654">Set direct sign successfully.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unset_direct_sign_successfully" added="1329793728">Unset direct sign successfully.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="deadline_has_been_reached" added="1329794558">Deadline has been reached</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="the_petition_help_you_are_looking_for_cannot_be_found" added="1329811546">The petition help you are looking for cannot be found.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_help_icon_file_size_limit" added="1329812302"><![CDATA[<title>File size of uploaded Help Icon</title><info>When users upload an help icon this will be the maximum file size for that picture.</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="required_fields" added="1329813499">Required Fields</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="submit" added="1329813742">Submit</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="reset" added="1329813784">Reset</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="save" added="1329813827">Save</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="please_provide_a_valid_url" added="1329814672">Please provide a valid URL. Begin with http:// or https://</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="example_http_www_yourwebsite_com" added="1329815845">Example: http://www.yourwebsite.com/</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="clear" added="1329962763">Clear</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="select_all" added="1329964741">Select All</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="un_select_all" added="1329964765">Un-Select All</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="view_more" added="1329964814">View More</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="views" added="1330054668">Views</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="likes" added="1330054682">Likes</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="any" added="1330055895">Any</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="search_by_date" added="1330316907">Search by end date</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="an_error_occurred_and_invited_message_could_not_be_sent" added="1330325038">An error occurred and invited message could not be sent.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="you_have_reached_your_upload_limit" added="1330415129">You have reached your upload limit.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="maximum_photos_imaximum" added="1330415395">Maximum photos: {iMaximum}</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="user_setting_total_photo_upload_limit" added="1330415536">Control how many photos a user can upload to a petition.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="unable_to_find_the_petition_you_are_trying_to_delete" added="1330574339">
+Unable to find the petition you are trying to delete.
+</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="view_all" added="1330587818">View All</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="petition_end_date_is_just_available_from_current_date_to_the_final_date_of_next_year" added="1330655300">Petition End Date is just available from current date to the final date of next year.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="invalid_files" added="1330740842">Invalid file(s):</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="setting_default_signature_goal" added="1330761324"><![CDATA[<title>Default Signature Goal</title><info>Default Signature Goal</info>]]></phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="notice" added="1330938656">Notice</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="topic_s" added="1331026444">Topics</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="page" added="1331080013">Page</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="click_on_image_to_set_it_as_default" added="1331108384">Click on image to set it as default.</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="loading" added="1331173649">Loading...</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="close" added="1331173677">Close</phrase>
+		<phrase module_id="petition" version_id="3.0.1" var_name="are_you_sure_you_want_to_delete_this_news" added="1331178156">Are you sure you want to delete this news?</phrase>
+		<phrase module_id="petition" version_id="3.1.0" var_name="full_name_tagged_you_in_a_comment_in_a_petition" added="1334386650">{full_name} tagged you in a comment in a petition</phrase>
+		<phrase module_id="petition" version_id="3.1.0" var_name="publishers_petition" added="1334386688">Petition</phrase>
+		<phrase module_id="petition" version_id="3.3.0" var_name="menu_petition_petition_532c28d5412dd75bf975fb951c740a30" added="1356490491">Petition</phrase>
+		<phrase module_id="petition" version_id="3.5.0rc1" var_name="menu_add_new_petition" added="1362974666">Create a Petition</phrase>
+		<phrase module_id="petition" version_id="3.6.0" var_name="signature_goal_must_be_less_than_4294967295" added="1373885979">Signature goal must be less than 4,294,967,295</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="petition" type="integer" admin="0" user="0" guest="0" staff="0" module="petition" ordering="19">flood_control_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="integer" admin="5" user="5" guest="0" staff="5" module="petition" ordering="13">total_photo_upload_limit</setting>
+		<setting is_admin_setting="0" module_id="petition" type="integer" admin="500" user="500" guest="0" staff="500" module="petition" ordering="12">max_upload_size_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="0" guest="0" staff="1" module="petition" ordering="15">can_feature_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="9">can_control_sign_on_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="7">can_set_allow_list_on_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="3">edit_own_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="0" guest="0" staff="1" module="petition" ordering="6">delete_user_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="10">can_post_comment_on_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="5">delete_own_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="0" guest="0" staff="1" module="petition" ordering="4">edit_user_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="1">add_new_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="0" user="0" guest="0" staff="0" module="petition" ordering="16">approve_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="integer" admin="1" user="1" guest="1" staff="1" module="petition" ordering="18">points_petition</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="1" staff="1" module="petition" ordering="0">view_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="8">can_control_comments_on_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="1" guest="0" staff="1" module="petition" ordering="14">can_add_tags_on_petitions</setting>
+		<setting is_admin_setting="0" module_id="petition" type="boolean" admin="1" user="0" guest="0" staff="1" module="petition" ordering="17">can_approve_petitions</setting>
+	</user_group_settings>
+</module>

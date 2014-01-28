@@ -1,0 +1,196 @@
+
+
+#container {
+	width:480px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+
+#example {
+	width:500px;
+	min-height:190px;
+	position:relative;
+}
+
+/*
+	Slideshow style
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:9px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	If height not specified height will be set by the slide content
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:470px;
+	height:170px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	Offeset for the 20px of padding
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+#slides .slide {
+	padding:20px;
+        padding-left: 0;
+	width:430px;
+	height:130px;
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+#slides .next,#slides .prev {
+	position:absolute;
+	top:-14px;
+	right:55px;
+	width:19px;
+	height:19px;
+	display:block;
+	z-index:101;
+}
+
+
+/*
+	Pagination
+*/
+
+.pagination {
+	position: absolute;
+        right: 2px;
+        top: -10px;
+	
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+
+
+h1 {
+	font-size:2em;
+}
+
+p {
+	font-size:1.3em;
+}
+
+#slides .link1 {
+	display:block;
+	margin-top:10px;
+	font-weight:800;
+      font-size: 15px;
+      font-weight: bold;
+}
+
+.js_petition_parent{
+  margin-top: 15px;
+}
+
+/*
+ Detail Page
+*/
+.petition_image img{max-width: 235px;max-height: 300px;}
+.petition_detail{margin-left: 2px;}
+.petition_detail > a{font-size: 15px;font-weight: bold;}
+.sign_now
+{
+    background: url(../../../image/signin-l.png) no-repeat left;
+    margin-left: 52px;
+    margin-top: 5px;
+    padding-left: 14px;
+    line-height: 38px;
+}
+.sign_now_r
+{
+    background: url(../../../image/signin-r.png) no-repeat right;
+    width: 120px;
+}
+.sign_now a{font-size: 16px;font-weight: bold;color: #fff; padding: 0 13px;}
+
+.signed
+{
+    background: url(../../../image/signed-l.png) no-repeat left;
+    margin-left: 52px;
+    margin-top: 5px;
+    padding-left: 14px;
+    line-height: 38px;
+    font-size: 16px;font-weight: bold;color: #fff; padding: 0 9px; text-align: center;
+}
+.signed_r
+{
+    background: url(../../../image/signed-r.png) no-repeat right;
+    width: 120px;
+}
+
+/*
+ Right-Block
+*/
+div.viewed_listing div.last{
+	 border-bottom: none;
+}
+.view_content_listing
+{
+   margin-bottom: 10px; 
+   border-bottom: 1px solid #DFDFDF;
+   min-height: 95px;
+}
+
+.view_content_listing .row_title_info{
+	margin-left: 90px;
+}
+
+.view_content_listing .stats{
+	
+}
+.view_content_listing .row_listing_image
+{
+    float:left;
+}
+.view_content_listing .row_listing_image img
+{
+    max-width: 85px;
+    max-height: 120px;
+    height: auto;
+    margin-right: 5px;
+}
+.view_more_link
+{
+    background: url(../../../image/view_more.png) no-repeat center left;
+    padding-left:13px;
+    margin: 10px 0;
+}
+.view_more_link a
+{
+    font-size: 13px;
+}
+

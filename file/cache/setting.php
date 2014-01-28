@@ -3653,6 +3653,7 @@ Site Name',
       8 => 'forum.thread|#text',
       9 => 'forum.post.thread|#text',
       10 => 'mail.thread|#message',
+      11 => 'petition.add|#description',
     ),
     'module_name' => 'tinymce',
   ),
@@ -4643,5 +4644,86 @@ Site Name',
     'var_name' => 'mobile_view_amount_of_item_per_page_in_new_playlist',
     'value_actual' => 10,
     'module_name' => 'musicsharing',
+  ),
+  646 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'default_signature_goal',
+    'value_actual' => 1000,
+    'module_name' => 'petition',
+  ),
+  647 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'friend_letter_template',
+    'value_actual' => 'Friends,
+
+I just created a petition: [title], because I care deeply about this very important issue.
+
+I\'m trying to collect [signature_goal] signatures, and I could really use your help.
+
+To read more about what I\'m trying to do and to sign my petition, click here:
+[petition_url]
+
+It\'ll just take a minute!
+
+Once you\'re done, please ask your friends to sign the petition as well. Grassroots movements succeed because people like you are willing to spread the word!
+
+Thanks',
+    'module_name' => 'petition',
+  ),
+  648 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'petition_meta_description',
+    'value_actual' => 'Read up on the latest petitions on Site Name.',
+    'module_name' => 'petition',
+  ),
+  649 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'petition_meta_keywords',
+    'value_actual' => 'petition, petitions, signatures',
+    'module_name' => 'petition',
+  ),
+  650 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'petition_digg_integration',
+    'value_actual' => true,
+    'module_name' => 'petition',
+  ),
+  651 => 
+  array (
+    'type_id' => 'large_string',
+    'var_name' => 'target_letter_template',
+    'value_actual' => 'Greetings,
+
+[description]
+
+Sincerely,
+[full_name]',
+    'module_name' => 'petition',
+  ),
+  652 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'preview_length_in_index',
+    'value_actual' => 200,
+    'module_name' => 'petition',
+  ),
+  653 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'petition_time_stamp',
+    'value_actual' => 'F j, Y',
+    'module_name' => 'petition',
+  ),
+  654 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'help_icon_file_size_limit',
+    'value_actual' => 200,
+    'module_name' => 'petition',
   ),
 ); ?>

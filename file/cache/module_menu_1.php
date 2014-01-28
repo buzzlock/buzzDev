@@ -515,6 +515,31 @@
   ),
   21 => 
   array (
+    'module_id' => 'petition',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'petition.admin_menu_manage_categories' => 
+      array (
+        'url' => 'petition/category',
+      ),
+      'petition.admin_menu_add_new_category' => 
+      array (
+        'url' => 'petition/category/add',
+      ),
+      'petition.admin_menu_petition' => 
+      array (
+        'url' => 'petition',
+      ),
+      'petition.admin_menu_manage_helps' => 
+      array (
+        'url' => 'petition/help',
+      ),
+    ),
+    'url_name' => 'petition',
+  ),
+  22 => 
+  array (
     'module_id' => 'photo',
     'is_menu' => '1',
     'menu' => 
@@ -526,7 +551,7 @@
     ),
     'url_name' => 'photo',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -547,7 +572,7 @@
     ),
     'url_name' => 'report',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -572,7 +597,7 @@
     ),
     'url_name' => 'rss',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -589,7 +614,7 @@
     ),
     'url_name' => 'share',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -614,7 +639,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -627,7 +652,7 @@
     ),
     'url_name' => 'user',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -644,7 +669,7 @@
     ),
     'url_name' => 'video',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -657,7 +682,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

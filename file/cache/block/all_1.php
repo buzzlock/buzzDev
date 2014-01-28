@@ -797,6 +797,44 @@
       'musicsharing.pic' => NULL,
     ),
   ),
+  'petition.view' => 
+  array (
+    1 => 
+    array (
+      'petition.images' => NULL,
+    ),
+    3 => 
+    array (
+      'petition.signnow' => NULL,
+    ),
+  ),
+  'petition.help' => 
+  array (
+    1 => 
+    array (
+      'petition.category' => NULL,
+    ),
+    3 => 
+    array (
+      'petition.direct' => NULL,
+    ),
+  ),
+  'petition.index' => 
+  array (
+    1 => 
+    array (
+      'petition.category' => NULL,
+      'petition.search' => NULL,
+      'petition.stats' => NULL,
+    ),
+    3 => 
+    array (
+      'petition.direct' => NULL,
+      'petition.popular' => NULL,
+      'petition.recent' => NULL,
+      'petition.signed' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -893,6 +931,13 @@
       'advancedphoto.otheralbum' => NULL,
     ),
   ),
+  'petition.profile' => 
+  array (
+    3 => 
+    array (
+      'petition.category' => NULL,
+    ),
+  ),
   'friend.profile' => 
   array (
     1 => 
@@ -948,6 +993,13 @@
     1 => 
     array (
       'advancedphoto.category' => NULL,
+    ),
+  ),
+  'petition.help.view' => 
+  array (
+    1 => 
+    array (
+      'petition.helplogo' => NULL,
     ),
   ),
   'video.view' => 
