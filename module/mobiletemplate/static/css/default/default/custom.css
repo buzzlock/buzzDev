@@ -1,0 +1,109 @@
+
+/*============================ Main Background ===========================*/
+#mobile_holder{
+	background: {mtcss_background_main};
+}
+/*
+ * Header
+ */
+
+/*============================ Header Background ===========================*/
+.ym-sub-header,
+#mobile_header{
+	background: {mtcss_header_background};
+}
+
+/*============================ Right Button Background ===========================*/
+
+.feed_sort_order a.feed_sort_order_link, 
+.feed_sort_order a.feed_sort_order_link:hover,
+.btn-head{
+	background: {mtcss_background_button_right};
+}
+
+/*
+ * Menu left
+ */
+
+/*============================ Left Menu Background ===========================*/
+.snap-drawer,
+.ym-menu-slide{
+	background: {mtcss_menu_left_background};
+}
+/*============================ Text Menu Color ===========================*/
+.mobile_main_menu a, .mobile_main_menu a:hover{
+	color: {mtcss_menu_text_s_color};
+}
+/*============================ Username's Color ===========================*/
+.ym-user .user_display_name a{
+	color: {mtcss_username_s_color};
+}
+/*
+ * Content
+ */
+
+/*============================ Content's Background ===========================*/
+#mobile_holder #main_content_holder{
+	background: {mtcss_content_s_background};
+}
+/*============================ Title's Color ===========================*/
+.friend_user_name span.user_profile_link_span a, .friend_user_name span.user_profile_link_span a:hover,
+.user_tooltip_info_user a, .user_tooltip_info_user a:hover,
+#mobile_h1_main h1, #mobile_h1_main h1 a, #mobile_h1_main h1 a:hover,
+h1 a, h1 a:hover, .h1 a, .h1 a:hover{
+	color: {mtcss_title_s_color};
+}
+
+/*
+ * Feed
+ */
+/*============================ Feed's Background  ===========================*/
+#js_feed_content{
+	background: {mtcss_feed_s_background};
+}
+
+/*============================ Item Background ===========================*/
+.js_temp_new_feed_entry, .ym-feed-item{
+	background: {mtcss_item_background};
+}
+/*============================ Text's Color ===========================*/
+.activity_feed_content_status{
+	color: {mtcss_text_s_color};
+}
+/*============================ Link's Background (like,comment,share) ===========================*/
+#js_feed_content .ym-feed-link{
+	background: {mtcss_background_link};
+}
+/*============================ Text Link's Color (like,comment,share) ===========================*/
+.row_feed_loop .js_feed_comment_border ul li a, 
+.row_feed_loop .js_feed_comment_border ul li a:hover, 
+.comment_mini_action ul li a, .comment_mini_action ul li a:hover, 
+.activity_feed_content_status ul li a, 
+.activity_feed_content_status ul li a:hover{
+	color: {mtcss_text_link_s_color};
+}
+
+/*
+ * Login page
+ */
+/*============================ Login Page Background  ===========================*/
+#mobile_holder #main_content_holder.ym-guest-home{
+	background:{mtcss_login_page_background};
+}
+/*============================ Login Button Color  ===========================*/
+input.button_register,
+#main_registration_form_holder input.button_register, 
+.ym-login-submit{
+ 	background: {mtcss_login_button_color};
+ 	border: 1px solid {mtcss_login_button_color};
+ }
+/*============================ Login Button Text Color  ===========================*/
+input.button_register,
+#main_registration_form_holder input.button_register, 
+.ym-login-submit{
+	color:{mtcss_login_button_text_color};
+}
+/*============================ Signup Button Color  ===========================*/
+.ym-button-sign-up{
+	background: {mtcss_signup_button_color};
+}

@@ -411,6 +411,31 @@
   ),
   17 => 
   array (
+    'module_id' => 'mobiletemplate',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'mobiletemplate.admin_menu_mobile_theme' => 
+      array (
+        'url' => 'mobiletemplate',
+      ),
+      'mobiletemplate.admin_menu_add_custom_style' => 
+      array (
+        'url' => 'mobiletemplate/addstyle',
+      ),
+      'mobiletemplate.admin_menu_manage_custom_styles' => 
+      array (
+        'url' => 'mobiletemplate/managestyles',
+      ),
+      'mobiletemplate.admin_menu_manage_navigation' => 
+      array (
+        'url' => 'mobiletemplate/managenavigation',
+      ),
+    ),
+    'url_name' => 'mobiletemplate',
+  ),
+  18 => 
+  array (
     'module_id' => 'music',
     'is_menu' => '1',
     'menu' => 
@@ -426,7 +451,7 @@
     ),
     'url_name' => 'music',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -443,7 +468,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -464,7 +489,7 @@
     ),
     'url_name' => 'pages',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -477,7 +502,7 @@
     ),
     'url_name' => 'photo',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -498,7 +523,7 @@
     ),
     'url_name' => 'report',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -523,7 +548,7 @@
     ),
     'url_name' => 'rss',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -540,7 +565,7 @@
     ),
     'url_name' => 'share',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -565,7 +590,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -578,7 +603,7 @@
     ),
     'url_name' => 'user',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -595,7 +620,7 @@
     ),
     'url_name' => 'video',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -608,7 +633,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

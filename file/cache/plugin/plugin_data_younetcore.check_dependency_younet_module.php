@@ -166,6 +166,21 @@ $aProduct = array(
 );
 $aProducts[] = $aProduct; defined(\'PHPFOX\') or exit(\'NO DICE!\');
 $aProduct = array(
+    \'product_id\' =>\'younet_mobiletemplate\',
+    \'is_core\' =>0,
+    \'title\' =>\'YouNet Mobile Template\',
+    \'description\' =>\'by YouNet Company\',
+    \'version\' =>\'3.01\',
+    \'latest_version\'=>NULL,
+    \'last_check\' =>0,
+    \'is_active\' =>1,
+    \'url\' =>\'http://phpfox3.demo.younetco.com/mobiletemplate/\',
+    \'url_version_check\' =>"",
+    \'type_id\'=>\'product\',
+    \'check_id\' =>\'younetcore\'
+    );
+$aProducts[] = $aProduct; defined(\'PHPFOX\') or exit(\'NO DICE!\');
+$aProduct = array(
     \'product_id\' =>\'younetwall\',
     \'is_core\' =>0,
     \'title\' =>\'Advanced Wall\',

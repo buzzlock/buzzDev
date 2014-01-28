@@ -1,4 +1,4 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
 <?php $aContent = array (
-  6 => true,
+  7 => true,
 ); ?>

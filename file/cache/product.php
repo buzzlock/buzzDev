@@ -208,6 +208,19 @@
     'url' => 'http://phpfox3.demo.younetco.com/',
     'url_version_check' => 'http://phpfox3.demo.younetco.com/',
   ),
+  'younet_mobiletemplate' => 
+  array (
+    'product_id' => 'younet_mobiletemplate',
+    'is_core' => '0',
+    'title' => 'YouNet Mobile Template',
+    'description' => 'by YouNet Company',
+    'version' => '3.01p2',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/mobiletemplate',
+    'url_version_check' => 'http://phpfox3.demo.younetco.com/',
+  ),
   'Younet_Payment_Gateway' => 
   array (
     'product_id' => 'Younet_Payment_Gateway',

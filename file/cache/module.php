@@ -43,6 +43,7 @@
   'log' => 'log',
   'mail' => 'mail',
   'mobile' => 'mobile',
+  'mobiletemplate' => 'mobiletemplate',
   'music' => 'music',
   'newsletter' => 'newsletter',
   'notification' => 'notification',

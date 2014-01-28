@@ -1,0 +1,109 @@
+<module>
+	<data>
+		<module_id>mobiletemplate</module_id>
+		<product_id>younet_mobiletemplate</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:4:{s:38:"mobiletemplate.admin_menu_mobile_theme";a:1:{s:3:"url";a:1:{i:0;s:14:"mobiletemplate";}}s:42:"mobiletemplate.admin_menu_add_custom_style";a:1:{s:3:"url";a:2:{i:0;s:14:"mobiletemplate";i:1;s:8:"addstyle";}}s:46:"mobiletemplate.admin_menu_manage_custom_styles";a:1:{s:3:"url";a:2:{i:0;s:14:"mobiletemplate";i:1;s:12:"managestyles";}}s:43:"mobiletemplate.admin_menu_manage_navigation";a:1:{s:3:"url";a:2:{i:0;s:14:"mobiletemplate";i:1;s:16:"managenavigation";}}}]]></menu>
+		<phrase_var_name>module_mobiletemplate</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="mobiletemplate" parent_var_name="" m_connection="mobile" var_name="menu_mobiletemplate_pages_532c28d5412dd75bf975fb951c740a30" ordering="131" url_value="pages" version_id="3.6.0" disallow_access="" module="mobiletemplate" mobile_icon="small_pages.png" />
+		<menu module_id="mobiletemplate" parent_var_name="" m_connection="mobile" var_name="menu_mobiletemplate_music_532c28d5412dd75bf975fb951c740a30" ordering="130" url_value="music" version_id="3.6.0" disallow_access="" module="mobiletemplate" mobile_icon="small_music.png" />
+	</menus>
+	<phrases>
+		<phrase module_id="mobiletemplate" version_id="3.0.1" var_name="module_mobiletemplate" added="1332812433">Mobile Template</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="admin_menu_mobile_theme" added="1375863180">Mobile Theme</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="admin_menu_add_custom_style" added="1375863180">Add Mobile Custom Style</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="admin_menu_manage_custom_styles" added="1375863180">Manage Mobile Custom Styles</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mobile_theme" added="1375864389">Mobile Theme</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="no_styles" added="1375867282">No Styles Found</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="activate" added="1375867755">Activate</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="deactivate" added="1375867775">Deactivate</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="theme_name" added="1375870100">Theme Name</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="style_name" added="1375870130">Style Name</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="save" added="1375937034">Save</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="name" added="1375937764">Name</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="main_information" added="1375937784">Main information</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="custom_css_details" added="1375937810">Custom CSS details</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="add_custom_mobile_style" added="1375944644">Add Custom Mobile Style</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="add_mobile_custom_style" added="1375946720">Add Mobile Custom Style</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="custom_style_successfully_added" added="1375946816">Mobile Custom Style successfully added.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="manage_mobile_custom_styles" added="1375946928">Manage Mobile Custom Styles</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="style_name_is_required" added="1375948053">Style name is required</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="custom_style_successfully_updated" added="1375948545">Custom Style successfully updated.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="delete_selected" added="1375949466">Delete Selected</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="status" added="1375949569">Status</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="manage" added="1375949742">Manage</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="edit" added="1375949785">Edit</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="delete" added="1375950904">Delete</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mcs_successfully_deleted" added="1375951589">Mobile Custom Style successfully deleted.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="style_is_not_valid" added="1375952737">Mobile Custom Style is not valid.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mobile_custom_style_successfully_updated" added="1375953541">Mobile Custom Style successfully updated.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="photos" added="1375958929">Photos</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="checkin" added="1375958950">Check In</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="born_on" added="1376023946">Born on</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="lives_in" added="1376023968">Lives in</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="relationship_status" added="1376024012">Relationship status</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_error" added="1376365975">There was a problem contacting the Google servers.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_invalid_request" added="1376366018">This request was invalid.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_over_query_limit" added="1376366047">The webpage has gone over its request quota.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_request_denied" added="1376366071">The webpage is not allowed to use the PlacesService.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_unknown_error" added="1376366094">The PlacesService request could not be processed due to a server error. The request may succeed if you try again.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="ga_status_code_zero_results" added="1376366116">No result was found for this request.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="menu_mobiletemplate_music_532c28d5412dd75bf975fb951c740a30" added="1376473017">Music</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="menu_mobiletemplate_pages_532c28d5412dd75bf975fb951c740a30" added="1376473093">Pages</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_background_main" added="1376909721">Main Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_header_background" added="1376909741">Header Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_background_button_right" added="1376909780">Right Button Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_menu_left_background" added="1376909805">Left Menu Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_menu_text_s_color" added="1376909835">Text Menu Color</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_username_s_color" added="1376909853"><![CDATA[Username&#039;s Color]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_content_s_background" added="1376909865"><![CDATA[Content&#039;s Background]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_title_s_color" added="1376909877"><![CDATA[Title&#039;s Color]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_feed_s_background" added="1376909887"><![CDATA[Feed&#039;s Background]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_item_background" added="1376909895">Item Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_text_s_color" added="1376909913"><![CDATA[Text&#039;s Color]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_background_link" added="1376909924"><![CDATA[Link&#039;s Background (like,comment,share)]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_text_link_s_color" added="1376909936"><![CDATA[Text Link&#039;s Color (like,comment,share)]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_login_page_background" added="1376963999">Login Page Background</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_login_button_color" added="1376964010">Login Button Color</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_login_button_text_color" added="1376964024">Login Button Text Color</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="mtcss_signup_button_color" added="1376964035">Signup Button Color</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="update_status" added="1377049771">Update Status</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="cancel" added="1377049791">Cancel</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="post" added="1377049818">Post</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="photo" added="1377049855">Photo</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="audience" added="1377049903">Audience</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="where_are_you" added="1377049929">Where are you?</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="search" added="1377049966">Search</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="searching" added="1377049979">Searching</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="about" added="1377050017">About</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="friends" added="1377050031">Friends</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="likes" added="1377050101">Likes</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="blog" added="1377050115">Blog</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="at_uppercase" added="1377141655">At</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="admin_menu_manage_navigation" added="1379496198">Manage Menu Navigation</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="manage_navigation" added="1379496420">Manage Navigation</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="manage_menu_navigation" added="1379497976">Manage Menu Navigation</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="order" added="1379503300">Order</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="label" added="1379503372">Label</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="enable" added="1379503387">Enable</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="warning_for_style" added="1379514564"><![CDATA[This function is only applied for YouNet&#039;s mobile template currently. It does not work with other templates.]]></phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="select_friend_to_share" added="1379503387">Select a friend to share this with.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="please_choose_image" added="1379503387">Please choose image before posting</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_menu" added="1379503387">Menu</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="acc_sett" added="1379503387">Account Settings</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_home" added="1379503387">Home</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_sort" added="1379503387">Sort</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_back" added="1379503387">Back</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="local_business" added="1379503387">Local Business</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_likes" added="1379503387">Likes</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_like" added="1379503387">Like</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_comments" added="1379503387">Comments</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.6.0" var_name="u_comment" added="1379503387">Comment</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.7.3" var_name="txt_do_not_have_permission_for_action" added="1386166313">You do not have permission for this action.</phrase>
+		<phrase module_id="mobiletemplate" version_id="3.7.3" var_name="txt_set_as_profile_image" added="1386166412">Set this photo as your profile image.</phrase>
+	</phrases>
+</module>
