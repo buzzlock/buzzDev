@@ -574,6 +574,59 @@
   ),
   24 => 
   array (
+    'module_id' => 'resume',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'resume.admin_menu_manage_resumes' => 
+      array (
+        'url' => 'resume/resumes',
+      ),
+      'resume.admin_menu_add_category' => 
+      array (
+        'url' => 'resume/addcategory',
+      ),
+      'resume.admin_menu_manage_categories' => 
+      array (
+        'url' => 'resume/categories',
+      ),
+      'resume.admin_menu_add_level' => 
+      array (
+        'url' => 'resume/addlevel',
+      ),
+      'resume.admin_menu_manage_levels' => 
+      array (
+        'url' => 'resume/levels',
+      ),
+      'resume.admin_menu_manage_view_service_registration' => 
+      array (
+        'url' => 'resume/registrations',
+      ),
+      'resume.admin_menu_statistic' => 
+      array (
+        'url' => 'resume/statistic',
+      ),
+      'resume.admin_menu_weight_settings' => 
+      array (
+        'url' => 'resume/weightsettings',
+      ),
+      'resume.admin_menu_global_settings' => 
+      array (
+        'url' => 'resume/globalsettings',
+      ),
+      'resume.admin_menu_add_custom_field' => 
+      array (
+        'url' => 'resume/custom/add',
+      ),
+      'resume.admin_menu_manage_custom_fields' => 
+      array (
+        'url' => 'resume/custom',
+      ),
+    ),
+    'url_name' => 'resume',
+  ),
+  25 => 
+  array (
     'module_id' => 'rss',
     'is_menu' => '1',
     'menu' => 
@@ -597,7 +650,7 @@
     ),
     'url_name' => 'rss',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -614,7 +667,7 @@
     ),
     'url_name' => 'share',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -639,7 +692,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -652,7 +705,7 @@
     ),
     'url_name' => 'user',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -669,7 +722,7 @@
     ),
     'url_name' => 'video',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -682,7 +735,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

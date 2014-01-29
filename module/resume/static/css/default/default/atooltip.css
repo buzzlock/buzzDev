@@ -1,0 +1,49 @@
+/* 
+	Required Styles
+*/
+#aToolTip {
+	position: absolute;
+	display: none;
+	z-index: 50000;
+}
+
+	#aToolTip .aToolTipContent {
+		position:relative;
+		margin:0;
+		padding:0;
+		font-size:12px;
+	}
+/* 
+	END: Required Styles
+*/
+/**
+	Default Theme
+*/
+.defaultTheme {
+	border:2px solid #FADDB3;
+	background:#FFFDE3;
+	color:#3B5998;
+	margin:0;
+	padding: 6px 15px 6px 12px;
+	width:200px;
+	-moz-box-shadow: 2px 2px 5px #DFDFDF; /* for Firefox 3.5+ */
+	-webkit-box-shadow: 2px 2px 5px #DFDFDF; /* for Safari and Chrome */
+	box-shadow: 2px 2px 5px #DFDFDF; /* for Safari and Chrome */
+}
+	
+	.defaultTheme #aToolTipCloseBtn {
+	background:url(../../../image/res.png) no-repeat 0 -73px;
+	display: block;
+    height: 5px;
+    margin: 2px;
+    outline: medium none;
+    padding: 4px;
+    position: absolute;
+    right: -19px;
+    text-indent: -9999px;
+    top: -8px;
+    width: 5px;
+	}
+	.resume_item_right h4{
+		position:relative;
+	}

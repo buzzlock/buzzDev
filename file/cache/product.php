@@ -273,4 +273,17 @@
     'url' => 'http://phpfox3demo.modules2buy.com/',
     'url_version_check' => NULL,
   ),
+  'younet_resume' => 
+  array (
+    'product_id' => 'younet_resume',
+    'is_core' => '0',
+    'title' => 'YouNet Resume',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p6',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
 ); ?>

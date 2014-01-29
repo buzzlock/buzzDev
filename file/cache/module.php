@@ -60,6 +60,7 @@
   'rate' => 'rate',
   'report' => 'report',
   'request' => 'request',
+  'resume' => 'resume',
   'rss' => 'rss',
   'search' => 'search',
   'share' => 'share',

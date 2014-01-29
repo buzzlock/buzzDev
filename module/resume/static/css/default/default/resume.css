@@ -1,0 +1,731 @@
+/**
+ * 	
+ * @copyright      YouNet Company
+ * @author         VuDP, TienNPL, TrucPTM
+ * @package        Module_Resume
+ * @version        3.01
+ * 
+ */
+
+
+.resume_category_list li
+{
+	border-bottom: 1px solid #DFDFDF;
+}
+/*CSS for All Resumes */
+.resume_item
+{
+    margin-top: 16px;
+	padding-bottom:16px;
+	border-bottom:1px solid #dfdfdf;
+	position:relative;
+	font-size:12px;
+	color: gray;
+}
+
+.resume_item_left
+{
+	float: left;
+	margin-left: 10px;
+}
+.resume_item_right
+{
+	margin-left: 140px;
+	margin-right: 100px;
+}
+.resume_item_right h4
+{
+	margin-bottom:5px;
+}
+.resume_item_right h4 a strong {
+	margin-right:2px;
+}
+.yns-item
+{
+	text-indent:-9999px;
+	display:inline-block;
+	background:url(../../../image/res.png) no-repeat;
+	height:16px;
+	padding:0 9px;
+	
+}
+.yns-item-pdf
+{
+	text-indent:-9999px;
+	display:inline-block;
+	background:url(../../../image/pdf.png) no-repeat;
+	height:16px;
+	padding:0 9px;
+	
+}
+.yns-search
+{
+	background-position:0px -25px;
+	
+}
+.yns-mail
+{
+	background-position:0 -42px;
+	padding:0 9px;
+}
+.yns-note
+{
+	background-position:0 -58px;
+	padding:0 9px;
+}
+.yns-reload
+{
+	background-position:0 -4px;
+	padding:0 9px;
+}
+.resume_item .yns-viewall:hover,
+.resume_item .yns-viewall
+{
+	position:absolute;
+	top:0;
+	right:0;
+	border:1px solid #333;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:#78d4ff;
+	display:block;
+	text-transform:uppercase;
+	font-size:12px;
+	padding:7px 15px;
+	font-size:9px;
+	color:#333333;
+}
+.resume_item .yns-res-info
+{
+	margin-bottom:10px;
+	font-size:11px;
+}
+/** CSS for detail page*/
+#content_load_data .yns-basic-header div a
+{
+	font-size:12px;
+	font-weight:bold;
+	padding-left:20px;
+	color:#3B5998;
+	text-indent:0;
+	width:auto;
+	 
+}
+#content_load_data .yns-basic-header
+{
+    position: relative;
+}
+.yns-basic-header > div
+{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.yns-fav
+{
+	background-position:0 -90px;
+}
+#content_load_data .yns-basic-header div a.yns-note
+{
+	background-position: 0 -58px;
+}
+#content_load_data .yns-basic-header div a.yns-mail
+{
+	 background-position: 0 -42px;
+}
+.yns_resume_basic
+{
+	margin-top:20px;
+}
+.yns .resume_image
+{
+	float:left;
+	width:120px;
+	text-align:center;
+	margin-left: 12px;
+}
+.yns .basic_info .name
+{
+	font-size:18px;
+	font-weight:bold;
+	color: #3B5998;
+}
+.yns .basic_info .edit
+{
+	margin-left:10px;
+}
+.yns .f18
+{
+	font-size:18px;
+}
+.yns .basic_info
+{
+	float:left;
+	padding-right:15px;
+	margin-left:15px;
+	border-right:1px solid #dfdfdf;
+	width:363px;
+}
+
+.yns .basic_info_export
+{
+	float:left;
+	padding-right:15px;
+	margin-left:15px;
+	border-right:1px solid #dfdfdf;
+}
+
+.yns .person-info
+{
+	overflow:hidden;
+	border-top:1px solid #dfdfdf;
+	margin-top:10px;
+	padding-top:5px;
+}
+#content .yns div.info
+{
+	font-size:12px;
+	border-bottom:1px solid #dfdfdf;
+}
+.yns div.info_left
+{
+	color:#000;
+	font-weight:normal;
+}
+#content .yns div.info_right
+{
+	margin-left:182px;
+}
+.yns .lock-icon
+{
+	background-position:0 -111px;
+}
+.yns .upgrade-btn
+{
+	background: none repeat scroll 0 0 #FF8011;
+    border: 1px solid #B8853C;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+.yns .upgrade-btn-link:hover
+{	
+	text-decoration: none; 
+}
+#content .yns .res-contact
+{
+	margin-top: 14px;
+    padding-bottom: 14px;
+}
+.yns .basic_note
+{
+	font-size: 13px;
+	margin-bottom: 10px;
+	padding:5px;
+	border: 1px solid #DFDFDF;
+	background-color: #FFFFA9;
+}
+.yns .basic_info_content
+{
+	background: none repeat scroll 0 0 #E1EEF0;
+    border: 1px solid #DFDFDF;
+   
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.yns .basic_info_content .yns-bg > div,
+.yns .basic_info_content > div
+{
+	padding-top:16px;
+	padding-bottom:16px;
+}
+.yns .basic_info_content .yns-bg
+{
+	background:#edf5f6;
+	float:left;
+	padding:0;
+/*	padding-left:16px;*/
+}
+.yns.no-res-complete .basic_info_content .yns-bg
+{
+	float:none;
+}
+.yns.no-res-complete .basic_info
+{
+	border:none;
+	width: 590px;
+}
+.yns.contact-info
+{
+	font-size:12px;
+	margin-bottom:30px;
+	margin-left:20px;
+	margin-right:20px;
+	line-height:20px;
+}
+
+.yns h3
+{
+	font-size: 14px;
+    font-weight: bold;
+	position:relative;
+}
+.f_14
+{
+	font-size:14px;
+}
+.f_11
+{
+	font-size:11px;
+}
+
+.yns .experience_content
+{
+	line-height:20px;
+	padding:8px;
+	padding-left:0;
+}
+.yns .experience_content .f_14
+{
+	color:#333;
+}
+.yns .experience_content .company_name
+{
+	color:#3B5998;
+	font-weight: bold;
+}
+.skill_education a,
+.skill_education a:hover
+{
+	border: 1px solid #DFDFDF;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 0px 10px;
+	background:url(../../../image/skill.jpg) repeat-x top #e4e4e4;
+	color:#333;
+	text-decoration:none;
+	
+}
+/* CSS for my resume detail */
+.yns .resume_image > p
+{
+	text-align:center;
+}
+.yns .res-complete
+{
+	padding-left:16px;
+	padding-right:13px;
+	float:right;
+	width: 225px;
+}
+.meter-wrap-l,
+.meter-wrap-r,
+.meter-wrap{background: url(../../../image/nl-sm.png) repeat-x;}
+.meter-wrap{background-position: 0 -29px;height:22px;padding-top:3px;width:211px;}
+.meter-wrap-l{background-position: 0 -2px;padding-left:3px;background-repeat:no-repeat;}
+.meter-wrap-r{ background-position: 100% -55px;padding-right: 2px;width:212px;background-repeat:no-repeat}
+.meter-wrap-l {
+	/* The width and height of your image */
+	width: 217px; height: 22px;
+	margin:10px 0;
+}
+.meter-value
+ {
+	height:15px;
+	background:url(../../../image/nl-s.jpg) no-repeat;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	font-size:10px;
+	line-height:15px;
+ }
+.yns .res-percent
+{
+	font-size:12px;
+	font-weight:bold;
+}
+.yns .res-percent span
+{
+	font-size:29px;
+}
+.yns .res-tip p
+{
+	margin-bottom:5px;
+	background:url(../../../image/res1.png) no-repeat 0 -130px;
+	font-size:12px;
+	padding-left:16px;
+}
+.yns .res-tip .tip-title
+{
+	background:url(../../../image/bd.jpg) no-repeat bottom left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 5px 5px 5px 0;
+}
+.yns .new-section
+{
+	 border: 1px solid #DFDFDF;
+    font-size: 12px;
+    padding: 10px 20px;
+	background:#FAFAFA;
+	margin-left:0;
+	margin-right:0;
+}
+.yns .new-section .add-new 
+{
+	right:20px;
+}
+.yns .add-new 
+{	
+	font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+/* CSS for my resume */
+.yns-publish
+{
+	background-position: 0 -148px;
+}
+.yns-complete
+{
+	background-position: 0 -169px;
+}
+.yns-uncomplete
+{
+	background-position: 0 -188px;
+}
+.my-resume .resume_item_right
+{
+	margin-left:27px;
+}
+.my-resume .resume_item_left
+{
+	margin-left:0px;
+}
+.my-resume .resume_item_left a.moderate_link
+{
+	margin-top:-2px;	
+}
+.resume_item .yns-publish-btn:hover,
+.resume_item .yns-publish-btn
+{
+	background:#ff7e0b;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	border:1px solid #b8853c;
+	text-decoration:none;
+}
+.resume_item .yns-private-btn:hover,
+.resume_item .yns-private-btn
+{
+	background:#ff0000;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	border:1px solid #b8853c;
+	text-decoration:none;
+}
+.resume_item .yns-disabled-btn:hover,
+.resume_item .yns-disabled-btn
+{
+	background:#a9a9a9;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	border:1px solid #b8853c;
+	text-decoration:none;
+}
+.yns .my-res-option
+{
+	font-size:12px;
+	margin-bottom:5px;
+	font-weight: bold;
+}
+.adv-search-left
+{
+	float: left;
+	width: 175px;
+}
+.adv-search-right #country_iso
+{
+	float: left;
+	margin-right: 10px;
+}
+.adv-search-right #js_country_child_id
+{
+	padding-top: 0px!important;
+}
+.adv-search-block
+{
+	border-bottom: 1px #DFDFDF solid;
+}
+/*CSS for add resume*/
+.yns.menu-add
+{
+	float:left;
+}
+.yns.action-add
+{
+	float:right;
+}
+.yns.menu-add li,
+.yns.action-add li
+{
+	float:left;
+}
+.yns.menu-add li
+{
+	margin-right:20px;
+}
+.yns a.page_section_menu_link,
+.yns a.page_section_menu_link:hover
+{
+	font-size: 11px;
+	display: inline-block;
+	position: inherit;
+}
+.yns.add-res
+{
+	position:relative;
+	overflow:hidden;
+}
+#menu_create_resume ul li{
+	display: block;
+	float: left;
+}
+#menu_create_resume ul > li > a,
+#menu_create_resume ul > li > span{
+	display: block;
+	margin-right: 5px;
+	font-weight: bold;
+	line-height: 26px;
+	padding: 0px 6px 0px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#menu_create_resume ul > li > span
+{
+	color:#ccc;
+}
+.table_left_add{
+	width: 200px;
+}
+.addition-session #menu_create_resume ul > li.yns-addition > a,
+.addition-session #menu_create_resume ul > li.yns-addition > a:hover,
+.public-session #menu_create_resume ul > li.yns-public > a,
+.public-session #menu_create_resume ul > li.yns-public > a:hover,
+.lang-session #menu_create_resume ul > li.yns-lang > a,
+.lang-session #menu_create_resume ul > li.yns-lang > a:hover,
+.certi-session #menu_create_resume ul > li.yns-certi > a,
+.certi-session #menu_create_resume ul > li.yns-certi > a:hover,
+.skill-session #menu_create_resume ul > li.yns-skill > a,
+.skill-session #menu_create_resume ul > li.yns-skill > a:hover,
+.education-session #menu_create_resume ul > li.yns-education > a,
+.education-session #menu_create_resume ul > li.yns-education > a:hover,
+.experience-session #menu_create_resume ul > li.yns-experience > a,
+.experience-session #menu_create_resume ul > li.yns-experience > a:hover,
+.add-session #menu_create_resume ul > li.yns-add > a,
+.add-session #menu_create_resume ul > li.yns-add > a:hover,
+.summary-session #menu_create_resume ul > li.yns-summary > a,
+.summary-session #menu_create_resume ul > li.yns-summary > a:hover
+{
+	background: #545454;
+	color: white;
+	text-decoration: none;
+}
+.addition-session #menu_create_resume ul > li.yns-more-option > a,
+.addition-session #menu_create_resume ul > li.yns-more-option > a:hover,
+.public-session #menu_create_resume ul > li.yns-more-option > a,
+.public-session #menu_create_resume ul > li.yns-more-option > a:hover,
+.lang-session #menu_create_resume ul > li.yns-more-option > a,
+.lang-session #menu_create_resume ul > li.yns-more-option > a:hover,
+.certi-session #menu_create_resume ul > li.yns-more-option > a,
+.certi-session #menu_create_resume ul > li.yns-more-option > a:hover{
+	background: #545454;
+	color: white;
+	text-decoration: none;
+}
+
+.page_section_menu_header {
+    border-top: none !important;
+    overflow:hidden;
+	height:auto;
+    padding-top: 1.5px;
+}
+
+.menu-add li > a{
+	display: block;
+	margin-right: 5px;
+	font-weight: bold;
+	line-height: 22px;
+	padding: 0px 6px 0px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	font-size: 12px;
+	z-index: 999;
+}
+.yns-un-fav
+{
+	background-position: 0 -206px;
+}
+/*CSS for who view me*/
+.yns.who-view-me
+{
+	font-size:12px;
+	padding-bottom:20px;
+	border-bottom:1px solid #dfdfdf;
+}
+
+.row_whoview{
+		border-bottom: 1px solid #DFDFDF;
+		padding-bottom: 5px;
+    	padding-top: 5px;
+		font-size:12px;
+		position:relative;
+}
+#content .yns .row_whoview div.info
+{
+	border:none;
+	clear:none;
+	margin-bottom:0;
+}
+.row_whoview span{
+	color: #9F9F9F;
+}
+.menu_viewme{
+	top: -5px !important;
+}
+.yns .send-mess
+{
+	position:absolute;
+	top:10px;
+	right:0;
+}
+#content .yns .row_whoview div.info_left
+{
+	color: #808080;
+}
+.yns.view-more
+{
+	margin-top:20px;
+}
+
+.chzn-choices .search-choice {
+    background-clip: padding-box;
+    background-color: #E4E4E4;
+    background: -moz-linear-gradient(center bottom , #E4E4E4 0%, #EEEEEE 70%);
+    border: 1px solid #B4B4B4;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    line-height: 13px;
+    margin: 3px 0 3px 5px;
+    padding: 3px 19px 3px 6px;
+    position: relative;
+}
+.chzn-choices li {
+    float: left;
+    list-style: none outside none;
+}
+
+.chzn-choices .search-choice .search-choice-close {
+    background: url("../../../image/chosen-sprite.png") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1px;
+    height: 13px;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    width: 12px;
+}
+
+.textareaselect{
+	background: none repeat-x scroll 0 0 #F4F4F4;
+    border: 1px solid #D7D7D7;
+    height: 98px;
+    padding-bottom: 20px;
+    width: 588px;
+    overflow: auto;
+}
+.page_section_menu ul.yns-viewmore-option{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	height: 43px;
+	border-top: 1px solid #DFDFDF;
+	top:29px;
+}
+.summary_label
+{
+	font-size:13px;
+	margin-bottom: 5px;
+}
+.summary_content
+{
+	margin-left: 50px;
+}
+
+#content div.info_left_pdf{
+    float: left;
+    padding-right: 8px;
+    width: 182px;
+}
+.ynr-add-sumary .table_left{
+	float:left;
+	width:120px;
+}
+.ynr-add-sumary {
+	border-bottom:1px solid #dfdfdf;
+	margin-bottom:10px;
+}
+.ynr-add-sumary .table{
+	overflow:hidden;
+}
+.ynr-add-sumary .table_right{
+	float:left;
+}
+.ynr-display{
+	margin-left: 469px;
+	font-size: 13px;
+}
+.ynr-add-sumary .ynr-display{
+	margin-left: 432px;
+	margin-top: 8px;
+}
+.ynr-add-sumary .default_profile_info{
+    font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+}
+.table_right.multi_location_holder{
+	font-size: 12px;
+	color: #888;
+	font-weight: bold;
+}
+.table_right.multi_location_holder .ynf-location-item{
+	overflow:hidden;
+        
+	margin-bottom:10px;
+}
+.table_right.multi_location_holder .ynf-location-item > div{
+	float:left;
+	margin-right:20px;
+}
+.ynf-show-profile{
+	display:inline-block;
+}
+
+.ynf-location-item td{
+    border-bottom: 1px solid #CCCCCC;
+}

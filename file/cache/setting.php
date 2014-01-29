@@ -4726,4 +4726,23 @@ Sincerely,
     'value_actual' => 200,
     'module_name' => 'petition',
   ),
+  655 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'total_resume_display',
+    'value_actual' => '5,10,15,20,25',
+    'module_name' => 'resume',
+  ),
+  656 => 
+  array (
+    'type_id' => 'array',
+    'var_name' => 'required_fields',
+    'value_actual' => 
+    array (
+      0 => 'experience',
+      1 => 'education',
+      2 => 'skills',
+    ),
+    'module_name' => 'resume',
+  ),
 ); ?>

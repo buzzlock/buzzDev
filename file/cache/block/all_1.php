@@ -60,6 +60,7 @@
       'friend.mutual-friend' => NULL,
       'wall.time' => NULL,
       'track.recent-views' => NULL,
+      'resume.resume-completeness' => NULL,
     ),
     2 => 
     array (
@@ -177,6 +178,13 @@
     ),
   ),
   'fundraising.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'resume.profile' => 
   array (
     1 => 
     array (
@@ -833,6 +841,20 @@
       'petition.popular' => NULL,
       'petition.recent' => NULL,
       'petition.signed' => NULL,
+    ),
+  ),
+  'resume.view' => 
+  array (
+    1 => 
+    array (
+      'resume.categories' => NULL,
+    ),
+  ),
+  'resume.index' => 
+  array (
+    1 => 
+    array (
+      'resume.categories' => NULL,
     ),
   ),
   'apps.index' => 

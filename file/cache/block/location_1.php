@@ -34,6 +34,7 @@
     'track.recent-views' => '3',
     'musicsharing.profileplayer' => '1',
     'friend.remove' => '1',
+    'resume.resume-completeness' => '3',
     'wall.display' => '2',
   ),
   'profile.info' => 
@@ -99,6 +100,10 @@
     'profile.pic' => '1',
   ),
   'fundraising.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'resume.profile' => 
   array (
     'profile.pic' => '1',
   ),
@@ -471,6 +476,14 @@
     'petition.popular' => '3',
     'petition.recent' => '3',
     'petition.signed' => '3',
+  ),
+  'resume.view' => 
+  array (
+    'resume.categories' => '1',
+  ),
+  'resume.index' => 
+  array (
+    'resume.categories' => '1',
   ),
   'apps.index' => 
   array (
