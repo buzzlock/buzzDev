@@ -18,8 +18,11 @@
     3 => 
     array (
       'friend.birthday' => NULL,
+      'suggestion.lessfriends' => NULL,
       'friend.suggestion' => NULL,
+      'suggestion.events' => NULL,
       'poke.display' => 'a:1:{i:0;s:1:"3";}',
+      'suggestion.pages' => NULL,
       'shoutbox.display' => NULL,
       'tag.cloud' => NULL,
     ),

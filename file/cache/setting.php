@@ -4829,4 +4829,11 @@ Sincerely,
     'value_actual' => 'Everyone',
     'module_name' => 'socialstream',
   ),
+  669 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'support_mobile',
+    'value_actual' => true,
+    'module_name' => 'suggestion',
+  ),
 ); ?>

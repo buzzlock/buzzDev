@@ -208,6 +208,19 @@
     'url' => 'http://phpfox.younetco.com',
     'url_version_check' => NULL,
   ),
+  'suggestion_recommendation' => 
+  array (
+    'product_id' => 'suggestion_recommendation',
+    'is_core' => '0',
+    'title' => 'Friend suggestion and recommendation',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p3',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com/suggestion/',
+    'url_version_check' => 'http://phpfox3.demo.younetco.com/suggestion/',
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

@@ -1,0 +1,175 @@
+<module>
+	<data>
+		<module_id>suggestion</module_id>
+		<product_id>suggestion_recommendation</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_suggestion</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="development" module_id="suggestion" is_hidden="0" type="boolean" var_name="support_mobile" phrase_var_name="setting_support_mobile" ordering="1" version_id="3.5.1">1</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="core.index-member" module_id="suggestion" component="events" location="3" is_active="1" ordering="6" disallow_access="" can_move="0">
+			<title>Suggest events block</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="suggestion" component="lessfriends" location="3" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title>Friends suggestion</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="suggestion" component="pages" location="3" is_active="1" ordering="7" disallow_access="" can_move="0">
+			<title>Recent Pages Block</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="suggestion" component="events" m_connection="" module="suggestion" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="suggestion" component="suggestion" m_connection="suggestion" module="suggestion" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="suggestion" component="pages" m_connection="" module="suggestion" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="suggestion" component="lessfriends" m_connection="" module="suggestion" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="module_suggestion" added="1322210570">Suggestion friends to each others.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="send_friend_request_to_friend_of" added="1322215316">Send friend request to friend of</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggest_friends_to" added="1322216869">Suggest friends to</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="continue" added="1322217222">continue</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="skip" added="1322217229">Skip</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_are_now_friend_with_select_friend" added="1322273413">You are now friends with {{friend_name}}. You want to know friends of {{friend_name}}. Select friends will get a friend request from you</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="add_friends" added="1322294231">Add friend(s)</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="message_tip" added="1322294457">Send message to your friends...</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="do_you_want_to_attach_a_message" added="1322295574">Do you want to attach a message.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="is_friend_of" added="1322453222">is friend of</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="message" added="1322453442">Message</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="completed_request" added="1322465508">Your request has been sent successfully.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="selected" added="1322534439">Selected</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="would_you_like_to_suggest_friend_to" added="1322542879">Would you like to suggest your friend to</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="agree" added="1322542981">agree</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="user_setting_enable_friend_recommend_and_suggestion" added="1322552993">Enable/Disable Friend recommendation and suggestion</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="select_all" added="1322564169">Select all</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_are_now_friend_with_select_friend_suggestion" added="1322623228">You are now friends with {{friend_name}}. You can suggest {{friend_name}} to know your friends. Please choose your friends to suggest to {{friend_name}}.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="send_suggestion" added="1322623680">Send suggestion</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="his" added="1322712177">his</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="her" added="1322712182">her</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="do_not_show_this" added="1322736100">Do not show this again</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggest_friends" added="1322738560">Suggest Friends</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="user_setting_random_friend_entries" added="1322810817">Total friends random appear in suggestion less friends block</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="help_your_friends_find_more_friends" added="1322817416">Recommend Friends</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="friends" added="1322819486">friend(s)</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="no_friends" added="1322821136">There is no friends who has less friends.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="your_friends_have_only_a_few_friends" added="1322821411">Help your friends find friends.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="will_get_friends_suggestion_from" added="1322821810">{{friend_name}} will get friend suggestion from you to add your selected friends below as friends</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="share_friends_with" added="1322961617">shares friends with</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_has_been_sent_suggestion_to" added="1322966509">You has been sent suggestion to {{friend_name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="enable_system_suggestion" added="1323420552">Display suggestion popup after accepting a friend</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="enable_system_recommendation" added="1323420571">Display recommendation popup after accepting a friend</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="has_sent_you_a_friend_suggestion" added="1323482907">has sent you a Friend Suggestion</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_has_sent_friend_a_friend_suggestion" added="1323484607">You has sent {{friend_name}} a friend suggestion.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_has_just_succeeded_sending_your_friend_suggestion_to_friend" added="1323485909">You have suggested your friends to {{friend_name}} successfully. You maybe know some friends of {{friend_name}}. You can select friends of {{friend_name}} to send Friend Request.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_might_also_want_to_know_friends_of_friend" added="1323488039">You might also want to know friends of {{friend_name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="selected_friend_will_get_a_friend_request_from_you" added="1323488091">Selected friend will get a friend request from you</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="here_are_friend_select_member_to_get_from_you" added="1323493681">Here are friend of {{friend_name}}. You may also want to add them to your friend list. Select members will get a friend request from you.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="user_setting_enable_friend_suggestion" added="1323501771"><![CDATA[Enable Recommendation & Suggestion Module]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="user_setting_max_message_chars" added="1323504312">Maxium characters of messages to be allowed in suggestion or recommendation popup</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="chars_limit" added="1323504517">Message only content {{max_chars}} characters</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggestion" added="1323656238">Suggestions</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="view_more" added="1323657004">View More</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="all_suggestions" added="1323659264">All Suggestions</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="my_suggestions" added="1323659276">My Suggestions</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="friend_suggestion" added="1323659306"><![CDATA[Friend's Suggestions]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="incoming_suggestions" added="1323659330">Incoming Suggestions</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="pending_suggestions" added="1323659640">Pending Suggestions</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="search_suggestions" added="1323665284">Search fullname</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="by" added="1323681569">By</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="filter" added="1323681582">Filter</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="no_suggestion_at_this_time" added="1323741218">No suggestion at this time.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="all" added="1323766692">All</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_suggested_friend_to_friend" added="1323769476">You suggested {{friend_name}} to {{friend_friend_name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggestion_friend_has_suggested_you_to_view" added="1323773519">{{friend_name}} has suggested {{you}} to view {{data}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggestion_friend_has_suggested_you_to_rate" added="1323773562">{{friend_name}} has suggested {{you}} to rate {{data}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggestion_friend_has_suggested_you_to_take" added="1323773576">{{friend_name}} has suggested {{you}} to take {{data}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="suggestion_friend_has_suggested_you_to_listen" added="1323773620">{{friend_name}} has suggested {{you}} to listen {{data}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="you_have_been_suggested_to_friend" added="1323773675">You have been suggested to {{friend_name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="recommendation" added="1324031406">Recommendation</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="accept" added="1324292502">Accept</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="ignore" added="1324292510">Ignore</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="view" added="1324379878">View</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="rate" added="1324379899">Rate</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="take" added="1324379909">Take</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="join" added="1324379917">Join</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0rc3" var_name="listen" added="1324379924">Listen</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="latest" added="1324440831">latest</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="photo" added="1324529734">Photo</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_friend_has_suggested_you_to_join" added="1324711907">{{friend_name}} has suggested {{you}} to join {{data}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="you" added="1324716282">you</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="need_to_select_some_friends_before_we_try_to_send_the_message" added="1324722560">Need to select some friends before we try to send the message.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_number_of_entries_display_in_blocks" added="1324874550">Number of entries will display in Fewer Friends, Recent Events, Recent Pages blocks</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_display_recent_pages_block" added="1324875365">Display Recent Pages. 
+Member can re-order Recent Pages Block if it is placed on Member Profile Page.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_display_member_profile_block" added="1324875407">Display Member profile block. 
+Member can re-order Member Profile Block if it is placed on Member Profile Page.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="recent_events" added="1324886174">Recent events</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="created_by" added="1324891010">created by</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="join_event" added="1324891326">Join event</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_display_fewer_friend_block" added="1324897289"><![CDATA[Display Fewer Friends block.<BR>
+Notice: Member can re-order Fewer Friend Block if it is placed on Member Profile Page.]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="send_a_personal_message_to_user" added="1324961087">Send a personal message to {{user_name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="you_might_need_user_name_permission_to_join_data" added="1324961753"><![CDATA[You might need {{user_name}}'s permission to join {{data}}]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="recent_pages" added="1324974377">Recent pages</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="join_pages" added="1324976524">Join pages</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="no_message" added="1325153088">No messages.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="add_friend" added="1325649113">Add friend(s)</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_total_less_friends" added="1325661404">Friend limit number. Members who have number of friends less than limit number will be display in fewer friend block.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_viewing" added="1325669461">Suggest your friends who might be interested in viewing {{name}}. Selected friends will get a {{suggestion_name}} suggestion from you to view {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_voting" added="1325669550">Suggest your friends who might be interested in voting {{name}}. Selected friends will get a {{suggestion_name}} suggestion from you to vote {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_taking" added="1325670076">Suggest your friends who might be interested in taking {{name}}. Selected friends will get a {{suggestion_name}} suggestion from you to take {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_joining" added="1325670124">Suggest your friends who might be interested in joining {{name}}. Selected friends will get an  {{suggestion_name}} suggestion from you to join {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_listening" added="1325670154">Suggest your friends who might be interested in listening {{name}}. Selected friends will get a {{suggestion_name}} suggestion from you to listen {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggestion_popup_message_default" added="1325670213">Suggest your friends who might be interested in viewing {{name}}. Selected friends will get a suggestion from you to view {{name}}</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="unable_to_send_a_private_message_to_this_user_at_the_moment" added="1325746806">Unable to send a private message to {{user_name}} at the moment.</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="suggest_to_friends" added="1325755878">Suggest Friends</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_enable_friend_recommend" added="1325925740"><![CDATA[Enable System Recommendation popup.<BR>
+(If you disable System Recommendation popup, it will not be displayed to your member after they accept a friend request)]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_display_events_block" added="1326004261"><![CDATA[Display Recent Events block.<BR>
+Notice: Member can re-order Events Block if it is placed on Member Profile Page.]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="privacy_notification_message" added="1326010436">Privacy Notification Message</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_enable_friend_suggestion_popup" added="1328338093"><![CDATA[Enable Friend Suggestion popup.<BR>
+(If you disable Friend Suggestion popup, it will not be displayed to your members right after they accept a friend request)]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_enable_suggestion_popup" added="1328338188"><![CDATA[Enable Content Suggestion popup.<BR>
+(If you disable Content Suggestion popup, it will not be displayed to you members right after they create a content)]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="enable_content_suggestion_popup" added="1328345277">Display suggestion popup after creating a content</phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_enable_content_suggestion_popup" added="1328345810"><![CDATA[Enable Content Suggestion popup.<BR>
+(If you disable Content Suggestion popup, it will not be displayed to your member right after they create a content)]]></phrase>
+		<phrase module_id="suggestion" version_id="3.0.0" var_name="user_setting_support_module" added="1329116757"><![CDATA[Supported modules to be integrated with Recommendation & Suggestion module.<BR>
+Default modules: photo,blog,forum,pages,poll,video,quiz,event,music,marketplace,fevent,document,videochannel,musicsharing,<BR>musicstore,advancedphoto,contest,fundraising,coupon.<BR>
+Notice: If you want to support other modules, please input the module names into textbox beside and separate them with commas.]]></phrase>
+		<phrase module_id="suggestion" version_id="3.1.0" var_name="notification_for_suggestion_system" added="1334837374">Notification for suggestion system</phrase>
+		<phrase module_id="suggestion" version_id="3.1.0" var_name="notification_for_recommendation_system" added="1334837398">Notification for recommendation system</phrase>
+		<phrase module_id="suggestion" version_id="3.2.0" var_name="recommendation_and_suggestion_settings" added="1337158207">Recommendation and Suggestion settings</phrase>
+		<phrase module_id="suggestion" version_id="3.2.0" var_name="save_changes" added="1337158336">Save Changes</phrase>
+		<phrase module_id="suggestion" version_id="3.2.0" var_name="me" added="1340244953">me</phrase>
+		<phrase module_id="suggestion" version_id="3.2.0" var_name="search_by_email_full_name" added="1340956363">Search by email, full name.</phrase>
+		<phrase module_id="suggestion" version_id="3.5.0" var_name="don_t_ask_me_again" added="1368088850"><![CDATA[Don&#039;t show again.]]></phrase>
+		<phrase module_id="suggestion" version_id="3.5.0" var_name="suggest_to_friends_2" added="1368769719">Suggest Friends</phrase>
+		<phrase module_id="suggestion" version_id="3.5.0" var_name="help_your_friends_find_more_friends_2" added="1368769804">Recommend Friends</phrase>
+		<phrase module_id="suggestion" version_id="3.5.1" var_name="setting_support_mobile" added="1377846100"><![CDATA[<title>Popup on Mobile</title><info>Turn off suggestion on mobile.</info>]]></phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="true" user="true" guest="true" staff="true" module="suggestion" ordering="1">enable_content_suggestion_popup</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="integer" admin="7" user="7" guest="7" staff="7" module="suggestion" ordering="3">total_less_friends</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="1" user="1" guest="1" staff="1" module="suggestion" ordering="2">display_fewer_friend_block</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="true" user="true" guest="true" staff="true" module="suggestion" ordering="1">enable_friend_suggestion_popup</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="1" user="1" guest="1" staff="1" module="suggestion" ordering="1">enable_friend_recommend</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="string" admin="photo,blog,forum,pages,poll,video,quiz,event,music,marketplace,fevent,document,videochannel,musicsharing,musicstore,advancedphoto,contest,fundraising,coupon" user="photo,blog,forum,pages,poll,video,qu,musicstoreiz,event,music,marketplace,fevent,document,videochannel,musicsharing,musicstore,advancedphoto,contest,fundraising,coupon" guest="photo,blog,forum,pages,poll,video,quiz,event,music,marketplace,fevent,document,videochannel,musicsharing,musicstore,advancedphoto,contest,fundraising,coupon" staff="photo,blog,forum,pages,poll,video,quiz,event,music,marketplace,fevent,document,videochannel,musicsharing,musicstore,advancedphoto,contest,fundraising,coupon" module="suggestion" ordering="3">support_module</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="1" user="1" guest="1" staff="1" module="suggestion" ordering="2">display_events_block</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="integer" admin="7" user="7" guest="7" staff="7" module="suggestion" ordering="3">number_of_entries_display_in_blocks</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="integer" admin="250" user="250" guest="250" staff="250" module="suggestion" ordering="3">max_message_chars</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="1" user="1" guest="1" staff="1" module="suggestion" ordering="2">display_recent_pages_block</setting>
+		<setting is_admin_setting="0" module_id="suggestion" type="boolean" admin="1" user="1" guest="1" staff="1" module="suggestion" ordering="0">enable_friend_suggestion</setting>
+	</user_group_settings>
+</module>

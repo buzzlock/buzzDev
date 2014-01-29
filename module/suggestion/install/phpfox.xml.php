@@ -1,0 +1,25 @@
+<module>
+	<data>
+		<module_id>suggestion</module_id>
+		<product_id>phpfox</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu></menu>
+		<phrase_var_name>module_suggestion</phrase_var_name>
+		<writable></writable>
+	</data>
+	<menus></menus>
+	<settings></settings>
+	<blocks></blocks>
+	<hooks></hooks>
+	<components></components>
+	<stats></stats>
+	<feed_share>
+	</feed_share>
+	<phrases></phrases>
+	<user_group_settings>		
+	</user_group_settings>
+	<tables></tables>
+	<install></install>
+</module>

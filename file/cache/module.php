@@ -71,6 +71,7 @@
   'socialpublishers' => 'socialpublishers',
   'socialstream' => 'socialstream',
   'subscribe' => 'subscribe',
+  'suggestion' => 'suggestion',
   'tag' => 'tag',
   'theme' => 'theme',
   'tinymce' => 'tinymce',
