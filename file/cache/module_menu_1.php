@@ -712,6 +712,27 @@
   ),
   30 => 
   array (
+    'module_id' => 'socialpublishers',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'socialpublishers.admin_menu_manage_modules' => 
+      array (
+        'url' => 'socialpublishers/modules',
+      ),
+      'socialpublishers.admin_menu_statistic_by_date' => 
+      array (
+        'url' => 'socialpublishers/statisticdate',
+      ),
+      'socialpublishers.admin_menu_statistic_by_user' => 
+      array (
+        'url' => 'socialpublishers/statisticuser',
+      ),
+    ),
+    'url_name' => 'socialpublishers',
+  ),
+  31 => 
+  array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
     'menu' => 
@@ -735,7 +756,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -748,7 +769,7 @@
     ),
     'url_name' => 'user',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -765,7 +786,7 @@
     ),
     'url_name' => 'video',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -778,7 +799,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  34 => 
+  35 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

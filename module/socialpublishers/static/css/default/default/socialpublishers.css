@@ -1,0 +1,32 @@
+.socialpublishers_provider_content
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 850px; 
+}
+.socialpublishers_provider_content  .text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    
+}
+.socialpublishers_provider_content  .text img {
+    height:32px;
+    width:32px;
+}
+.socialpublishers_provider
+{
+    float:left;
+    margin:10px;
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    max-width: 99%;
+    padding: 4px;
+   
+}
+.socialpublishers_provider_img
+{
+    width:250px;
+    height:80px;
+}

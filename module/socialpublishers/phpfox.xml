@@ -1,0 +1,132 @@
+<module>
+	<data>
+		<module_id>socialpublishers</module_id>
+		<product_id>socialpublishers</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:3:{s:42:"socialpublishers.admin_menu_manage_modules";a:1:{s:3:"url";a:2:{i:0;s:16:"socialpublishers";i:1;s:7:"modules";}}s:45:"socialpublishers.admin_menu_statistic_by_date";a:1:{s:3:"url";a:2:{i:0;s:16:"socialpublishers";i:1;s:13:"statisticdate";}}s:45:"socialpublishers.admin_menu_statistic_by_user";a:1:{s:3:"url";a:2:{i:0;s:16:"socialpublishers";i:1;s:13:"statisticuser";}}}]]></menu>
+		<phrase_var_name>module_socialpublishers</phrase_var_name>
+	</data>
+	<components>
+		<component module_id="socialpublishers" component="socialpublishers.setting" m_connection="socialpublishers.setting" module="socialpublishers" is_controller="1" is_block="0" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="admin_menu_manage_providers" added="1325264950">Manage Providers</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="module_socialpublishers" added="1325264950">Social Publisher</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="mange_social_providers" added="1325265818">Manage Social Providers</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="setting" added="1325266128">Settings</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="facebook_secret" added="1325342656">Facebook Secret</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="application_id" added="1325342679">Application ID</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="enable_facebook_connect" added="1325342820">Enable Facebook Connect:</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="consumer_key" added="1325343152">Consumer Key</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="consumer_secret" added="1325343192">Consumer Secret</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="enable_twitter_connect" added="1325343232">Enable Twitter Connect:</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="api_key" added="1325344324">API Key</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="secret_key" added="1325344362">Secret Key</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="enable_linkedin_connect" added="1325344421">Enable Linkedin Connect</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="update_successfully" added="1325344772">Update Successfully</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="menu_socialpublishers_social_publishers_settings_a0665c4da3a57e7b66f0e23dc705b53b" added="1325346863">Social Publishers Settings</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="unable_to_edit_this_account" added="1325347165">Unable to edit this account.</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="mange_social_publishers_connect" added="1325347210">Manage Social Publisher Connections</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="there_are_no_publisher_providers_were_enable_please_contact_to_admin_site_to_get_more_information" added="1325347952">There are no publisher providers were enable. Please contact to admin site to get more information.</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="disconnect" added="1325350426">disconnect</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="connected_as" added="1325350453">Connected as {full_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="click_here" added="1325350955">Click here</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="to" added="1325350972">to</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="connect" added="1325351040">connect</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="share_content" added="1325419880">Share Content</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="share" added="1325421038">Share</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="auto_publish_next_time" added="1325425617">Auto publish next time</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="don_t_ask_me_again" added="1325425630"><![CDATA[Don&#039;t ask me again]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="publish" added="1325428032">Publish</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_on" added="1325442172">posted on</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_blog_title_on" added="1325442340">{full_name} posted a blog{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="facebook" added="1325463369">Facebook</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="twitter" added="1325463381">Twitter</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="linkedin" added="1325463393">Linkedin</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="view_your_setting" added="1325463477">View your setting</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="connections" added="1325463550">Connections</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="admin_menu_manage_modules" added="1325505710">Manage Modules</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="mange_modules" added="1325506525">Manage Modules</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="event" added="1325506598">Event</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="marketplace" added="1325506625">Marketplace</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="quiz" added="1325506694">Quiz</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="active" added="1325507835">Active</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="publish_provides" added="1325507970">Publish providers</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="activity_management" added="1325511156">Activity Management</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="share_a_link_title_on" added="1325519307">{full_name} shared a link{link} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_song_title_on" added="1325520522">{full_name} posted a song{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_photo_title_on" added="1325525812">{full_name} posted a photo{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_poll_title_on" added="1325528875">{full_name} posted a question{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="status" added="1325529097">User Status</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_status_title_on" added="1325529308">{full_name} posted a status{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_video_title_on" added="1325529968">{full_name} posted a video{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_quiz_title_on" added="1325586074">{full_name} posted a quiz{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_event_title_on" added="1325586151">{full_name} posted an event{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_marketplace_title_on" added="1325586775">{full_name} posted a listing{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_album_title_on" added="1325586775">{full_name} posted an album{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_playlist_title_on" added="1325586775">{full_name} posted a playlist{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_karaoke_title_on" added="1325586775">{full_name} posted a karaoke song{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_record_title_on" added="1325586775">{full_name} posted a karaoke recordding{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_a_petition_title_on" added="1325586775">{full_name} posted a petition{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="not_connected" added="1325661364">Not connected</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="error" added="1325736211">Error</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="view" added="1325736291">View</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="hide" added="1325736363">Hide</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="tutorial_how_to_get_facebook_api_key" added="1325736967"><![CDATA[tutorial "How to get Facebook Api Key"]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="to_get_your_facebook_api_id" added="1325737154"><![CDATA[<li>To get your <strong>"Facebook API ID"</strong> and <strong>"Facebook App Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="http://developers.facebook.com/setup/" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="for_site_url_you_should_use_this_url" added="1325737172"><![CDATA[For "Site URL" you should use this URL:]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="do_follow_facebook_steps_to_complete_create_new_application" added="1325737189">Do follow Facebook steps to complete create new application.</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="tutorial_how_to_get_twitter_api_key" added="1325737245"><![CDATA[tutorial "How to get Twitter Api Key"]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="to_get_your_twitter_api" added="1325737357"><![CDATA[<li>To get your <strong>"Twitter Consumer Key"</strong> and <strong>"Twitter Consumer Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://dev.twitter.com/apps" target="_blank">Make application</a></div>
+    			</li>
+    			<li>
+    				Click to "Create new application" button.
+    			</li>]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="for_website_you_should_use_this_url" added="1325737372"><![CDATA[For "WebSite" you should use this URL:]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="for_callback_url_must_use" added="1325737387"><![CDATA[For "Callback URL" must use:]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="do_follow_twitter_steps_to_complete_create_new_application" added="1325737411"><![CDATA[<li>Do follow Twitter steps to complete create new application.</li>
+    			<li>Go to tab "Settings" of your application.</li>
+    			<li>Change "Access level" to <strong>"Read and write"</strong></li>]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="tutorial_how_to_get_linkedin_api_key" added="1325737451"><![CDATA[tutorial "How to get Linkedin Api Key"]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="to_get_your_linkedin_api_key" added="1325737476"><![CDATA[<li>To get your <strong>"Linkedin API Key"</strong> and <strong>"Linkedin Secret Key"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://www.linkedin.com/secure/developer?newapp=" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="do_follow_linkedin_steps_to_complete_create_new_application" added="1325737520"><![CDATA[<li>
+    				<div class="p_4">For "Application Type" you should use this URL: <strong>Web Application</strong></div>
+    				<div class="p_4">For "Live Status" should be: <strong style="color:red;">Live</strong></div>
+    				
+    			</li>
+    			<li>Do follow Linkedin steps to complete create new application.</li>]]></phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_on_site" added="1325908760">{full_name} post{title} on {site_name}</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="comment_on_friends_wall" added="1325924401">Post on Friends Wall</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="post_on_pages_wall" added="1325924508">Post on pages Wall</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="all_your_socials_api_keys_will_be_stored_in" added="1326696585">All social API Keys Configuration was setup in:</phrase>
+		<phrase module_id="socialpublishers" version_id="3.0.0" var_name="please_install_social_bridge_plugin_first" added="1326784489">Please install Social Bridge plugin first</phrase>
+		<phrase module_id="socialpublishers" version_id="3.2.0" var_name="social_publishers" added="1342581044">Social Publishers</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="admin_menu_statistic_by_date" added="1364376525">Statistic By Date</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="admin_menu_statistic_by_user" added="1364376525">Statistic By User</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="statistic_by_date" added="1364376862">Statistic By Date</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="statistic_by_user" added="1364376907">Statistic By User</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="id" added="1364437363">Id</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="date" added="1364437380">Date</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="are_you_sure" added="1364437451">Are you sure?</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="search_filter" added="1364438247">Search Filter</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="search_for_statistic_date" added="1364438274">Search for statistic date</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="limit_per_page" added="1364438327">Limit per page</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="sort" added="1364438389">Sort</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="delete_all" added="1364438477">Delete all</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="no_statistic_date_has_been_created" added="1364439376">No statistic date has been created.</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="statistic_by_date_successfully_deleted" added="1364440452">Statistic by date successfully deleted!</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="delete_statistic_by_date_fail" added="1364440471">Delete statistic by date fail!</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="statistic_by_user_successfully_deleted" added="1364440522">Statistic by user successfully deleted!</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="delete_statistic_by_user_fail" added="1364440539">Delete statistic by user fail!</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="full_name" added="1364440576">Full Name</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="search_for_full_name" added="1364440695">Search for full name</phrase>
+		<phrase module_id="socialpublishers" version_id="3.5.0" var_name="no_statistic_user_has_been_created" added="1364440788">No statistic user has been created!</phrase>
+	</phrases>
+</module>

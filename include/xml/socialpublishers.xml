@@ -1,0 +1,57 @@
+<product>
+	<data>
+		<product_id>socialpublishers</product_id>
+		<is_core>0</is_core>
+		<title>Social Publisher</title>
+		<description>by YouNet Company</description>
+		<version>3.04p1</version>
+		<latest_version></latest_version>
+		<last_check>1364366579</last_check>
+		<is_active>1</is_active>
+		<url>http://phpfox3.demo.younetco.com</url>
+		<url_version_check></url_version_check>
+	</data>
+	<dependencies>
+		<dependency>
+			<type_id>product</type_id>
+			<check_id>younetcore</check_id>
+			<dependency_start>3.01</dependency_start>
+			<dependency_end></dependency_end>
+		</dependency>
+	</dependencies>
+	<installs>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.01.php');]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.01p1</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.01p1.php');]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.02p3</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.02p3.php');]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.02p5</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.02p5.php');]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.03</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.03.php');]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>3.04</version>
+			<install_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.04.php');]]></install_code>
+			<uninstall_code><![CDATA[include (PHPFOX_DIR_MODULE . 'socialpublishers/install/v3.04_uninstall.php');]]></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>socialpublishers</module_id>
+	</modules>
+</product>
