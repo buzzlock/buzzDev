@@ -156,6 +156,19 @@
     'url' => 'http://phpfox.younetco.com/',
     'url_version_check' => NULL,
   ),
+  'profilecompleteness' => 
+  array (
+    'product_id' => 'profilecompleteness',
+    'is_core' => '0',
+    'title' => 'Profile Completeness',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p2',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'socialbridge' => 
   array (
     'product_id' => 'socialbridge',

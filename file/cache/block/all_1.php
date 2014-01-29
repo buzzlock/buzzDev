@@ -68,6 +68,7 @@
     3 => 
     array (
       'userconnect.mayyouknow' => NULL,
+      'profilecompleteness.profilecompleteness' => NULL,
       'friend.mutual-friend' => NULL,
       'wall.time' => NULL,
       'track.recent-views' => NULL,

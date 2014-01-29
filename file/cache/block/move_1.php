@@ -35,6 +35,7 @@
     'friend.profile.small' => true,
     'report.profile' => false,
     'userconnect.mayyouknow' => false,
+    'profilecompleteness.profilecompleteness' => false,
     'friend.mutual-friend' => true,
     'wall.time' => false,
     'userconnect.connectionpath_sidebar' => false,

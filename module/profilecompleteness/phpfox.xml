@@ -1,0 +1,53 @@
+<module>
+	<data>
+		<module_id>profilecompleteness</module_id>
+		<product_id>profilecompleteness</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:46:"profilecompleteness.admin_menu_global_settings";a:1:{s:3:"url";a:2:{i:0;s:19:"profilecompleteness";i:1;s:8:"settings";}}s:46:"profilecompleteness.admin_menu_weight_settings";a:1:{s:3:"url";a:2:{i:0;s:19:"profilecompleteness";i:1;s:14:"weightsettings";}}}]]></menu>
+		<phrase_var_name>module_profilecompleteness</phrase_var_name>
+	</data>
+	<blocks>
+		<block type_id="0" m_connection="profile.index" module_id="profilecompleteness" component="profilecompleteness" location="3" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title>Profile Completeness</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="profilecompleteness" component="profilecompleteness" m_connection="" module="profilecompleteness" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="profilecompleteness" version_id="3.0.0beta1" var_name="module_profilecompleteness" added="1315615214">Profile Completeness</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0beta1" var_name="admin_menu_global_settings" added="1315626137">Global Settings</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0beta1" var_name="admin_menu_weight_settings" added="1315628943">Weight Settings</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0beta1" var_name="admin_message_weight_settings" added="1315628943">Allow admin to setup points for each profile entry such that the system converts these points to percentage and display them in Front End.</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="profile_completeness" added="1323118897">Profile completeness</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="next" added="1323118927">Next</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="update_profile" added="1323118950">Update Profile</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="basic_information" added="1323118984">Basic Information</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="location" added="1323119005">Location</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="city" added="1323119021">City</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="zip_postal_code" added="1323119039">ZIP/Postal Code</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="date_of_birth" added="1323119058">Date of Birth</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="gender" added="1323119073">Gender</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="relationship_status" added="1323119093">Relationship Status</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="forum_signature" added="1323119115">Forum Signature</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="save_changes" added="1323119163">Save Changes</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="profile_address" added="1323119191">Profile Address</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="enter_gauge_color_in_hex" added="1323119208">Enter Gauge Color in Hex</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="profile_photo_weight" added="1323119232">Profile Photo Weight</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="enter_0_to_skip_photo_checking_by_default_it_s_included_with_value_2" added="1323119251"><![CDATA[Enter 0 to skip photo checking, by default it's included with value 2]]></phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="whether_show_widget_or_not_when_100_completed" added="1323119271">Whether show widget or not when 100% completed</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="not_show_the_widget_when_100_completed" added="1323119296">Not show the widget when 100% completed</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="edit_weight_of_profile_fields" added="1323119486">Edit weight of profile fields</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="global_settings" added="1323119559">Global Settings</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="update_global_settings_successfully" added="1323119586">Update Global Settings successfully</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0rc3" var_name="update_weight_settings_successfully" added="1323119635">Update Weight Settings successfully</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0" var_name="photo" added="1326581372">Photo</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.0.0" var_name="is_invalid" added="1326581528">is invalid</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.2.0" var_name="profile_photo" added="1337833967">Profile Photo</phrase>
+		<phrase module_id="profilecompleteness" version_id="3.2.0" var_name="custom_group_test_user_group" added="1338172501">Test_user_group</phrase>
+	</phrases>
+</module>

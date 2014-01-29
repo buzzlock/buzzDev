@@ -57,6 +57,7 @@
   'poll' => 'poll',
   'privacy' => 'privacy',
   'profile' => 'profile',
+  'profilecompleteness' => 'profilecompleteness',
   'quiz' => 'quiz',
   'rate' => 'rate',
   'report' => 'report',

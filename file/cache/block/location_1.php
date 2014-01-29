@@ -35,6 +35,7 @@
     'friend.profile.small' => '1',
     'report.profile' => '1',
     'userconnect.mayyouknow' => '3',
+    'profilecompleteness.profilecompleteness' => '3',
     'friend.mutual-friend' => '3',
     'wall.time' => '3',
     'userconnect.connectionpath_sidebar' => '1',
