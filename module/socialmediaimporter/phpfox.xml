@@ -1,0 +1,252 @@
+<module>
+	<data>
+		<module_id>socialmediaimporter</module_id>
+		<product_id>socialmediaimporter</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:1:{s:61:"socialmediaimporter.admin_menu_social_media_importer_settings";a:1:{s:3:"url";a:1:{i:0;s:19:"socialmediaimporter";}}}]]></menu>
+		<phrase_var_name>module_socialmediaimporter</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="socialmediaimporter" parent_var_name="" m_connection="photo" var_name="menu_socialmediaimporter_import_photo_714586c73197300f65ba08f7dee8cb4a" ordering="129" url_value="socialmediaimporter.connect" version_id="3.2.0" disallow_access="" module="socialmediaimporter" />
+		<menu module_id="socialmediaimporter" parent_var_name="" m_connection="main" var_name="menu_socialmediaimporter_import_photo_fad58de7366495db4650cfefac2fcd61" ordering="128" url_value="socialmediaimporter.connect" version_id="3.2.0" disallow_access="a:1:{i:0;s:1:&quot;3&quot;;}" module="socialmediaimporter" />
+	</menus>
+	<settings>
+		<setting group="" module_id="socialmediaimporter" is_hidden="0" type="drop" var_name="default_privacy" phrase_var_name="setting_default_privacy" ordering="1" version_id="3.1.0"><![CDATA[a:2:{s:7:"default";s:8:"Everyone";s:6:"values";a:4:{i:0;s:8:"Everyone";i:1;s:7:"Only Me";i:2;s:18:"Friends of Friends";i:3;s:7:"Friends";}}]]></setting>
+		<setting group="" module_id="socialmediaimporter" is_hidden="0" type="drop" var_name="display_limit" phrase_var_name="setting_display_limit" ordering="1" version_id="3.1.0"><![CDATA[a:2:{s:7:"default";s:1:"8";s:6:"values";a:5:{i:0;s:1:"8";i:1;s:1:"4";i:2;s:2:"12";i:3;s:2:"16";i:4;s:2:"20";}}]]></setting>
+		<setting group="" module_id="socialmediaimporter" is_hidden="0" type="drop" var_name="max_import_per_time" phrase_var_name="setting_max_import_per_time" ordering="1" version_id="3.1.0"><![CDATA[a:2:{s:7:"default";s:2:"30";s:6:"values";a:6:{i:0;s:2:"30";i:1;s:2:"10";i:2;s:2:"20";i:3;s:2:"40";i:4;s:2:"50";i:5;s:2:"60";}}]]></setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="socialmediaimporter.index" module_id="socialmediaimporter" component="services" location="2" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection=" " module_id="socialmediaimporter" component=" " location="0" is_active="0" ordering="0" disallow_access=" " can_move="0">
+			<title>
+			</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="socialmediaimporter" component="index" m_connection="socialmediaimporter.index" module="socialmediaimporter" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="socialmediaimporter" component="services" m_connection="" module="socialmediaimporter" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="module_socialmediaimporter" added="1335328446">Social Media Importer</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="admin_menu_manage_providers" added="1335337341">Manage Providers</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="mange_social_providers" added="1335337921">Manage Social Providers</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="view" added="1335337931">View</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="hide" added="1335337943">Hide</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="tutorial_how_to_get_facebook_api_key" added="1335339388">Tutorial: how to get facebook api key</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="to_get_your_facebook_api_id" added="1335339416"><![CDATA[<li>To get your <strong>"Facebook API ID"</strong> and <strong>"Facebook App Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="http://developers.facebook.com/setup/" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="for_site_url_you_should_use_this_url" added="1335339439"><![CDATA[For "Site URL" you should use this URL:]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="do_follow_facebook_steps_to_complete_create_new_application" added="1335339463">Do follow Facebook steps to complete create new application.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="go_to_the_following_url_select_your_app_and_edit" added="1335339486"><![CDATA[Go to the following URL, select your app and edit: <div class="p_4">
+<a href="http://developers.facebook.com/apps/" target="_blank">Edit application</a>
+</div>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="select_advanced_setting_and_edit_migrations_settings" added="1335339506"><![CDATA[Select Advanced setting and edit Migrations settings <span style="font-weight: bold;color: red"> (Require)</span>:
+<ul>
+<li style="list-style: circle"> Stream post URL security: <strong>Disable</strong></li>
+<li style="list-style: circle"> Remove offline_access permission: <strong>Disable</strong></li>
+<li style="list-style: circle"> Timezone-less events: <strong>Enable</strong></li>
+<li style="list-style: circle"> Forces use of login secret for auth.login: <strong>Enable</strong></li>
+<li style="list-style: circle"> Enhanced Auth Dialog: <strong>Enable</strong></li>
+<li style="list-style: circle"> Page Hours Format: <strong>Enable</strong></li>
+<li style="list-style: circle"> Batch API Exceptions Format: <strong>Disable</strong></li>
+<li style="list-style: circle"> July 2012 Breaking Changes: <strong>Enable</strong></li>
+<li style="list-style: circle"> Include Checkins with Statuses: <strong>Enable</strong></li>
+<li style="list-style: circle"> August 2012 Breaking Changes: <strong>Disable</strong></li>
+<li style="list-style: circle"> FBML Deprecation: <strong>Disable</strong></li>
+</ul>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="application_id" added="1335339526">Application ID</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="facebook_secret" added="1335339548">Facebook Secret</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="enable_facebook_connect" added="1335339586">Enable Facebook Connect:</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="setting" added="1335339612">Setting</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="tutorial_how_to_get_twitter_api_key" added="1335339634">Tutorial: how to get twitter api key</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="to_get_your_twitter_api" added="1335339653"><![CDATA[<li>To get your <strong>"Twitter Consumer Key"</strong> and <strong>"Twitter Consumer Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://dev.twitter.com/apps" target="_blank">Make application</a></div>
+    			</li>
+    			<li>
+    				Click to "Create new application" button.
+    			</li>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="for_website_you_should_use_this_url" added="1335339672"><![CDATA[For "WebSite" you should use this URL:]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="for_callback_url_must_use" added="1335339693"><![CDATA[For "Callback URL" must use:]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="do_follow_twitter_steps_to_complete_create_new_application" added="1335339711"><![CDATA[<li>Do follow Twitter steps to complete create new application.</li>
+    			<li>Go to tab "Settings" of your application.</li>
+    			<li>Change "Access level" to <strong>"Read and write"</strong></li>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="consumer_key" added="1335339727">Consumer Key</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="consumer_secret" added="1335339739">Consumer Secret</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="enable_twitter_connect" added="1335339780">Enable Twitter Connect:</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="update_successfully" added="1335340251">Update Successfully</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="connected_as" added="1335342668">Connected as</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="click_here" added="1335342696">Click here</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="to" added="1335342732">to</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="disconnect" added="1335342742">disconnect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="connect" added="1335342762">connect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="social_stream_settings" added="1335426044">Social Media Importer</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="menu_socialmediaimporter_social_stream_settings_a0665c4da3a57e7b66f0e23dc705b53b" added="1335426256">Social Media Importer Settings</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="unable_to_edit_this_account" added="1335426558">Unable to edit this account</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="update_privacy_successfully" added="1335433727">Update Privacy Successfully</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="get_feeds" added="1335433892">Get feeds</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="are_you_sure_you_want_to_disconnect_this_account" added="1335434846">Are you sure you want to disconnect this account?</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="unable_to_post_a_comment_on_this_item_due_to_privacy_settings" added="1335515302">Unable to post a comment on this item due to privacy settings.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="how_long_to_get_data" added="1336040510">How long to get data</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="minutes" added="1336040613">Minutes</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="hours" added="1336040674">Hours</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="days" added="1336040716">Days</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="months" added="1336040745">Months</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="years" added="1336040765">Years</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="facebook" added="1336528807">Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="twitter" added="1336528850">Twitter</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="all_feeds" added="1336529159">All feeds</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="user_status" added="1336529176">User status</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="friends" added="1336529193">Friends</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="photos" added="1336529211">Photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="links" added="1336529229">Links</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="events" added="1336529240">Events</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="comments" added="1336529281">Comments</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="marketplace" added="1336529300">Marketplace</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="polls" added="1336529312">Polls</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="blogs" added="1336529323">Blogs</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="videos" added="1336529333">Videos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="music_songs" added="1336529352">Music songs</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="documents" added="1336529381">Documents</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="musicstore_albums" added="1336529397">MusicStore albums</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="musicstore_playlists" added="1336529415">MusicStore playlists</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="musicsharing_albums" added="1336529431">MusicSharing albums</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="musicsharing_playlists" added="1336529445">MusicSharing playlists</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="filter" added="1336529636">Filter</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="sitename_s_feeds" added="1336529812"><![CDATA[{sitename}&#039;s feeds]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="status_update" added="1336531022">Status Update</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="link" added="1336531079">Link</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="poke" added="1336531097">Poke</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="wall_comment" added="1336531132">Wall Comment</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="feed" added="1336531154">Feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_liked_your_social_feed_title" added="1336613136">{full_name} liked your social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="new_like" added="1336613286">New like</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_liked_gender_own_social_feed_title" added="1336613345">{users} liked {gender} own social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_liked_your_social_feed_title" added="1336613389">{users} liked your social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_social_feed_title" added="1336613460"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> social feed]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_your_social_feed_title" added="1336613631">{full_name} commented on your social feed.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_your_social_feed_a_href_link_title_a" added="1336613689"><![CDATA[{full_name} commented on your social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_gender_social_feed" added="1336613743">{full_name} commented on {gender} social feed.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_row_full_name_s_social_feed_a_href_link_title_a_message" added="1336613809"><![CDATA[{full_name} commented on {row_full_name}&#039;s social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_commented_on_gender_social_feed_title" added="1336613907">{users} commented on {gender} social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_commented_on_your_social_feed_title" added="1336613939">{users} commented on your social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name_s_span_social_feed_title" added="1336613984"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> social feed]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_row_full_name_s_social_feed" added="1336614072"><![CDATA[{full_name} commented on {row_full_name}&#039;s social feed.]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="full_name_commented_on_gender_social_feed_a_href_link_title_a" added="1336614580"><![CDATA[{full_name} commented on {gender} social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="user_name_tagged_you_in_a_comment_in_a_social_feed" added="1336616081">{user_name} tagged you in a comment in a social feed</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="there_are_no_social_stream_providers_were_enable_please_contact_to_admin_site_to_get_more_informatio" added="1336616623">No social media importer providers were enabled. Please contact admin to get more information.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="by_full_name_on_facebook" added="1336620859">by {full_name} on Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="by_full_name_on_twitter" added="1336620930">by @{full_name} on Twitter</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="setting_default_privacy" added="1336621698"><![CDATA[<title>Default Privacy Setting</title><info>With this setting you can control the default privacy setting for a user when they connect their Facebook, Flickr, Instagram and Picasa account on Social Media Importer setting page. This will control their social feeds.</info>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="settings" added="1336708815">Settings</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="gets_a_href_link_title_title_full_name_s_feed_from_facebook" added="1337224382"><![CDATA[gets <a href="{link}" title="{title}">{full_name}&#039;s</a> feed from Facebook]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.1.0" var_name="gets_a_href_link_title_title_full_name_s_feed_from_twitter" added="1337225165"><![CDATA[gets <a href="{link}" title="{title}">@{full_name}&#039;s</a> feed from Twitter]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="admin_menu_social_media_importer_settings" added="1337502839">Social Media Importer Settings</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_photo_paging" added="1337834958">Photo Paging</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_album_paging" added="1337834982">Album paging</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="menu_socialmediaimporter_import_photo_fad58de7366495db4650cfefac2fcd61" added="1337844593">Social Media Importer</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="menu_socialmediaimporter_import_photo_714586c73197300f65ba08f7dee8cb4a" added="1337844678">Import Photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="enable_flickr_connect" added="1339561432">Enable Flickr Connect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="instagr_secret" added="1339561567">Instagram Secret</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="flickr_secret" added="1339933639">Flickr Secret</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="you_don_t_have_any_albums" added="1339933639"><![CDATA[You don&#039;t have any album (or Can&#039;t reload album. Please try again)]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="you_don_t_have_any_photos" added="1339933639"><![CDATA[You don&#039;t have any photo (or Can&#039;t reload photo . Please try again)]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="enable_instagr_connect" added="1339933639">Enable Instagram Connect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="to_get_your_flickr_api_id" added="1340005249"><![CDATA[<li>To get your <strong>"Flickr API ID"</strong> and <strong>"Flickr App Secret"</strong> strings, go to the following URL:
+	<div class="p_4">
+		<a href="http://www.flickr.com/services/apps/create/apply/" target="_blank">Make application</a>
+	</div>
+</li>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="tutorial_how_to_get_flickr_api_key" added="1340005291">Tutorial: how to get flickr api key</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="do_follow_flickr_steps_to_complete_create_new_application" added="1340005348">Do follow Flickr steps to complete create new application.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="for_callback_url_you_should_use_this_url" added="1340005454"><![CDATA[For "Callback URL" you should use this URL:]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="edit_the_auth_flow" added="1340019305"><![CDATA[on your "Edit the authentication flow"]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_from_facebook" added="1340089075">Import From Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_from_flickr" added="1340089287">Import From Flickr</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_from_instagr" added="1340089358">Import From Instagram</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_albums" added="1340089438">Import Albums</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_photos" added="1340101676">Import Photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="your_albums" added="1340101845">Your Albums</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="view_more" added="1340102527">View More</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="photo_s" added="1340102641">photo(s)</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="please_select_photo_s_to_import" added="1340102700">Please select photo(s) to import!</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="please_select_album_s_to_import" added="1340102856">Please select album(s) to import!</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_selected" added="1340103175">Import Selected</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="select_all" added="1340182076">Select All</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="deselect_all" added="1340182140">Deselect All</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="not_imported_yet" added="1340182244">Not Imported yet</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="imported" added="1340182462">Imported</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_albums_from_facebook" added="1340182874">Import your albums from Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_albums_from_flickr" added="1340182895">Import your albums from Flickr</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_albums_from_instagram" added="1340182916">Import your albums from Instagram</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import" added="1340183987">Import</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="close" added="1340183997">Close</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_photos_from_facebook" added="1340184010">Import your photos from Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_photos_from_flickr" added="1340184023">Import your photos from Flickr</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_photos_from_instagram" added="1340184052">Import your photos from Instagram</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_this_album" added="1340184067">Import this Album</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="select_this_album" added="1340184093">Select this Album</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_this_photo" added="1340184346">Import this Photo</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="select_this_photo" added="1340185326">Select this Photo</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_from_picasa" added="1340244424">Import From Picasa</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="refresh" added="1340465708">Refresh</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_albums_from_picasa" added="1340467765">Import your albums from Picasa</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_your_photos_from_picasa" added="1340718362">Import your photos from Picasa</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="enable_picasa_connect" added="1340815774">Enable Picasa Connect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="submit" added="1340815774">Submit</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="cancel" added="1340815774">Cancel</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="next" added="1340815774">Next</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="finish" added="1340815774">Finish</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="fail" added="1340815774">Fail</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="total" added="1340815774">Total</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="success" added="1340815774">Success</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_now" added="1340815774">Import now</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="auto_import_and_inform_me_when_finish" added="1340815774">Import albums/photos automatically. You will receive notification when it is done.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="importing_photos" added="1340815774">Importing photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="downloading_photos" added="1340815774">Downloading photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="downloading_photos_in_albums" added="1340815774">Downloading photos in albums...</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="photos_successfully_downloaded" added="1340815774">Photos successfully downloaded</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="photos_successfully_imported" added="1340815774">Photos successfully imported</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="import_from_instagram" added="1340815774">Import From Instagram</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="social_media_importer" added="1341810034">Social Media Importer</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="setting_display_limit" added="1341810034"><![CDATA[<title>Display Limit</title><info>The number of photos will be displayed when you click View More</info>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="setting_max_import_per_time" added="1341810034"><![CDATA[<title>Maximum number of photos</title><info>The maximum number of photos will be imported per time. We suggest 30 photos per time in order to guarantee performance of site normally.</info>]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_enable_facebook" added="1341810034">Import Photos From Facebook</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_enable_flickr" added="1341810034">Import Photos From Flickr</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_enable_instagram" added="1341810034">Import Photos From Instagram</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="user_setting_enable_picasa" added="1341810034">Import Photos From Picasa</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="recommend_for_import" added="1341821568"><![CDATA[We recommend you to select <strong>"Import albums/photos automatically. You will receive notification when it is done."</strong> when you try to import greater than <strong>{max}</strong> photos.]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="view_uploaded_albums_photos" added="1341824441">View uploaded Albums/Photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="imported_number_photos_from_service" added="1341824649"><![CDATA[imported <a href="{link}">{number} photos</a> from {service}]]></phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="mail_subject_of_import_photos" added="1341828271">Update status of importing albums/photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="mail_body_of_import_photos" added="1341828348">{success}/{total} photos have been imported. Please click the link below to view your photos: 
+{link}</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="notification_of_import_photos" added="1341828375">{success}/{total} photos have been imported</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="social_media_connect" added="1341832503">Social Media Connect</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="connected_as_full_name" added="1341886320">Connected as {full_name}</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="message_of_import_photos_error_space" added="1341971352">You reach to the limit of storage. Your remain photos will not be imported. Total imported photos is {success}/{total}.</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="your_photos" added="1341990108">Your photos</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="album" added="1341991112">Album</phrase>
+		<phrase module_id="socialmediaimporter" version_id="3.2.0" var_name="back" added="1342094661">Back</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="socialmediaimporter" type="boolean" admin="true" user="true" guest="false" staff="true" module="socialmediaimporter" ordering="0">enable_facebook</setting>
+		<setting is_admin_setting="0" module_id="socialmediaimporter" type="boolean" admin="true" user="true" guest="false" staff="true" module="socialmediaimporter" ordering="1">enable_flickr</setting>
+		<setting is_admin_setting="0" module_id="socialmediaimporter" type="boolean" admin="true" user="true" guest="false" staff="true" module="socialmediaimporter" ordering="2">enable_instagram</setting>
+		<setting is_admin_setting="0" module_id="socialmediaimporter" type="boolean" admin="true" user="true" guest="false" staff="true" module="socialmediaimporter" ordering="3">enable_picasa</setting>
+	</user_group_settings>
+</module>

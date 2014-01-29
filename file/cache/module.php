@@ -67,6 +67,7 @@
   'share' => 'share',
   'shoutbox' => 'shoutbox',
   'socialbridge' => 'socialbridge',
+  'socialmediaimporter' => 'socialmediaimporter',
   'subscribe' => 'subscribe',
   'tag' => 'tag',
   'theme' => 'theme',

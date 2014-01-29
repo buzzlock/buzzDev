@@ -538,6 +538,10 @@
   array (
     'petition.category' => '3',
   ),
+  'socialmediaimporter.index' => 
+  array (
+    'socialmediaimporter.services' => '2',
+  ),
   'friend.profile' => 
   array (
     'profile.pic' => '1',

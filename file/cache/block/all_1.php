@@ -960,6 +960,13 @@
       'petition.category' => NULL,
     ),
   ),
+  'socialmediaimporter.index' => 
+  array (
+    2 => 
+    array (
+      'socialmediaimporter.services' => NULL,
+    ),
+  ),
   'friend.profile' => 
   array (
     1 => 

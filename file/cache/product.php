@@ -169,6 +169,19 @@
     'url' => NULL,
     'url_version_check' => NULL,
   ),
+  'socialmediaimporter' => 
+  array (
+    'product_id' => 'socialmediaimporter',
+    'is_core' => '0',
+    'title' => 'Social Media Importer',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p8',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

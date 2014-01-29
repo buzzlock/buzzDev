@@ -699,6 +699,19 @@
   ),
   29 => 
   array (
+    'module_id' => 'socialmediaimporter',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'socialmediaimporter.admin_menu_social_media_importer_settings' => 
+      array (
+        'url' => 'socialmediaimporter',
+      ),
+    ),
+    'url_name' => 'socialmediaimporter',
+  ),
+  30 => 
+  array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
     'menu' => 
@@ -722,7 +735,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -735,7 +748,7 @@
     ),
     'url_name' => 'user',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -752,7 +765,7 @@
     ),
     'url_name' => 'video',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -765,7 +778,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

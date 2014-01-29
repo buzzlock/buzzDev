@@ -4773,4 +4773,25 @@ Sincerely,
     'value_actual' => 24,
     'module_name' => 'opensocialconnect',
   ),
+  661 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'default_privacy',
+    'value_actual' => 'Everyone',
+    'module_name' => 'socialmediaimporter',
+  ),
+  662 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'display_limit',
+    'value_actual' => '8',
+    'module_name' => 'socialmediaimporter',
+  ),
+  663 => 
+  array (
+    'type_id' => 'drop',
+    'var_name' => 'max_import_per_time',
+    'value_actual' => '30',
+    'module_name' => 'socialmediaimporter',
+  ),
 ); ?>

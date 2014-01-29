@@ -48,4 +48,4 @@
 		// echo \'<li><a href="#" onclick="js_box_remove(this); $Core.box(\\\'photo.viewAllSizes\\\', \\\'full\\\', \\\'id=\' . $this->_aVars[\'aForms\'][\'photo_id\'] . \'\\\'); return false;">View All Sizes</a></li>\';
 		echo \'<li><a href="\' . Phpfox::permalink(array(\'photo\', \'all\'), $this->_aVars[\'aForms\'][\'photo_id\'], $this->_aVars[\'aForms\'][\'title\']) . \'" class="no_ajax_link">\' . Phpfox::getPhrase(\'photo.view_all_sizes\') . \'</a></li>\';
 	}
-} '; ?>
+} /* Nothing to show */ '; ?>
