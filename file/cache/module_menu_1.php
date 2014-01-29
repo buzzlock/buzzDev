@@ -733,6 +733,23 @@
   ),
   31 => 
   array (
+    'module_id' => 'socialstream',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'socialstream.admin_menu_statistics_by_date' => 
+      array (
+        'url' => 'socialstream/statdate',
+      ),
+      'socialstream.admin_menu_statistics_by_user' => 
+      array (
+        'url' => 'socialstream/statuser',
+      ),
+    ),
+    'url_name' => 'socialstream',
+  ),
+  32 => 
+  array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
     'menu' => 
@@ -756,7 +773,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -769,7 +786,7 @@
     ),
     'url_name' => 'user',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -786,7 +803,7 @@
     ),
     'url_name' => 'video',
   ),
-  34 => 
+  35 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -799,7 +816,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  35 => 
+  36 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

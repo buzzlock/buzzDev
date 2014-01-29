@@ -195,6 +195,19 @@
     'url' => 'http://phpfox3.demo.younetco.com',
     'url_version_check' => NULL,
   ),
+  'socialstream' => 
+  array (
+    'product_id' => 'socialstream',
+    'is_core' => '0',
+    'title' => 'Social Stream',
+    'description' => 'by YouNet Company',
+    'version' => '3.03',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox.younetco.com',
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

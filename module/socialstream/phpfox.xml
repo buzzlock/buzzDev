@@ -1,0 +1,188 @@
+<module>
+	<data>
+		<module_id>socialstream</module_id>
+		<product_id>socialstream</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:42:"socialstream.admin_menu_statistics_by_date";a:1:{s:3:"url";a:2:{i:0;s:12:"socialstream";i:1;s:8:"statdate";}}s:42:"socialstream.admin_menu_statistics_by_user";a:1:{s:3:"url";a:2:{i:0;s:12:"socialstream";i:1;s:8:"statuser";}}}]]></menu>
+		<phrase_var_name>module_socialstream</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="" module_id="socialstream" is_hidden="0" type="boolean" var_name="show_feeds_automatically" phrase_var_name="setting_show_feeds_automatically" ordering="4" version_id="3.2.0">1</setting>
+		<setting group="" module_id="socialstream" is_hidden="0" type="integer" var_name="maximum_feeds_per_time" phrase_var_name="setting_maximum_feeds_per_time" ordering="2" version_id="3.1.0">5</setting>
+		<setting group="" module_id="socialstream" is_hidden="1" type="boolean" var_name="admin_can_view_any_socialstream_feeds" phrase_var_name="setting_admin_can_view_any_socialstream_feeds" ordering="3" version_id="3.2.0">0</setting>
+		<setting group="" module_id="socialstream" is_hidden="1" type="drop" var_name="default_privacy" phrase_var_name="setting_default_privacy" ordering="1" version_id="3.1.0"><![CDATA[a:2:{s:7:"default";s:8:"Everyone";s:6:"values";a:4:{i:0;s:8:"Everyone";i:1;s:18:"Friends of Friends";i:2;s:7:"Only Me";i:3;s:7:"Friends";}}]]></setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="profile.index" module_id="socialstream" component="filter" location="2" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Social Stream Filter</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="socialstream" component="filter" location="2" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Social Stream Filter</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="socialstream" component="filter" m_connection="" module="socialstream" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="module_socialstream" added="1335328446">Social Stream</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="admin_menu_manage_providers" added="1335337341">Manage Providers</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="mange_social_providers" added="1335337921">Manage Social Providers</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="view" added="1335337931">View</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="hide" added="1335337943">Hide</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="tutorial_how_to_get_facebook_api_key" added="1335339388">Tutorial: how to get facebook api key</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="to_get_your_facebook_api_id" added="1335339416"><![CDATA[<li>To get your <strong>"Facebook API ID"</strong> and <strong>"Facebook App Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="http://developers.facebook.com/setup/" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="for_site_url_you_should_use_this_url" added="1335339439"><![CDATA[For "Site URL" you should use this URL:]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="do_follow_facebook_steps_to_complete_create_new_application" added="1335339463">Do follow Facebook steps to complete create new application.</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="go_to_the_following_url_select_your_app_and_edit" added="1335339486"><![CDATA[Go to the following URL, select your app and edit: <div class="p_4">
+<a href="http://developers.facebook.com/apps/" target="_blank">Edit application</a>
+</div>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="select_advanced_setting_and_edit_migrations_settings" added="1335339506"><![CDATA[Select Advanced setting and edit Migrations settings <span style="font-weight: bold;color: red"> (Require)</span>:
+<ul>
+<li style="list-style: circle"> Stream post URL security: <strong>Disable</strong></li>
+<li style="list-style: circle"> Deprecate offline access: <strong>Disable</strong></li>
+<li style="list-style: circle"> Timezone-less events: <strong>Enable</strong></li>
+<li style="list-style: circle"> Forces use of login secret for auth.login: <strong>Enable</strong></li>
+<li style="list-style: circle"> Enhanced Auth Dialog: <strong>Enable</strong></li>
+<li style="list-style: circle"> Page Hours Format: <strong>Disable</strong></li>
+<li style="list-style: circle"> Batch API Exceptions Format: <strong>Disable</strong></li>
+</ul>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="application_id" added="1335339526">Application ID</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="facebook_secret" added="1335339548">Facebook Secret</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="enable_facebook_connect" added="1335339586">Enable Facebook Connect:</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="setting" added="1335339612">Setting</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="tutorial_how_to_get_twitter_api_key" added="1335339634">Tutorial: how to get twitter api key</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="to_get_your_twitter_api" added="1335339653"><![CDATA[<li>To get your <strong>"Twitter Consumer Key"</strong> and <strong>"Twitter Consumer Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://dev.twitter.com/apps" target="_blank">Make application</a></div>
+    			</li>
+    			<li>
+    				Click to "Create new application" button.
+    			</li>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="for_website_you_should_use_this_url" added="1335339672"><![CDATA[For "WebSite" you should use this URL:]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="for_callback_url_must_use" added="1335339693"><![CDATA[For "Callback URL" must use:]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="do_follow_twitter_steps_to_complete_create_new_application" added="1335339711"><![CDATA[<li>Do follow Twitter steps to complete create new application.</li>
+    			<li>Go to tab "Settings" of your application.</li>
+    			<li>Change "Access level" to <strong>"Read and write"</strong></li>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="consumer_key" added="1335339727">Consumer Key</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="consumer_secret" added="1335339739">Consumer Secret</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="enable_twitter_connect" added="1335339780">Enable Twitter Connect:</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="update_successfully" added="1335340251">Update Successfully</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="connected_as" added="1335342668">Connected as</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="click_here" added="1335342696">Click here</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="to" added="1335342732">to</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="disconnect" added="1335342742">disconnect</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="connect" added="1335342762">connect</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="social_stream_settings" added="1335426044">Social Stream Settings</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="menu_socialstream_social_stream_settings_a0665c4da3a57e7b66f0e23dc705b53b" added="1335426256">Social Stream Settings</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="unable_to_edit_this_account" added="1335426558">Unable to edit this account</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="update_privacy_successfully" added="1335433727">Update Privacy Successfully</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="get_feeds" added="1335433892">Get feeds</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="are_you_sure_you_want_to_disconnect_this_account" added="1335434846">Are you sure you want to disconnect this account?</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="unable_to_post_a_comment_on_this_item_due_to_privacy_settings" added="1335515302">Unable to post a comment on this item due to privacy settings.</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="how_long_to_get_data" added="1336040510">How long to get data</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="minutes" added="1336040613">Minutes</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="hours" added="1336040674">Hours</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="days" added="1336040716">Days</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="months" added="1336040745">Months</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="years" added="1336040765">Years</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="facebook" added="1336528807">Facebook</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="twitter" added="1336528850">Twitter</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="all_feeds" added="1336529159">All feeds</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="user_status" added="1336529176">User status</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="friends" added="1336529193">Friends</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="photos" added="1336529211">Photos</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="links" added="1336529229">Links</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="events" added="1336529240">Events</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="comments" added="1336529281">Comments</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="marketplace" added="1336529300">Marketplace</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="polls" added="1336529312">Polls</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="blogs" added="1336529323">Blogs</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="videos" added="1336529333">Videos</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="music_songs" added="1336529352">Music songs</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="documents" added="1336529381">Documents</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="musicstore_albums" added="1336529397">MusicStore albums</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="musicstore_playlists" added="1336529415">MusicStore playlists</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="musicsharing_albums" added="1336529431">MusicSharing albums</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="musicsharing_playlists" added="1336529445">MusicSharing playlists</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="filter" added="1336529636">Filter</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="sitename_s_feeds" added="1336529812"><![CDATA[{sitename}&#039;s feeds]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="status_update" added="1336531022">Status Update</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="link" added="1336531079">Link</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="poke" added="1336531097">Poke</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="wall_comment" added="1336531132">Wall Comment</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="feed" added="1336531154">Feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_liked_your_social_feed_title" added="1336613136">{full_name} liked your social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="new_like" added="1336613286">New like</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_liked_gender_own_social_feed_title" added="1336613345">{users} liked {gender} own social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_liked_your_social_feed_title" added="1336613389">{users} liked your social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_social_feed_title" added="1336613460"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> social feed]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_your_social_feed_title" added="1336613631">{full_name} commented on your social feed.</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_your_social_feed_a_href_link_title_a" added="1336613689"><![CDATA[{full_name} commented on your social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_gender_social_feed" added="1336613743">{full_name} commented on {gender} social feed.</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_row_full_name_s_social_feed_a_href_link_title_a_message" added="1336613809"><![CDATA[{full_name} commented on {row_full_name}&#039;s social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_commented_on_gender_social_feed_title" added="1336613907">{users} commented on {gender} social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_commented_on_your_social_feed_title" added="1336613939">{users} commented on your social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="users_commented_on_span_class_drop_data_user_row_full_name_s_span_social_feed_title" added="1336613984"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> social feed]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_row_full_name_s_social_feed" added="1336614072"><![CDATA[{full_name} commented on {row_full_name}&#039;s social feed.]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="full_name_commented_on_gender_social_feed_a_href_link_title_a" added="1336614580"><![CDATA[{full_name} commented on {gender} social feed.
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="user_name_tagged_you_in_a_comment_in_a_social_feed" added="1336616081">{user_name} tagged you in a comment in a social feed</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="there_are_no_social_stream_providers_were_enable_please_contact_to_admin_site_to_get_more_informatio" added="1336616623">No social stream providers were enabled. Please contact admin to get more information.</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="by_full_name_on_facebook" added="1336620859">by {full_name} on Facebook</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="by_full_name_on_twitter" added="1336620930">by @{full_name} on Twitter</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="setting_default_privacy" added="1336621698"><![CDATA[<title>Default Privacy Setting when Users add their Facebook & Twitter account</title><info>With this setting you can control the default privacy setting for a user when they connect their Facebook and Twitter account on Social Stream setting page. This will control their social feeds.</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="setting_maximum_feeds_per_time" added="1336708346"><![CDATA[<title>Maximum number of feeds per getting feeds time</title><info>Maximum number of feeds per getting feeds time
+Default: 5
+Maximum: 200</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="settings" added="1336708815">Settings</phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="gets_a_href_link_title_title_full_name_s_feed_from_facebook" added="1337224382"><![CDATA[gets <a href="{link}" title="{title}" target="_blank">{full_name}&#039;s</a> feed from Facebook]]></phrase>
+		<phrase module_id="socialstream" version_id="3.1.0" var_name="gets_a_href_link_title_title_full_name_s_feed_from_twitter" added="1337225165"><![CDATA[gets <a href="{link}" title="{title}">@{full_name}&#039;s</a> feed from Twitter]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="setting_admin_can_view_any_socialstream_feeds" added="1340681637"><![CDATA[<title>Site Admin can view any Social Stream feeds</title><info>Site Admin can view any Social Stream feeds</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="setting_show_feeds_automatically" added="1340681858"><![CDATA[<title>Show feeds automatically</title><info>System will display all feeds automatically when user goes to Home Page and Profile Page or system only shows your site&#039;s feeds and user has to select filter to view Facebook and Twitter&#039;s feeds</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="setting_enable_facebook" added="1341219867"><![CDATA[<title>Enable Facebook</title><info>Enable Facebook settings</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="setting_enable_twitter" added="1341219901"><![CDATA[<title>Enable Twitter</title><info>Enable Twitter settings</info>]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="facebook_settings" added="1341310501">Enable Facebook</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="enable_this_setting_to_get_feed_from_your_facebook_account" added="1341310816">Enable this setting to get Feed from your Facebook account</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="enable_twitter" added="1341312811">Enable Twitter</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="enable_this_setting_to_get_feed_from_your_twitter_account" added="1341312859">Enable this setting to get Feed from your Twitter account</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="there_are_no_providers_were_enable_please_click_a_href_title_social_stream_settings_here_a" added="1341388017"><![CDATA[There are no providers were enable. Please click <a href="{link}" title="Social Stream Settings">here</a> to go to Social Stream Settings page.]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="twitter_privacy" added="1341537994">Twitter Privacy</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="facebook_privacy" added="1341538163">Facebook Privacy</phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="control_who_can_see_your_facebook_s_feeds" added="1342082295"><![CDATA[Control who can see your Facebook&#039;s feeds.]]></phrase>
+		<phrase module_id="socialstream" version_id="3.2.0" var_name="control_who_can_see_your_twitter_s_feeds" added="1342082325"><![CDATA[Control who can see your Twitter&#039;s feeds.]]></phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="network_only" added="1363146355">Network only</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="statistics" added="1364289836">Statistics</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="date" added="1364358347">Date</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="no_providers_found" added="1364358988">No providers found.</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="there_are_no_feeds_to_statistics" added="1364359269">There are no feeds to statistics.</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="feeds" added="1364359550">feeds</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="display_name" added="1364370410">Display Name</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="admin_menu_statistics_by_date" added="1364789441">Statistics by Date</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="admin_menu_statistics_by_user" added="1364789441">Statistics by User</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="statistics_by_date" added="1364789562">Statistics by Date</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="statistics_by_user" added="1364789585">Statistics by User</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="the_end_date_must_be_greater_than_or_equal_to_the_start_date" added="1365157711">The end date must be greater than or equal to the start date.</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="from" added="1365157738">From</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="go" added="1365157800">Go</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="user_does_not_exist_or_does_not_get_any_feed" added="1365215193">User does not exist or does not get any feed.</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="email_name" added="1365216169"><![CDATA[Email & Name]]></phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="email" added="1365216194">Email</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="name" added="1365216211">Name</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="within" added="1365216235">within</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="search" added="1365216254">Search</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="invalid_date" added="1366003938">Invalid date.</phrase>
+		<phrase module_id="socialstream" version_id="3.5.0" var_name="currently_we_do_not_support_the_year_greater_than_2037" added="1366008688">Currently we do not support the year greater than 2037.</phrase>
+	</phrases>
+</module>

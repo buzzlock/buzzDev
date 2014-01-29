@@ -48,4 +48,10 @@
 		// echo \'<li><a href="#" onclick="js_box_remove(this); $Core.box(\\\'photo.viewAllSizes\\\', \\\'full\\\', \\\'id=\' . $this->_aVars[\'aForms\'][\'photo_id\'] . \'\\\'); return false;">View All Sizes</a></li>\';
 		echo \'<li><a href="\' . Phpfox::permalink(array(\'photo\', \'all\'), $this->_aVars[\'aForms\'][\'photo_id\'], $this->_aVars[\'aForms\'][\'title\']) . \'" class="no_ajax_link">\' . Phpfox::getPhrase(\'photo.view_all_sizes\') . \'</a></li>\';
 	}
-} /* Nothing to show */ '; ?>
+} /* Nothing to show */ defined(\'PHPFOX\') or exit(\'NO DICE!\');
+	$aFeed = $this->getVar(\'aFeed\');
+	if(isset($aFeed[\'social_agent_full_name\']) && !empty($aFeed[\'social_agent_full_name\']))
+	{
+	  echo \'<li><span>&middot;</span></li>\';
+	  echo \'<li><a href="\'.$aFeed[\'service_feed_link\'].\'" title="\'.$aFeed[\'social_agent_full_name\'].\'" target="_blank">\'.$aFeed[\'social_agent_full_name\'].\'</a></li>\';
+	} '; ?>

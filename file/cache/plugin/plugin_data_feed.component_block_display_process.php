@@ -1,26 +1,23 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php $aContent = '$aRequest = Phpfox::getLib(\'request\')->get(\'core\');
- $sView = Phpfox::getLib(\'request\')->get(\'viewId\'); 
- $iPage = (int)Phpfox::getLib(\'request\')->get(\'page\'); 
- 
- if($sView == \'\' || ($sView == \'all\' && !$aRequest[\'is_user_profile\']))
- {
-  $iTotalFeeds = (int) Phpfox::getComponentSetting(($bIsProfile > 0 ?  $iUserId : Phpfox::getUserId() ), \'feed.feed_display_limit_\' . ($bIsProfile > 0 ? \'profile\' : \'dashboard\'), Phpfox::getParam(\'feed.feed_display_limit\')); 
- $iCount = Phpfox::getLib(\'database\')->select(\'count(*)\')->from(Phpfox::getT(\'feed\'))->execute(\'getSlaveField\');
- while(empty($aRows) && ($iFeedPage*$iTotalFeeds) < $iCount - $iTotalFeeds)
- {
- $iFeedPage++;
- $aRows = Phpfox::getService(\'feed\')->callback($aFeedCallback)->get(($bIsProfile > 0 ? $iUserId : null), ($this->request()->get(\'feed\') ? $this->request()->get(\'feed\') : null), $iFeedPage);
- }
- 
- if (($this->request()->getInt(\'status-id\') 
- || $this->request()->getInt(\'comment-id\') 
- || $this->request()->getInt(\'link-id\')
- || $this->request()->getInt(\'poke-id\')
- ) 
- && isset($aRows[0]))
- {
- $aRows[0][\'feed_view_comment\'] = true;
- $this->setParam(\'aFeed\', array_merge(array(\'feed_display\' => \'view\', \'total_like\' => $aRows[0][\'feed_total_like\']), $aRows[0])); 
- } 
- } //	THIS PLUGIN IS NOT USED '; ?>
+<?php $aContent = '//	THIS PLUGIN IS NOT USED defined(\'PHPFOX\') or exit(\'NO DICE!\');
+
+    if(Phpfox::isModule(\'socialstream\'))
+    {
+        foreach ( $aRows as $iKey => $Row )
+        {
+            if(isset($Row[\'feed_image\']))
+            {
+                $aRows[$iKey][\'feed_image\'] = str_replace("&cfs=1", "", $Row["feed_image"]);
+                if(isset($aRows[$iKey][\'more_feed_rows\']))
+                {
+                    foreach( $aRows[$iKey][\'more_feed_rows\'] as $iKey1 => $MoreRow)
+                    {
+                        if(isset($MoreRow[\'feed_image\']))
+                        {
+                            $aRows[$iKey][\'more_feed_rows\'][$iKey1][\'feed_image\'] = str_replace("&cfs=1", "", $MoreRow["feed_image"]);
+                        }
+                    }
+                }
+            }
+        }
+    } '; ?>

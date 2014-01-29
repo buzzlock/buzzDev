@@ -1,0 +1,27 @@
+.st_select .st_item,
+.st_select .js_datepicker_core_from,
+.st_select .js_datepicker_core_to{
+	float:left;
+}
+.st_select .st_item label{
+	float:left; 
+	line-height: 27px;
+	margin-right: 10px;
+}
+.st_select .st_item select{
+    margin-top: 3px;
+}
+.st_select .st_item  + .st_item{
+	margin-left:10px;
+}
+.st_select .st_item input{
+	margin-top:2px;
+}
+.st_select{
+	float:right;
+}
+.st.table{
+	overflow:hidden;
+	padding-bottom:10px;
+	padding-top:0;
+}

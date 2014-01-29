@@ -5,6 +5,7 @@
     2 => 
     array (
       'contactimporter.home_contact' => NULL,
+      'socialstream.filter' => NULL,
       'wall.display' => NULL,
     ),
     1 => 
@@ -55,16 +56,17 @@
       'musicsharing.profileplayer' => NULL,
       'friend.remove' => NULL,
     ),
+    2 => 
+    array (
+      'socialstream.filter' => NULL,
+      'wall.display' => NULL,
+    ),
     3 => 
     array (
       'friend.mutual-friend' => NULL,
       'wall.time' => NULL,
       'track.recent-views' => NULL,
       'resume.resume-completeness' => NULL,
-    ),
-    2 => 
-    array (
-      'wall.display' => NULL,
     ),
   ),
   'profile.info' => 

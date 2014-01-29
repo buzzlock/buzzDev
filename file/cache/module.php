@@ -69,6 +69,7 @@
   'socialbridge' => 'socialbridge',
   'socialmediaimporter' => 'socialmediaimporter',
   'socialpublishers' => 'socialpublishers',
+  'socialstream' => 'socialstream',
   'subscribe' => 'subscribe',
   'tag' => 'tag',
   'theme' => 'theme',

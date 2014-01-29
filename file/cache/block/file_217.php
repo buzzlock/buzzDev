@@ -2,7 +2,7 @@
 <?php $aContent = array (
   'block_id' => '217',
   'type_id' => '0',
-  'ordering' => '27',
+  'ordering' => '29',
   'm_connection' => 'core.index-member',
   'component' => 'display',
   'location' => '2',

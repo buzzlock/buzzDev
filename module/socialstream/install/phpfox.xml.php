@@ -1,0 +1,11 @@
+<module>
+	<data>
+		<module_id>socialstream</module_id>
+		<product_id>socialstream</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:1:{s:40:"socialstream.admin_menu_manage_providers";a:1:{s:3:"url";a:1:{i:0;s:12:"socialstream";}}}]]></menu>
+		<phrase_var_name>module_socialstream</phrase_var_name>
+	</data>
+</module>

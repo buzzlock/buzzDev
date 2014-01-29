@@ -1,5 +1,48 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php $aContent = 'if (Phpfox::getParam(\'facebook.enable_facebook_connect\'))
+<?php $aContent = '$sCacheId = Phpfox::getLib(\'cache\')->set(\'373f8034a282365715a1d3a6f335bb31\');
+
+if (!Phpfox::getLib(\'cache\')->get($sCacheId))
+{
+	$aRow = Phpfox::getLib(\'database\')->select(\'value_actual\')->from(Phpfox::getT(\'setting\'))->where(\'var_name LIKE "checked_socialstream_feeds"\')->execute(\'getRow\');
+	$isModuleSocialStream = Phpfox::isModule(\'socialstream\');
+	$oDb = Phpfox::getLib(\'database\');
+	if(count($aRow) == 0)
+	{
+		$aInsert = array(\'module_id\' => \'admincp\',
+						 \'product_id\' => \'phpfox\',
+						 \'is_hidden\' => 1,
+						 \'version_id\'=> \'2.0.0rc1\',
+						 \'type_id\' => \'boolean\',
+						 \'var_name\' => \'checked_socialstream_feeds\',
+						 \'phrase_var_name\' => "Checked Social Stream Feeds",
+						 \'value_actual\' => $isModuleSocialStream ? 1 : 0,
+						 \'value_default\' => $isModuleSocialStream ? 1 : 0 ,
+						 \'ordering\' => 1,
+		);		
+		$oDb->insert(Phpfox::getT(\'setting\'),$aInsert);
+		$aRow = $aInsert;
+	}
+	
+    $isCheckedSocialStream = (int) $aRow[\'value_actual\'];
+    
+    if ($isModuleSocialStream && !$isCheckedSocialStream) //enable && 0
+    {
+        $sSQL1 = "UPDATE `" . Phpfox::getT(\'feed\') . "` SET `privacy` = `privacy` - 7,`feed_reference` = `feed_reference` -7  WHERE `type_id` LIKE \'socialstream_%\' AND `item_id` IS NOT NULL AND `feed_reference` IS NOT NULL AND `privacy` >= 7";
+        Phpfox::getLib(\'database\')->query($sSQL1);
+     
+		$sSQL2 = "UPDATE `" . Phpfox::getT(\'setting\') . "` SET `value_actual` = \'1\',`value_default` = \'1\' WHERE `var_name` = \'checked_socialstream_feeds\' AND `module_id` = \'admincp\'";
+        Phpfox::getLib(\'database\')->query($sSQL2);
+    }
+    else if (!$isModuleSocialStream && $isCheckedSocialStream) //disable && 1
+    {        
+        $sSQL1 = "UPDATE `" . Phpfox::getT(\'feed\') . "` SET `privacy` = `privacy` + 7,`feed_reference` = `feed_reference` +7 WHERE `type_id` LIKE \'socialstream_%\' AND `item_id` IS NOT NULL AND `feed_reference` IS NOT NULL AND `privacy` < 7";
+        Phpfox::getLib(\'database\')->query($sSQL1);
+        
+		$sSQL2 = "UPDATE `" . Phpfox::getT(\'setting\') . "` SET `value_actual` = \'0\',`value_default` = \'0\' WHERE `var_name` = \'checked_socialstream_feeds\' AND `module_id` = \'admincp\'";
+        Phpfox::getLib(\'database\')->query($sSQL2);
+    }
+    Phpfox::getLib(\'cache\')->save($sCacheId, true);
+} if (Phpfox::getParam(\'facebook.enable_facebook_connect\'))
 {
 	if (!empty($_REQUEST[\'facebook-process-login\']))
 	{	
@@ -192,7 +235,7 @@
 {
 	Phpfox::getComponent(\'share.connect\', array(), \'controller\');	
 	exit;
-} if (!PHPFOX_IS_AJAX)
+} //This plugin is no longer used. if (!PHPFOX_IS_AJAX)
 {
 	$mRedirectId = Phpfox::getService(\'subscribe.purchase\')->getRedirectId();
 	if (is_numeric($mRedirectId) && $mRedirectId > 0)

@@ -5,6 +5,7 @@
     'contactimporter.home_contact' => '2',
     'apps.menu' => '1',
     'donation.donate' => '1',
+    'socialstream.filter' => '2',
     'friend.mini' => '1',
     'log.login' => '1',
     'friend.birthday' => '3',
@@ -27,6 +28,7 @@
   'profile.index' => 
   array (
     'profile.pic' => '1',
+    'socialstream.filter' => '2',
     'friend.profile.small' => '1',
     'report.profile' => '1',
     'friend.mutual-friend' => '3',
