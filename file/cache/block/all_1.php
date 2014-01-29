@@ -56,6 +56,7 @@
       'profile.pic' => NULL,
       'friend.profile.small' => NULL,
       'report.profile' => NULL,
+      'userconnect.connectionpath_sidebar' => NULL,
       'musicsharing.profileplayer' => NULL,
       'friend.remove' => NULL,
     ),
@@ -66,6 +67,7 @@
     ),
     3 => 
     array (
+      'userconnect.mayyouknow' => NULL,
       'friend.mutual-friend' => NULL,
       'wall.time' => NULL,
       'track.recent-views' => NULL,
@@ -860,6 +862,17 @@
     1 => 
     array (
       'resume.categories' => NULL,
+    ),
+  ),
+  'userconnect.view' => 
+  array (
+    1 => 
+    array (
+      'userconnect.connectionsettings' => NULL,
+    ),
+    2 => 
+    array (
+      'userconnect.display' => NULL,
     ),
   ),
   'apps.index' => 

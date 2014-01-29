@@ -393,4 +393,4 @@ if (isset($_SESSION[\'suggestion\'][\'aFeed\']) && ($a != $b || ($a==$b && $_SES
         <?php }
         }
     }
-} '; ?>
+} /*phpfox::getService(\'userconnect.algorithm\')->clearCache($sType,$iItemId,Phpfox::getUserId());*/ '; ?>

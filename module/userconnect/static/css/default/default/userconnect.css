@@ -1,0 +1,144 @@
+a#feed_view_more {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: #EDF6FA;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-bottom-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: #FFFFFF;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    text-decoration: none;
+    width: 100% !important;
+}
+
+.connectionsettings
+{
+    color: #393939;
+    font-weight: bold;
+    margin:1px 0 15px 0;
+    padding:4px 2px 4px 2px;
+}
+.uscn_settings .options
+{
+    padding: 15px 0 15px 2px;
+    line-height: 20px;
+}
+#js_userconnect_content .left
+{
+    float:left;
+    margin:8px;
+/*   border:1px solid #CCC;*/
+}
+#js_userconnect_content .user_browse_image
+{
+    width:115px;
+}
+#js_userconnect_content
+{
+    margin:0 auto;
+}
+#js_userconnect_content .user_info
+{
+    border:1px solid #CCC;
+}
+#js_userconnect_content .user_browse_image img
+{
+    width:75px;
+    height:75px;
+}
+ul.connection_path .user_browse_image
+{
+     width:90px;
+}
+ul.connection_path .user_browse_image img
+{
+    width:80px;
+    height:80px;
+    margin:4px 0px 0px 2px;
+}
+ul.connection_path li
+{
+    float:left;
+}
+ul.connection_path li div.arrow_path 
+{
+    width:30px;
+    
+}
+ul.connection_path li div.arrow_path img
+{
+    margin:auto;
+    display:block;
+    margin-top:30px;
+    
+}
+
+ul.connection_path li div.arrow_path_sidebar img
+{
+    margin-top:2px;
+    margin-bottom: 2px;
+    margin-left: 33px;  
+}
+
+.uscn_mini_menu
+{
+    height: 21px;
+	position: absolute;
+	z-index: 10;
+	width: 90px;
+	top: 70px;
+	left: 15px;
+	display:none;
+}
+.uscn_mini_menu .uscn_control
+{
+    /background: none repeat scroll 0 0 white;
+    border-radius: 6px 6px 6px 6px;
+    /margin: -21px 0 0 7px;
+    width: 71%;
+    
+}
+.uscn_mini_menu .uscn_control span
+{
+    margin-right:2px;
+}
+.quickFlipCta
+{
+    display:none;
+}
+.quickFlip, .quickFlipPanel {
+    height: 90px;
+    width: 90px;
+}
+ul.front_end
+{
+    margin:0 37px;
+}
+ul.front_end li
+{
+    float:none;
+}
+ul.connection_path li.li_u_img,
+ul.front_end li.li_u_img{
+	min-height:104px;
+	height:auto;
+	position:relative;
+}
+ul.connection_path li div.arrow_path img 
+ul.front_end li div.arrow_path img 
+{
+     margin:6px 10px 6px 33px;
+}

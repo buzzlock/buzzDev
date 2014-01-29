@@ -221,6 +221,19 @@
     'url' => 'http://phpfox3.demo.younetco.com/suggestion/',
     'url_version_check' => 'http://phpfox3.demo.younetco.com/suggestion/',
   ),
+  'userconnect' => 
+  array (
+    'product_id' => 'userconnect',
+    'is_core' => '0',
+    'title' => 'User Connections',
+    'description' => 'by Younet Company',
+    'version' => '3.02p6',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',

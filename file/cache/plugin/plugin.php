@@ -140,6 +140,8 @@
   'pages.template_controller_widget_ajax_onsubmit' => 'pages.template_controller_widget_ajax_onsubmit',
   'parse_input__removeevilattributes' => 'parse_input__removeevilattributes',
   'validator_check_routine_default' => 'validator_check_routine_default',
+  'feed.service_process_add__start' => 'feed.service_process_add__start',
+  'service_process_delete__1' => 'service_process_delete__1',
   'wall.service_get_feed_types' => 'wall.service_get_feed_types',
   'admincp.component_controller_index_clean' => 'admincp.component_controller_index_clean',
   'video.service_video_getvideo' => 'video.service_video_getvideo',

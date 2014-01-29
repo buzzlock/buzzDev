@@ -77,6 +77,7 @@
   'tinymce' => 'tinymce',
   'track' => 'track',
   'user' => 'user',
+  'userconnect' => 'userconnect',
   'video' => 'video',
   'wall' => 'wall',
   'younetcore' => 'younetcore',

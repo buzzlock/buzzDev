@@ -34,8 +34,10 @@
     'socialstream.filter' => '2',
     'friend.profile.small' => '1',
     'report.profile' => '1',
+    'userconnect.mayyouknow' => '3',
     'friend.mutual-friend' => '3',
     'wall.time' => '3',
+    'userconnect.connectionpath_sidebar' => '1',
     'track.recent-views' => '3',
     'musicsharing.profileplayer' => '1',
     'friend.remove' => '1',
@@ -489,6 +491,11 @@
   'resume.index' => 
   array (
     'resume.categories' => '1',
+  ),
+  'userconnect.view' => 
+  array (
+    'userconnect.connectionsettings' => '1',
+    'userconnect.display' => '2',
   ),
   'apps.index' => 
   array (

@@ -1,0 +1,94 @@
+<module>
+	<data>
+		<module_id>userconnect</module_id>
+		<product_id>userconnect</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_userconnect</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="userconnect" parent_var_name="" m_connection="profile" var_name="menu_userconnect_connection_path_7d97481b1fe66f4b51db90da7e794d9f" ordering="113" url_value="profile.userconnect" version_id="2.0.7" disallow_access="" module="userconnect" />
+		<menu module_id="userconnect" parent_var_name="" m_connection="profile.my" var_name="menu_userconnect_my_connect_ab57a0b2d013618c61d9361f4c3a3f94" ordering="114" url_value="userconnect.view" version_id="2.0.7" disallow_access="" module="userconnect" />
+		<menu module_id="userconnect" parent_var_name="menu_profile" m_connection="" var_name="menu_userconnect_my_connections_ab57a0b2d013618c61d9361f4c3a3f94" ordering="115" url_value="userconnect.view" version_id="3.0.0beta5" disallow_access="" module="userconnect" />
+	</menus>
+	<blocks>
+		<block type_id="0" m_connection="profile.index" module_id="userconnect" component="mayyouknow" location="3" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title>May You Know</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="userconnect.view" module_id="userconnect" component="connectionsettings" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Connection Settings</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="profile.index" module_id="userconnect" component="connectionpath_sidebar" location="1" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title>connectionpath_sidebar</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="userconnect.view" module_id="userconnect" component="display" location="2" is_active="1" ordering="2" disallow_access="" can_move="1">
+			<title>display</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="userconnect" component="display" m_connection="" module="userconnect" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="userconnect" component="connectionsettings" m_connection="" module="userconnect" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="userconnect" component="mayyouknow" m_connection="" module="userconnect" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="userconnect" component="connectionpath_sidebar" m_connection="" module="userconnect" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="userconnect" component="view" m_connection="userconnect.view" module="userconnect" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="userconnect" component="index" m_connection="userconnect.index" module="userconnect" is_controller="1" is_block="0" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="userconnect" version_id="2.0.7" var_name="module_userconnect" added="1313092346">User Connection</phrase>
+		<phrase module_id="userconnect" version_id="2.0.7" var_name="menu_userconnect_connection_path_7d97481b1fe66f4b51db90da7e794d9f" added="1313171583">Connection Path</phrase>
+		<phrase module_id="userconnect" version_id="2.0.7" var_name="menu_userconnect_my_connect_ab57a0b2d013618c61d9361f4c3a3f94" added="1313598419">My Connection</phrase>
+		<phrase module_id="userconnect" version_id="2.0.7" var_name="setting_abcdef" added="1313874450"><![CDATA[<title>sdfdsfdsf</title><info>sdfdsf</info>]]></phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="user_setting_connection_levels" added="1315479857"><![CDATA[Enter the maximum level depth till which User Connections are to be shown to users of this Member Level Note: Connections of levels larger than this will not be shown. For optimal page performance, we recommend that a value from 2 to 5 is chosen (Connection level 1 => Friend, Connection level 2 => Friend of Friend).]]></phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="user_setting_users_number_show" added="1315480124"><![CDATA[How many friends will be shown in "User Connection" page?]]></phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="user_setting_may_you_know_numbers" added="1315563520"><![CDATA[How many members will be shown in "People You May Know" block? (The value should be greater than 0)]]></phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="there_is_no_permission_to_view_connection_path" added="1315620753">There is no permission to view connection path to this user.</phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="there_is_no_connection" added="1315620869">There is no connection.</phrase>
+		<phrase module_id="userconnect" version_id="2.1.0" var_name="there_is_no_connection_to_this_user" added="1315620921">There is no connection to this user.</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta2" var_name="there_are_no_friends_at_this_level" added="1316776861">There are no friends at this level.</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="connection_path" added="1320252917">Connection Path</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="visibility_in_connection_paths" added="1320682015">Visibility in Connection Paths</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="you_have_updated_my_connection_settings_successfully" added="1320682250">You have updated My Connection Settings successfully.</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="yes_show_my_connection_path" added="1320682309">Yes, show my Connection Path.</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="no_hide_my_connection_path" added="1320682322">No, hide my Connection Path.</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="current_friends" added="1320682373">Current Friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="2nd_level_friends" added="1320682387">2nd Level Friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="3rd_level_friends" added="1320682400">3rd Level Friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="4th_level_friends" added="1320682412">4th Level Friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="5th_level_friends" added="1320682423">5th Level Friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="find_not_found_the_connection_to_this_user" added="1320733871">Can not find the connection to this user</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="menu_userconnect_my_connections_ab57a0b2d013618c61d9361f4c3a3f94" added="1320734080">My Connections</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="friends" added="1321681919">friends</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="friend" added="1321681936">friend</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="total" added="1321681965">Total</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0beta5" var_name="people_you_may_know" added="1321682018">People You May Know</phrase>
+		<phrase module_id="userconnect" version_id="3.0.0rc2" var_name="unable_to_find_any_friends_with_the_current_search_criteria" added="1322592069">Unable to find any friends with the current search criteria.</phrase>
+		<phrase module_id="userconnect" version_id="3.2.0" var_name="friend_request_sent" added="1337669357">Friend request sent</phrase>
+		<phrase module_id="userconnect" version_id="3.02p1" var_name="my_connection_settings" added="1337669357">My Connection Settings</phrase>
+		<phrase module_id="userconnect" version_id="3.02p1" var_name="user_connections" added="1337669357">User Connections</phrase>
+		<phrase module_id="userconnect" version_id="3.02p1" var_name="submit" added="1337669357">Submit</phrase>
+		<phrase module_id="userconnect" version_id="3.02p1" var_name="change" added="1337669357">Change</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="connection_level_setting" added="1355385705">Connection Level Setting</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="enter_the_maximum_level_depth_till_which_user_connections_are_to_be_shown_to_users_of_this_member_le" added="1355385725"><![CDATA[Enter the maximum level depth till which User Connections are to be shown to users of this Member Level Note: Connections of levels larger than this will not be shown. For optimal page perfomance, we recommend that a value between 2 to 5 is chosen (Connection level 1 => Friend, Connection level 2 => Friend of Friend).]]></phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="global_settings" added="1355385870">Global Settings</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="position_of_the_connection_path_widget" added="1355385883">Position of the Connection Path Widget</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="select_the_position_for_the_connection_path_widget_with_will_show_the_connection_path_between_the_pr" added="1355385895">Select the position for the Connection Path Widget with will show the Connection Path between the profile owner and the profile viewer.</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="for_this_please_enable_the_connection_path_widget_in_the_sidebar_of_member_profile_page" added="1355385912"><![CDATA[[For this, please enable the Connection Path widget in the Sidebar of Member Profile page.]]]></phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="sidebar_leveled" added="1355385953">Sidebar Leveled</phrase>
+		<phrase module_id="userconnect" version_id="3.4.1" var_name="sidebar_vertical_without_image" added="1355385987">Sidebar-Vertical without Image</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="userconnect" type="integer" admin="5" user="5" guest="0" staff="5" module="userconnect" ordering="0">connection_levels</setting>
+		<setting is_admin_setting="0" module_id="userconnect" type="integer" admin="7" user="5" guest="0" staff="7" module="userconnect" ordering="0">may_you_know_numbers</setting>
+		<setting is_admin_setting="0" module_id="userconnect" type="integer" admin="10" user="5" guest="0" staff="10" module="userconnect" ordering="0">users_number_show</setting>
+	</user_group_settings>
+</module>
