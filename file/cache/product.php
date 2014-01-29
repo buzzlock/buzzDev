@@ -130,6 +130,19 @@
     'url' => 'http://phpfox3demo.modules2buy.com/musicsharing/',
     'url_version_check' => NULL,
   ),
+  'opensocialconnect' => 
+  array (
+    'product_id' => 'opensocialconnect',
+    'is_core' => '0',
+    'title' => 'Social Connect',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p1',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'pagecontacts' => 
   array (
     'product_id' => 'pagecontacts',

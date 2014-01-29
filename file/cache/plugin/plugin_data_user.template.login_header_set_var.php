@@ -5,4 +5,7 @@
 } if (Phpfox::getParam(\'janrain.enable_janrain_login\'))
 {
 	Phpfox::getLib(\'template\')->assign(\'bCustomLogin\', true);
+} if (Phpfox::isModule(\'opensocialconnect\'))
+{
+    echo Phpfox::getService(\'opensocialconnect.providers\')->viewLoginHeader();
 } '; ?>

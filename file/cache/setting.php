@@ -4745,4 +4745,32 @@ Sincerely,
     ),
     'module_name' => 'resume',
   ),
+  657 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'margin_top',
+    'value_actual' => 25,
+    'module_name' => 'opensocialconnect',
+  ),
+  658 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'margin_right',
+    'value_actual' => 430,
+    'module_name' => 'opensocialconnect',
+  ),
+  659 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'limit_providers_view_on_login_header',
+    'value_actual' => 7,
+    'module_name' => 'opensocialconnect',
+  ),
+  660 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'size_of_icon_in_pixel',
+    'value_actual' => 24,
+    'module_name' => 'opensocialconnect',
+  ),
 ); ?>

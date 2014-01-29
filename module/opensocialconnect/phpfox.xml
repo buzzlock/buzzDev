@@ -1,0 +1,61 @@
+<module>
+	<data>
+		<module_id>opensocialconnect</module_id>
+		<product_id>opensocialconnect</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:45:"opensocialconnect.admin_menu_manage_providers";a:1:{s:3:"url";a:2:{i:0;s:17:"opensocialconnect";i:1;s:9:"providers";}}s:39:"opensocialconnect.admin_menu_statistics";a:1:{s:3:"url";a:2:{i:0;s:17:"opensocialconnect";i:1;s:4:"stat";}}}]]></menu>
+		<phrase_var_name>module_opensocialconnect</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="" module_id="opensocialconnect" is_hidden="0" type="integer" var_name="margin_top" phrase_var_name="setting_margin_top" ordering="3" version_id="3.5.0">25</setting>
+		<setting group="" module_id="opensocialconnect" is_hidden="0" type="integer" var_name="margin_right" phrase_var_name="setting_margin_right" ordering="4" version_id="3.5.0">430</setting>
+		<setting group="" module_id="opensocialconnect" is_hidden="0" type="integer" var_name="limit_providers_view_on_login_header" phrase_var_name="setting_limit_providers_view_on_login_header" ordering="1" version_id="3.0.0">7</setting>
+		<setting group="" module_id="opensocialconnect" is_hidden="0" type="integer" var_name="size_of_icon_in_pixel" phrase_var_name="setting_size_of_icon_in_pixel" ordering="2" version_id="3.5.0">24</setting>
+	</settings>
+	<phrases>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="admin_menu_manage_providers" added="1324652308">Manage Providers</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="module_opensocialconnect" added="1324652308">Social Connect</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="providers_successfully_deleted" added="1324661831">Providers successfully deleted.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="mange_social_providers" added="1324661873">Mange Social Providers</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="title" added="1324662024">Title</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="name" added="1324662419">Name</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="not_a_valid_request" added="1324662832">Not a valid request.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="invalid_security_problem" added="1324753970">Invalid security problem.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="synchronize" added="1324768232">Synchronize</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="this_email_already_exists_do_you_want_to_synchronize_with_this_account" added="1324768441"><![CDATA[This email <strong>{email}</strong> already exists. Do you want to synchronize with this account?]]></phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="welcome_email_content_sign_up" added="1324917739">Thanks for joining our community! Your Account Info:
+Email: {email}
+Password: {password}
+You can login by using above info or using social connect to login.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="you_registered_an_account_on_site_title_before_being_able_to_use_your_account_you_need_to_verify_tha" added="1324918114"><![CDATA[You registered an account on {site_title}, before being able to use your account you need to verify that this is your email address by clicking here:
+<a href="{link}">{link}</a>
+Email: {email}
+Password: {password}
+You can login by using above info or using social connect to login.]]></phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="facebook_secret" added="1324937331">Facebook Secret</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="application_id" added="1324937349">Application ID</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="overwrite_default_facebook_settings" added="1324937672">Overwrite default Facebook settings</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="update_successfully" added="1324940399">Update Successfully</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="invalid_facebook_api" added="1324940511">Invalid Facebook API</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="auto_generate_password" added="1326338831">Auto generate password.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="secret_key" added="1326491455">Secret Key</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="api_key" added="1326491478">API Key</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="consumer_key" added="1326491541">Consumer Key</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="consumer_secret" added="1326491574">Consumer Secret</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="setting_limit_providers_view_on_login_header" added="1326494451"><![CDATA[<title>Limit providers view on login header</title><info>The number providers can view on login section.</info>]]></phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="by_using" added="1326682558">by using</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="please_install_social_bridge_plugin_first" added="1326784553">Please install Social Bridge plugin first</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.0.0" var_name="all_social_api_keys_configuration_was_setup_in" added="1326856896">All social API Keys Configuration was setup in:</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="admin_menu_statistics" added="1364964070">Statistics</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="statistics" added="1364964110">Statistics</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="no_providers_found" added="1364964165">No providers found.</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="provider" added="1364964191">Provider</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="total_signup" added="1364964223">Total Signup</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="total_login" added="1364964240">Total Login</phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="setting_size_of_icon_in_pixel" added="1365505002"><![CDATA[<title>Size of provider icon (px)</title><info>Size in pixel of each provider icon on front-end.</info>]]></phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="setting_margin_right" added="1365556965"><![CDATA[<title>Margin right (px)</title><info>Pixel distance from the provider block to the right side of the web page.</info>]]></phrase>
+		<phrase module_id="opensocialconnect" version_id="3.5.0" var_name="setting_margin_top" added="1365557333"><![CDATA[<title>Margin top (px)</title><info>Pixel distance from the provider block to the top of the web page.</info>]]></phrase>
+	</phrases>
+</module>

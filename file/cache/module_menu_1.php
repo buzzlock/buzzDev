@@ -494,6 +494,23 @@
   ),
   20 => 
   array (
+    'module_id' => 'opensocialconnect',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'opensocialconnect.admin_menu_manage_providers' => 
+      array (
+        'url' => 'opensocialconnect/providers',
+      ),
+      'opensocialconnect.admin_menu_statistics' => 
+      array (
+        'url' => 'opensocialconnect/stat',
+      ),
+    ),
+    'url_name' => 'opensocialconnect',
+  ),
+  21 => 
+  array (
     'module_id' => 'pages',
     'is_menu' => '1',
     'menu' => 
@@ -513,7 +530,7 @@
     ),
     'url_name' => 'pages',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'petition',
     'is_menu' => '1',
@@ -538,7 +555,7 @@
     ),
     'url_name' => 'petition',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -551,7 +568,7 @@
     ),
     'url_name' => 'photo',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -572,7 +589,7 @@
     ),
     'url_name' => 'report',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'resume',
     'is_menu' => '1',
@@ -625,7 +642,7 @@
     ),
     'url_name' => 'resume',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -650,7 +667,7 @@
     ),
     'url_name' => 'rss',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -667,7 +684,7 @@
     ),
     'url_name' => 'share',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'socialbridge',
     'is_menu' => '1',
@@ -680,7 +697,7 @@
     ),
     'url_name' => 'socialbridge',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -705,7 +722,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -718,7 +735,7 @@
     ),
     'url_name' => 'user',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -735,7 +752,7 @@
     ),
     'url_name' => 'video',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -748,7 +765,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

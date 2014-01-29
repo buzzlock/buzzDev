@@ -47,6 +47,7 @@
   'musicsharing' => 'musicsharing',
   'newsletter' => 'newsletter',
   'notification' => 'notification',
+  'opensocialconnect' => 'opensocialconnect',
   'page' => 'page',
   'pagecontacts' => 'pagecontacts',
   'pages' => 'pages',
