@@ -669,6 +669,19 @@
   ),
   27 => 
   array (
+    'module_id' => 'socialbridge',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'socialbridge.admin_menu_manage_social_api_keys' => 
+      array (
+        'url' => 'socialbridge/providers',
+      ),
+    ),
+    'url_name' => 'socialbridge',
+  ),
+  28 => 
+  array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
     'menu' => 
@@ -692,7 +705,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -705,7 +718,7 @@
     ),
     'url_name' => 'user',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'video',
     'is_menu' => '1',
@@ -722,7 +735,7 @@
     ),
     'url_name' => 'video',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -735,7 +748,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

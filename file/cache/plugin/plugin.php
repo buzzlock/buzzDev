@@ -1,5 +1,6 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
 <?php $aContent = array (
+  'feed.component_block_display_process' => 'feed.component_block_display_process',
   'theme_template_body__start' => 'theme_template_body__start',
   'admincp.component_controller_index_process_menu' => 'admincp.component_controller_index_process_menu',
   'feed.template_block_entry_2' => 'feed.template_block_entry_2',
@@ -73,7 +74,6 @@
   'jobposting.theme_template_body__end' => 'jobposting.theme_template_body__end',
   'profile.component_block_info' => 'profile.component_block_info',
   'profile.template_block_info' => 'profile.template_block_info',
-  'feed.component_block_display_process' => 'feed.component_block_display_process',
   'library_template_getlayoutfile_1' => 'library_template_getlayoutfile_1',
   'library_template_getstyle_1' => 'library_template_getstyle_1',
   'librayr_url__send_switch' => 'librayr_url__send_switch',

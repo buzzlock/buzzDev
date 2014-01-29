@@ -65,6 +65,7 @@
   'search' => 'search',
   'share' => 'share',
   'shoutbox' => 'shoutbox',
+  'socialbridge' => 'socialbridge',
   'subscribe' => 'subscribe',
   'tag' => 'tag',
   'theme' => 'theme',

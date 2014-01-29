@@ -1,0 +1,123 @@
+<module>
+	<data>
+		<module_id>socialbridge</module_id>
+		<product_id>socialbridge</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:1:{s:46:"socialbridge.admin_menu_manage_social_api_keys";a:1:{s:3:"url";a:2:{i:0;s:12:"socialbridge";i:1;s:9:"providers";}}}]]></menu>
+		<phrase_var_name>module_socialbridge</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="socialbridge" parent_var_name="menu_settings" m_connection="" var_name="menu_socialbridge_manage_social_accounts_a4d91de34ac868ffc9869b826f2e135f" ordering="105" url_value="socialbridge.setting" version_id="3.2.0" disallow_access="" module="socialbridge" />
+	</menus>
+	<phrases>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="admin_menu_manage_social_api_keys" added="1326641405">Manage Social API Keys</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="module_socialbridge" added="1326641405">Manage Social Keys</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="update_successfully" added="1326642316">Update Successfully</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="manage_social_api_keys" added="1326642361">Manage Social API Keys</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="error" added="1325736211">Error</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="view" added="1325736291">View</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="hide" added="1325736363">Hide</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="tutorial_how_to_get_facebook_api_key" added="1325736967"><![CDATA[tutorial "How to get Facebook Api Key"]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="to_get_your_facebook_api_id" added="1325737154"><![CDATA[<li>To get your <strong>"Facebook API ID"</strong> and <strong>"Facebook App Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="http://developers.facebook.com/setup/" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="for_site_url_you_should_use_this_url" added="1325737172"><![CDATA[For "Site URL" you should use this URL:]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="do_follow_facebook_steps_to_complete_create_new_application" added="1325737189">Do follow Facebook steps to complete create new application.</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="tutorial_how_to_get_twitter_api_key" added="1325737245"><![CDATA[tutorial "How to get Twitter Api Key"]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="to_get_your_twitter_api" added="1325737357"><![CDATA[<li>To get your <strong>"Twitter Consumer Key"</strong> and <strong>"Twitter Consumer Secret"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://dev.twitter.com/apps" target="_blank">Make application</a></div>
+    			</li>
+    			<li>
+    				Click to "Create new application" button.
+    			</li>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="for_website_you_should_use_this_url" added="1325737372"><![CDATA[For "WebSite" you should use this URL:]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="for_callback_url_must_use" added="1325737387"><![CDATA[For "Callback URL" must use:]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="do_follow_twitter_steps_to_complete_create_new_application" added="1325737411"><![CDATA[<li>Do follow Twitter steps to complete create new application.</li>
+    			<li>Go to tab "Settings" of your application.</li>
+    			<li>Change "Access level" to <strong>"Read and write"</strong></li>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="tutorial_how_to_get_linkedin_api_key" added="1325737451"><![CDATA[tutorial "How to get Linkedin Api Key"]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="to_get_your_linkedin_api_key" added="1325737476"><![CDATA[<li>To get your <strong>"Linkedin API Key"</strong> and <strong>"Linkedin Secret Key"</strong> strings, go to the following URL:
+    				<div class="p_4"><a href="https://www.linkedin.com/secure/developer?newapp=" target="_blank">Make application</a></div>
+    			</li>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="do_follow_linkedin_steps_to_complete_create_new_application" added="1325737520"><![CDATA[<li>
+    				<div class="p_4">For "Application Type" you should use this URL: <strong>Web Application</strong></div>
+    				<div class="p_4">For "Live Status" should be: <strong style="color:red;">Live</strong></div>
+    				
+    			</li>
+    			<li>Do follow Linkedin steps to complete create new application.</li>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="setting" added="1325266128">Settings</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="facebook_secret" added="1325342656">Facebook Secret</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="application_id" added="1325342679">Application ID</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="enable_facebook_connect" added="1325342820">Enable Facebook Connect:</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="consumer_key" added="1325343152">Consumer Key</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="consumer_secret" added="1325343192">Consumer Secret</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="enable_twitter_connect" added="1325343232">Enable Twitter Connect:</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="api_key" added="1325344324">API Key</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="secret_key" added="1325344362">Secret Key</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="enable_linkedin_connect" added="1325344421">Enable Linkedin Connect</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="migrate_settings" added="1326768950">Migrate Settings</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="migrate" added="1326769236">Migrate</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="to_upgrade_new_settings_from_social_connect_or_social_publishers_settings_please_click_to_migrate" added="1326769449"><![CDATA[To upgrade new settings from Social Connect or Social Publishers Settings, please click to "migrate" button .]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="migrate_from" added="1326769528">Migrate from</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="social_connect" added="1326769693">Social Connect</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="social_publishers" added="1326769709">Social Publishers</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="if_both_social_connect_and_social_publlishers_settings_are_configured_after_upgrading_the_new_se" added="1326770983"><![CDATA[If both Social Connect and Social Publlishers' settings  are configured, after upgrading, the new settings would be Social Connect settings only]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="no_selected_migrate_options" added="1326771234">No selected Migrate Options</phrase>
+		<phrase module_id="socialbridge" version_id="3.0.0" var_name="for_twitter_api_settings_strong_must_change_callback_url_to_strong" added="1326861283"><![CDATA[For Twitter API Settings: <strong>must change CallBack URL to: </strong>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.1" var_name="go_to_the_following_url_select_your_app_and_edit" added="1332834658"><![CDATA[Go to the following URL, select your app and edit: <div class="p_4">
+<a href="http://developers.facebook.com/apps/" target="_blank">Edit application</a>
+</div>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.0.1" var_name="select_advanced_setting_and_edit_migrations_settings" added="1332834709"><![CDATA[Select Advanced setting and edit Migrations settings <span style="font-weight: bold;color: red"> (Require)</span>:
+<ul>
+<li style="list-style: circle"> Stream post URL security: <strong>Disable</strong></li>
+<li style="list-style: circle"> Deprecate offline access: <strong>Disable</strong></li>
+<li style="list-style: circle"> Forces use of login secret for auth.login: <strong>Enable</strong></li>
+<li style="list-style: circle"> August 2012 Breaking Changes: <strong>Enable</strong></li>
+<li style="list-style: circle"> September 2012 Breaking Changes: <strong>Enable</strong></li>
+<li style="list-style: circle"> October 2012 Breaking Changes: <strong>Enable</strong></li>
+</ul>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="social_bridge_settings" added="1341281375">Social Bridge Settings</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="connected_as" added="1341281444">Connected as</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="are_you_sure_you_want_to_disconnect_this_account" added="1341281484">Are you sure you want to disconnect this account?</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="click_here" added="1341281558">Click here</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="to" added="1341281567">to</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="disconnect" added="1341281588">disconnect</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="connect" added="1341281612">connect</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="view_your_settings" added="1341303481">View your settings</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="update_unsuccessful" added="1341313883">Update Unsuccessfully</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="supported_modules" added="1341367218">Supported modules</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="menu_socialbridge_manage_social_accounts_a4d91de34ac868ffc9869b826f2e135f" added="1341386223">Manage Social Accounts</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="there_are_no_social_providers_were_enable_please_contact_to_admin_site_to_get_more_information" added="1341394163">There are no social providers were enable. Please contact to admin site to get more information.</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="connections" added="1341481281">Connections</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="you_are_not_connected_to_any_providers" added="1341562301">You are not connected to any providers.</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="none" added="1341917865">None</phrase>
+		<phrase module_id="socialbridge" version_id="3.2.0" var_name="manage_social_accounts" added="1342149934">Manage Social Accounts</phrase>
+		<phrase module_id="socialbridge" version_id="3.3.0" var_name="for_website_url_you_should_use_this_url" added="1345016981"><![CDATA[For "Website URL:" you should use this URL:]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.3.0" var_name="for_live_status_should_be_live" added="1345017221"><![CDATA[For "Live Status" should be: <strong style="color:red;">Live</strong>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.3.0" var_name="do_follow_linkedin_steps_to_complete_create_new_application2" added="1345017352">Do follow Linkedin steps to complete create new application</phrase>
+		<phrase module_id="socialbridge" version_id="3.3.0" var_name="picture_show_on_facebook" added="1350617176">Default Picture show on Facebook.</phrase>
+		<phrase module_id="socialbridge" version_id="3.4.0" var_name="select_advanced_setting_and_edit_migrations_settings_2" added="1353984128"><![CDATA[Select Advanced setting and edit Migrations settings <span style="font-weight: bold;color: red"> (Require)</span>:
+<ul>
+<li style="list-style: circle"> Stream post URL security: <strong>Disable</strong></li>
+<li style="list-style: circle"> Deprecate offline access: <strong>Disable</strong></li>
+</ul>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.4.0" var_name="for_website_url_you_should_use_this_url_2" added="1353984434"><![CDATA[For "Website URL:" you should use this URL:]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.4.0" var_name="for_application_use_should_be_strong_style_color_red_social_aggregation_strong" added="1353984621"><![CDATA[For "Application Use" should be: <strong style="color:red;">Social Aggregation</strong>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.4.0" var_name="please_enter_your_api" added="1355820996">Please enter your API.</phrase>
+		<phrase module_id="socialbridge" version_id="3.4.0" var_name="please_enter_your_linkedin_api" added="1355906648">Please enter your Linkedin API.</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.0" var_name="redirect_loop_msg" added="1364353466">There are some problems when connecting to this account. Please try to connect again.</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="maximum_invite_per_day" added="1369733573">Maximum Allowed Invitations Per Day</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="description_facebook_maximum_invite_per_day" added="1369733929">The maximum number of messages will be sent per day for 1 account (Enter a number between 1 and 20)</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="viewmore_facebook_maximum_invite_per_day" added="1369734162"><![CDATA[More Info: <a href="http://developers.facebook.com/docs/chat/" target="_blank">Facebook Chat API</a>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="description_twtitter_maximum_invite_per_day" added="1369734272">The maximum number of messages will be sent per day for 1 account (Enter a number between 1 and 250)</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="viewmore_twtitter_maximum_invite_per_day" added="1369734288"><![CDATA[More Info: <a href="https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following" target="_blank">About Twitter Limits</a>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="description_linkedin_maximum_invite_per_day" added="1369734364">The maximum number of messages will be sent per day for 1 account (Enter a number between 1 and 10)</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="viewmore_linkedin_maximum_invite_per_day" added="1369734616"><![CDATA[More Info: <a href="http://developer.linkedin.com/documents/throttle-limits" target="_blank">Throttle Limits</a>]]></phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="fill_max_invite_for_facebook" added="1369736590">The maximum number of messages be sent per day for 1 account on Facebook is a number between 1 and 20.</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="fill_max_invite_for_linkedin" added="1369739001">The maximum number of messages be sent per day for 1 account on LinkedIn is a number between 1 and 10.</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="fill_max_invite_for_twitter" added="1369739036">The maximum number of messages be sent per day for 1 account on Twitter is a number between 1 and 250.</phrase>
+		<phrase module_id="socialbridge" version_id="3.5.1" var_name="max_invite_is_numberic" added="1369739202">Maximum allowed invitations is a numerical value.</phrase>
+	</phrases>
+</module>

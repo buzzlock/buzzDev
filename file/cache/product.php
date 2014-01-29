@@ -143,6 +143,19 @@
     'url' => 'http://phpfox.younetco.com/',
     'url_version_check' => NULL,
   ),
+  'socialbridge' => 
+  array (
+    'product_id' => 'socialbridge',
+    'is_core' => '0',
+    'title' => 'Social Bridge - Manage Your Social API Keys',
+    'description' => 'by YouNet Company',
+    'version' => '3.03p3',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'younetcore' => 
   array (
     'product_id' => 'younetcore',
