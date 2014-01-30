@@ -154,6 +154,51 @@
       'profile.pic' => NULL,
     ),
   ),
+  'advancedmarketplace.all' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+      'advancedmarketplace.category' => NULL,
+    ),
+    3 => 
+    array (
+      'advancedmarketplace.search' => NULL,
+      'advancedmarketplace.todaylisting' => NULL,
+      'advancedmarketplace.sponsored' => NULL,
+      'advancedmarketplace.invite' => NULL,
+      'advancedmarketplace.mostreviewedlisting' => NULL,
+      'advancedmarketplace.recentviewlisting' => NULL,
+    ),
+  ),
+  'advancedphoto.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'contest.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'fundraising.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
+  'resume.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
   'user.browse' => 
   array (
     1 => 
@@ -306,13 +351,6 @@
       'track.recent-views' => NULL,
     ),
   ),
-  'resume.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
   'younetcore.admincp.index' => 
   array (
     1 => 
@@ -367,23 +405,6 @@
     1 => 
     array (
       'fevent.category' => NULL,
-    ),
-  ),
-  'advancedmarketplace.all' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-      'advancedmarketplace.category' => NULL,
-    ),
-    3 => 
-    array (
-      'advancedmarketplace.search' => NULL,
-      'advancedmarketplace.todaylisting' => NULL,
-      'advancedmarketplace.sponsored' => NULL,
-      'advancedmarketplace.invite' => NULL,
-      'advancedmarketplace.mostreviewedlisting' => NULL,
-      'advancedmarketplace.recentviewlisting' => NULL,
     ),
   ),
   'advancedmarketplace.detail' => 
@@ -447,13 +468,6 @@
       'advancedmarketplace.recentlisting' => NULL,
     ),
   ),
-  'advancedphoto.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
   'advancedphoto.rate' => 
   array (
     3 => 
@@ -503,13 +517,6 @@
       'contactimporter.statistics' => NULL,
     ),
   ),
-  'contest.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
   'contest.index' => 
   array (
     1 => 
@@ -547,13 +554,6 @@
       'contest.premium-contest' => NULL,
       'contest.top-contest' => NULL,
       'contest.popular-contest' => NULL,
-    ),
-  ),
-  'fundraising.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
     ),
   ),
   'fundraising.index' => 

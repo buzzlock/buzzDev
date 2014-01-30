@@ -338,6 +338,19 @@
     'url' => 'http://phpfox3.demo.younetco.com/',
     'url_version_check' => 'http://phpfox3.demo.younetco.com/',
   ),
+  'younet_mfox' => 
+  array (
+    'product_id' => 'younet_mfox',
+    'is_core' => '0',
+    'title' => 'Younet Mobile Fox',
+    'description' => 'Younet Mobile Fox',
+    'version' => '3.01',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => NULL,
+    'url_version_check' => NULL,
+  ),
   'younet_mobiletemplate' => 
   array (
     'product_id' => 'younet_mobiletemplate',

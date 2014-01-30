@@ -1,0 +1,94 @@
+<module>
+	<data>
+		<module_id>mfox</module_id>
+		<product_id>younet_mfox</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:3:{s:24:"mfox.admin_menu_settings";a:1:{s:3:"url";a:2:{i:0;s:4:"mfox";i:1;s:6:"styles";}}s:26:"mfox.admin_menu_navigation";a:1:{s:3:"url";a:3:{i:0;s:4:"mfox";i:1;s:6:"styles";i:2;s:6:"manage";}}s:20:"mfox.admin_menu_test";a:1:{s:3:"url";a:2:{i:0;s:4:"mfox";i:1;s:10:"navigation";}}}]]></menu>
+		<phrase_var_name>module_mfox</phrase_var_name>
+	</data>
+	<setting_groups>
+		<name module_id="mfox" version_id="3.5.0" var_name="setting_group_mobile_phpfox">mobile_phpfox</name>
+	</setting_groups>
+	<settings>
+		<setting group="mobile_phpfox" module_id="mfox" is_hidden="0" type="string" var_name="google_key" phrase_var_name="setting_google_key" ordering="1" version_id="3.5.0">AIzaSyAGcbHzQAOFc148o6kdE2CMWLUwYaa0D3g</setting>
+	</settings>
+	<phrases>
+		<phrase module_id="mfox" version_id="3.4.0" var_name="admin_menu_settings" added="1358837283">Custom Styles</phrase>
+		<phrase module_id="mfox" version_id="3.4.0" var_name="module_mfox" added="1358837283">Mobile Phpfox</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="setting_group_mobile_phpfox" added="1368459583"><![CDATA[<title>Mobile phpFox</title><info>Mobile phpFox Settings</info>]]></phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="setting_google_key" added="1368459662"><![CDATA[<title>Google Api Key</title><info>Google Api Key 
+https://code.google.com/apis/console/</info>]]></phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="admin_menu_navigation" added="1369825428">Manage Styles</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="homelistviewitem_id_background" added="1369828593">homelistviewitem_id_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="homelistviewitem_id_color" added="1369828604">homelistviewitem_id_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="a_color" added="1369828617">a_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="purple_btn_background" added="1369828625">purple_btn_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="purple_btn_color" added="1369828634">purple_btn_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="header_background" added="1369828642">header_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="fm_guide_container_background" added="1369828655">fm_guide_container_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="leftnavi_menu_id_menu_color" added="1369828664">leftnavi_menu_id_menu_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="landingpage_background" added="1369828673">landingpage_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="button_green_background" added="1369828680">button_green_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="login_form_input_color" added="1369828690">login_form_input_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="popupcontent_background" added="1369828698">popupcontent_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="menu_footer_background" added="1369828706">menu_footer_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="menu_footer_a_color" added="1369828717">menu_footer_a_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="menu_footer_activebutton_background" added="1369828724">menu_footer_activebutton_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="menu_footer_activebutton_a_color" added="1369828733">menu_footer_activebutton_a_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="comment_actions_background" added="1369828741">comment_actions_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="comment_actions_div_a_color" added="1369828751">comment_actions_div_a_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="comment_actions_div_a_likeactive_color" added="1369828759">comment_actions_div_a_likeactive_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="feed_entry_color" added="1369828769">feed_entry_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="user_post_content_color" added="1369828868">user_post_content_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="slide_photo_content_background" added="1369828876">slide_photo_content_background</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="extra_color" added="1369828884">extra_color</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigation" added="1369882935">Navigation</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="no_navigations" added="1369883871">No navigations.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="manage_navigations" added="1369884724">Manage Navigations</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="order" added="1369884740">Order</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigations_successfully_edited" added="1369886143">Navigations succesfully edited.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigations_not_edited" added="1369886157">Navigations not edited.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="custom_styles" added="1369886915">Custom Styles</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigations_successfully_deleted" added="1369887181">Navigations successfully deleted.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="deactivate" added="1369887732">Deactivate</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="activate" added="1369887740">Activate</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="enable" added="1369887810">Enable</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="manage" added="1369888994">Manage</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="are_you_sure" added="1369889014">Are you sure?</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="delete" added="1369889030">Delete</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="edit" added="1369889051">Edit</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="edit_navigation" added="1369889428">Edit Navigation</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigation_successfully_updated" added="1369889883">Navigation successfully updated!</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigation_successfully_added" added="1369889898">Navigation successfully added!</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="provide_a_name_for_this_navigation" added="1369896970">Provide a name for this navigation.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="provide_a_label_for_this_navigation" added="1369896992">Provide a label for this navigation.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="provide_a_layout_for_this_navigation" added="1369897012">Provide a layout for this navigation.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="provide_a_icon_for_this_navigation" added="1369897028">Provide a icon for this navigation.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="provide_a_url_for_this_navigation" added="1369897046">Provide a url for this navigation.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="navigation_info" added="1369897597">Navigation Info</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="label" added="1369897924">Label</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="layout" added="1369897937">Layout</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="icon" added="1369897949">Icon</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="submit" added="1369897962">Submit</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="name" added="1369898088">Name</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="yes" added="1369898105">Yes</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="no" added="1369898113">No</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="is_enabled" added="1369898134">Is enabled?</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="url" added="1369898490">Url</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="custom_css_details" added="1369900586">Custom CSS details</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="admin_menu_test" added="1369902990">Navigation</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="manage_styles" added="1369903272">Manage Styles</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_id" added="1369904118">Style Id</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_name" added="1369904146">Revision</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="no_styles" added="1369904188">No styles.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_active" added="1369904287">Style Active</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="delete_selected" added="1369912174">Delete selected</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="add_custom_styles" added="1369912234">Add custom styles</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_is_not_valid" added="1369914193">Style is not valid!</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_successfully_edited" added="1369914434">Style successfully edited.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="style_successfully_added" added="1369914479">Style successfully added.</phrase>
+		<phrase module_id="mfox" version_id="3.5.0" var_name="add_navigation" added="1370011066">Add navigation</phrase>
+	</phrases>
+</module>

@@ -50,6 +50,8 @@ class Friend_Service_Request_Process extends Phpfox_Service
 			->message(array('friend.full_name_added_you_as_a_friend_on_site_title_to_confirm_this_friend_request', array('full_name' => Phpfox::getUserBy('full_name'), 'site_title' => Phpfox::getParam('core.site_title'), 'link' => $sLink)))
 			->notification('friend.new_friend_request')
 			->send();
+        
+        if ($sPlugin = Phpfox_Plugin::get('friend.service_request_process_add_end')){eval($sPlugin);}
 			
 		if (Phpfox::getParam('friend.enable_friend_suggestion'))
 		{

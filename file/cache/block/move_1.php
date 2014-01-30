@@ -88,6 +88,33 @@
   array (
     'profile.pic' => false,
   ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => false,
+    'advancedmarketplace.category' => false,
+    'advancedmarketplace.search' => true,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.sponsored' => false,
+    'advancedmarketplace.invite' => false,
+    'advancedmarketplace.mostreviewedlisting' => false,
+    'advancedmarketplace.recentviewlisting' => false,
+  ),
+  'advancedphoto.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
+  'contest.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
+  'fundraising.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
+  'resume.profile' => 
+  array (
+    'profile.pic' => true,
+  ),
   'user.browse' => 
   array (
     'user.filter' => false,
@@ -171,10 +198,6 @@
   array (
     'track.recent-views' => false,
   ),
-  'resume.profile' => 
-  array (
-    'profile.pic' => true,
-  ),
   'younetcore.admincp.index' => 
   array (
     'younetcore.newsrss' => false,
@@ -206,17 +229,6 @@
     'fevent.calendar' => false,
     'fevent.past' => false,
     'fevent.upcoming' => false,
-  ),
-  'advancedmarketplace.all' => 
-  array (
-    'profile.pic' => false,
-    'advancedmarketplace.category' => false,
-    'advancedmarketplace.search' => true,
-    'advancedmarketplace.todaylisting' => false,
-    'advancedmarketplace.sponsored' => false,
-    'advancedmarketplace.invite' => false,
-    'advancedmarketplace.mostreviewedlisting' => false,
-    'advancedmarketplace.recentviewlisting' => false,
   ),
   'advancedmarketplace.detail' => 
   array (
@@ -255,10 +267,6 @@
     'advancedmarketplace.listingslideshow' => false,
     'advancedmarketplace.recentlisting' => false,
   ),
-  'advancedphoto.profile' => 
-  array (
-    'profile.pic' => false,
-  ),
   'advancedphoto.rate' => 
   array (
     'advancedphoto.stat' => false,
@@ -284,10 +292,6 @@
     'contactimporter.top-inviter' => false,
     'contactimporter.statistics' => false,
   ),
-  'contest.profile' => 
-  array (
-    'profile.pic' => false,
-  ),
   'contest.index' => 
   array (
     'contest.category' => false,
@@ -311,10 +315,6 @@
     'contest.premium-contest' => false,
     'contest.top-contest' => false,
     'contest.popular-contest' => false,
-  ),
-  'fundraising.profile' => 
-  array (
-    'profile.pic' => false,
   ),
   'fundraising.index' => 
   array (

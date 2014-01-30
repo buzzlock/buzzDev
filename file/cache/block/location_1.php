@@ -88,6 +88,33 @@
   array (
     'profile.pic' => '1',
   ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => '1',
+    'advancedmarketplace.category' => '1',
+    'advancedmarketplace.search' => '3',
+    'advancedmarketplace.todaylisting' => '3',
+    'advancedmarketplace.sponsored' => '3',
+    'advancedmarketplace.invite' => '3',
+    'advancedmarketplace.mostreviewedlisting' => '3',
+    'advancedmarketplace.recentviewlisting' => '3',
+  ),
+  'advancedphoto.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'contest.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'fundraising.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
+  'resume.profile' => 
+  array (
+    'profile.pic' => '1',
+  ),
   'user.browse' => 
   array (
     'user.filter' => '1',
@@ -171,10 +198,6 @@
   array (
     'track.recent-views' => '3',
   ),
-  'resume.profile' => 
-  array (
-    'profile.pic' => '1',
-  ),
   'younetcore.admincp.index' => 
   array (
     'younetcore.newsrss' => '1',
@@ -206,17 +229,6 @@
     'fevent.calendar' => '3',
     'fevent.past' => '3',
     'fevent.upcoming' => '3',
-  ),
-  'advancedmarketplace.all' => 
-  array (
-    'profile.pic' => '1',
-    'advancedmarketplace.category' => '1',
-    'advancedmarketplace.search' => '3',
-    'advancedmarketplace.todaylisting' => '3',
-    'advancedmarketplace.sponsored' => '3',
-    'advancedmarketplace.invite' => '3',
-    'advancedmarketplace.mostreviewedlisting' => '3',
-    'advancedmarketplace.recentviewlisting' => '3',
   ),
   'advancedmarketplace.detail' => 
   array (
@@ -255,10 +267,6 @@
     'advancedmarketplace.listingslideshow' => '2',
     'advancedmarketplace.recentlisting' => '2',
   ),
-  'advancedphoto.profile' => 
-  array (
-    'profile.pic' => '1',
-  ),
   'advancedphoto.rate' => 
   array (
     'advancedphoto.stat' => '3',
@@ -284,10 +292,6 @@
     'contactimporter.top-inviter' => '1',
     'contactimporter.statistics' => '1',
   ),
-  'contest.profile' => 
-  array (
-    'profile.pic' => '1',
-  ),
   'contest.index' => 
   array (
     'contest.category' => '1',
@@ -311,10 +315,6 @@
     'contest.premium-contest' => '3',
     'contest.top-contest' => '3',
     'contest.popular-contest' => '3',
-  ),
-  'fundraising.profile' => 
-  array (
-    'profile.pic' => '1',
   ),
   'fundraising.index' => 
   array (

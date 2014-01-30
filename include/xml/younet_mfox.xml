@@ -1,0 +1,51 @@
+<product>
+	<data>
+		<product_id>younet_mfox</product_id>
+		<is_core>0</is_core>
+		<title>Younet Mobile Fox</title>
+		<description>Younet Mobile Fox</description>
+		<version>3.01</version>
+		<latest_version></latest_version>
+		<last_check>1370012089</last_check>
+		<is_active>1</is_active>
+		<url></url>
+		<url_version_check></url_version_check>
+	</data>
+	<installs>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[require_once PHPFOX_DIR . 'module/mfox/install/v3.01.php';
+Phpfox::getLib('database')->query("INSERT INTO `" . Phpfox::getT('mfox_leftnavi') . "` (`id`, `name`, `is_enabled`, `sort_order`, `label`, `layout`, `icon`, `url`) VALUES
+(1, 'Apps', 0, 1, 'Apps', 'apps', 'icon-briefcase', ''),
+(2, 'Blogs', 0, 2, 'Blogs', 'blogs', 'icon-book', ''),
+(3, 'Events', 1, 3, 'Events', 'events', 'icon-calendar', 'myevent/0'),
+(4, 'News Feed', 1, 4, 'News Feed', 'feed', 'icon-rss', 'home'),
+(5, 'Forum', 0, 5, 'Forum', 'forum', 'icon-comments-alt', ''),
+(6, 'Friends', 1, 6, 'Friends', 'friends', 'icon-group', 'friend/0'),
+(7, 'Mail', 1, 7, 'Mail', 'Mail', 'icon-envelope', 'maillist'),
+(8, 'Marketplace', 0, 8, 'Marketplace', 'marketplace', 'icon-shopping-cart', ''),
+(9, 'Photos', 1, 9, 'Photos', 'photo', 'icon-picture', 'photoList'),
+(10, 'Polls', 0, 10, 'Polls', 'poll', 'icon-gift', ''),
+(11, 'Profile', 1, 11, 'Profile', 'profile', 'icon-user-md', 'profileinfo'),
+(12, 'Quiz', 0, 12, 'Quiz', 'quiz', 'icon-comment-alt', '');");]]></install_code>
+			<uninstall_code><![CDATA[
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 1;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 2;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 3;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 4;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 5;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 6;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 7;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 8;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 9;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 10;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 11;");
+                Phpfox::getLib('database')->query("DELETE FROM `" . Phpfox::getT('mfox_leftnavi') . "` WHERE `id` = 12;");
+]]>
+            </uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>mfox</module_id>
+	</modules>
+</product>

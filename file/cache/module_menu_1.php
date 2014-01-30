@@ -411,6 +411,27 @@
   ),
   17 => 
   array (
+    'module_id' => 'mfox',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'mfox.admin_menu_settings' => 
+      array (
+        'url' => 'mfox/styles',
+      ),
+      'mfox.admin_menu_navigation' => 
+      array (
+        'url' => 'mfox/styles/manage',
+      ),
+      'mfox.admin_menu_test' => 
+      array (
+        'url' => 'mfox/navigation',
+      ),
+    ),
+    'url_name' => 'mfox',
+  ),
+  18 => 
+  array (
     'module_id' => 'mobiletemplate',
     'is_menu' => '1',
     'menu' => 
@@ -434,7 +455,7 @@
     ),
     'url_name' => 'mobiletemplate',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'musicsharing',
     'is_menu' => '1',
@@ -475,7 +496,7 @@
     ),
     'url_name' => 'musicsharing',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -492,7 +513,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'opensocialconnect',
     'is_menu' => '1',
@@ -509,7 +530,7 @@
     ),
     'url_name' => 'opensocialconnect',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -530,7 +551,7 @@
     ),
     'url_name' => 'pages',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'petition',
     'is_menu' => '1',
@@ -555,7 +576,7 @@
     ),
     'url_name' => 'petition',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -568,7 +589,7 @@
     ),
     'url_name' => 'photo',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'profilecompleteness',
     'is_menu' => '1',
@@ -585,7 +606,7 @@
     ),
     'url_name' => 'profilecompleteness',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'profilepopup',
     'is_menu' => '1',
@@ -606,7 +627,7 @@
     ),
     'url_name' => 'profilepopup',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -627,7 +648,7 @@
     ),
     'url_name' => 'report',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'resume',
     'is_menu' => '1',
@@ -680,7 +701,7 @@
     ),
     'url_name' => 'resume',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -705,7 +726,7 @@
     ),
     'url_name' => 'rss',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -722,7 +743,7 @@
     ),
     'url_name' => 'share',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'socialbridge',
     'is_menu' => '1',
@@ -735,7 +756,7 @@
     ),
     'url_name' => 'socialbridge',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'socialmediaimporter',
     'is_menu' => '1',
@@ -748,7 +769,7 @@
     ),
     'url_name' => 'socialmediaimporter',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'socialpublishers',
     'is_menu' => '1',
@@ -769,7 +790,7 @@
     ),
     'url_name' => 'socialpublishers',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'socialstream',
     'is_menu' => '1',
@@ -786,7 +807,7 @@
     ),
     'url_name' => 'socialstream',
   ),
-  34 => 
+  35 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -811,7 +832,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  35 => 
+  36 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -824,7 +845,7 @@
     ),
     'url_name' => 'user',
   ),
-  36 => 
+  37 => 
   array (
     'module_id' => 'videochannel',
     'is_menu' => '1',
@@ -841,7 +862,7 @@
     ),
     'url_name' => 'videochannel',
   ),
-  37 => 
+  38 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -854,7 +875,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  38 => 
+  39 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

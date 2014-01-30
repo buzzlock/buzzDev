@@ -4864,4 +4864,11 @@ Sincerely,
     'value_actual' => 5,
     'module_name' => 'profilepopup',
   ),
+  674 => 
+  array (
+    'type_id' => 'string',
+    'var_name' => 'google_key',
+    'value_actual' => 'AIzaSyAGcbHzQAOFc148o6kdE2CMWLUwYaa0D3g',
+    'module_name' => 'mfox',
+  ),
 ); ?>

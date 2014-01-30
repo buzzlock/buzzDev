@@ -42,6 +42,7 @@
   'link' => 'link',
   'log' => 'log',
   'mail' => 'mail',
+  'mfox' => 'mfox',
   'mobile' => 'mobile',
   'mobiletemplate' => 'mobiletemplate',
   'musicsharing' => 'musicsharing',

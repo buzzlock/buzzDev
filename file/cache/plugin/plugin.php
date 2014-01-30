@@ -73,6 +73,8 @@
   'jobposting.theme_template_body__end' => 'jobposting.theme_template_body__end',
   'profile.component_block_info' => 'profile.component_block_info',
   'profile.template_block_info' => 'profile.template_block_info',
+  'friend.service_request_process_add_end' => 'friend.service_request_process_add_end',
+  'mail.service_process_add' => 'mail.service_process_add',
   'feed.component_block_display_process' => 'feed.component_block_display_process',
   'library_template_getlayoutfile_1' => 'library_template_getlayoutfile_1',
   'library_template_getstyle_1' => 'library_template_getstyle_1',

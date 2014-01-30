@@ -48,7 +48,12 @@ class Notification_Service_Process extends Phpfox_Service
 			'time_stamp' => PHPFOX_TIME		
 		);	
 		
-		$this->database()->insert($this->_sTable, $aInsert);
+        // Edit code for cloud message.
+		$iId = $this->database()->insert($this->_sTable, $aInsert);
+		if ($iId > 0 && Phpfox::isModule('mfox'))
+		{
+			Phpfox::getService('mfox.cloudmessage') -> send(array('message' => 'notification', 'iId' => $iId, 'sType' => 'notification'), $iOwnerUserId);    
+		}
 		
 		return true;
 	}	
