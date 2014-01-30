@@ -805,20 +805,20 @@
   ),
   35 => 
   array (
-    'module_id' => 'video',
+    'module_id' => 'videochannel',
     'is_menu' => '1',
     'menu' => 
     array (
-      'video.admin_menu_add_category' => 
+      'videochannel.admin_menu_add_category' => 
       array (
-        'url' => 'video/add',
+        'url' => 'videochannel/add',
       ),
-      'video.admin_menu_manage_categories' => 
+      'videochannel.admin_menu_manage_categories' => 
       array (
-        'url' => 'video',
+        'url' => 'videochannel',
       ),
     ),
-    'url_name' => 'video',
+    'url_name' => 'videochannel',
   ),
   36 => 
   array (

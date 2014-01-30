@@ -154,51 +154,6 @@
       'profile.pic' => NULL,
     ),
   ),
-  'advancedmarketplace.all' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-      'advancedmarketplace.category' => NULL,
-    ),
-    3 => 
-    array (
-      'advancedmarketplace.search' => NULL,
-      'advancedmarketplace.todaylisting' => NULL,
-      'advancedmarketplace.sponsored' => NULL,
-      'advancedmarketplace.invite' => NULL,
-      'advancedmarketplace.mostreviewedlisting' => NULL,
-      'advancedmarketplace.recentviewlisting' => NULL,
-    ),
-  ),
-  'advancedphoto.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
-  'contest.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
-  'fundraising.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
-  'resume.profile' => 
-  array (
-    1 => 
-    array (
-      'profile.pic' => NULL,
-    ),
-  ),
   'user.browse' => 
   array (
     1 => 
@@ -266,6 +221,7 @@
     array (
       'pages.photo' => NULL,
       'pages.like' => NULL,
+      'videochannel.categoryinpage' => NULL,
       'pages.menu' => NULL,
     ),
     3 => 
@@ -350,17 +306,11 @@
       'track.recent-views' => NULL,
     ),
   ),
-  'video.index' => 
+  'resume.profile' => 
   array (
     1 => 
     array (
-      'video.category' => NULL,
-    ),
-    3 => 
-    array (
-      'video.sponsored' => NULL,
-      'video.featured' => NULL,
-      'tag.cloud' => NULL,
+      'profile.pic' => NULL,
     ),
   ),
   'younetcore.admincp.index' => 
@@ -417,6 +367,23 @@
     1 => 
     array (
       'fevent.category' => NULL,
+    ),
+  ),
+  'advancedmarketplace.all' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+      'advancedmarketplace.category' => NULL,
+    ),
+    3 => 
+    array (
+      'advancedmarketplace.search' => NULL,
+      'advancedmarketplace.todaylisting' => NULL,
+      'advancedmarketplace.sponsored' => NULL,
+      'advancedmarketplace.invite' => NULL,
+      'advancedmarketplace.mostreviewedlisting' => NULL,
+      'advancedmarketplace.recentviewlisting' => NULL,
     ),
   ),
   'advancedmarketplace.detail' => 
@@ -480,6 +447,13 @@
       'advancedmarketplace.recentlisting' => NULL,
     ),
   ),
+  'advancedphoto.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
   'advancedphoto.rate' => 
   array (
     3 => 
@@ -529,6 +503,13 @@
       'contactimporter.statistics' => NULL,
     ),
   ),
+  'contest.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
+    ),
+  ),
   'contest.index' => 
   array (
     1 => 
@@ -566,6 +547,13 @@
       'contest.premium-contest' => NULL,
       'contest.top-contest' => NULL,
       'contest.popular-contest' => NULL,
+    ),
+  ),
+  'fundraising.profile' => 
+  array (
+    1 => 
+    array (
+      'profile.pic' => NULL,
     ),
   ),
   'fundraising.index' => 
@@ -876,6 +864,34 @@
       'userconnect.display' => NULL,
     ),
   ),
+  'videochannel.index' => 
+  array (
+    1 => 
+    array (
+      'videochannel.category' => NULL,
+    ),
+    3 => 
+    array (
+      'videochannel.sponsored' => NULL,
+      'videochannel.mostviewed' => NULL,
+      'videochannel.toprated' => NULL,
+      'videochannel.mostdiscussed' => NULL,
+    ),
+  ),
+  'videochannel.view' => 
+  array (
+    3 => 
+    array (
+      'videochannel.related' => NULL,
+    ),
+  ),
+  'videochannel.profile' => 
+  array (
+    1 => 
+    array (
+      'videochannel.pic' => NULL,
+    ),
+  ),
   'apps.index' => 
   array (
     1 => 
@@ -905,7 +921,6 @@
     ),
     2 => 
     array (
-      'video.parent' => NULL,
       'photo.parent' => NULL,
       'advancedphoto.parent' => NULL,
       'feed.display' => NULL,
@@ -1050,11 +1065,11 @@
       'petition.helplogo' => NULL,
     ),
   ),
-  'video.view' => 
+  'video.index' => 
   array (
     3 => 
     array (
-      'video.related' => NULL,
+      'tag.cloud' => NULL,
     ),
   ),
   'forum.index' => 

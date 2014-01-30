@@ -87,4 +87,4 @@ if ($iPageId>0 && Phpfox::isModule(\'suggestion\')  && Phpfox::isUser() ){
         #js_is_user_profile #js_is_page #section_menu{min-width: 0px;}
 		#section_menu ul{float: right;}
     </style>
-<?php } /*end check module*/ '; ?>
+<?php } /*end check module*/  '; ?>

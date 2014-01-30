@@ -88,33 +88,6 @@
   array (
     'profile.pic' => false,
   ),
-  'advancedmarketplace.all' => 
-  array (
-    'profile.pic' => false,
-    'advancedmarketplace.category' => false,
-    'advancedmarketplace.search' => true,
-    'advancedmarketplace.todaylisting' => false,
-    'advancedmarketplace.sponsored' => false,
-    'advancedmarketplace.invite' => false,
-    'advancedmarketplace.mostreviewedlisting' => false,
-    'advancedmarketplace.recentviewlisting' => false,
-  ),
-  'advancedphoto.profile' => 
-  array (
-    'profile.pic' => false,
-  ),
-  'contest.profile' => 
-  array (
-    'profile.pic' => false,
-  ),
-  'fundraising.profile' => 
-  array (
-    'profile.pic' => false,
-  ),
-  'resume.profile' => 
-  array (
-    'profile.pic' => true,
-  ),
   'user.browse' => 
   array (
     'user.filter' => false,
@@ -154,6 +127,7 @@
     'pages.photo' => true,
     'pages.like' => true,
     'pagecontacts.page-button' => true,
+    'videochannel.categoryinpage' => true,
     'pages.menu' => true,
     'pages.widget' => true,
     'pages.admin' => true,
@@ -197,12 +171,9 @@
   array (
     'track.recent-views' => false,
   ),
-  'video.index' => 
+  'resume.profile' => 
   array (
-    'video.category' => false,
-    'video.sponsored' => false,
-    'video.featured' => false,
-    'tag.cloud' => false,
+    'profile.pic' => true,
   ),
   'younetcore.admincp.index' => 
   array (
@@ -235,6 +206,17 @@
     'fevent.calendar' => false,
     'fevent.past' => false,
     'fevent.upcoming' => false,
+  ),
+  'advancedmarketplace.all' => 
+  array (
+    'profile.pic' => false,
+    'advancedmarketplace.category' => false,
+    'advancedmarketplace.search' => true,
+    'advancedmarketplace.todaylisting' => false,
+    'advancedmarketplace.sponsored' => false,
+    'advancedmarketplace.invite' => false,
+    'advancedmarketplace.mostreviewedlisting' => false,
+    'advancedmarketplace.recentviewlisting' => false,
   ),
   'advancedmarketplace.detail' => 
   array (
@@ -273,6 +255,10 @@
     'advancedmarketplace.listingslideshow' => false,
     'advancedmarketplace.recentlisting' => false,
   ),
+  'advancedphoto.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
   'advancedphoto.rate' => 
   array (
     'advancedphoto.stat' => false,
@@ -298,6 +284,10 @@
     'contactimporter.top-inviter' => false,
     'contactimporter.statistics' => false,
   ),
+  'contest.profile' => 
+  array (
+    'profile.pic' => false,
+  ),
   'contest.index' => 
   array (
     'contest.category' => false,
@@ -321,6 +311,10 @@
     'contest.premium-contest' => false,
     'contest.top-contest' => false,
     'contest.popular-contest' => false,
+  ),
+  'fundraising.profile' => 
+  array (
+    'profile.pic' => false,
   ),
   'fundraising.index' => 
   array (
@@ -498,6 +492,22 @@
     'userconnect.connectionsettings' => false,
     'userconnect.display' => true,
   ),
+  'videochannel.index' => 
+  array (
+    'videochannel.category' => false,
+    'videochannel.sponsored' => false,
+    'videochannel.mostviewed' => false,
+    'videochannel.toprated' => false,
+    'videochannel.mostdiscussed' => false,
+  ),
+  'videochannel.view' => 
+  array (
+    'videochannel.related' => false,
+  ),
+  'videochannel.profile' => 
+  array (
+    'videochannel.pic' => false,
+  ),
   'apps.index' => 
   array (
     'apps.categories' => true,
@@ -513,7 +523,6 @@
   'group.view' => 
   array (
     'forum.parent' => true,
-    'video.parent' => true,
     'photo.parent' => true,
     'advancedphoto.parent' => true,
     'shoutbox.display' => true,
@@ -589,9 +598,9 @@
   array (
     'petition.helplogo' => false,
   ),
-  'video.view' => 
+  'video.index' => 
   array (
-    'video.related' => false,
+    'tag.cloud' => false,
   ),
   'forum.index' => 
   array (

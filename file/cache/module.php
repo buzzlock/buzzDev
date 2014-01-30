@@ -79,7 +79,7 @@
   'track' => 'track',
   'user' => 'user',
   'userconnect' => 'userconnect',
-  'video' => 'video',
+  'videochannel' => 'videochannel',
   'wall' => 'wall',
   'younetcore' => 'younetcore',
   'younetpaymentgateways' => 'younetpaymentgateways',
