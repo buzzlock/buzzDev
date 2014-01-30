@@ -1,0 +1,143 @@
+<module>
+	<data>
+		<module_id>profilepopup</module_id>
+		<product_id>younet_profilepopup</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:3:{s:39:"profilepopup.admin_menu_global_settings";a:1:{s:3:"url";a:2:{i:0;s:12:"profilepopup";i:1;s:4:"user";}}s:45:"profilepopup.admin_menu_pages_global_settings";a:1:{s:3:"url";a:2:{i:0;s:12:"profilepopup";i:1;s:5:"pages";}}s:45:"profilepopup.admin_menu_event_global_settings";a:1:{s:3:"url";a:2:{i:0;s:12:"profilepopup";i:1;s:5:"event";}}}]]></menu>
+		<phrase_var_name>module_profilepopup</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="opening_delay_time" phrase_var_name="setting_opening_delay_time" ordering="1" version_id="3.01">300</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="closing_delay_time" phrase_var_name="setting_closing_delay_time" ordering="2" version_id="3.01">300</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="boolean" var_name="show_mutual_friend" phrase_var_name="setting_show_mutual_friend" ordering="8" version_id="3.01">1</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="number_of_mutual_friend" phrase_var_name="setting_number_of_mutual_friend" ordering="9" version_id="3.01">5</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="boolean" var_name="show_joined_friend_in_pages" phrase_var_name="setting_show_joined_friend_in_pages" ordering="12" version_id="3.01">1</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="number_of_joined_friend_in_pages" phrase_var_name="setting_number_of_joined_friend_in_pages" ordering="13" version_id="3.01">5</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="profilepopup_length_in_index" phrase_var_name="setting_profilepopup_length_in_index" ordering="18" version_id="3.01">50</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="boolean" var_name="enable_thumbnails" phrase_var_name="setting_enable_thumbnails" ordering="5" version_id="3.01">1</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="boolean" var_name="show_joined_friend_in_event" phrase_var_name="setting_show_joined_friend_in_event" ordering="16" version_id="3.01">1</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="boolean" var_name="enable_cache_popup" phrase_var_name="setting_enable_cache_popup" ordering="0" version_id="3.01">1</setting>
+		<setting group="" module_id="profilepopup" is_hidden="0" type="integer" var_name="number_of_joined_friend_in_event" phrase_var_name="setting_number_of_joined_friend_in_event" ordering="17" version_id="3.01">5</setting>
+	</settings>
+	<phrases>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="module_profilepopup" added="1356572958">Profile Popup</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="birth_date" added="1356581426">Birth Date</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="age" added="1356581554">Age</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="1_member" added="1356582901">1 member.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="total_members" added="1356582927">{total} members.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="1_person_likes_this" added="1356582964">1 person likes this.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="total_people_like_this" added="1356583006">{total} people like this.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="age_years_old" added="1356583038">{age} years old</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="mutual_friends_total" added="1356583192">Mutual Friends ({total})</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="add_to_friends" added="1356583373">Add to Friends</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="add_as_friend" added="1356583421">Add as Friend</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="send_message" added="1356583524">Send Message</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="say_happy_birthday" added="1356583556">Say Happy Birthday</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_opening_delay_time" added="1356619363"><![CDATA[<title>Delay Time to Display Popup</title><info>Delay time to display popup (in millisecond).</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_closing_delay_time" added="1356620638"><![CDATA[<title>Delay Time to Close Popup</title><info>Delay time to close popup (in millisecond).</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_ignore_css_class" added="1356620649"><![CDATA[<title>Ignore CSS Class</title><info>Disable popup when mouse within element has following CSS class, separate by comma.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_max_height_of_popup" added="1356620661"><![CDATA[<title>Max Heigh Of Popup</title><info>Max height of popup content (pixel).</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_enable_thumbnails" added="1356620674"><![CDATA[<title>Display Thumbnail</title><info>Display thumbnail in popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_user_status" added="1356620685"><![CDATA[<title>Show User Status</title><info>Show user status on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_profiles_fields" added="1356620695"><![CDATA[<title>Show Profile Fields</title><info>Show profile fields on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_profile_fields" added="1356620707"><![CDATA[<title>Number Of Profile Fields</title><info>How many profile fields will be shown on popup?</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_mutual_friend" added="1356620719"><![CDATA[<title>Display Mutual Friends</title><info>Display mutual friends in popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_mutual_friend" added="1356620731"><![CDATA[<title>Limit Of Mutual Friends</title><info>Limit of mutual friends are displayed in popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_length_in_index" added="1356620746"><![CDATA[<title>How Long is the Preview</title><info>How much of the long text to show on the popup?
+
+Value is in characters, i.e.:
+15 would show something like:
+"Lorem ipsum dol..."
+
+0 = No limit</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="admin_menu_global_settings" added="1356621659">User Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_first_name" added="1356629542">First Name</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_last_name" added="1356629559">Last Name</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_gender" added="1356629570">Gender</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_birthday" added="1356629584">Birthday</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_relationship_status" added="1356629601">Relationship Status</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_settings" added="1356630045">Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_settings_title" added="1356630075">Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="no_global_settings" added="1356630322">No global settings found.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="field_label" added="1356630602">Field Label</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_settings_ordering" added="1356630635">Ordering</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_settings_info" added="1356630780">Select field(s) to show on popup.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_settings_update" added="1356631414">Update</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="global_setting_warning_ordering" added="1356660715">Ordering(s) must be numeric type and positive.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="item_s_successfully_updated" added="1356661052">Item(s) successfully updated.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_status" added="1356682631">Status</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="unfriend" added="1357005115">Unfriend</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_enable_cache_popup" added="1357017297"><![CDATA[<title>Apply Cache</title><info>Enable cache when showing popup on client side.
+
+True = data popup is refreshed after loading page
+False = data popup is always refreshed
+</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="profile_is_private" added="1357033467">Profile is private</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="user_not_found" added="1357034377">User not found</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="admin_menu_pages_global_settings" added="1357140542">Pages Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="admin_menu_event_global_settings" added="1357140542">Event Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="user_global_settings" added="1357143440">User Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pages_global_settings" added="1357143490">Pages Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_global_settings" added="1357143523">Event Global Settings</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_joined_friend_in_pages" added="1357143964"><![CDATA[<title>Display Joined Friends In Pages</title><info>Display joined friends in pages on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_joined_friend_in_pages" added="1357143977"><![CDATA[<title>Limit Of Joined Friends In Pages</title><info>Limit of joined friends in pages are displayed in popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_joined_friend_in_event" added="1357143994"><![CDATA[<title>Display Joined Friends In Event</title><info>Display joined friends in event on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_joined_friend_in_event" added="1357144004"><![CDATA[<title>Limit Of Joined Friends In Event</title><info>Limit of joined friends in event are displayed in popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_category" added="1357144592">Category</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_total_of_likes" added="1357144651">Total of Likes</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_time" added="1357144666">Time</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_location" added="1357144675">Location</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pp_item_total_of_members" added="1357144690">Total of Members</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="no_user_global_settings" added="1357180030">No User global settings found.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="no_pages_global_settings" added="1357180067">No Pages global settings found.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="no_event_global_settings" added="1357180111">No Event global settings found.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_pages_fields" added="1357180530"><![CDATA[<title>Show Pages Fields</title><info>Show pages fields on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_pages_fields" added="1357180546"><![CDATA[<title>Number Of Pages Fields</title><info>How many pages fields will be shown on popup?</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_show_event_fields" added="1357180559"><![CDATA[<title>Show Event Fields</title><info>Show event fields on popup.</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_number_of_event_fields" added="1357180572"><![CDATA[<title>Number Of Event Fields</title><info>How many event fields will be shown on popup?</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pages_global_settings_info" added="1357180761">Select field(s) to show on popup.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_global_settings_info" added="1357180803">Select field(s) to show on popup.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="pages_not_found" added="1357183746">Pages not found</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="joined_friends_total" added="1357197639">Joined Friends ({total})</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="joined_friends_s" added="1357198431">Joined Friend(s)</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="share" added="1357201478">Share</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="like" added="1357201510">Like</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="unlike" added="1357201534">Unlike</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_not_found" added="1357270643">Event not found</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_join" added="1357286814">Join</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_leave" added="1357286861">Leave</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_invite" added="1357287406">Invite</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_inform_leave" added="1357291284">You are not longer a member of this event.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_join_successfully" added="1357291326">Join this event successfully.</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_confirm_leave" added="1357291436">Are you sure you want to leave this event?</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_join_title" added="1357291631">Join Event</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="event_leave_title" added="1357291711">Leave Event</phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="setting_profilepopup_length_in_index" added="1357898745"><![CDATA[<title>Limit of Description In Popup</title><info>Limit of characters of description are displayed in popup
+
+0 = No limit</info>]]></phrase>
+		<phrase module_id="profilepopup" version_id="3.01" var_name="notice" added="1357919236">Notice</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="pp_share" added="1358218339">Share</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="pp_online" added="1358218439">Online</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="favorite" added="1358391565">Favorite</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="unfavorite" added="1358391580">Unfavorite</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="loading" added="1358391620">Loading...</phrase>
+		<phrase module_id="profilepopup" version_id="3.4.0" var_name="loading_error" added="1358391673">There was an error during processing. Please try again.</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="user_setting_can_view_profile_popup" added="1377748619">Can view Profile Popup?</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="basic_information" added="1378194047">Basic Information</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="resume_fields" added="1378194069">Resume Fields</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_currently_work" added="1378194541">Currently Work</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_highest_level" added="1378194555">Highest Level</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_phone_number" added="1378194608">Phone Number</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_im" added="1378194620">IM</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_email" added="1378194638">Email</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_categories" added="1378194662">Categories</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="view_resume" added="1378205355">View Resume</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_cover_photo" added="1378265413">Cover Photo</phrase>
+		<phrase module_id="profilepopup" version_id="3.6.0" var_name="pp_item_r_highest_education" added="1378265413">Highest Education</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="profilepopup" type="boolean" admin="1" user="1" guest="0" staff="1" module="profilepopup" ordering="0">can_view_profile_popup</setting>
+	</user_group_settings>
+</module>

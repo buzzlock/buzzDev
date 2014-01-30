@@ -4787,4 +4787,81 @@ Sincerely,
     'value_actual' => 'share',
     'module_name' => 'videochannel',
   ),
+  663 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'opening_delay_time',
+    'value_actual' => 300,
+    'module_name' => 'profilepopup',
+  ),
+  664 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'closing_delay_time',
+    'value_actual' => 300,
+    'module_name' => 'profilepopup',
+  ),
+  665 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_mutual_friend',
+    'value_actual' => true,
+    'module_name' => 'profilepopup',
+  ),
+  666 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_mutual_friend',
+    'value_actual' => 5,
+    'module_name' => 'profilepopup',
+  ),
+  667 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_joined_friend_in_pages',
+    'value_actual' => true,
+    'module_name' => 'profilepopup',
+  ),
+  668 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_joined_friend_in_pages',
+    'value_actual' => 5,
+    'module_name' => 'profilepopup',
+  ),
+  669 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'profilepopup_length_in_index',
+    'value_actual' => 50,
+    'module_name' => 'profilepopup',
+  ),
+  670 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enable_thumbnails',
+    'value_actual' => true,
+    'module_name' => 'profilepopup',
+  ),
+  671 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'show_joined_friend_in_event',
+    'value_actual' => true,
+    'module_name' => 'profilepopup',
+  ),
+  672 => 
+  array (
+    'type_id' => 'boolean',
+    'var_name' => 'enable_cache_popup',
+    'value_actual' => true,
+    'module_name' => 'profilepopup',
+  ),
+  673 => 
+  array (
+    'type_id' => 'integer',
+    'var_name' => 'number_of_joined_friend_in_event',
+    'value_actual' => 5,
+    'module_name' => 'profilepopup',
+  ),
 ); ?>

@@ -525,6 +525,7 @@
   'profile.display_membership_info' => true,
   'profile.can_view_users_profile' => true,
   'profile.can_change_cover_photo' => true,
+  'profilepopup.can_view_profile_popup' => true,
   'quiz.max_questions' => 9999,
   'quiz.min_questions' => 1,
   'quiz.max_answers' => 9999,

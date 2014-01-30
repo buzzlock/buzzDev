@@ -587,6 +587,27 @@
   ),
   25 => 
   array (
+    'module_id' => 'profilepopup',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'profilepopup.admin_menu_global_settings' => 
+      array (
+        'url' => 'profilepopup/user',
+      ),
+      'profilepopup.admin_menu_pages_global_settings' => 
+      array (
+        'url' => 'profilepopup/pages',
+      ),
+      'profilepopup.admin_menu_event_global_settings' => 
+      array (
+        'url' => 'profilepopup/event',
+      ),
+    ),
+    'url_name' => 'profilepopup',
+  ),
+  26 => 
+  array (
     'module_id' => 'report',
     'is_menu' => '1',
     'menu' => 
@@ -606,7 +627,7 @@
     ),
     'url_name' => 'report',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'resume',
     'is_menu' => '1',
@@ -659,7 +680,7 @@
     ),
     'url_name' => 'resume',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -684,7 +705,7 @@
     ),
     'url_name' => 'rss',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -701,7 +722,7 @@
     ),
     'url_name' => 'share',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'socialbridge',
     'is_menu' => '1',
@@ -714,7 +735,7 @@
     ),
     'url_name' => 'socialbridge',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'socialmediaimporter',
     'is_menu' => '1',
@@ -727,7 +748,7 @@
     ),
     'url_name' => 'socialmediaimporter',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'socialpublishers',
     'is_menu' => '1',
@@ -748,7 +769,7 @@
     ),
     'url_name' => 'socialpublishers',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'socialstream',
     'is_menu' => '1',
@@ -765,7 +786,7 @@
     ),
     'url_name' => 'socialstream',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -790,7 +811,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  34 => 
+  35 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -803,7 +824,7 @@
     ),
     'url_name' => 'user',
   ),
-  35 => 
+  36 => 
   array (
     'module_id' => 'videochannel',
     'is_menu' => '1',
@@ -820,7 +841,7 @@
     ),
     'url_name' => 'videochannel',
   ),
-  36 => 
+  37 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -833,7 +854,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  37 => 
+  38 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',

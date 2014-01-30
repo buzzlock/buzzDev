@@ -377,6 +377,19 @@
     'url' => 'http://phpfox3demo.modules2buy.com/',
     'url_version_check' => NULL,
   ),
+  'younet_profilepopup' => 
+  array (
+    'product_id' => 'younet_profilepopup',
+    'is_core' => '0',
+    'title' => 'YouNet Profile Popup',
+    'description' => 'by YouNet Company',
+    'version' => '3.02p4',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://phpfox3.demo.younetco.com',
+    'url_version_check' => NULL,
+  ),
   'younet_resume' => 
   array (
     'product_id' => 'younet_resume',

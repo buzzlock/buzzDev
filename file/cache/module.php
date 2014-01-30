@@ -58,6 +58,7 @@
   'privacy' => 'privacy',
   'profile' => 'profile',
   'profilecompleteness' => 'profilecompleteness',
+  'profilepopup' => 'profilepopup',
   'quiz' => 'quiz',
   'rate' => 'rate',
   'report' => 'report',

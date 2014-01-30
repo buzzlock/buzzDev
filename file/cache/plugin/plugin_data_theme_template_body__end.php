@@ -131,6 +131,28 @@ if($sController == \'user.profile\' && $sModule == \'user\')
 </script>
 <?php 
     }
+} defined(\'PHPFOX\') or exit(\'NO DICE!\');
+
+if (Phpfox::isModule(\'profilepopup\') && !Phpfox::isMobile() && Phpfox::getUserParam(\'profilepopup.can_view_profile_popup\'))
+{
+        $aRet = Phpfox::getService(\'profilepopup\')->initThemeTemplateBodyPlugin();
+
+        echo " <script type=\\"text/javascript\\"> 
+        var iOpeningDelayTime = " . $aRet[\'iOpeningDelayTime\'] . "; 
+        var iClosingDelayTime = " . $aRet[\'iClosingDelayTime\'] . "; 
+        var sEnableCache = " . $aRet[\'sEnableCache\'] . "; 
+         </script> ";
+		 
+	?>
+
+    <script language="javascript">        
+        $Behavior.ynppSetDataForYnfbpp = function(){
+        	ynfbpp.rewriteData = $.parseJSON(\'<?php echo $aRet[\'rewriteData\']; ?>\');
+        };    
+    </script>
+	
+	<?php
+		 
 } if(Phpfox::isModule(\'socialmediaimporter\') && defined(\'PHPFOX_IS_PAGES_VIEW\') && defined(\'PAGE_TIME_LINE\') && Phpfox::getLib(\'request\')->get(\'req3\')==\'photo\')
 {
 ?>
