@@ -1,0 +1,31 @@
+<form action="{$sefurl->'mylead','',''}" method="post" name="mylead">
+<input type="hidden" name="i" value="{$lid}" />
+<input type="hidden" name="l" value="{$l}" />
+<input type="hidden" name="g" value="{$g}" />
+<fieldset>
+<legend>{$lng->subscriber_info}</legend><br />
+<table><tr><td>
+<div class="{$error_style_name}"><label>{$lng->subscriber_name}<br />
+<input type="text" name="lname" size="50" value="{$lname}" />{$error_name}
+</label></div><br />
+<div class="{$error_style_email}"><label>{$lng->subscriber_email}<br />
+<input type="text" name="lemail" size="50" value="{$lemail}" />{$error_email}
+</label></div><br />
+<label>{$lng->subscriber_phone}<br />
+<input type="text" name="lphone" size="50" value="{$lphone}" />
+</label><br /><br />
+{$lcustomfields}
+<div class="{$error_style_emtype}"><label>{$lng->subscriber_emtype}&nbsp;
+<label accesskey="1"><input type="radio" name="ltype" id="1" value="Text" class="radio"{$ltype_t} /> Text</label>&nbsp;<label accesskey="2"><input type="radio" name="ltype" id="2" value="Html" class="radio"{$ltype_h} /> HTML</label>&nbsp;<label accesskey="3"><input type="radio" name="ltype" id="3" value="Both" class="radio"{$ltype_b} /> Text &amp; HTML</label>&nbsp;
+{$error_emtype}
+</label></div><br />
+{$show_captcha}
+</td><td width="10">&nbsp;</td>
+<td valign="top"><br />
+<b>{$company_name}</b><br /><br />
+{$company_address}
+</td></tr></table>
+</fieldset>
+<br />
+<input name="submit" type="submit" class="button" value="{$lng->subscriber_button}" />
+</form>

@@ -1,0 +1,235 @@
+<fieldset>
+<legend>{$lng->client_carefee}</strong></legend><br />
+<table width=100% border=0 cellspacing=0 cellpadding=4>
+<tr><td colspan="2">{$client_carefee_msg}</tr>
+<tr><td colspan="2"><br /></tr>
+
+<tr{$carehide_alertpay}>
+<td width=220><label>{$currencysym}{$cfg_carefee} + {$alertpayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalalertpay} {$currencycode}</label></td>
+<form method="post" action="{$post_to_ap}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithalertpay.gif" alt="Pay using Payza" title="Pay with Payza" border="0" style="border-style:none;" value="Submit" />
+<!--input type='hidden' name='ap_purchasetype' value='Service'>
+<input type='hidden' name='ap_amount' value='{$totalalertpay}'-->
+{$alertpaysubs_addcnt}
+<input type='hidden' name='ap_merchant' value='{$cfg_apacc}'>
+<input type='hidden' name='ap_itemname' value='{$cfg_paynamememo} {$lng->ipn_carefee} {$username}'>
+<input type='hidden' name='ap_currency' value='{$currencycode}'>
+<input type='hidden' name='ap_returnurl' value='{$site_url}/index.php?a=client&eg={$eg}&un={$username}'>
+<input type="hidden" name="ap_cancelurl" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type='hidden' name='ap_quantity' value='1'>
+<input type='hidden' name='ap_test' value='0'>
+<input type='hidden' name='ap_description' value='{$site_name}'>
+<input type='hidden' name='apc_1' value='{$invoicerid}'>
+</td>
+</form>
+</tr>
+
+<tr{$carehide_paypal}>
+<td><label>{$currencysym}{$cfg_carefee} + {$paypalfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalpaypal} {$currencycode}</label></td>
+<form method="post" action="{$post_to_pp}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithpaypal.gif" alt="Pay through PayPal" title="Pay through PayPal" border="0" style="border-style:none;" value="Submit" />
+<!--input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="amount" value="{$totalpaypal}"-->
+{$paypalsubs_addcnt}
+<input type="hidden" name="business" value="{$cfg_ppacc}">
+<input type="hidden" name="notify_url" value="{$site_url}/pppay.php">
+<input type="hidden" name="return" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="cancel_return" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type="hidden" name="currency_code" value="{$currencycode}">
+<input type="hidden" name="item_name" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}">
+<input type="hidden" name="quantity" value="1">
+<input type="hidden" name="rm" value="2">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="custom" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_lreserve}>
+<td><label>{$currencysym}{$cfg_carefee} + {$lreservefee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totallreserve} {$currencycode}</label></td>
+<form method="post" action="{$post_to_lr}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithlibertyreserve.gif" alt="Pay through LibertyReserve" title="Pay through LibertyReserve" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="lr_acc" value="{$cfg_lracc}">
+<input type="hidden" name="lr_store" value="{$lr_store}">
+<input type="hidden" name="lr_status_url" value="{$site_url}/lrpay.php">
+<input type="hidden" name="lr_success_url" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="lr_fail_url" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type="hidden" name="lr_currency" value="{$lr_currency}">
+<input type="hidden" name="lr_amnt" value="{$totallreserve}">
+<input type="hidden" name="lr_comments" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}">
+<input type="hidden" name="custom1" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_solidtrust}>
+<td><label>{$currencysym}{$cfg_carefee} + {$solidtrustfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalsolidtrust} {$currencycode}</label></td>
+<form method="post" action="{$post_to_st}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithsolidtrustpay.gif" alt="Pay through SolidTrustPay" title="Pay through SolidTrustPay" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="merchantAccount" value="{$cfg_solidtrustacc}">
+<input type="hidden" name="amount" value="{$totalsolidtrust}">
+<input type="hidden" name="currency" value="{$currencycode}">
+<input type="hidden" name="notify_url" value="{$site_url}/stpay.php">
+<input type="hidden" name="return_url" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="cancel_url" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<!--input type="hidden" name="item_id" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}"-->
+<input type="hidden" name="item_id" value="{$cfg_solidtrustitem}"-->
+<input type="hidden" name="subscription" value="{$cfg_solidtrustsubs}" />
+<input type="hidden" name="testmode" value="{$cfg_solidtrusttest}">
+<input type="hidden" name="user1" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_perfectmoney}>
+<td><label>{$currencysym}{$cfg_carefee} + {$perfectmoneyfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalperfectmoney} {$currencycode}</label></td>
+<form method="post" action="{$post_to_pm}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithperfectmoney.gif" alt="Pay with PerfectMoney" title="Pay with PerfectMoney" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="PAYEE_ACCOUNT" value="{$cfg_perfectmoneyacc}" /> 
+<input type="hidden" name="PAYEE_NAME" value="{$cfg_perfectmoneyname}" /> 
+<input type="hidden" name="PAYMENT_AMOUNT" value="{$totalperfectmoney}" /> 
+<input type="hidden" name="PAYMENT_UNITS" value="{$cfg_perfectmoneycurrency}" /> 
+<input type="hidden" name="PAYMENT_ID" value="{$cfg_perfectmoneyid}" /> 
+<input type="hidden" name="STATUS_URL" value="{$site_url}/pmpay.php" /> 
+<input type="hidden" name="PAYMENT_URL" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}" /> 
+<input type="hidden" name="PAYMENT_URL_METHOD" value="LINK" /> 
+<input type="hidden" name="NOPAYMENT_URL" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}" /> 
+<input type="hidden" name="NOPAYMENT_URL_METHOD" value="LINK" /> 
+<input type="hidden" name="EGTX" value="{$invoicerid}" /> 
+<input type="hidden" name="BAGGAGE_FIELDS" value="EGTX" /> 
+<input type="hidden" name="SUGGESTED_MEMO" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}" />
+</td>
+</form>
+</tr>
+
+<tr{$carehide_linkpoint}>
+<td><label>{$currencysym}{$cfg_carefee} + {$linkpointfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totallinkpoint} {$currencycode}</label></td>
+<form action="{$post_to_lp}" method="post"  name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithlinkpoint.gif" alt="Pay with Credit Card" title="Pay with Credit Card" border="0" style="border-style:none;" value="Submit" />
+<INPUT type="hidden" name="chargetotal" value="{$totallinkpoint}">
+<INPUT type="hidden" name="storename" value="{$cfg_lpacc}">
+<input type="hidden" name="comments" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}">
+<input type="hidden" name="responseURL" value="{$site_url}/lppay.php">
+<input type="hidden" name="responseSuccessURL" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="responseFailURL" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type="hidden" name="lp_invoicerid" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_authorize}>
+<td><label>{$currencysym}{$cfg_carefee} + {$authorizefee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalauthorize} {$currencycode}</label></td>
+<form method="post" action="{$post_to_an}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithauthorize.gif" alt="Pay by credit cards through AuthorizeNet" title="Pay by credit cards through AuthorizeNet" border="0" style="border-style:none;" value="Submit" />
+
+<input type="hidden" name="x_login" value="{$cfg_anlogin}">
+<input type="hidden" name="x_amount" value="{$totalauthorize}">
+<input type="hidden" name="x_show_form" value="PAYMENT_FORM">
+<input type="hidden" name="x_relay_response" value="TRUE">
+<input type="hidden" name="x_relay_url" value="{$site_url}/anpay.php">
+
+<input type="hidden" name="x_invoice_num" value="{$authorize_invoice}">
+<input type="hidden" name="x_currency_code" value="{$currencycode}">
+{$InsertFP}
+
+<input type="hidden" name="x_description" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}">
+<input type="hidden" name="custom" value="{$invoicerid}">
+<input type="hidden" name="returnURL" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="cancelURL" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+
+<input type="hidden" name="x_test_request" value="{$cfg_antest}">
+<input type="hidden" name="x_merchant_email" value="{$cfg_myemail}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_safepay}>
+<td><label>{$currencysym}{$cfg_carefee} + {$safepayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalsafepay} {$currencycode}</label></td>
+<form method="post" action="{$post_to_sps}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithsafepay.gif" alt="Pay through SafePay Solutions" title="Pay through SafePay Solutions" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="_ipn_act" value="_ipn_payment">
+<!--input type="hidden" name="fid" value="a510986f75c2e80384a8966e899cd5"-->
+<input type="hidden" name="itestmode" value="{$cfg_spstest}">
+<input type="hidden" name="notifyURL" value="{$site_url}/sppay.php">
+<input type="hidden" name="returnURL" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="cancelURL" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type="hidden" name="notifyEml" value="{$cfg_myemail}">
+<input type="hidden" name="iowner" value="{$cfg_spsacc}">
+<input type="hidden" name="ireceiver" value="{$cfg_spsacc}">
+<!--input type="hidden" name="iamount" value="{$cfg_carefee}"-->
+<input type="hidden" name="iamount" value="{$totalsafepay}">
+<input type="hidden" name="itemName" value="{$site_name}">
+<!--input type="hidden" name="itemNum" value="1"-->
+<input type="hidden" name="idescr" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}">
+<input type="hidden" name="idelivery" value="1">
+<!--input type="hidden" name="iquantity" value="1"-->
+<!--input type="hidden" name="imultiplyPurchase" value="n"-->
+<input type="hidden" name="custom1" value="{$invoicerid}">
+<input type="hidden" name="colortheme" value="LightBlueYellow">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_mbookers}>
+<td><label>{$currencysym}{$cfg_carefee} + {$mbookersfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalmbookers} {$currencycode}</label></td>
+<form method="post" action="{$post_to_mb}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithmoneybookers.gif" alt="Pay through MoneyBookers" title="Pay through MoneyBookers" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="pay_to_email" value="{$cfg_mbacc}">
+<input type="hidden" name="transaction_id" value="{$username}">
+<input type="hidden" name="status_url" value="{$site_url}/mbpay.php">
+<input type="hidden" name="return_url" value="{$site_url}/index.php?a=client&eg={$eg}&un={$username}">
+<input type="hidden" name="cancel_url" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}">
+<input type="hidden" name="currency" value="{$currencycode}">
+<input type="hidden" name="amount" value="{$totalmbookers}">
+<input type="hidden" name="detail1_text" value="{$cfg_paynamememo} {$username}">
+<input type="hidden" name="detail1_description" value="{$lng->ipn_carefee} {$site_name}">
+<input type="hidden" name="language" value="{$cfg_mblng}">
+<input type="hidden" name="confirmation_note" value="{$cfg_mbnote}">
+<input type="hidden" name="merchant_fields" value="custom1">
+<input type="hidden" name="custom1" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$carehide_egold}>
+<td><label>{$currencysym}{$cfg_carefee} + {$egoldfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalegold} {$currencycode}</label></td>
+<form method="post" action="{$post_to}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithegold.gif" alt="Pay with e-gold" title="Pay with e-gold" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="PAYEE_ACCOUNT" value="{$cfg_egoldacc}" />
+<input type="hidden" name="PAYEE_NAME" value="{$cfg_payname}" />
+<input type="hidden" name="PAYMENT_AMOUNT" value="{$totalegold}" />
+<input type="hidden" name="PAYMENT_UNITS" value="1" />
+<input type="hidden" name="PAYMENT_METAL_ID" value="1" />
+<input type="hidden" name="STATUS_URL" value="{$site_url}/egpay.php" />
+<input type="hidden" name="PAYMENT_URL" value="{$site_url}/index.php?a=client&eg={$eg}" />
+<input type="hidden" name="PAYMENT_URL_METHOD" value="LINK" />
+<input type="hidden" name="NOPAYMENT_URL" value="{$site_url}/index.php?a=client&tx={$tx}&f={$f}" />
+<input type="hidden" name="NOPAYMENT_URL_METHOD" value="LINK" />
+<input type="hidden" name="EGTX" value="{$invoicerid}" /> 
+<input type="hidden" name="BAGGAGE_FIELDS" value="EGTX" /> 
+<input type="hidden" name="SUGGESTED_MEMO" value="{$lng->ipn_carefee} {$username}" />
+<!--br /><label><b><font color="#ff0000" size="1">IMPORTANT!!!</font></b><br /><font color="#666666" size="1">You must click on &quot;<b>Continue</b>&quot; after payment (answer &quot;YES&quot; if you see 1 or 2 alert windows of transition to and from secured servers). If you don't, you </font><font color="#CC0000">will not be able</font><font color="#666666"> to get your payment confirmation page.</font></label-->
+</td>
+</form>
+</tr>
+
+<tr{$carehide_manualpay}>
+<td><label>{$currencysym}{$cfg_carefee} + {$manualpayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalmanualpay} {$currencycode}</label></td>
+<td>{$manualpayname}<br />{$manualpayipn}</td>
+</tr>
+
+{$additional_payprocs}
+
+</table>
+</fieldset>

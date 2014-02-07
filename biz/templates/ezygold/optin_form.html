@@ -1,0 +1,59 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function vercodereloaded() {
+	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
+}
+// -->
+</script>
+<html>
+<style type="text/css">
+body, input, td {
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+</style>
+
+<form action="{$sefurl->'subscriber','',''}" method="post" name="subscriber">
+<fieldset>
+<legend>{$lng->subscriber_header}</legend><br />
+<table border="0" cellpadding="2" cellspacing="1" align="center" width="98%">
+<tr>
+<td>
+<label>{$lng->subscriber_name}<br />
+<input type="text" name="lname" size="20" value="{$lname}" />
+{$error_name}
+</label><br /><br />
+<label>{$lng->subscriber_email}<br />
+<input type="text" name="lemail" size="20" value="{$lemail}" />
+{$error_email}
+</label><br /><br />
+</td>
+<td>
+<label>{$lng->subscriber_phone}<br />
+<input type="text" name="lphone" size="20" value="{$lphone}" />
+</label><br /><br />
+<label>{$lng->subscriber_emtype}<br />
+<select name="ltype" />
+	<option value="" />-
+	<option value="Text" />Text
+	<option value="Html" />Html
+	<option value="Both" />Text &amp; Html
+</select>
+{$error_emtype}
+</label><br /><br />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+{$show_captcha}
+<input name="squezzer_submit" value="1" type="hidden">
+<input name="squezzer_failedurl" value="optin.php" type="hidden">
+<input name="squezzer_successurl" value="optin.php" type="hidden">
+<input name="squezzer_delayed" value="5" type="hidden">
+<input name="submit" type="submit" class="button" value="{$lng->subscriber_button}" />
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+</html>

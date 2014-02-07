@@ -1,0 +1,18 @@
+<form action="{$site_urlori}/{$sefurl->'client','',''}" method="post">
+<fieldset>
+<legend>{$lng->client_header}</legend><br />
+{$thankyou_paid}
+<label>{$lng->g_username}<br />
+<input type="text" name="u" size="20" value="{$u}"/><br /><br />
+</label>
+<label>{$lng->g_password}<br />
+<table cellpadding="0" cellspacing="0" border="0"><tr><td><input type="password" name="password" size="20" autocomplete="off" /></td><td></td></tr></table>
+<br />
+</label>
+{$show_captcha}
+</fieldset>
+<br />
+<input type="submit" class="button" value="{$lng->client_login}" /><br /><br />
+</form>
+<a href="{$site_url}/{$sefurl->'lost_pw','',''}">{$lng->lost_pw_forgot}</a><br />
+<a href="{$site_url}/{$sefurl->'join','',''}">{$lng->client_create_newacc}</a>

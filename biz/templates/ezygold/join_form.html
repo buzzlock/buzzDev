@@ -1,0 +1,65 @@
+<fieldset>
+{$lng->join_notice}
+</fieldset>
+<br />
+<form action="{$sefurl->'join','',''}" method="post" name="join_form">
+<fieldset>
+<legend>{$lng->join_user}</legend><br />
+{$join_ref}
+{$join_spr}
+<div class="{$error_style_username}"><label>{$lng->g_username}<br />
+<input type="text" name="u" size="20" value="{$username}" id="username" />
+<span id="usernameResult"></span>&nbsp;<span id="usernameLoading"><img src="{$site_url}/etcs/i_busy.gif" alt="Ajax Indicator" /></span>{$error_username}
+</label></div><br />
+<div class="{$error_style_password}"><label>{$lng->g_password}<br />
+<input type="password" name="password" size="20" value="{$password}" />
+{$error_password}
+
+</label></div><br />
+<div class="{$error_style_password_mismatch}"><label>{$lng->g_passwordx}<br />
+<input type="password" name="passwordx" size="20" value="{$passwordx}" />
+{$error_password_mismatch}
+
+</label></div><br />
+</fieldset>
+<br />
+
+{$binarysys_option}
+
+{$membership_types}
+
+<fieldset>
+<legend>{$lng->g_accdetails}</legend><br />
+<div class="{$error_style_fullname}"><label>{$lng->g_fullname}<br />
+<input type="text" name="fullname" size="50" value="{$fullname}" />
+{$error_fullname}
+</label></div><br />
+<!--label>{$lng->g_fistname}<br />
+<input type="text" name="firstname" size="50" value="{$firstname}" />
+</label><br /><br />
+<label>{$lng->g_lastname}<br />
+<input type="text" name="lastname" size="50" value="{$lastname}" />
+</label><br /><br /-->
+<div class="{$error_style_email}"><label>{$lng->g_email}<br />
+<input type="text" name="email" size="50" value="{$email}" />
+{$error_email}
+</label></div><br />
+<div{$hide_egold}>
+<label>{$lng->g_egold}<br />
+<input type="text" name="egold" size="20" value="{$egold}" />
+</label><br /><br />
+</div>
+{$client_userfields}
+<label>{$lng->g_country}<br />
+{$country_list}
+</label><br /><br />
+{$show_captcha}
+</fieldset>
+<br />
+
+<div class="{$error_style_isagree}"><label>
+<input type="checkbox" class="checkbox" name="isagree" size="50" value="i agree"{$isagree_check} /> {$lng->terms_i_agree}
+{$error_isagree}
+</label></div><br /><br />
+<input name="join_submit" type="submit" class="button" value="{$lng->join_button}" />
+</form>

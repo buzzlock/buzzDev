@@ -1,0 +1,1 @@
+CHMOD addon.cfg.php to 777 to enable editing from Admin CP

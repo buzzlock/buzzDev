@@ -1,0 +1,144 @@
+# ------------------------------------------------------------------------ #
+# Software Name: EzyGold - The Ulimate Network Marketing Suite             #
+# Website: http://www.ezygold.com                                          #
+# Copyright ©2007-2012 All Rights Reserved.                                #
+# ------------------------------------------------------------------------ #
+# COPYRIGHT AND LICENSE AGREEMENT.                                         #
+# REDISTRIBUTION OF THIS SCRIPT OR ANY MODIFICATIONS                       #
+# OF THIS SCRIPT IN ANY FORM IS STRICTLY PROHIBITED!                       #
+#                                                                          #
+# There are no warranties expressed or implied of any kind, and by using   #
+# this code you agree to indemnify Era Setiawan and Aratisa Corporation,   #
+# from any and all liability that might arise from it's use.               #
+# ------------------------------------------------------------------------ #
+# . h t a c c e s s                                                        #
+# ------------------------------------------------------------------------ #
+
+# Protect .htaccess file from prying eyes.
+<files ".htaccess">
+	order allow,deny
+	deny from all
+</files>
+
+# Protect certain files format from prying eyes.
+<Files ~ "\.(cfg|txt|log)$">
+	Order allow,deny  
+	Deny from all  
+	Satisfy All  
+</Files> 
+
+# Allow robot.txt file to load.
+<files "robot.txt">
+	order allow,deny
+	Allow from all  
+	Satisfy All  
+</files>
+
+# Use PHP5 as default parser
+#AddType application/x-httpd-php5 .php
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Set the default handler.
+#DirectoryIndex index.php
+
+# Override PHP settings.
+
+# PHP 4, Apache 1.
+<IfModule mod_php4.c>
+  php_value register_globals 0
+</IfModule>
+
+# PHP 4, Apache 2.
+<IfModule sapi_apache2.c>
+  php_value register_globals 0
+</IfModule>
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+  php_value register_globals 0
+</IfModule>
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Page error handler
+#ErrorDocument 401 http://www.yoursite.com/pg_error.php?errcode=401&d=ezygold.com&r=1&e=email@yoursite.com&w=3
+#ErrorDocument 403 http://www.yoursite.com/pg_error.php?errcode=403&d=ezygold.com&r=1&e=email@yoursite.com&w=2
+#ErrorDocument 404 http://www.yoursite.com/pg_error.php?errcode=404&d=ezygold.com&r=1&e=email@yoursite.com&w=5
+#ErrorDocument 500 http://www.yoursite.com/pg_error.php?errcode=500&d=ezygold.com&r=1&e=email@yoursite.com&w=5
+
+# =================
+# Website Caching
+# =================
+<IfModule mod_headers.c>
+	RewriteEngine on
+
+	# 3 MONTHS
+	# -----------------
+	<filesmatch \.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$"="">
+	Header set Cache-Control "max-age=7257600, public"
+	</filesmatch>
+
+	# 1 WEEK
+	# -----------------
+	<filesmatch \.(jpg|jpeg|png|gif|swf|dat)$"="">
+	Header set Cache-Control "max-age=604800, public"
+	</filesmatch>
+
+	# 3 HOUR
+	# -----------------
+	<filesmatch \.(txt|xml|js|css|cfg)$"="">
+	Header set Cache-Control "max-age=10800"
+	</filesmatch>
+
+	# NEVER CACHE
+	# -----------------
+	<filesmatch \.(html|htm|php|cgi|pl|log)$"="">
+	Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+	</filesmatch>
+
+</IfModule>
+
+# =================
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	#RewriteCond %1 !^(www|ftp|mail|pop3)$ [nc]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^cp_(.*)/(.*)/(.*).html index.php?a=$1&b=$2&set=$3 [l,nc]
+	RewriteRule ^cp_(.*)/(.*).html index.php?a=$1&b=$2 [l,nc]
+	RewriteRule ^tx_(.*)/(.*).html index.php?a=$1&set=$2 [l,nc]
+	RewriteRule ^pg_(.*).html index.php?a=$1 [l,nc]
+	RewriteRule ^tx_order/itm(.*)/cat(.*)/(.*) index.php?a=itemspage&id=$1&cat=$2&title=$3 [l,nc]
+	RewriteRule ^tx_order/cat(.*)/(.*) index.php?a=order&itz=$1&title=$2 [l,nc]
+
+	#---------------------------------------------------------------------
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)/(.*)/s:(.*)(/)?$ index.php?a=$1&b=$2&set=$3 [l,nc]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)/s:(.*)(/)?$ index.php?a=$1&set=$2 [l,nc]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)/(.*)(/)?$ index.php?a=$1&b=$2 [l,nc]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)(/)?$ index.php?a=$1 [l,nc]
+
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^order/itm(.*)/cat(.*)/(.*)(/)?$ index.php?a=itemspage&id=$1&cat=$2&title=$3 [l,nc]
+
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^order/cat(.*)/(.*)(/)?$ index.php?a=order&itz=$1&title=$2 [l,nc]
+</IfModule>

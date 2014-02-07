@@ -1,0 +1,44 @@
+<script language="JavaScript" type="text/javascript">
+function addT(textToAdd){document.dlbuilder.surl.value += textToAdd;}
+</script>
+<a name="update"></a>
+<form name="dlbuilder" action="index.php?a=client&amp;b=dlbsites" method="post">
+<input type="hidden" name="a" value="client" />
+<input type="hidden" name="b" value="dlbsites" />
+<input type="hidden" name="d" value="{$formd}" />
+<input type="hidden" name="e" value="go" />
+<input type="hidden" name="stitlex" value="{$stitle}" />
+<fieldset>
+<legend>{$lng->a_dlbuilder_title_form}</legend><br />
+<div class="{$error_style_stitle}"><label>{$lng->a_dlbuilder_title}<br />
+<input type="text" name="stitle" size="50" value="{$stitle}" /><br />
+{$error_stitle}</label></div><br />
+<div class="{$error_style_surl}"><label>{$lng->a_dlbuilder_url}<br />
+<input type="text" name="surl" size="50" value="{$surl}"/> Tag: <a href="javascript:void(0);" onClick="addT('%IDUSERNAME%')"><b>%IDUSERNAME%</b></a><br />
+{$error_surl}</label></div><br />
+<label>{$lng->a_dlbuilder_username}<br />
+<input type="text" name="susername" size="50" value="{$susername}"/><br /><br />
+</label>
+<label>{$lng->a_dlbuilder_info}<br />
+<textarea style="width: 80%;" rows="7" name="sinfo" id="sinfo">{$sinfo}</textarea><br />
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor('sinfo' , "100%" , "200" , 'EzyGold2');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.ReplaceTextarea();
+</script>
+{$lng->a_dlbuilder_urltag} <strong>%DLBSITEURL%</strong><br /><br />
+</label>
+<label>{$lng->a_dlbuilder_imgurl}<br />
+<input type="text" name="simageurl" size="50" value="{$simageurl}"/><br /><br />
+</label>
+<label>{$lng->a_dlbuilder_cloack}<br />
+<select name="scloack">
+	  {$menu_scloack}
+</select><br />
+</label>
+</fieldset>
+<br />
+
+<input name="reset" type="reset" class="button" value="{$lng->g_button_reset}" />&nbsp;
+<input name="submit" type="submit" class="button" value="{$lng->g_button_submit}" />&nbsp;&nbsp;
+</form>

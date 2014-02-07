@@ -1,0 +1,70 @@
+<script type="text/javascript" src="{$site_url}/etcs/jquery152.js"></script>
+<script type="text/javascript" src="{$site_url}/etcs/flowplayer-3.2.6.min.js"></script>
+<script type="text/javascript" src="{$site_url}/etcs/helphint.js"></script>
+<script type="text/javascript" src="{$site_url}/etcs/dtree.js"></script>
+
+<script language='JavaScript' type="text/javascript">
+<!--
+	var theTime = new Date ("{$server_datetime}");
+	var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+//-->
+</script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/clock.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function vercodereloaded() {
+	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
+}
+function out(username)
+{
+  image = new Image();
+  image.src= '{$site_url}/index.php?a=out&u=' + username;
+}
+
+function addTexTag(isform, text)
+{
+	var myFormField = isform;
+	//IE support
+	if (document.selection) {
+		myFormField.focus();
+		sel = document.selection.createRange();
+		sel.text = text;
+	}
+	//MOZILLA/NETSCAPE support
+	else if (myFormField.selectionStart || myFormField.selectionStart == '0') {
+		var startPos = myFormField.selectionStart;
+		var endPos = myFormField.selectionEnd;
+		myFormField.value = myFormField.value.substring (0, startPos) + text + myFormField.value.substring (endPos, myFormField.value.length);
+	} else {
+		myFormField.value += text;
+	}
+}
+    
+function yesno_alert(warnmsg,locasi){
+	if (confirm(warnmsg) != "0"){
+		window.location = locasi;
+	}
+}
+
+function yesno_alert_post(warnmsg){
+	question = confirm(warnmsg)
+	if (question !="0")	return true;
+	else return false;
+}
+// -->
+</script>
+
+<script type="text/javascript" src="{$site_url}/fckeditor/fckeditor.js"></script>
+
+<script language="JavaScript1.2">
+<!--				
+function hideshow_togle(which_hideshowid, imgid_hideshowid){
+	if (!document.getElementById) return
+	if (which_hideshowid.style.display == "none"){
+		which_hideshowid.style.display =  ""
+	} else {
+		which_hideshowid.style.display = "none";
+	}
+}//-->
+</script>

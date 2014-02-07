@@ -1,0 +1,82 @@
+<form action="{$sefurl->'contact','',''}" method="post" name="contact">
+<fieldset>
+<legend>{$lng->contact_header}</legend><br />
+<table width="100%"><tr><td valign="top">
+<div class="{$error_style_name}"><label>{$lng->contact_name}<br />
+<input type="text" name="name" size="50" value="{$name}" />{$error_name}
+</label></div><br />
+<div class="{$error_style_email}"><label>{$lng->contact_email}<br />
+<input type="text" name="email" size="50" value="{$email}" />
+{$error_email}
+
+</label></div><br />
+<div class="{$error_style_subject}"><label>{$lng->contact_subject}<br />
+<input type="text" name="subject" size="50" value="{$subject}" />
+{$error_subject}
+</label></div><br />
+<div class="{$error_style_body}"><label>{$lng->contact_body}<br />
+<textarea name="body" rows="6" cols="40" />{$body}</textarea>
+{$error_body}
+</label></div><br />
+<label>{$lng->contact_reff}<br />
+<input type="text" name="reff" size="50" value="{$reff}" />
+</label><br /><br />
+
+<span{$msg_sendto}>
+<label>Send message to<br />
+</label>
+<label id='opt1'>&nbsp; &nbsp;<input type="radio" class="radio" name="s_to" value="a" checked="checked" /> Administrator<br /></label>
+<label id='opt2'{$msg_sendtoref}>&nbsp; &nbsp;<input type="radio" class="radio" name="s_to" value="r" /> Referrer [<b>{$referrer}</b>]<br /></label>
+<label id='opt3'{$msg_sendtospr}>&nbsp; &nbsp;<input type="radio" class="radio" name="s_to" value="u" /> Sponsor [<b>{$sponsor}</b>]</label>
+<br /><br />
+</span>
+
+{$show_captcha}
+</td><td width="30"></td>
+<td width="50%" valign="top">
+
+<span{$msg_sendtoref}>
+<fieldset style="background-color: #F9F9F9;">
+<h3>Contact Person (Referrer)</h3><br />
+<table border="0"><tr><td valign="top">
+{$tagref_show_photoku}
+</td>
+<td style="padding-left: 22px;"><b>{$tagref_fullname}</b>
+</td></tr></table>
+<br />
+{$tagref_address}<br />
+{$tagref_state}<br />
+Country 12321<br /><br />
+Phone: (123) 123 4567<br />
+Email: {$tagref_email}
+</fieldset>
+<br />
+</span>
+<span{$msg_sendtospr}>
+<fieldset style="background-color: #F9F9F9;">
+<h3>Contact Person (Sponsor)</h3><br />
+<table border="0"><tr><td valign="top">
+{$tagspr_show_photoku}
+</td>
+<td style="padding-left: 22px;"><b>{$tagspr_fullname}</b>
+</td></tr></table>
+<br />
+{$tagspr_address}<br />
+{$tagspr_state}<br />
+Country 12321<br /><br />
+Phone: (123) 123 4567<br />
+Email: {$tagspr_email}
+</fieldset>
+<br />
+</span>
+
+<fieldset style="background-color: #F9F9F9;">
+<h3>{$company_name}</h3>
+<br />
+{$company_address}
+</fieldset>
+</td></tr></table>
+</fieldset>
+<br />
+<input name="submit" type="submit" class="button" value="{$lng->contact_button}" />
+</form>

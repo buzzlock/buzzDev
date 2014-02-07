@@ -1,0 +1,25 @@
+{$lng->client_responder_subheader}
+<br /><br />
+<span{$span_hide_responder_archive}>
+<form name="emailarchives" method="get">
+<input type="hidden" name="a" value="client">
+<input type="hidden" name="b" value="responder">
+<fieldset>
+<legend>{$lng->client_responder_archive}</legend><br />
+<div align="right">
+<label>
+<select name="c">
+<option value="">-</option>
+	  {$responderers_archive}
+</select><br /><br />
+<input type="submit" class="button" value="{$lng->g_button_load}" />
+</label>
+<br />
+</div>
+</fieldset>
+</form>
+<br />
+<br />
+</span>
+
+{$responder_form_content}

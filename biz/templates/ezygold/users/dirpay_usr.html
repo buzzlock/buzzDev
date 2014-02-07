@@ -1,0 +1,167 @@
+<fieldset>
+<legend>{$lng->dirpay_userdetails}</strong></legend><br />
+<table width=100% border=0 cellspacing=0 cellpadding=4>
+<tr>
+<td><label>
+<strong>{$dirpay_username}</strong><br />
+{$dirpay_fullname}<br />
+{$dirpay_email}<br />
+<br />
+{$dirpay_memo} {$dirpay_amount}<br />
+<br />
+{$dirpay_confirmpay}
+<br />
+</label></td>
+</tr>
+</table>
+</fieldset>
+<br />
+
+<fieldset>
+<legend>{$lng->dirpay_payoptions}</strong></legend><br />
+<table width=100% border=0 cellspacing=0 cellpadding=4>
+
+<tr{$hide_alertpay}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$alertpayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalalertpay} {$currencycode}</label></td>
+<form method="post" action="{$post_to_ap}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithalertpay.gif" alt="Pay using Payza" title="Pay with Payza" border="0" style="border-style:none;" value="Submit" />
+<input type='hidden' name='ap_merchant' value='{$cfg_apacc}'>
+<input type='hidden' name='ap_itemname' value='{$cfg_paynamememo} {$lng->ipn_joinfee} {$username}'>
+<input type='hidden' name='ap_currency' value='{$currencycode}'>
+<input type='hidden' name='ap_returnurl' value='{$site_url}/index.php?a=client&b=upgrade'>
+<input type="hidden" name="ap_cancelurl" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}">
+<input type='hidden' name='ap_quantity' value='1'>
+<input type='hidden' name='ap_test' value='0'>
+<!--input type='hidden' name='ap_purchasetype' value='Service'>
+<input type='hidden' name='ap_amount' value='{$totalalertpay}'-->
+{$alertpaysubs_addcnt}
+<input type='hidden' name='ap_description' value='{$site_name}'>
+<input type='hidden' name='apc_1' value='{$invoicerid}'>
+</td>
+</form>
+</tr>
+
+<tr{$hide_paypal}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$paypalfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalpaypal} {$currencycode}</label></td>
+<form method="post" action="{$post_to_pp}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithpaypal.gif" alt="Pay through PayPal" title="Pay through PayPal" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="business" value="{$cfg_ppacc}">
+<input type="hidden" name="notify_url" value="{$site_url}/pppay.php">
+<input type="hidden" name="return" value="{$site_url}/index.php?a=client&b=upgrade">
+<input type="hidden" name="cancel_return" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}">
+<input type="hidden" name="currency_code" value="{$currencycode}">
+<!--input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="amount" value="{$totalpaypal}"-->
+{$paypalsubs_addcnt}
+<input type="hidden" name="item_name" value="{$cfg_paynamememo} {$lng->ipn_joinfee} {$username}">
+<input type="hidden" name="quantity" value="1">
+<input type="hidden" name="rm" value="2">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="custom" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$hide_lreserve}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$lreservefee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totallreserve} {$currencycode}</label></td>
+<form method="post" action="{$post_to_lr}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithlibertyreserve.gif" alt="Pay through LibertyReserve" title="Pay through LibertyReserve" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="lr_acc" value="{$cfg_lracc}">
+<input type="hidden" name="lr_store" value="{$lr_store}">
+<input type="hidden" name="lr_status_url" value="{$site_url}/lrpay.php">
+<input type="hidden" name="lr_success_url" value="{$site_url}/index.php?a=client&b=upgrade">
+<!--input type="hidden" name="lr_fail_url" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}"-->
+<input type="hidden" name="lr_fail_url" value="{$site_url}/index.php?a=client&b=upgrade">
+<input type="hidden" name="lr_currency" value="{$lr_currency}">
+<input type="hidden" name="lr_amnt" value="{$totallreserve}">
+<input type="hidden" name="lr_comments" value="{$cfg_paynamememo} {$lng->ipn_joinfee} {$username}">
+<input type="hidden" name="custom1" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$hide_solidtrust}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$solidtrustfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalsolidtrust} {$currencycode}</label></td>
+<form method="post" action="{$post_to_st}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithsolidtrustpay.gif" alt="Pay through SolidTrustPay" title="Pay through SolidTrustPay" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="merchantAccount" value="{$cfg_solidtrustacc}">
+<input type="hidden" name="amount" value="{$totalsolidtrust}">
+<input type="hidden" name="currency" value="{$currencycode}">
+<input type="hidden" name="notify_url" value="{$site_url}/stpay.php">
+<input type="hidden" name="return_url" value="{$site_url}/index.php?a=client&b=upgrade">
+<input type="hidden" name="cancel_url" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}">
+<!--input type="hidden" name="item_id" value="{$cfg_paynamememo} {$lng->ipn_carefee} {$username}"-->
+<input type="hidden" name="item_id" value="{$cfg_solidtrustitem}"-->
+<input type="hidden" name="subscription" value="{$cfg_solidtrustsubs}" />
+<input type="hidden" name="testmode" value="{$cfg_solidtrusttest}">
+<input type="hidden" name="user1" value="{$invoicerid}">
+</td>
+</form>
+</tr>
+
+<tr{$hide_perfectmoney}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$perfectmoneyfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalperfectmoney} {$currencycode}</label></td>
+<form method="post" action="{$post_to_pm}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithperfectmoney.gif" alt="Pay with PerfectMoney" title="Pay with PerfectMoney" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="PAYEE_ACCOUNT" value="{$cfg_perfectmoneyacc}" /> 
+<input type="hidden" name="PAYEE_NAME" value="{$cfg_perfectmoneyname}" /> 
+<input type="hidden" name="PAYMENT_AMOUNT" value="{$totalperfectmoney}" /> 
+<input type="hidden" name="PAYMENT_UNITS" value="{$cfg_perfectmoneycurrency}" /> 
+<input type="hidden" name="PAYMENT_ID" value="{$cfg_perfectmoneyid}" /> 
+<input type="hidden" name="STATUS_URL" value="{$site_url}/pmpay.php" /> 
+<input type="hidden" name="PAYMENT_URL" value="{$site_url}/index.php?a=client&b=upgrade" /> 
+<input type="hidden" name="PAYMENT_URL_METHOD" value="LINK" /> 
+<input type="hidden" name="NOPAYMENT_URL" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}" /> 
+<input type="hidden" name="NOPAYMENT_URL_METHOD" value="LINK" /> 
+<input type="hidden" name="EGTX" value="{$invoicerid}" /> 
+<input type="hidden" name="BAGGAGE_FIELDS" value="EGTX" /> 
+<input type="hidden" name="SUGGESTED_MEMO" value="{$cfg_paynamememo} {$lng->ipn_joinfee} {$username}" />
+</td>
+</form>
+</tr>
+
+<tr{$hide_safepay}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$safepayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalsafepay} {$currencycode}</label></td>
+<form method="post" action="{$post_to_sps}" name="join_pay">
+<td>
+<input type="image" src="{$site_url}/images/paywithsafepay.gif" alt="Pay through SafePay Solutions" title="Pay through SafePay Solutions" border="0" style="border-style:none;" value="Submit" />
+<input type="hidden" name="_ipn_act" value="_ipn_payment">
+<!--input type="hidden" name="fid" value="a510986f75c2e80384a8966e899cd5"-->
+<input type="hidden" name="itestmode" value="{$cfg_spstest}">
+<input type="hidden" name="notifyURL" value="{$site_url}/sppay.php">
+<input type="hidden" name="returnURL" value="{$site_url}/index.php?a=client&b=upgrade">
+<input type="hidden" name="cancelURL" value="{$site_url}/index.php?a=client&b=dirpay&_ix={$dirpay_ix}&_ux={$dirpay_ux}">
+<input type="hidden" name="notifyEml" value="{$cfg_myemail}">
+<input type="hidden" name="iowner" value="{$cfg_spsacc}">
+<input type="hidden" name="ireceiver" value="{$cfg_spsacc}">
+<!--input type="hidden" name="iamount" value="{$cfg_dirpayfee}"-->
+<input type="hidden" name="iamount" value="{$totalsafepay}">
+<input type="hidden" name="itemName" value="{$site_name}">
+<!--input type="hidden" name="itemNum" value="1"-->
+<input type="hidden" name="idescr" value="{$cfg_paynamememo} {$lng->ipn_joinfee} {$username}">
+<input type="hidden" name="idelivery" value="1">
+<!--input type="hidden" name="iquantity" value="1"-->
+<!--input type="hidden" name="imultiplyPurchase" value="n"-->
+<input type="hidden" name="custom1" value="{$invoicerid}">
+<input type="hidden" name="colortheme" value="LightBlueYellow">
+</td>
+</form>
+</tr>
+
+<tr{$hide_manualpay}>
+<td width=212><label>{$currencysym}{$cfg_dirpayfee} + {$manualpayfee} <font size=1 color=#CCCCCC><em>({$lng->g_fee})</em></font> = {$currencysym}{$totalmanualpay} {$currencycode}</label></td>
+<td>{$manualpayname}<br />{$manualpayipn}</td>
+</tr>
+
+<tr{$hide_warn_noprocessor}>
+<td colspan="2">{$dirpay_processer_notset}</td>
+</tr>
+
+</table>
+</fieldset>

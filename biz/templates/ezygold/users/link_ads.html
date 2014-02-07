@@ -1,0 +1,24 @@
+<br />
+<fieldset>
+	{$preads_email_subject}
+      <fieldset style="background-color:#FFFFCC; border:dashed 2px;">
+      	<font face="Courier New, Courier, monospace">{$preads_content}</font>
+      </fieldset>
+<br />
+<p>
+{$linkads_pretext}
+</p>
+
+<form name="txt">
+<textarea readonly="readonly" name="txt" rows="4" style="width: 100%;">{$preads_content}</textarea>
+<br />
+<script language="javascript" type="text/javascript">
+var browserIE = "Microsoft Internet Explorer";
+if (navigator.appName == browserIE) 
+	{document.write("<input type='button' class='button' value='Select &amp; Copy' onClick='javascript:this.form.txt.focus();this.form.txt.select();initiatecopy();copyit();' name='button'>");}
+else
+	{document.write("<input type='button' class='button' value='Select' onClick='javascript:this.form.txt.focus();this.form.txt.select();' name='button'>"); }
+</script>
+</form>
+</fieldset>
+<br />

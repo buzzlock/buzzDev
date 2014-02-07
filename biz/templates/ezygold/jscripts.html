@@ -1,0 +1,53 @@
+<script type="text/javascript" src="{$site_url}/etcs/jquery152.js"></script>
+<script type="text/javascript" src="{$site_url}/etcs/helphint.js"></script>
+<script type="text/javascript" src="{$site_url}/etcs/flowplayer-3.2.6.min.js"></script>
+
+{$popover_jscript}
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function vercodereloaded() {
+	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
+}
+function out(username)
+{
+  image = new Image();
+  image.src= '{$site_url}/index.php?a=out&u=' + username;
+}
+
+function yesno_alert(warnmsg,locasi){
+	if (confirm(warnmsg) != "0"){
+		window.location = locasi;
+	}
+}
+
+function yesno_alert_post(warnmsg){
+	question = confirm(warnmsg)
+	if (question !="0")	return true;
+	else return false;
+}
+// -->
+</script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+	jQuery('#usernameLoading').hide();
+	jQuery('#username').blur(function(){
+	  jQuery('#usernameLoading').show();
+      jQuery.post("verify_username.php", {
+        u: jQuery('#username').val()
+      }, function(response){
+        jQuery('#usernameResult').fadeOut();
+        setTimeout("finishAjax('usernameResult', '"+escape(response)+"')", 400);
+      });
+    	return false;
+	});
+});
+
+function finishAjax(id, response) {
+  jQuery('#usernameLoading').hide();
+  jQuery('#'+id).html(unescape(response));
+  jQuery('#'+id).fadeIn();
+} //finishAjax
+</script>

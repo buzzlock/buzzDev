@@ -1,0 +1,118 @@
+<a name="cgiftform"></a>
+<fieldset>
+<legend>{$lng->cashgift_detail_header}</legend><br />
+<table width=100% border=0 cellspacing=0 cellpadding=4>
+<tr>
+<td width="100" valign="top"><label>{$lng->cashgift_level}</label></td>
+<td width="5" valign="top">:</td><td valign="top"><label>{$cashgift_level}</label></td>
+</tr>
+<tr>
+<td valign="top"><label>{$lng->cashgift_status}</label></td>
+<td valign="top">:</td><td valign="top"><label><strong>{$cashgift_status}</strong></label></td>
+</tr>
+<tr>
+<td valign="top"><label>{$lng->cashgift_qualified}</label></td>
+<td valign="top">:</td><td valign="top"><label><strong>{$is_qualified}</strong>{$lng->cashgift_qualified_need}</label></td>
+</tr>
+
+<tr><td colspan="3"><label><hr size="1" align="center" width="100%" /></label></td></tr>
+
+<tr{$cash_gifting_payment}>
+<td colspan="3">
+
+    <fieldset{$cash_gifting_payment_hoster}>
+    <table width="100%">
+    <tr>
+    <td>
+    {$lng->cashgift_pay_hoster}<br /><br />
+    <font color="#336600"><strong>{$cashgift_hoster_name}</strong><br />
+    {$cashgift_hoster_addr}</font><br /><br />
+    {$lng->cashgift_pay_done_hoster}
+    </td>
+    </tr>
+    </table>
+    </fieldset>
+	<br />
+    <fieldset{$cash_gifting_payment_inviter}>
+    <table width="100%">
+    <tr>
+    <td>
+    {$lng->cashgift_pay_inviter}<br /><br />
+    <font color="#336600"><strong>{$cashgift_inviter_name}</strong><br />
+    {$cashgift_inviter_addr}</font><br /><br />
+    {$lng->cashgift_pay_done}
+    </td>
+    </tr>
+    </table>
+    </fieldset>
+
+</td>
+</tr>
+
+<tr{$cash_gifting_formconfirm}>
+<td colspan="3"><br />
+    <form method="post" name="myForm" onSubmit="return yesno_alert_post(''+
+    '{$lng->cashgift_sendmtd} '+document.myForm.cg_payby.value+' '+document.myForm.cg_amount.value+' ('+document.myForm.cg_username.value+')\n\r'+
+    '{$lng->cashgift_sendsn} '+document.myForm.cg_sendsn.value+'\n\r'+
+    '\n\r'+
+    '{$lng->cashgift_postconfirm}'); return false;">
+    <input type="hidden" name="cg_userid" value="{$cash_gifting_userid}">
+    <input type="hidden" name="c_upid" value="{$cash_gifting_upconfirmid}">
+    <input type="hidden" name="c_up" value="{$cash_gifting_upconfirm}">
+    <table width="100%">
+    <tr>
+    <td align="right"><label>{$lng->cashgift_sendmtd}</label></td>
+    <td>
+    <select name="cg_payby">
+    {$cash_gifting_payselect}
+    </select> {$cash_gifting_upconfirm_memo}
+    </td>
+    </tr>
+    <tr>
+    <td align="right"><label>{$lng->cashgift_sendsn}</label></td>
+    <td><input type="input" size="20" name="cg_sendsn" value=""><font color="#FF0000">*</font></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><input type="input" size="20" name="cg_username" value="{$cash_gifting_username}"></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><input type="input" size="10" name="cg_amount" value="{$cash_gifting_amount}"></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><input type="submit" class="button" value="{$lng->cashgift_btnconfirm}"></td>
+    </tr>
+    </table>
+    </form>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+{$lng->cashgift_apprwaiting}
+</td>
+</tr>
+
+<tr{$cash_gifting_trupgrade}>
+    <form method="post" name="upForm" onSubmit="return yesno_alert_post('{$lng->cashgift_upgradeto} '+document.upForm.cg_upgrade.value+'\n\r'+
+    '\n\r'+
+    '{$lng->cashgift_upgradeconfirm}'); return false;">
+    <input type="hidden" name="cg_myid" value="{$id}">
+    <td>
+    <label>{$lng->cashgift_upgradeto}</label>
+    </td><td></td>
+    <td width="70%">
+    <select name="cg_upgrade">
+    {$cash_gifting_upgradeselect}
+    </select>
+    &nbsp;
+    <input type="submit" class="button" value="{$lng->cashgift_btnconfirm}">
+    </td>
+    </form>
+</tr>
+
+</table>
+</fieldset>
+<br />

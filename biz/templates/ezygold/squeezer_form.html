@@ -1,0 +1,56 @@
+<br />
+<form action="{$sefurl->'subscriber','',''}" method="post" name="subscriber">
+<fieldset>
+<legend>{$lng->subscriber_header}</legend><br />
+<div class="{$error_style_sponsor}"{$hide_sponsor_field}>
+<label>{$lng->subscriber_sponsor}<br />
+<input type="text" name="lspru" size="50" value="{$lspru}" />{$error_sponsor}
+</label>
+<br />
+</div>
+<!--div class="{$error_style_fname}"><label>{$lng->g_fistname}<br />
+<input type="text" name="lfname" size="50" value="{$lfname}" />{$error_fname}
+</label></div><br />
+<label>{$lng->g_lastname}<br />
+<input type="text" name="llname" size="50" value="{$llname}" /><br />
+</label><br /-->
+<div class="{$error_style_name}"><label>{$lng->subscriber_name}<br />
+<input type="text" name="lname" size="50" value="{$lname}" />{$error_name}
+</label></div><br />
+<div class="{$error_style_email}"><label>{$lng->subscriber_email}<br />
+<input type="text" name="lemail" size="50" value="{$lemail}" />
+{$error_email}
+</label></div><br />
+<label>{$lng->subscriber_phone}<br />
+<input type="text" name="lphone" size="50" value="{$lphone}" /><br />
+</label><br />
+{$subscriber_userfields}
+<div class="{$error_style_emtype}"><label>{$lng->subscriber_emtype}&nbsp;
+<label accesskey="1"><input type="radio" name="ltype" id="1" value="Text" class="radio" /> Text</label>&nbsp;<label accesskey="2"><input type="radio" name="ltype" id="2" value="Html" class="radio" /> HTML</label>&nbsp;<label accesskey="3"><input type="radio" name="ltype" id="3" value="Both" class="radio" /> Text &amp; HTML</label>&nbsp;
+{$error_emtype}
+</label></div><br />
+{$show_captcha}
+<input name="squezzer_submit" value="1" type="hidden">
+<input name="squezzer_failedurl" value="" type="hidden">
+<input name="squezzer_successurl" value="" type="hidden">
+<input name="squezzer_delayed" value="5" type="hidden">
+<input name="submit" type="submit" class="button" value="{$lng->subscriber_button}" />
+</fieldset>
+</form>
+<br />
+
+<form action="{$sefurl->'subscriber','',''}" method="post" name="subscriber">
+<fieldset>
+<legend>{$lng->subscriber_already}</legend><br />
+<label>{$lng->subscriber_already_info}<br /><br />
+</label>
+<label>{$lng->subscriber_email}<br />
+<input type="text" name="mylemail" size="50" value="{$mylemail}" /><br />
+</label><br />
+<input name="squezzer_submit" value="1" type="hidden">
+<input name="squezzer_failedurl" value="" type="hidden">
+<input name="squezzer_successurl" value="" type="hidden">
+<input name="squezzer_delayed" value="5" type="hidden">
+<input name="submit" type="submit" class="button" value="{$lng->subscriber_button}" />
+</fieldset>
+</form>

@@ -1,0 +1,65 @@
+<script type="text/javascript">
+<!--
+bBool=false
+var copiedtext=""
+var tempstore=""
+
+
+function initiatecopy() {
+	bBool=true;
+}
+
+
+function copyit() {
+	if (bBool) {
+		tempstore=copiedtext
+		document.execCommand("Copy")
+		copiedtext=window.clipboardData.getData("Text");
+		if (tempstore!=copiedtext) {
+		}
+		bBool=false;
+	}
+}
+//-->
+</script>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tr><td valign="top" style="padding-right: 8px; padding-top: 3px;" width="125">
+<p align="right"><strong>.:[ {$username_uc} ]::</strong><br /><br /><em>{$payplan_name}</em> ::</p>
+<ul class="nav">
+<li><a href="{$site_url}/{$sefurl->'client','',''}" class="{$crnt_}">{$lng->main_menu_home} ::</a></li>
+<li {$div_upgrade_none}><a href="{$site_url}/{$sefurl->'client','upgrade',''}" class="{$crnt_upgrade}">{$lng->renew_upgrade} ::</a></li>
+<li {$div_purchased_none}><a href="{$site_url}/{$sefurl->'client','purchased',''}" class="{$crnt_purchased}">{$lng->bough_menu} ::</a></li>
+<li {$div_ads_none}><a href="{$site_url}/{$sefurl->'client','ads',''}" class="{$crnt_ads}">{$lng->bough_ads} ::</a></li>
+<li {$div_download_none}><a href="{$site_url}/{$sefurl->'client','download',''}" class="{$crnt_download}">{$lng->dl_menu} ::</a></li>
+<li {$div_video_none}><a href="{$site_url}/{$sefurl->'client','video',''}" class="{$crnt_video}">{$lng->video_menu} ::</a></li>
+<li {$div_dlbsites_none}><a href="{$site_url}/{$sefurl->'client','dlbsites',''}" class="{$crnt_dlbsites}">{$lng->client_dlbsites} ::</a></li>
+<li {$div_referrals_none}><a href="{$site_url}/{$sefurl->'client','referrals',''}" class="{$crnt_referrals}">{$lng->edit_referrals} ::</a></li>
+<li {$div_genealogy_none}><a href="{$site_url}/{$sefurl->'client','genealogy',''}" class="{$crnt_genealogy}">{$lng->genealogy_menu} ::</a></li>
+<li {$div_history_none}><a href="{$site_url}/{$sefurl->'client','history',''}" class="{$crnt_history}">{$lng->history_header} ::</a></li>
+<li {$div_giftpass_none}><a href="{$site_url}/{$sefurl->'client','giftpass',''}" class="{$crnt_giftpass}">{$lng->giftpass_menu} ::</a></li>
+<li {$div_leads_none}><a href="{$site_url}/{$sefurl->'client','leads',''}" class="{$crnt_leads}">{$lng->subscriber_menu} ::</a></li>
+<li {$div_broadcast_none}><a href="{$site_url}/{$sefurl->'client','broadcast',''}" class="{$crnt_broadcast}">{$lng->broadcast_menu} ::</a></li>
+<li {$div_responder_none}><a href="{$site_url}/{$sefurl->'client','responder',''}" class="{$crnt_responder}">{$lng->responder_menu} ::</a></li>
+<li {$div_link_code_none}><a href="{$site_url}/{$sefurl->'client','link_code',''}" class="{$crnt_link_code}">{$lng->link_code_header} ::</a></li>
+<li {$div_promotools_none}><a href="{$site_url}/{$sefurl->'client','promotools',''}" class="{$crnt_promotools}">{$lng->premade_ads_header} ::</a></li>
+<li {$div_campstat_none}><a href="{$site_url}/{$sefurl->'client','campstat',''}" class="{$crnt_campstat}">{$lng->client_campstat_menu} ::</a></li>
+<li {$div_feedback_none}><a href="{$site_url}/{$sefurl->'client','feedback',''}" class="{$crnt_feedback}">{$lng->client_feedback} ::</a></li>
+<li {$div_messenger_none}><a href="{$site_url}/{$sefurl->'client','messenger',''}" class="{$crnt_messenger}">{$lng->client_messenger} ::</a></li>
+<li {$div_ttf_none}><a href="{$site_url}/{$sefurl->'client','ttf',''}" class="{$crnt_ttf}">{$lng->client_ttf} ::</a></li>
+<li {$div_affiliate_none}><a href="{$site_url}/{$sefurl->'client','affiliate',''}" class="{$crnt_affiliate}">{$lng->client_affiliate} ::</a></li>
+<li {$div_classite_none}><a href="{$site_url}/index.php?a=stats&amp;u={$username}" class="{$crnt_stats}">{$lng->stats_header} ::</a></li>
+<li {$div_edit_none}><a href="{$site_url}/{$sefurl->'client','edit',''}" class="{$crnt_edit}">{$lng->edit_header} ::</a></li>
+<li><a href="{$site_url}/{$sefurl->'client','logout',''}">{$lng->client_logout} ::</a></li>
+</ul>
+<br />
+<!--p align="right"><span id="dispDate">-</span> ::<br /><span id="dispTime">-</span> ::</p-->
+</td><td class="darkbg" style="width: 1px;">
+</td><td valign="top" style="padding-left: 8px;">
+<h2>{$header}</h2><br />
+{$client_warn_not_pay}
+{$client_warn_bad_email}
+<br />
+{$client_content}
+</td></tr>
+</table>
+<br /><br />

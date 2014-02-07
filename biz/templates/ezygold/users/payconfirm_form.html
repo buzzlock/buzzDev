@@ -1,0 +1,16 @@
+<fieldset>
+<legend>{$lng->client_payconfirm_details}</legend><br />
+<label>
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor('mbody' , "100%" , "200" , 'EzyGold2');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.Value = "{$mbody}" ;
+  oFCKeditor.Create();
+</script>
+<!--textarea style="width: 100%;" rows="15" name="mbody" id="mbody" class="fcktexteditor"></textarea--><br /><br />
+</label>
+</fieldset>
+<input name="msubject" type="hidden" value="{$lng->client_payconfirm} :: {$username}" /><input name="mtype" type="hidden" value="4" />
+<br />
+<input name="reset" type="reset" class="button" value="{$lng->g_button_reset}" />&nbsp;
+<input name="submit" type="submit" class="button" value="{$lng->g_button_submit}"{$btn_disabled} />

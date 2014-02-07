@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>{$site_name} - {$header}</title>
+<meta http-equiv="Content-Type" content="text/html;charset={$lng->charset}" />
+<meta name="description" content="{$site_description}">
+<meta name="keywords" content="{$site_keywords}">
+<link rel="SHORTCUT ICON" href="{$skins_url}/{$skin_name}/images/favicon.ico" type="image/x-icon">
+<link rel="alternate" href="{$site_url}/{$feed}" type="application/rss+xml" title="{$site_name}" />
+<link rel="stylesheet" type="text/css" media="screen" href="{$skins_url}/{$skin_name}/default.css" />
+{$include_jscripts}
+{$popover_head}
+</head>
+
+<body background="{$skins_url}/{$skin_name}/images/page_bg.jpg">
+{$popover_body}
+{$test_mode}
+<div align="center"><table align="center" cellspacing="0" width="620" class='tableborder'><tr><td class="tablebg" width="100%" valign="top" style="padding:5px">
+
+<table align="center" cellspacing="0" cellpadding="0" width="100%" border=1 bordercolor="#FF8C00" style="border-collapse: collapse">
+<tr><td align="center">
+<h1>Header Squeeze Page Here</h1>
+</td></tr>
+
+<!-- start top menu -->
+<tr>
+<td>
+<table width="100%" cellpadding=2 cellspacing=1><tr><td class="mediumbg" align="center">
+<span {$span_hidefrom_mainpage}></span><strong>
+| <a href="{$site_url}/" class="menu">{$lng->main_menu_home}</a>
+| <a href="{$site_url}/{$sefurl->'client','',''}" class="menu">{$lng->main_menu_client}</a>
+|
+</strong></td></tr></table></td></tr></table>
+<!-- end top menu -->
+
+<table width="100%" border="0" cellpadding=2 cellspacing=1><tr><td align="left" width="33%"><font color="#CC6600"><strong>{$current_language}</strong></font></td><td align="center" width="34%"><span style="background-color:#FF9">.:: Referred by ::.<br /><b>{$referrer_fullname}</b></span></td><td align="right" width="33%">{$language_selector}</td></tr></table>
+
+<br />
+<table align="center" cellspacing="0" cellpadding="0" width="700" style="clear: both;">
+<tr><td align="left">
+
+<p><h1>Header Text Here Header Text Here</h1></p>
+<p>Squeeze page content here.</p>
+<p>
+{$squeezer_form}
+</p>
+
+</td></tr>
+</table>
+<p style="margin: 0px; height: 16px;"></p>
+
+<table width="100%" cellpadding=2 cellspacing=1 border=1 bordercolor="#FF8C00" style="border-collapse: collapse">
+<tr><td class="mediumbg" align="center">
+<span {$span_hidefrom_mainpage}></span><strong>
+| <a href="{$site_url}/" class="menu">{$lng->main_menu_home}</a>
+| <a href="{$site_url}/{$sefurl->'terms','',''}" class="menu">{$lng->main_menu_terms}</a>
+|
+</strong></td></tr></table>
+</td></tr>
+</table>
+
+<div class="bottom">
+{$lng->main_executiontime}: {$execution_time} | <b>{$lng->main_members}: {$num_members}</b> | {$lng->main_visitor}: <b>{$guest_visitor}</b> {$lng->main_visitor_guests} and <b>{$member_visitor}</b> {$lng->main_visitor_members}<br />
+{$site_powered_by}
+</div>
+
+{$include_footcode}
+</body>
+</html>

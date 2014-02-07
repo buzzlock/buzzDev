@@ -1,0 +1,16 @@
+<form action="{$sefurl->'mylead','',''}" method="post" name="mylead">
+<input type="hidden" name="i" value="{$lid}" />
+<input type="hidden" name="l" value="{$l}" />
+<input type="hidden" name="g" value="{$g}" />
+<fieldset>
+<legend>{$lng->subscriber_info}</legend><br />
+<table>
+<tr><td>{$lng->subscriber_name}</td><td>: {$lname}</td></tr>
+<tr><td>{$lng->subscriber_email}</td><td>: {$lemail}</td></tr>
+<tr><td colspan="2"><br />{$lng->subscriber_remove}</td></tr>
+</table>
+</fieldset>
+<br />
+<input name="remove" type="submit" class="button" value="{$lng->subscriber_remove_button}" />&nbsp;
+<input name="update" type="button" class="button" onclick="javascript:window.location='{$update_link}'" value="{$lng->subscriber_update_button}" />
+</form>

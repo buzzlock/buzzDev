@@ -1,0 +1,24 @@
+<fieldset>
+<legend>{$lng->client_renewal}</strong></legend><br />
+
+<!--img src="{$site_url}/images/paywithewallet.gif" alt="Pay using E-Wallet Balance" title="Pay with E-Wallet Balance" border="0" style="border-style:none;">
+<br /><br /-->
+
+{$lng->client_totalewallet} : <strong>{$currencysym}{$edompet} {$currencycode}</strong>
+<br /><br />
+{$lng->renew_ewtotalpay} : {$currencysym}{$totalewallet} {$currencycode}
+<br /><br />
+
+<em>{$lng->renew_ewpay_confirm}</em>
+
+<br /><br />
+
+<form method="post" action="">
+<input type="image" src="{$site_url}/images/paywithewallet{$imgbtn_dis}.gif" alt="Pay using E-Wallet Balance" title="Pay with E-Wallet Balance" border="0" style="border-style:none;" value="Submit"{$btnewallet_dis} />
+<input type='hidden' name='ew_token' value='{$tokenewallet}'>
+<input type='hidden' name='ew_amount' value='{$totalewallet}'>
+<input type='hidden' name='ewp' value='2'>
+</form>
+
+<br />
+</fieldset>

@@ -1,0 +1,111 @@
+/*
+# -------------------------------------------------------------------------------------------------------- #
+# Written by C. Era Setiawan                                                                               #
+# Website: http://www.ezygold.com                                                                          #
+# Copyright ©2007-2011 All Rights Reserved Worldwide.                                                      #
+# -------------------------------------------------------------------------------------------------------- #
+# L . I . C . E . N . S . E                                                                                #
+# -------------------------------------------------------------------------------------------------------- #
+*/
+
+EzyGold Complete Terms and Conditions, Refund Policy and End User License Agreements:
+http://www.ezygold.com/terms
+
+***
+
+EzyGold Licence Agreement
+------------------------------------
+
+	By installing and using programs/scripts, produced by EzyGold.com on your server, you agree to 
+	the following terms and conditions:
+	1) 	EzyGold license grants you the right to run one instance (a single installation) of one 
+		of a program/script, produced by EzyGold.com on one web server and one web site for each
+		license purchased. Each license may power one instance of a program/script on one domain. 
+		For each installed instance of a program/script, a separate license is required.
+
+	2) 	All customers may include the URL where a EzyGold will be used.
+
+	3) 	At the owners risk, anyone may alter un-encryption files, produced by EzyGold.com, but 
+		said programs/scripts, altered or otherwise, may not be distributed to entities beyond the 
+		license holder without the explicit written permission of EzyGold.com. Said modifications 
+		are at the risk of the owner/user and will not be supported by EzyGold.com
+
+	4) 	All EzyGold copyright notices contained therein must remain unchanged in the said program/
+		script. Copyright notices contained therein must not be removed or altered under any 
+		circumstances without the express permission of EzyGold.com. Copyright restrictions for 
+		said products must be strictly adhered to and included in all documentations.
+
+	5) 	Registered users may modify the EzyGold un-encryption code or files for their personal use 
+		(at their own risk), but any altered code must not be redistributed or resold in any form.
+
+	6) 	EzyGold programs/scripts may not be used for anything that would represent or is associated
+		with an Intellectual Property Violation, including, but not limited to, engaging in any 
+		activity that infringes or misappropriates the intellectual property rights of others, 
+		including copyrights, trademarks, service marks, trade secrets, software piracy, and 
+		patents held by individuals, corporations, or other entities.
+
+	7) 	If any terms are violated, EzyGold.com reserves the right to revoke license's at any time. 
+		No license refunds will be granted for revoked licenses. EzyGold.com reserves the right to 
+		modify these terms at any time. This license is governed by the laws of Canada, the 
+		United States of America and some other countries.
+
+	8) 	License fees are non-refundable. We encourage you to verify that the server which hosts your 
+		web site supports program/script requirements, before purchasing a program/script from
+		EzyGold.com. For complete system requirements, please visit the requirements page that
+		accompanies each program/script.
+
+THE LAW
+-------
+
+	Your acquisition and use of software is governed by copyright law and the license agreement 
+	accompanying the software. Therefore, you should be aware that it is a breach of the license 
+	agreement and it may be illegal:
+
+	1)	To copy or distribute software or its accompanying documentation, including programs, 
+		applications, data, codes, and manuals, without permission or a license from the copyright 
+		owner;
+	2)	To run a copyrighted software program on two or more computers simultaneously unless this 
+		is specifically allowed by the license agreement;
+	3)	For organizations to consciously or unconsciously encourage, allow, compel, or pressure 
+		employees to make or distribute unauthorized software copies;
+	4)	To infringe the laws against unauthorized software copying because someone requests or 
+		compels it;
+	5)	To lend software so that a copy can be made or to copy software while it is lent to you;
+	6)	To make, import, possess, or deal with articles intended to facilitate the removal of 
+		any technical means applied to protect the software program.
+
+Disclaimer of Warranty
+----------------------
+
+	THIS SOFTWARE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND WITHOUT WARRANTIES AS TO 
+	PERFORMANCE OR MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.
+
+	EzyGold.com, is not liable for the content contained or added to a program/script as provided 
+	by EzyGold.com
+
+	The user must assume the entire risk of using the program. ANY LIABILITY OF THE SELLER WILL BE 
+	LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT.
+
+	From time to time, EzyGold.com, may inspect your registration integrity. This will be done 
+	without collecting any information whatsoever about yourself, your server or your users. 
+	The only information verified will be your license number and the domain on which the software
+	is run. Should we discover discrepancies in the software usage, be aware that you may lose
+	your license and may face legal actions for Software Piracy.
+
+What are the penalties for pirating software?
+---------------------------------------------
+	
+	If caught with pirated software, the infringing company or individual may be liable under 
+	both civil and criminal law. A civil action may be instituted for injunctive relief, 
+	actual damages (including infringement profits), or statutory damages up to $20,000 per 
+	infringement. Criminal penalties for copyright infringement include fines up to 
+	$1,000,000 and jail terms up to five years, or both.
+
+
+
+EzyGold Team
+------------
+Support: http://www.ezygold.com/helpdesk
+
+
+

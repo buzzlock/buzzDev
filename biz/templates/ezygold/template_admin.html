@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{$lng->langiso}" lang="{$lng->langiso}">
+<head>
+<title>{$site_name} - {$header}</title>
+<meta http-equiv="Content-Type" content="text/html;charset={$lng->charset}" />
+<meta name="description" content="{$site_description}">
+<meta name="keywords" content="{$site_keywords}">
+<link rel="SHORTCUT ICON" href="{$skins_url}/{$skin_name}/images/favicon.ico" type="image/x-icon">
+<link rel="alternate" href="{$site_url}/{$feed}" type="application/rss+xml" title="{$site_name}" />
+<link rel="stylesheet" type="text/css" media="screen" href="{$skins_url}/{$skin_name}/defaultadm.css" />
+{$include_jscripts}
+</head>
+
+<body background="{$skins_url}/{$skin_name}/images/page_bg2.gif" onLoad="clock(); ReplaceAllTextareas(); init();">
+
+<div id="loading" style="position:absolute; width:100%; text-align:center; top:300px;">
+<img src="{$skins_url}/{$skin_name}/images/img_loader.gif" border=0 style="border:#C60 solid 1px; background-color:#FFD; padding: 20px;">
+</div>
+<script>
+	 var ld=(document.all);
+	 var ns4=document.layers;
+	 var ns6=document.getElementById&&!document.all;
+	 var ie4=document.all;
+	 if (ns4) ld=document.loading;
+	 else if (ns6) ld=document.getElementById("loading").style;
+	 else if (ie4) ld=document.all.loading.style;
+	 function init() {
+		 if(ns4){ld.visibility="hidden";}
+		 else if (ns6||ie4) ld.display="none";
+	 }
+</script>
+
+{$test_mode}
+<div align="center">
+<table align="center" cellspacing="0" width="98%" class='tableborder'><tr><td class="tablebg" width="100%" valign="top" style="padding:0px">
+
+<table align="center" cellspacing="0" cellpadding="0" width="100%" border=0 bordercolor="#FF8C00" style="border-collapse: collapse;"><tr><td bgcolor="#FDCC54" align="left">
+<img src="{$skins_url}/{$skin_name}/images/logo_admin.jpg" alt="{$site_name}" border="0" /></td><td bgcolor="#FDCC54" align="center">
+<form method="get" action="index.php">
+<input type="text" name="keywrd" style="width:150;" />&nbsp;
+<input type="hidden" name="a" value="admin" /><input type="hidden" name="b" value="manage" /><input type="hidden" name="gs" value="1" /><input type="hidden" name="infield" value="all" />
+<input type="submit" value="Members Locator" class="button" style="width:150;" />
+</form>
+</td></tr>
+<tr><td colspan="2">
+<table width="100%" cellpadding=3 cellspacing=0><tr><td class="menu" align="center"><strong>
+<a href="{$site_url}/" class="{$m_acrnt_}">{$lng->main_menu_home}</a>
+<a href="{$site_url}/{$sefurl->'details','',''}" class="{$m_acrnt_details}">{$lng->main_menu_info}</a>
+<span  {$div_dlbuilder_none}><a href="{$site_url}/{$sefurl->'programs','',''}" class="{$m_acrnt_programs}">{$lng->main_menu_program}</a> </span>
+<a href="{$site_url}/{$sefurl->'join','',''}" class="{$m_acrnt_join}">{$lng->main_menu_join}</a>
+<a href="{$site_url}/{$sefurl->'admin','',''}" class="{$m_acrnt_admin}">{$lng->a_header}</a>
+<a href="{$site_url}/{$sefurl->'news','',''}" class="{$m_acrnt_news}">{$lng->main_menu_news}</a>
+<a href="{$site_url}/{$sefurl->'faqs','',''}" class="{$m_acrnt_faqs}">{$lng->main_menu_faq}</a>
+<a href="{$site_url}/{$sefurl->'contact','',''}" class="{$m_acrnt_contact}">{$lng->main_menu_contact}</a>
+</strong></td></tr></table>
+</td></tr></table>
+
+<br />
+<table align="center" cellspacing="0" cellpadding="2" width="98%" style="clear: both;">
+<tr><td align="left">{$content}</td></tr>
+</table>
+
+<p style="margin: 0px; height: 16px;"></p>
+
+<table width="100%" cellpadding=3 cellspacing=0 border=0 bordercolor="#FF8C00" style="border-collapse: collapse">
+<tr><td class="menuf" align="center" colspan="2" style="border-bottom: #E4B750 dotted 1px;"><strong>
+<a href="#" title="Go to Top">^</a> 
+| <a href="{$site_url}/" class="{$m_acrnt_}">{$lng->main_menu_home}</a>
+| <a href="{$site_url}/{$sefurl->'details','',''}" class="{$m_acrnt_details}">{$lng->main_menu_info}</a>
+<span  {$div_estore_none}>| <a href="{$site_url}/{$sefurl->'order','',''}" class="{$m_acrnt_order}">{$lng->estore_menu_order}</a> </span>
+| <a href="{$site_url}/{$sefurl->'join','',''}" class="{$m_acrnt_join}">{$lng->main_menu_join}</a>
+| <a href="{$site_url}/{$sefurl->'news','',''}" class="{$m_acrnt_news}">{$lng->main_menu_news}</a>
+| <a href="{$site_url}/{$sefurl->'faqs','',''}" class="{$m_acrnt_faqs}">{$lng->main_menu_faq}</a>
+| <a href="{$site_url}/{$sefurl->'subscriber','',''}" class="{$m_acrnt_subscriber}">{$lng->main_menu_subscriber}</a>
+| <a href="{$site_url}/{$sefurl->'testimonials','',''}" class="{$m_acrnt_testimonials}">{$lng->main_menu_testimonials}</a>
+| <a href="#" title="Go to Top">^</a>
+</strong>
+<br />
+</td></tr>
+<tr>
+<td width="50%" style="background-color: #FEF0C7; border-top: #999 dotted 1px; padding: 10px; text-align: right" valign="top">
+<b>{$lng->a_edit_active} {$lng->main_members}: {$num_members}</b><br />
+{$lng->a_lead_header} / {$lng->a_lead_text}: <b>{$num_leads}</b><br />
+{$lng->main_executiontime}: {$execution_time}<br />
+{$lng->main_queries}: {$num_queries}
+</td>
+<td style="background-color: #FEF0C7; border-top: #999 dotted 1px; padding: 10px; text-align: left;" valign="top">
+{$lng->main_visitor}: <b>{$guest_visitor}</b> {$lng->main_visitor_guests} and <b>{$member_visitor}</b> {$lng->main_visitor_members}<br />
+<br />
+<div class="bottom">
+{$site_powered_by}<br />
+{$ezygold_version}
+</div>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+<span style="color: #999; font-size:10px;">We recommend FireFox 9+ for best viewing of {$site_name} Admin CP</span>
+<br />
+
+{$include_footcode}
+</body>
+</html>

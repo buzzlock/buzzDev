@@ -1,0 +1,40 @@
+<!--br />
+<fieldset>
+<legend>Referrer Details</legend><br />
+<table border=0 cellspacing=0 cellpadding=4>
+{$tagmyref_user_photo}
+<tr>
+<td width=150><label>{$lng->g_username}</label></td>
+<td width=7>:</td><td><label><strong>{$tagmyref_username}</strong></label></td>
+</tr>
+<tr>
+<td><label>{$lng->g_fullname}</label></td>
+<td>:</td><td><label><strong>{$tagmyref_fullname}</strong></label></td>
+</tr>
+<tr>
+<td><label>{$lng->g_email}</label></td>
+<td>:</td><td><label><a href="index.php?a=client&amp;b=messenger&amp;mailto={$tagmyref_username}#update" title="{$lng->a_msgr_button_create}"><strong>{$tagmyref_email}</strong></a></label></td>
+</tr>
+</table>
+</fieldset-->
+
+<br />
+<fieldset>
+<legend>{$lng->client_spr_details}</legend><br />
+<table border=0 cellspacing=0 cellpadding=4>
+{$myspr_user_photo}
+<tr>
+<td width=150><label>{$lng->g_username}</label></td>
+<td width=7>:</td><td><label><strong>{$myspr_username}</strong>{$cashgift_inviterlevel}</label></td>
+</tr>
+<tr>
+<td><label>{$lng->g_fullname}</label></td>
+<td>:</td><td><label><strong>{$myspr_name}</strong></label></td>
+</tr>
+<tr>
+<td><label>{$lng->g_email}</label></td>
+<td>:</td><td><label><a href="index.php?a=client&amp;b=messenger&amp;mailto={$myspr_username}#update" title="{$lng->a_msgr_button_create}"><strong>{$myspr_email}</strong></a></label></td>
+</tr>
+{$client_sponsorfull}
+</table>
+</fieldset>

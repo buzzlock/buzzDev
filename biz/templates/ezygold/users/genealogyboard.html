@@ -1,0 +1,23 @@
+<!--table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
+<form method="get" action="index.php">
+<td style="vertical-align:middle">
+<input type="checkbox" class="checkbox" name="isall" value="1"{$isall_checked}/> <input type="submit" value="Show All" class="button" />
+<input type="hidden" name="y" value="1" />
+<input type="hidden" name="a" value="client" />
+<input type="hidden" name="b" value="genealogy" />
+</td>
+</form>
+<td align="right">{$genealogy_cycling}</td>
+</tr></table>
+<br />
+<hr size="1" />
+<br />
+
+<table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
+<td>{$genealogy_tree}</td>
+</tr></table-->
+<div style="float: right;"><a href="genealogyview.php?idupliner={$idupliner}" target="_blank"><img src="{$site_url}/images/dtree/ezytree_openall.gif" border="0" /></a></div>
+<iframe width="100%" height="500" frameborder="0" align="top" scrolling="auto" src="genealogyview.php?idupliner={$idupliner}">
+</iframe>
+
+<br />

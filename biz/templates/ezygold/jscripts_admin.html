@@ -1,0 +1,243 @@
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/dtree.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jquery152.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/flowplayer-3.2.6.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/helphint.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/selectCombo.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jscolor.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jquery.cookie.js"></script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/customFuncAdm.js"></script>
+
+<link type="text/css" rel="stylesheet" href="{$site_url}/etcs/jquery.jgrowl.css" />
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jquery.jgrowl.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="{$site_url}/etcs/jquery.qtip.min.css" />
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jquery.qtip.min.js"></script>
+
+<script language='JavaScript' type="text/javascript">
+<!--
+	var theTime = new Date ("{$server_datetime}");
+	var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+//-->
+</script>
+<script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/clock.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function vercodereloaded() {
+	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
+}
+function out(username)
+{
+  image = new Image();
+  image.src= '{$site_url}/index.php?a=out&u=' + username;
+}
+
+function addTexTag(isform, text)
+{
+	var myFormField = isform;
+	//IE support
+	if (document.selection) {
+		myFormField.focus();
+		sel = document.selection.createRange();
+		sel.text = text;
+	}
+	//MOZILLA/NETSCAPE support
+	else if (myFormField.selectionStart || myFormField.selectionStart == '0') {
+		var startPos = myFormField.selectionStart;
+		var endPos = myFormField.selectionEnd;
+		myFormField.value = myFormField.value.substring (0, startPos) + text + myFormField.value.substring (endPos, myFormField.value.length);
+	} else {
+		myFormField.value += text;
+	}
+}
+    
+function yesno_alert(warnmsg,locasi){
+	if (confirm(warnmsg) != "0"){
+		window.location = locasi;
+	}
+}
+
+function yesno_alert_post(warnmsg){
+	question = confirm(warnmsg)
+	if (question !="0")	return true;
+	else return false;
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function getElementsByClass(searchClass,node,tag) {
+	var classElements = new Array();
+	if ( node == null )
+		node = document;
+	if ( tag == null )
+		tag = '*';
+	var els = node.getElementsByTagName(tag);
+	var elsLen = els.length;
+	var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+	for (i = 0, j = 0; i < elsLen; i++) {
+		if ( pattern.test(els[i].className) ) {
+			classElements[j] = els[i];
+			j++;
+		}
+	}
+	return classElements;
+}
+</script>
+<script type="text/javascript" src="{$site_url}/fckeditor/fckeditor.js"></script>
+
+<script type="text/javascript">
+function ReplaceAllTextareas() {
+  var allTextAreas = getElementsByClass("tinymce", document, "textarea");
+  for (var i=0; i < allTextAreas.length; i++) {
+  var oFCKeditor = new FCKeditor( allTextAreas[i].name , "100%" , "300" , '{$wysiwyg_toolbar}') ;
+  //var oFCKeditor = new FCKeditor('content');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.ReplaceTextarea();
+  }
+}
+</script>
+
+  <!-- calendar stylesheet -->
+  <link rel="stylesheet" type="text/css" media="all" href="{$site_url}/etcs/calendar-win2k-1.css" title="win2k-1" />
+  <!-- main calendar program -->
+  <script type="text/javascript" src="{$site_url}/etcs/calendar.js"></script>
+  <!-- language for the calendar -->
+  <script type="text/javascript" src="{$site_url}/etcs/calendar-en.js"></script>
+  <!-- the following script defines the Calendar.setup helper function, which makes adding a calendar a matter of 1 or 2 lines of code. -->
+  <script type="text/javascript" src="{$site_url}/etcs/calendar-setup.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('#find_tbl').selectCombo("{$site_url}/load_fields.php", '#find_fld', {hidetarget: false});
+	<!--$('#undata1').selectCombo("{$site_url}/load_pplans.php", '#pplan1', {hidetarget: false});-->
+});
+
+$(document).ready(function() {
+    {$pqry1}
+    {$pqry2}
+    {$pqry3}
+    {$pqry4}
+    {$pqry5}
+    $('#usernameLoading').hide();
+	$('#username').blur(function(){
+	  $('#usernameLoading').show();
+      $.post("verify_username.php?c_id={$id}", {
+        username: $('#username').val()
+      }, function(response){
+        $('#usernameResult').fadeOut();
+        setTimeout("finishAjax('usernameResult', '"+escape(response)+"')", 400);
+      });
+    	return false;
+	});
+
+	// qTip display
+	qTip_options = {
+		position: {
+			my: 'bottom center',
+			target: 'mouse',
+			viewport: $(window), // Keep it on-screen at all times if possible
+			adjust: {
+				x: 0,  y: -10
+			}
+		},
+		hide: {
+			fixed: true // Helps to prevent the tooltip from hiding ocassionally when tracking!
+		},
+		style: 'qTipTooltip'
+	};
+	$('a[title]').qtip(qTip_options);
+	$('img[title]').qtip(qTip_options);
+	$('input[title]').qtip(qTip_options);
+
+	// --- start alertme ---
+	ezyalertData();
+	var refreshId = setInterval(ezyalertData, 1000*14*1);
+	function ezyalertData() {
+		$.ajax({
+				type: "POST",
+				url: "ezyalertData.php",
+				dataType: 'text',
+				data: 'q=yes&rnd='+ Math.random(),
+				success: function(data){
+					if (data == 'o;') { 
+						$.jGrowl('Please login...', { life: 7500, position: 'bottom-right', theme: 'jGrowlnotered' });
+						clearInterval(refreshId);
+					}
+					else if (data.length > 0) { 
+						$.jGrowl(data, { life: 5000, position: 'bottom-right' });
+					}
+				},
+				error: function(){
+					clearInterval(refreshId);
+				},
+				complete: function(){
+				}
+		});
+	}
+	// --- end alertme ---
+
+	// qTip ajax load
+	// Make sure to only match links to dataviewer with a rel tag
+	$('a[id*=dataviewer][rel]').each(function()
+	{
+	  // We make use of the .each() loop to gain access to each element via the "this" keyword...
+	  $(this).qtip(
+	  {
+		 content: {
+			// Set the text to an image HTML string with the correct src URL to the loading image you want to use
+			text: 'Loading...',
+			ajax: {
+			   url: $(this).attr('rel') // Use the rel attribute of each element for the url to load
+			},
+			title: {
+			   //text: 'Data Viewer - ' + $(this).text(), // Give the tooltip a title using each elements text
+			   button: true
+			}
+		 },
+		 position: {
+			at: 'bottom center', // Position the tooltip above the link
+			my: 'top center',
+			viewport: $(window) // Keep the tooltip on-screen at all times
+		 },
+		 show: {
+			event: 'click',
+			solo: true // Only show one tooltip at a time
+		 },
+		 hide: 'unfocus',
+		 style: {
+			//classes: 'ui-tooltip-dataviewer ui-tooltip-light ui-tooltip-jtools',
+			classes: 'ui-tooltip-dataviewer ui-tooltip-light',
+		 }
+	  })
+	  
+	  // Make sure it doesn't follow the link when we click it
+	  .click(function() { return false; });
+	});
+	
+});
+
+function finishAjax(id, response) {
+  $('#usernameLoading').hide();
+  $('#'+id).html(unescape(response));
+  $('#'+id).fadeIn();
+} //finishAjax
+</script>
+
+<script language="JavaScript1.2">
+<!--				
+function hideshow_togle(which_hideshowid, imgid_hideshowid){
+	if (!document.getElementById) return
+	if (which_hideshowid.style.display == "none"){
+		which_hideshowid.style.display =  ""
+	} else {
+		which_hideshowid.style.display = "none";
+	}
+}
+
+function js_strpos(haystack, needle, offset) {
+	var i = (haystack+'').indexOf(needle, (offset || 0));
+	return i === -1 ? false : i;
+}
+//-->
+</script>

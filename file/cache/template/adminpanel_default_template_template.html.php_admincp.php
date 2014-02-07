@@ -1,5 +1,5 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php /* Cached: January 30, 2014, 1:17 am */ ?>
+<?php /* Cached: February 6, 2014, 9:55 pm */ ?>
 <?php 
 /**
  * [PHPFOX_HEADER]
@@ -181,7 +181,7 @@
 						<div id="breadcrumb_content_holder">
 <?php endif; ?>
 <?php if (!$this->bIsSample):  $this->getLayout('error');  endif; ?>
-<?php if (!$this->bIsSample): ?><div id="site_content"><?php if (isset($this->_aVars['bSearchFailed'])): ?><div class="message">Unable to find anything with your search criteria.</div><?php else:  $sController = "admincp.maintain/cache";  if ( Phpfox::getLib("template")->shouldLoadDelayed("admincp.maintain/cache") == true ): ?>
+<?php if (!$this->bIsSample): ?><div id="site_content"><?php if (isset($this->_aVars['bSearchFailed'])): ?><div class="message">Unable to find anything with your search criteria.</div><?php else:  $sController = "admincp.menu/index";  if ( Phpfox::getLib("template")->shouldLoadDelayed("admincp.menu/index") == true ): ?>
 <div id="delayed_block_image" style="text-align:center; padding-top:20px;"><img src="http://localhost/theme/frontend/default/style/default/image/ajax/add.gif" alt="" /></div>
 <div id="delayed_block" style="display:none;"><?php echo Phpfox::getLib('phpfox.module')->getFullControllerName(); ?></div>
 <?php else:  Phpfox::getLib('phpfox.module')->getControllerTemplate();  endif;  endif; ?></div><?php endif; ?>

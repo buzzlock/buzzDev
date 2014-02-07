@@ -1,0 +1,22 @@
+<br />
+<fieldset>
+<a href="{$site_url}/id/{$user_url_id}" title="{$site_name}"><img src="{$banner_file}" alt="{$site_name}" border="0" /></a>
+
+<br />
+<p>
+{$lng->preads_banner_pretext}
+</p>
+
+<form name="txt">
+<textarea readonly="readonly" name="txt" rows="4" style="width: 100%;">&lt;a href="{$site_url}/id/{$user_url_id}" title="{$site_name}">&lt;img src="{$banner_file}" alt="{$site_name} :: {$banner_info}" border="0" />&lt;/a></textarea>
+<br />
+<script language="javascript" type="text/javascript">
+var browserIE = "Microsoft Internet Explorer";
+if (navigator.appName == browserIE) 
+	{document.write("<input type='button' class='button' value='Select &amp; Copy' onClick='javascript:this.form.txt.focus();this.form.txt.select();initiatecopy();copyit();' name='button'>");}
+else
+	{document.write("<input type='button' class='button' value='Select' onClick='javascript:this.form.txt.focus();this.form.txt.select();' name='button'>"); }
+</script>
+</form>
+</fieldset>
+<br />

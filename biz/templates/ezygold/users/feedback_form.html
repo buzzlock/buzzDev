@@ -1,0 +1,24 @@
+<fieldset>
+<legend>{$lng->a_fback_header}</legend><br />
+<label>{$lng->g_sendto}: <strong>{$user_fromname}</strong><br /><br />
+</label>
+<label>{$lng->a_fback_tb_subject}<br />
+<input type="text" name="msubject" value="{$re_msubject}" size="50" /><br /><br />
+</label>
+<label>{$lng->a_fback_content}<br />
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor('mbody' , "100%" , "200" , 'EzyGold2');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.Create();
+</script>
+<!--textarea style="width: 100%;" rows="15" name="mbody" id="mbody" class="fcktexteditor"></textarea--><br /><br />
+</label>
+<label>{$lng->a_fback_type}<br />
+<select name="mtype">
+	  {$menu_type}
+</select><br />
+</label>
+</fieldset>
+<br />
+<input name="reset" type="reset" class="button" value="{$lng->g_button_reset}" />&nbsp;
+<input name="submit" type="submit" class="button" value="{$lng->g_button_submit}" />

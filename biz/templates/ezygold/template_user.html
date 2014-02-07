@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{$lng->langiso}" lang="{$lng->langiso}">
+<head>
+<title>{$site_name} - {$header}</title>
+<meta http-equiv="Content-Type" content="text/html;charset={$lng->charset}" />
+<meta name="description" content="{$site_description}">
+<meta name="keywords" content="{$site_keywords}">
+<link rel="SHORTCUT ICON" href="{$skins_url}/{$skin_name}/images/favicon.ico" type="image/x-icon">
+<link rel="alternate" href="{$site_url}/{$feed}" type="application/rss+xml" title="{$site_name}" />
+<link rel="stylesheet" type="text/css" media="screen" href="{$skins_url}/{$skin_name}/default.css" />
+{$include_jscripts}
+</head>
+
+<body background="{$skins_url}/{$skin_name}/images/page_bg3.gif" onLoad="clock();">
+{$test_mode}
+<div id="article" align="center">
+<table align="center" cellspacing="0" width="780px" class='tableborder'>
+<tr><td class="tablebg" width="100%" valign="top" style="padding:1px">
+
+    <table align="center" cellspacing="0" cellpadding="0" width="100%" border=0 bordercolor="#FF8C00" style="border-collapse: collapse; background-image: url({$skins_url}/{$skin_name}/images/logo.jpg); background-repeat: no-repeat;"><tr>
+    	<td align="left" width="50%" style="height: 92px; padding-bottom: 7px; vertical-align: bottom;"><font color="#666600"><strong>{$addon_gootrans_text}</strong></font></td>
+        <td align="right" width="50%" style="height: 92px; padding-bottom: 7px; vertical-align: bottom;">{$addon_gootrans_flags}</td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">
+    <table width="100%" cellpadding=3 cellspacing=0><tr><td class="menu" align="center">
+    <span {$span_hidefrom_mainpage}></span><strong> <a href="{$site_url}/" class="{$m_acrnt_}">{$lng->main_menu_home}</a> <a href="{$site_url}/{$sefurl->'details','',''}" class="{$m_acrnt_details}">{$lng->main_menu_info}</a> <span {$div_dlbuilder_none}> <a href="{$site_url}/{$sefurl->'programs','',''}" class="{$m_acrnt_programs}">{$lng->main_menu_program}</a> </span> <span {$div_register_none}>  <a href="{$site_url}/{$sefurl->'join','',''}" class="{$m_acrnt_join}">{$lng->main_menu_join}</a> </span> <a href="{$site_url}/{$sefurl->'client','',''}" class="{$m_acrnt_client}">{$lng->main_menu_client}</a> <a href="{$site_url}/{$sefurl->'news','',''}" class="{$m_acrnt_news}">{$lng->main_menu_news}</a> <a href="{$site_url}/{$sefurl->'faqs','',''}" class="{$m_acrnt_faqs}">{$lng->main_menu_faq}</a> <a href="{$site_url}/{$sefurl->'contact','',''}" class="{$m_acrnt_contact}">{$lng->main_menu_contact}</a> </strong></td></tr></table>
+    </td></tr></table>
+	<br />
+    <table width="98%" border="0" align="center" cellpadding=2 cellspacing=2>
+    <tr>
+        <form method="get" action="">{$mypplan_hidden_input}
+        <td align="right"><select name="set_defppid">{$mypplan_menu}</select> <input class="button" type="submit" value="GO" /></td>
+        </form>
+	</tr>
+	</table>
+    
+    <!-- start content -->
+    <table align="center" cellspacing="0" cellpadding="2" width="98%" style="clear: both;">
+    <tr><td align="left">{$featured_header}</td></tr>
+    <tr><td align="left">{$content}</td></tr>
+    <tr><td align="left">
+        <p style="margin: 0px; height: 16px;"></p>
+        <p align="right"><img src="{$site_url}/images/i_date.gif" alt="" border="0" /> <font color="#666666"><span id="dispDate">-</span> - <span id="dispTime">-</span></font></p>
+    </td></tr>
+    </table>
+    <!-- end content -->
+    
+    <table width="100%" cellpadding=3 cellspacing=0 border=0 bordercolor="#FF8C00" style="border-collapse: collapse">
+    <tr><td class="menuf" align="center">
+    <span {$span_hidefrom_mainpage}></span><strong> | <a href="{$site_url}/" class="{$m_acrnt_}">{$lng->main_menu_home}</a> | <a href="{$site_url}/{$sefurl->'details','',''}" class="{$m_acrnt_details}">{$lng->main_menu_info}</a> <span {$div_estore_none}>| <a href="{$site_url}/{$sefurl->'order','',''}" class="{$m_acrnt_order}">{$lng->estore_menu_order}</a> </span> <span {$div_register_none}>| <a href="{$site_url}/{$sefurl->'join','',''}" class="{$m_acrnt_join}">{$lng->main_menu_join}</a> </span> | <a href="{$site_url}/{$sefurl->'faqs','',''}" class="{$m_acrnt_faqs}">{$lng->main_menu_faq}</a> | <a href="{$site_url}/{$sefurl->'subscriber','',''}" class="{$m_acrnt_subscriber}">{$lng->main_menu_subscriber}</a> | <a href="{$site_url}/{$sefurl->'testimonials','',''}" class="{$m_acrnt_testimonials}">{$lng->main_menu_testimonials}</a> | <a href="{$site_url}/{$sefurl->'terms','',''}" class="{$m_acrnt_terms}">{$lng->main_menu_terms}</a> | </strong></td></tr></table>
+
+</td></tr>
+</table>
+
+<div class="bottom">
+{$lng->main_executiontime}: {$execution_time} | {$lng->main_queries}: {$num_queries} | <b>{$lng->main_members}: {$num_members}</b> | {$lng->main_visitor}: <b>{$guest_visitor}</b> {$lng->main_visitor_guests} and <b>{$member_visitor}</b> {$lng->main_visitor_members}<br />
+{$site_powered_by}{$cmpny_footnote}
+</div>
+</div>
+
+{$include_footcode}
+</body>
+</html>

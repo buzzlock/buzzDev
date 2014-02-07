@@ -1,0 +1,47 @@
+<fieldset>
+<legend>{$lng->client_broadcast_manage}</legend><br />
+<label>{$lng->client_broadcast_to}<br />
+<select name="send_to" onChange="isHideShow2(document.email.send_to, '-', false, 'myrefonly_hideshow')">
+<option value="--"{$is_selected5}>{$lng->a_email_to_all}</option>
+<option value="0"{$is_selected0}>{$lng->a_email_to_allmbr}</option>
+<option value="1"{$is_selected1}>&nbsp; - {$lng->a_edit_active}</option>
+<option value="2"{$is_selected2}>&nbsp; - {$lng->a_edit_expired}</option>
+<option value="3"{$is_selected3}>&nbsp; - {$lng->a_edit_inactive}</option>
+<option value="-"{$is_selected4}>{$lng->a_email_to_leads}</option>
+</select><br />
+</label>
+    <span {$myrefonly_hideshow} id="myrefonly_hideshow">
+    <label><input type="checkbox" name="myrefonly" value="1"{$myrefonly_sel} /> {$lng->client_broadcast_meto}</label><br />
+    </span>
+<br />
+<label>{$lng->g_from}<br />
+<input type="text" name="sfrom" size="50" value="{$sfrom}" readonly /><br />
+</label><br />
+<label>{$lng->a_email_subject}<br />
+<div class="{$error_style_subject}"><input type="text" name="subject" size="50" value="{$subject}" /><br />
+{$error_subject}
+</div></label><br />
+<label>{$lng->a_email_priority}<br />
+<select name="spriority">
+{$spriority_menu}</select><br /><br />
+</label>
+<div class="{$error_style_message}"><label>{$lng->a_email_message}<br />
+<textarea style="width: 99%;" rows="22" name="message">{$message}</textarea><br />
+</label><br />
+<label>{$a_news_tag} <font size="1">{$a_news_tag_note}</font></label>
+<br /><br />
+<label>{$lng->a_email_htmlmessage}<br />
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor('htmlmessage' , "100%" , "300" , 'EzyGold2');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.Value = "{$htmlmessage}";
+  oFCKeditor.Create();
+</script>
+<!--textarea style="width: 100%;" rows="30" name="htmlmessage" id="ez_wysiwyg_editor" class="tinymce">{$htmlmessage}</textarea--><br />
+{$error_message}
+</label></div><br />
+<label>{$a_news_tag_h} <font size="1">{$a_news_tag_note}</font></label>
+</fieldset>
+<br />
+<input name="submit" type="{$btn_broadcast_hidden}" class="button" value="{$lng->client_broadcast_btnstart}"{$btn_demo_dis} />
+{$broadcast_disable_warning}

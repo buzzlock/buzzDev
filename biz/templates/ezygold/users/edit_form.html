@@ -1,0 +1,205 @@
+{$lng->edit_subheader}
+<br /><br />
+<form enctype="multipart/form-data" method="post">
+<input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+<fieldset>
+<legend>{$lng->g_accdetails}</legend><br />
+<label>{$lng->g_username}<br />
+<input type="text" name="username" size="50" value="{$username}" disabled/><br /><br />
+</label>
+<div class="{$error_style_fullname}"><label>{$lng->g_fullname}<br />
+<input type="text" name="fullname" size="50" value="{$fullname}"{$field_readonly} />
+{$error_fullname}</label>
+</div><br />
+<div class="{$error_style_email}"><label>{$lng->g_email}<br />
+<input type="text" name="email" size="50" value="{$email}"{$field_readonly} />
+{$error_email}</label>
+</div><br />
+{$client_userfields}
+<label>{$lng->g_address}<br />
+<textarea cols="40" rows="5" name="address"{$field_readonly} />{$address}</textarea><br /><br />
+</label>
+<label>{$lng->g_state}<br />
+<input type="text" name="state" size="50" value="{$state}"{$field_readonly} /><br /><br />
+</label>
+<label>{$lng->g_country}<br />
+{$country_list}<br />
+</label>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>{$lng->g_accounts}</legend>
+<div{$div_no_accaval}>
+<br />
+<label>{$lng->g_manual_payout}<br />
+</label>
+</div>
+<div{$div_no_alertpay}>
+<br />
+<label>{$lng->g_alertpay}<br />
+<input type="text" name="alertpay" size="50" value="{$alertpay}"{$field_readonly} /> <a href="javascript:hideshow_togle(document.getElementById('alertpay_ipn'),'Show: {$lng->a_s_alertpayipn}')"{$hide_client_hsdirpay}><img src="{$site_url}/images/downleft.gif" border="0"></a><br />
+</label>
+<span id="alertpay_ipn" style='display:none'>
+<label><font color="#666666">.:: {$lng->a_s_alertpayipn}</font> <input type="password" name="alertpayipn" size="25" value="{$alertpayipn}" /><a href="javascript:;" data-helphint="stickyhintbox0">?</a><br /></label>
+</span>
+</div>
+<div{$div_no_paypal}>
+<br />
+<label>{$lng->g_paypal}<br />
+<input type="text" name="paypal" size="50" value="{$paypal}"{$field_readonly} /><br />
+</label>
+</div>
+<div{$div_no_lreserve}>
+<br />
+<label>{$lng->g_lreserve}<br />
+<input type="text" name="libertyreserve" size="20" value="{$libertyreserve}"{$field_readonly} /> <a href="javascript:hideshow_togle(document.getElementById('libertyreserve_sto'),'Show: {$lng->a_s_alertpayipn}')"{$hide_client_hsdirpay}><img src="{$site_url}/images/downleft.gif" border="0"></a><br />
+</label>
+<span id="libertyreserve_sto" style='display:none'>
+<label><font color="#666666">.:: {$lng->a_s_lreservesto}</font> <input type="text" name="libertyreservesto" size="25" value="{$libertyreservesto}" /><a href="javascript:;" data-helphint="stickyhintbox1">?</a><br /></label>
+<label><font color="#666666">.:: {$lng->a_s_lreservestopwd}</font> <input type="password" name="libertyreservestopwd" size="25" value="{$libertyreservestopwd}" /><br /></label>
+</span>
+</div>
+<div{$div_no_solidtrust}>
+<br />
+<label>{$lng->a_s_solidtrustpay}<br />
+<input type="text" name="solidtrustpay" size="50" value="{$solidtrustpay}"{$field_readonly} /> <a href="javascript:hideshow_togle(document.getElementById('solidtrustpay_ipn'),'Show: {$lng->a_s_alertpayipn}')"{$hide_client_hsdirpay}><img src="{$site_url}/images/downleft.gif" border="0"></a><br />
+</label>
+<span id="solidtrustpay_ipn" style='display:none'>
+<label><font color="#666666">.:: {$lng->a_s_solidtrustpass}</font> <input type="password" name="solidtrustpaypass" size="25" value="{$solidtrustpaypass}" /><br /></label>
+<label{$div_no_solidtrustsubs}><font color="#666666">.:: {$lng->a_s_solidtrustitem}</font> <input type="test" name="solidtrustpayitem" size="25" value="{$solidtrustpayitem}" /><a href="javascript:;" data-helphint="stickyhintbox3">?</a><br /></label>
+</span>
+</div>
+<div{$div_no_perfectmoney}>
+<br />
+<label>{$lng->a_s_perfectmoney}<br />
+<input type="text" name="perfectmoney" size="20" value="{$perfectmoney}"{$field_readonly} /> <a href="javascript:hideshow_togle(document.getElementById('perfectmoney_ipn'),'Show: {$lng->a_s_alertpayipn}')"{$hide_client_hsdirpay}><img src="{$site_url}/images/downleft.gif" border="0"></a><br />
+</label>
+<span id="perfectmoney_ipn" style='display:none'>
+<label><font color="#666666">.:: {$lng->a_s_perfectmoneyaltpass}</font> <input type="password" name="perfectmoneypass" size="25" value="{$perfectmoneypass}" /><br /></label>
+<label><font color="#666666">.:: {$lng->a_s_perfectmoneyname}</font> <input type="test" name="perfectmoneyname" size="25" value="{$perfectmoneyname}" /><br /></label>
+</span>
+</div>
+<div{$div_no_egold}>
+<br />
+<label>{$lng->g_egold}<br />
+<input type="text" name="egold" size="20" value="{$egold}"{$field_readonly} /><br />
+</label>
+</div>
+<div{$div_no_mbookers}>
+<br />
+<label>{$lng->g_mbookers}<br />
+<input type="text" name="moneybookers" size="50" value="{$moneybookers}"{$field_readonly} /><br />
+</label>
+</div>
+<div{$div_no_safepay}>
+<br />
+<label>{$lng->g_safepay}<br />
+<input type="text" name="safepay" size="50" value="{$safepay}"{$field_readonly} /> <a href="javascript:hideshow_togle(document.getElementById('safepay_ipn'),'Show: {$lng->a_s_alertpayipn}')"{$hide_client_hsdirpay}><img src="{$site_url}/images/downleft.gif" border="0"></a><br />
+</label>
+<span id="safepay_ipn" style='display:none'>
+<label><font color="#666666">.:: {$lng->a_s_safepayipn}</font> <input type="password" name="safepayipn" size="25" value="{$safepayipn}" /><a href="javascript:;" data-helphint="stickyhintbox2">?</a><br /></label>
+</span>
+</div>
+<div{$div_no_manualpay}>
+<br />
+<label>{$lng->g_mypayment}<br />
+<textarea cols="40" rows="3" name="mypayment"{$field_readonly} />{$mypayment}</textarea><br />
+</label>
+</div>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>{$lng->g_user_image}</legend><br />
+{$current_user_image}
+<div class="{$error_style_user_photo}"><label>{$lng->g_user_photo}<br />
+<input type="file" name="user_photo" size="50" class="inputfile" />
+{$error_user_photo}
+</label></div>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>{$lng->join_website}</legend><br />
+<div class="{$error_style_url}"><label>{$lng->g_url}<br />
+<input type="text" name="url" size="50" value="{$url}" />
+{$error_url}
+</label></div><br />
+<div class="{$error_style_title}"><label>{$lng->g_title}<br />
+<input type="text" name="title" size="50" value="{$title}" {$max_title_char_limit} />
+{$error_title}
+</label></div><br />
+<div class="{$error_style_description}"><label>{$lng->g_description}<br />
+<textarea cols="40" rows="5" name="description" {$max_descr_char_limit} />{$description}</textarea>
+{$error_description}<br />
+</label></div><br />
+<label>{$lng->g_category}<br />
+{$categories_menu}
+</label><br />
+<div {$div_classite_none}><br />
+<label>{$lng->g_showstat}<br />
+<select name="showstat">{$showstat_menu}</select><br />
+</label></div>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>{$lng->g_options}</legend><br />
+<div{$div_no_sprbypass}>
+<label>{$lng->client_mybypass}<br />
+<input type="text" name="mybypass" size="50" value="{$mybypass}" /><br /><br />
+</label>
+</div>
+<div{$hide_client_payback}>
+<label>{$lng->client_payback}<br />
+<input type="text" name="payback" size="5" value="{$payback}" />&nbsp;{$lng->client_payback_input}<br /><br />
+</label>
+</div>
+<label>{$lng->client_optinme}<br />
+<select name="optinme">
+{$optinme_menu}</select><br /><br />
+</label>
+<label>{$lng->client_mylanguage}<br />
+<select name="mylanguage">
+{$mylanguage_menu}</select><br />
+</label>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>{$lng->join_user}</legend><br />
+<label>{$lng->g_old} {$lng->g_password}<br />
+<input type="password" name="oldpassword" size="20" /> <font color=red><em>{$lng->edit_password_blank}</em></font><br /><br />
+</label>
+<label>{$lng->g_new} {$lng->g_password}<br />
+<input type="password" name="password" size="20" /> <font color=red><em>{$lng->edit_password_blank}</em></font><br />
+</label>
+</fieldset>
+<br>
+<input name="submit" type="submit" class="button" value="{$lng->edit_header}" />
+</form>
+
+    <div id="divhelphintku" class="helphintku">
+    <div style="padding:3px">
+    
+    <div id="stickyhintbox0" class="hintbox"  style="width:300px">
+    {$lng->hint_alertpay}
+    </div>
+    
+    <div id="stickyhintbox1" class="hintbox"  style="width:300px">
+    {$lng->hint_lreserve_client}
+    </div>
+    
+    <div id="stickyhintbox2" class="hintbox"  style="width:300px">
+    {$lng->hint_safepay}
+    </div>
+    
+    <div id="stickyhintbox3" class="hintbox"  style="width:300px">
+    {$lng->hint_solidtrustpaysubs}
+    </div>
+    
+    </div>
+    
+    <div class="stickystatus"></div>
+    </div>

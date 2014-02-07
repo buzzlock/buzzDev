@@ -1,0 +1,35 @@
+# ------------------------------------------------------------------------ #
+# Software Name: EzyGold - The Ulimate Network Marketing Suite             #
+# Website: http://www.ezygold.com                                          #
+# Copyright ©2007-2011 All Rights Reserved.                                #
+# ------------------------------------------------------------------------ #
+# COPYRIGHT AND LICENSE AGREEMENT.                                         #
+# REDISTRIBUTION OF THIS SCRIPT OR ANY MODIFICATIONS                       #
+# OF THIS SCRIPT IN ANY FORM IS STRICTLY PROHIBITED!                       #
+#                                                                          #
+# There are no warranties expressed or implied of any kind, and by using   #
+# this code you agree to indemnify Era Setiawan and Aratisa Corporation,   #
+# from any and all liability that might arise from it's use.               #
+# ------------------------------------------------------------------------ #
+# . h t a c c e s s                                                        #
+# ------------------------------------------------------------------------ #
+
+# Protect .htaccess files from prying eyes.
+<files ".htaccess">
+	order allow,deny
+	deny from all
+</files>
+
+<IfModule mod_rewrite.c>
+  # NOTICE: Uncomment the line below if you are getting 404
+  #AllowOverride All
+  Options +FollowSymLinks
+  RewriteEngine on
+
+  # Send request via index.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # NOTICE: If running within a userdir (e.g. home/~user) add your the full path below. Eg: /~user/index.php/$1
+  RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>

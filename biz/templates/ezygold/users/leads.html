@@ -1,0 +1,26 @@
+{$lng->client_leads_subheader}
+<br /><br />
+<fieldset>
+{$leads_content}
+</fieldset>
+
+<span{$span_add_leads}>
+    <br /><br />
+    <form method="post">
+    <fieldset>
+    <legend>{$lng->client_leads_import}</legend><br />
+    <label>{$lng->client_leads_import_info}<br /><br />{$lng->client_leads_import_example}<br />
+    <textarea style="width: 90%;" rows="9" name="imp_text" wrap="off"></textarea><br />
+    </label><br />
+    <label>{$lng->client_leads_import_separator}<br />
+    <select name="imp_sprtor">
+    <option value='|' />| (tab character)
+    <option value=';' selected />; (semicolon character)
+    <option value=',' />, (comma character)
+    </select><br />
+    </label>
+    </fieldset>
+    <br />
+    <input name="submit" type="submit" class="button" value="{$lng->client_leads_import_submit}" />
+    </form>
+</span>

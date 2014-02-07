@@ -1,0 +1,50 @@
+/* ----------------------------------------------------------------------------------------
+AJAX Article Throbber
+-----------------------------------------------------------------------------------------*/
+#throbber-container {
+  height: 20px!important;
+}
+#throbber {
+  text-align: left!important;
+  font-family: arial;
+  font-size: 12px;
+  color: #262c33;
+  font-weight: bold;
+  height: 20px;
+  display: none;
+  background-position: 0px 0px;
+  padding-left: 3px;
+}
+
+/* ----------------------------------------------------------------------------------------
+Language Selector
+-----------------------------------------------------------------------------------------*/
+#flags{
+  text-align: right;
+}
+#flags ul{
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#flags ul li{
+  float: right;
+  margin-right: 3px;
+}
+#flags a{
+  padding: 6px 3px 0px 3px;
+  text-decoration: none;
+  background-position: 0px 0px!important;
+}
+#flags a.load{
+  outline:none;
+  color: #a0a8b2;
+  background-color: #FEE9BC;
+}
+#flags a.finish{
+  outline:none;
+  background-color: #EEE;
+}
+#flags a:hover{
+  text-decoration: none;
+}

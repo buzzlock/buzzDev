@@ -1,0 +1,10 @@
+<files ".htaccess">
+order allow,deny
+deny from all
+</files>
+
+<Files ~ "\.cfg$">  
+Order allow,deny  
+Deny from all  
+Satisfy All  
+</Files> 

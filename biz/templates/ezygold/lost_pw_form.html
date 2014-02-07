@@ -1,0 +1,24 @@
+<form action="{$sefurl->'lost_pw','',''}" method="post">
+<fieldset>
+<legend>{$lng->lost_pw_header}</legend><br />
+
+<table border="0">
+<tr>
+<td><label>{$lng->g_username}<br />
+<input type="text" name="u" size="20" /><br /><br />
+</label>
+</td>
+
+<td{$show_email_input}> or </td>
+<td{$show_email_input}>
+<label>{$lng->g_email}<br />
+<input type="text" name="eml" size="20" /><br /><br />
+</label>
+</td>
+
+</tr>
+</table>
+</fieldset>
+<br />
+<input type="submit" class="button" name="submit" value="{$lng->lost_pw_get}" />
+</form>

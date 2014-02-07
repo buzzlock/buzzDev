@@ -1,0 +1,49 @@
+<fieldset>
+<legend>{$lng->client_responder_manage}</legend><br />
+<label>{$lng->client_responder_to}<br />
+<select name="rtype" onChange="isHideShow2(document.responder.rtype, '2', false, 'myrefonly_hideshow')">
+<option value="3"{$is_selected3}>{$lng->a_email_to_all}</option>
+<option value="1"{$is_selected1}>{$lng->a_email_to_allmbr}</option>
+<option value="4"{$is_selected4}>&nbsp; - {$lng->a_edit_active} {$lng->main_members}</option>
+<option value="5"{$is_selected5}>&nbsp; - {$lng->a_edit_inactive} {$lng->main_members}</option>
+<option value="2"{$is_selected2}>{$lng->a_email_to_leads}</option>
+</select><br />
+</label>
+    <span {$myrefonly_hideshow} id="myrefonly_hideshow">
+    <label><input type="checkbox" name="myrefonly" value="1"{$myrefonly_sel} /> {$lng->client_broadcast_meto}</label><br />
+    </span>
+<br />
+<label>{$lng->g_from}<br />
+<input type="text" name="rfrom" size="50" value="{$sfrom}" readonly /><br />
+</label><br />
+<label>{$lng->a_email_subject}<br />
+<div class="{$error_style_subject}"><input type="text" name="rsubject" size="50" value="{$subject}" /><br />
+{$error_subject}
+</div></label><br />
+<label>{$lng->a_email_priority}<br />
+<select name="rpriority">
+{$spriority_menu}</select><br /><br />
+</label>
+<label>{$lng->client_responder_days}<br />
+<input type="text" name="rdayout" size="5" value="{$rdayout}" /><br /><br />
+</label>
+<div class="{$error_style_message}"><label>{$lng->a_email_message}<br />
+<textarea style="width: 99%;" rows="22" name="rbody">{$message}</textarea><br />
+</label><br />
+<label>{$a_responders_tag} <font size="1">{$lng->a_responders_tag_note}</font></label>
+<br /><br />
+<label>{$lng->a_email_htmlmessage}<br />
+<script type="text/javascript">
+  var oFCKeditor = new FCKeditor('rhtmlbody' , "100%" , "300" , 'EzyGold2');
+  oFCKeditor.BasePath = "fckeditor/";
+  oFCKeditor.Value = "{$htmlmessage}";
+  oFCKeditor.Create();
+</script>
+<!--textarea style="width: 100%;" rows="30" name="htmlmessage" id="ez_wysiwyg_editor" class="tinymce">{$htmlmessage}</textarea--><br />
+{$error_message}
+</label></div><br />
+<label>{$a_responders_tag_h} <font size="1">{$lng->a_responders_tag_note}</font></label>
+</fieldset>
+<br />
+<input name="delete" type="button" class="button" value="{$lng->client_responder_btndel}"{$btn_demo_dis}{$btn_remove}{$remove_confirm} /> 
+<input name="submit" type="submit" class="button" value="{$lng->client_responder_btnsave}"{$btn_demo_dis} />

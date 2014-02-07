@@ -1,0 +1,15 @@
+<form action="{$site_urlori}/{$sefurl->'admin','',''}" method="post">
+<fieldset>
+<legend>{$lng->a_header}</legend><br />
+<label>{$lng->g_password} 1<br />
+<input type="password" name="password" size="20" /><br /><br />
+</label>
+<label>{$lng->g_password} 2<br />
+<input type="password" name="authcode" size="20" /><br /><br />
+</label>
+{$show_etoken}
+{$show_captcha}
+</fieldset>
+<br />
+<input type="submit" class="button" value="{$lng->client_login}" />
+</form>

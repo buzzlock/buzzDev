@@ -1,0 +1,10 @@
+<strong><font color="#FF0000">{$lng->g_noreferrer_details}</font></strong>
+<br /><br />
+{$lng->g_noreferrer_getuser}<br />
+{$noreferrer_nouser}
+<form method="get" action="{$site_url}/id/index.php">
+<input type="text" name="ref" />&nbsp;<input type="submit" class="button" value="Submit" />
+<input type="hidden" name="lref" value="{$lref}" />
+<input type="hidden" name="norefform" value="1" />
+</form>
+{$random_ref_button}
