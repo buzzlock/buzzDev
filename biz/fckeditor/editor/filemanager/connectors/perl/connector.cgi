@@ -28,7 +28,8 @@
 ##
 
 ## START: Hack for Windows (Not important to understand the editor code... Perl specific).
-if(Windows_check()) {
+if(Windows_check())
+{
 	chdir(GetScriptPath($0));
 }
 

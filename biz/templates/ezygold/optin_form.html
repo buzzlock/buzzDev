@@ -1,5 +1,5 @@
 <script language="JavaScript" type="text/javascript">
-<!--
+//<!--
 function vercodereloaded() {
 	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
 }
@@ -33,11 +33,11 @@ font-size:12px;
 <input type="text" name="lphone" size="20" value="{$lphone}" />
 </label><br /><br />
 <label>{$lng->subscriber_emtype}<br />
-<select name="ltype" />
-	<option value="" />-
-	<option value="Text" />Text
-	<option value="Html" />Html
-	<option value="Both" />Text &amp; Html
+<select name="ltype">
+	<option value="">-</option>
+	<option value="Text">Text</option>
+	<option value="Html">Html</option>
+	<option value="Both">Text &amp; Html</option>
 </select>
 {$error_emtype}
 </label><br /><br />

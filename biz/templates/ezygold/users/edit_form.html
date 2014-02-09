@@ -17,7 +17,7 @@
 </div><br />
 {$client_userfields}
 <label>{$lng->g_address}<br />
-<textarea cols="40" rows="5" name="address"{$field_readonly} />{$address}</textarea><br /><br />
+<textarea cols="40" rows="5" name="address"{$field_readonly}>{$address}</textarea><br /><br />
 </label>
 <label>{$lng->g_state}<br />
 <input type="text" name="state" size="50" value="{$state}"{$field_readonly} /><br /><br />
@@ -104,7 +104,7 @@
 <div{$div_no_manualpay}>
 <br />
 <label>{$lng->g_mypayment}<br />
-<textarea cols="40" rows="3" name="mypayment"{$field_readonly} />{$mypayment}</textarea><br />
+<textarea cols="40" rows="3" name="mypayment"{$field_readonly}>{$mypayment}</textarea><br />
 </label>
 </div>
 </fieldset>
@@ -131,7 +131,7 @@
 {$error_title}
 </label></div><br />
 <div class="{$error_style_description}"><label>{$lng->g_description}<br />
-<textarea cols="40" rows="5" name="description" {$max_descr_char_limit} />{$description}</textarea>
+<textarea cols="40" rows="5" name="description" {$max_descr_char_limit}>{$description}</textarea>
 {$error_description}<br />
 </label></div><br />
 <label>{$lng->g_category}<br />
@@ -182,24 +182,24 @@
 
     <div id="divhelphintku" class="helphintku">
     <div style="padding:3px">
-    
+
     <div id="stickyhintbox0" class="hintbox"  style="width:300px">
     {$lng->hint_alertpay}
     </div>
-    
+
     <div id="stickyhintbox1" class="hintbox"  style="width:300px">
     {$lng->hint_lreserve_client}
     </div>
-    
+
     <div id="stickyhintbox2" class="hintbox"  style="width:300px">
     {$lng->hint_safepay}
     </div>
-    
+
     <div id="stickyhintbox3" class="hintbox"  style="width:300px">
     {$lng->hint_solidtrustpaysubs}
     </div>
-    
+
     </div>
-    
+
     <div class="stickystatus"></div>
     </div>

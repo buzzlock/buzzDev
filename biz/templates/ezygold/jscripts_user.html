@@ -4,7 +4,7 @@
 <script type="text/javascript" src="{$site_url}/etcs/dtree.js"></script>
 
 <script language='JavaScript' type="text/javascript">
-<!--
+//<!--
 	var theTime = new Date ("{$server_datetime}");
 	var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 //-->
@@ -12,7 +12,7 @@
 <script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/clock.js"></script>
 
 <script language="JavaScript" type="text/javascript">
-<!--
+//<!--
 function vercodereloaded() {
 	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
 }
@@ -40,7 +40,7 @@ function addTexTag(isform, text)
 		myFormField.value += text;
 	}
 }
-    
+
 function yesno_alert(warnmsg,locasi){
 	if (confirm(warnmsg) != "0"){
 		window.location = locasi;
@@ -58,7 +58,7 @@ function yesno_alert_post(warnmsg){
 <script type="text/javascript" src="{$site_url}/fckeditor/fckeditor.js"></script>
 
 <script language="JavaScript1.2">
-<!--				
+//<!--
 function hideshow_togle(which_hideshowid, imgid_hideshowid){
 	if (!document.getElementById) return
 	if (which_hideshowid.style.display == "none"){

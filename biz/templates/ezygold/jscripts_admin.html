@@ -14,7 +14,7 @@
 <script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/jquery.qtip.min.js"></script>
 
 <script language='JavaScript' type="text/javascript">
-<!--
+//<!--
 	var theTime = new Date ("{$server_datetime}");
 	var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 //-->
@@ -22,7 +22,7 @@
 <script language="JavaScript" type="text/javascript" src="{$site_url}/etcs/clock.js"></script>
 
 <script language="JavaScript" type="text/javascript">
-<!--
+//<!--
 function vercodereloaded() {
 	document.getElementById('vercodereloaded').src = "{$site_url}/captcha.php?" + (new Date()).getTime();
 }
@@ -50,7 +50,7 @@ function addTexTag(isform, text)
 		myFormField.value += text;
 	}
 }
-    
+
 function yesno_alert(warnmsg,locasi){
 	if (confirm(warnmsg) != "0"){
 		window.location = locasi;
@@ -110,7 +110,6 @@ function ReplaceAllTextareas() {
 <script type="text/javascript">
 $(function(){
 	$('#find_tbl').selectCombo("{$site_url}/load_fields.php", '#find_fld', {hidetarget: false});
-	<!--$('#undata1').selectCombo("{$site_url}/load_pplans.php", '#pplan1', {hidetarget: false});-->
 });
 
 $(document).ready(function() {
@@ -160,11 +159,11 @@ $(document).ready(function() {
 				dataType: 'text',
 				data: 'q=yes&rnd='+ Math.random(),
 				success: function(data){
-					if (data == 'o;') { 
+					if (data == 'o;') {
 						$.jGrowl('Please login...', { life: 7500, position: 'bottom-right', theme: 'jGrowlnotered' });
 						clearInterval(refreshId);
 					}
-					else if (data.length > 0) { 
+					else if (data.length > 0) {
 						$.jGrowl(data, { life: 5000, position: 'bottom-right' });
 					}
 				},
@@ -210,11 +209,11 @@ $(document).ready(function() {
 			classes: 'ui-tooltip-dataviewer ui-tooltip-light',
 		 }
 	  })
-	  
+
 	  // Make sure it doesn't follow the link when we click it
 	  .click(function() { return false; });
 	});
-	
+
 });
 
 function finishAjax(id, response) {
@@ -225,7 +224,7 @@ function finishAjax(id, response) {
 </script>
 
 <script language="JavaScript1.2">
-<!--				
+//<!--
 function hideshow_togle(which_hideshowid, imgid_hideshowid){
 	if (!document.getElementById) return
 	if (which_hideshowid.style.display == "none"){

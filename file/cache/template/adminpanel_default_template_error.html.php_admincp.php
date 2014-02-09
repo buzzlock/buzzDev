@@ -1,5 +1,5 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
-<?php /* Cached: February 6, 2014, 9:55 pm */ ?>
+<?php /* Cached: February 9, 2014, 5:51 am */ ?>
 <?php if ($this->_aVars['sPublicMessage']): ?>
 <div class="public_message" id="public_message">
 <?php echo $this->_aVars['sPublicMessage']; ?>

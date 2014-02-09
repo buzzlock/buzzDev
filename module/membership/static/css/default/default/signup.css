@@ -1,0 +1,50 @@
+#buzzbiz_BG
+{
+	width:500px;
+	height:400px;
+	float:left;
+	z-index:0;
+}
+#buzzbiz_1
+{
+	position:absolute;
+	left:53px;
+	top:225px;
+}
+#buzzbiz_2
+{
+	position:absolute;
+	left:50px;
+	top:275px;
+}
+#buzzbiz_3
+{
+	position:absolute;
+	left:50px;
+	top:325px;
+}
+#buzzbiz_form
+{
+	width:290px;
+	height:420px;
+	top:auto;
+	overflow:scroll;
+	z-index:1;
+}
+#buzzbiz_logo
+{
+	width:20;
+	height:10;
+	top:auto;
+}
+#buzzbiz_error
+{
+	background-color:yellow;
+	color:red;
+	font-size:10pt;
+}
+#buzzbiz_required_text
+{
+	color:red;
+	font-size:10pt;
+}

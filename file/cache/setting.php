@@ -1266,7 +1266,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'theme_session_prefix',
-    'value_actual' => '486256453',
+    'value_actual' => '52f543f47e5df',
     'module_name' => 'core',
   ),
   173 => 

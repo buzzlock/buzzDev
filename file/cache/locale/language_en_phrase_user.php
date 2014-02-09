@@ -894,4 +894,6 @@ If this setting is set to false visitors will have to answer only one question, 
   'view_more_search_options' => 'View More Search Options',
   'reason' => 'Reason',
   'user_buzzprime' => 'buzzPrime',
+  'user_buzzbiz' => 'buzzBiz',
+  'user_buzzpro' => 'buzzPro',
 ); ?>

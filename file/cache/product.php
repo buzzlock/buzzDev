@@ -52,6 +52,19 @@
     'url' => 'http://phpfox.younetco.com',
     'url_version_check' => NULL,
   ),
+  'buzzbiz' => 
+  array (
+    'product_id' => 'buzzbiz',
+    'is_core' => '0',
+    'title' => 'Buzzbiz',
+    'description' => 'Buzzlock\'s Membership and Affiliate',
+    'version' => '2.0',
+    'latest_version' => NULL,
+    'last_check' => '0',
+    'is_active' => '1',
+    'url' => 'http://www.buzzlock.net/',
+    'url_version_check' => 'http://www.buzzlock.net/version.php',
+  ),
   'contactimporter' => 
   array (
     'product_id' => 'contactimporter',

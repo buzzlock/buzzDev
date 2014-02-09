@@ -18,7 +18,7 @@
     'total_dislike' => '0',
     'total_comment' => '0',
     'privacy' => '0',
-    'designer_style_id' => '0',
+    'designer_style_id' => '6',
     'cover_photo_id' => NULL,
     'cover_photo_position' => NULL,
     'location_latitude' => NULL,
