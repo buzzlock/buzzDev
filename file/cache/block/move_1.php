@@ -14,7 +14,6 @@
     'suggestion.events' => false,
     'poke.display' => true,
     'suggestion.pages' => false,
-    'shoutbox.display' => true,
     'core.welcome' => false,
     'announcement.index' => false,
     'tag.cloud' => false,
@@ -158,7 +157,6 @@
     'pages.menu' => true,
     'pages.widget' => true,
     'pages.admin' => true,
-    'shoutbox.display' => true,
     'profile.logo' => false,
     'feed.display' => false,
   ),
@@ -525,7 +523,6 @@
     'forum.parent' => true,
     'photo.parent' => true,
     'advancedphoto.parent' => true,
-    'shoutbox.display' => true,
     'feed.display' => false,
   ),
   'photo.view' => 

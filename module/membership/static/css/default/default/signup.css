@@ -1,49 +1,51 @@
-#buzzbiz_BG
+div#bizbody
 {
-	width:500px;
-	height:400px;
-	float:left;
-	z-index:0;
+	width: 785px;
+	height:100%;
+	background-image: url('../../../image/buzzbizBG.png');
+	float: left;
+	z-index: 0;
 }
-#buzzbiz_1
+div#buzzbiz_1
 {
 	position:absolute;
 	left:53px;
 	top:225px;
 }
-#buzzbiz_2
+div#buzzbiz_2
 {
 	position:absolute;
 	left:50px;
 	top:275px;
 }
-#buzzbiz_3
+div#buzzbiz_3
 {
 	position:absolute;
 	left:50px;
 	top:325px;
 }
-#buzzbiz_form
+div#buzzbiz_form
 {
 	width:290px;
 	height:420px;
 	top:auto;
+	float:right;
 	overflow:scroll;
 	z-index:1;
 }
-#buzzbiz_logo
+div#buzzbiz_logo
 {
-	width:20;
-	height:10;
-	top:auto;
+	width:50px;
+	height:30px;
+	top:100px;
 }
-#buzzbiz_error
+div#buzzbiz_error
 {
 	background-color:yellow;
 	color:red;
 	font-size:10pt;
 }
-#buzzbiz_required_text
+div#buzzbiz_required_text
 {
 	color:red;
 	font-size:10pt;

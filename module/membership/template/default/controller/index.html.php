@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>	
 	<body>
-		<div id="buzzbiz_BG">
-			<img src="{$buzzbizBG}" alt="">
-		</div>		
+	<div id="bizbody">		
 		<div id="buzzbiz_1">
-			<a href="#" id="pop1"><img src="{$buzzbiz1}" alt="1. Signup - Free to join."></a>
+			<a href="#" id="pop1">{img theme= 'buzzbiz/buzzbiz1.png' alt='1. Signup		- Free to join.'}</a>
 		</div>		
 		<div id="buzzbiz_2">
-			<a href="#" id="pop2"><img src="{$buzzbiz2}" alt="2. Buzz	  - Share your link."></a>
+			<a href="#" id="pop2">{img theme= 'buzzbiz/buzzbiz2.png' alt='2. Buzz	  - Share your link.'}</a>
 		</div>		
 		<div id="buzzbiz_3">
-			<a href="#" id="pop3"><img src="{$buzzbiz3}" alt="3. Lock	  - Lock-in your income."></a>
+			<a href="#" id="pop3">{img theme= 'buzzbiz/buzzbiz2.png' alt='3. Lock	  - Lock-in your income.'}</a>
 		</div>
 		<div id="buzzbiz_form">			
 			<form  method="post" action="{url link='membership.index'}" autocomplete="off">
 				<br>
-				<div id="buzzbiz_logo">
-					<img src="{$buzzbizLogo}" alt="Buzzbiz">
+				<div id="buzzbiz_logo">{img theme= 'buzzbiz/buzzbizLogo.png'}
 				</div>
 				<div class="separate">
 				</div>
@@ -153,10 +150,8 @@
 					Need an account?
 				</div>
 				<div class="table_left">								
-						<a href="{$paypal}" target="_blank"><img src="{$paypalLogo}" alt="Papal Sign up" width="140"></a>								
-				</div>
-				<div class="table_left">								
-					<a href="{$payza}" target="_blank"><img src="{$payzaLogo}" alt="Payza Sign up" width="140"></a>								
+					<a href="{$paypal}" target="_blank">{img theme= 'buzzbiz/paypal.gif'}</a> 
+					<a href="{$payza}" target="_blank">{img theme= 'buzzbiz/payza.gif'}</a>							
 				</div>
 			</div>
 			<div class="separate">
@@ -186,7 +181,7 @@
 					Need a TIN?
 				</div>
 				<div class="table_left">
-					<a href="{$irs}" target="_blank"><img src="{$irsLogo}" alt="IRS TIN"></a>
+					<a href="{$irs}" target="_blank">{img theme= 'buzzbiz/irsGov.png'}</a>
 				</div>
 			</div>
 			<div class="separate">
@@ -218,5 +213,6 @@
 			</div>				
 			</form>
 		</div>
+	</div>
 	</body>
 </html>

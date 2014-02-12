@@ -23,7 +23,6 @@
       'suggestion.events' => NULL,
       'poke.display' => 'a:1:{i:0;s:1:"3";}',
       'suggestion.pages' => NULL,
-      'shoutbox.display' => NULL,
       'tag.cloud' => NULL,
     ),
     7 => 
@@ -274,7 +273,6 @@
       'pagecontacts.page-button' => NULL,
       'pages.widget' => NULL,
       'pages.admin' => NULL,
-      'shoutbox.display' => NULL,
     ),
     13 => 
     array (
@@ -924,10 +922,6 @@
       'photo.parent' => NULL,
       'advancedphoto.parent' => NULL,
       'feed.display' => NULL,
-    ),
-    0 => 
-    array (
-      'shoutbox.display' => NULL,
     ),
   ),
   'photo.view' => 

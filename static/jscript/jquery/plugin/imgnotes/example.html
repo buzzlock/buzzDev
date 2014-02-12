@@ -1,21 +1,22 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Buzzlock Example</title>
     <meta content="">
 	<link rel="stylesheet" type="text/css" href="imgnotes.css" >
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="jquery.imgareaselect-0.4.js"></script>
 	<script type="text/javascript" src="jquery.imgnotes-0.2.js"></script>
-	
+
 	<script type="text/javascript">
 
         	notes = [{"x1":"10","y1":"200","height":"150","width":"50","note":"This is a note"}, {"x1":"25","y1":"25","height":"70","width":"80","note":"<b>This</b> is a new note This is another note This is a new note"}];
-		
+
 		$(window).load(function () {
 			$('#tern').imgNotes(); //If your notes data is is not named notes pass it
- 
+
 			//$('#tern').imgAreaSelect({ onSelectChange: showaddnote })
- 
+
 			$('#cancelnote').click(function(){
 				$('#tern').imgAreaSelect({ hide: true });
 				$('#noteform').hide();
@@ -26,7 +27,7 @@
 				return false;
 			});
 		});
-		
+
 	function showaddnote (img, area) {
 		imgOffset = $(img).offset();
 		form_left  = parseInt(imgOffset.left) + parseInt(area.x1);
@@ -52,14 +53,14 @@
 	<a href="#" id='addnotelink' >Add a note</a>
   <p><a href="http://www.sanisoft.com/blog/2008/05/26/img-notes-jquery-plugin/" >Back to blog post</a></p>
 	<div id="noteform" >
-	<form id="NoteAddForm" method="post" action="example.php">	
+	<form id="NoteAddForm" method="post" action="example.php">
 		<fieldset>
 		<legend>Add Note</legend>
 		<input name="data[Note][x1]" type="text" value="" id="NoteX1" />
 		<input name="data[Note][y1]" type="text" value="" id="NoteY1" />
 		<input name="data[Note][height]" type="text" value="" id="NoteHeight" />
 		<input name="data[Note][width]" type="text" value="" id="NoteWidth" />
-		<textarea name="data[Note][note]" id="NoteNote" /></textarea>
+		<textarea name="data[Note][note]" id="NoteNote"> </textarea>
 		</fieldset>
 		<div class="submit"><input type="submit" value="Submit" /> &nbsp;&nbsp;&nbsp;<input type="button" value="Cancel" id="cancelnote" ></div>
 		</form>

@@ -24,7 +24,6 @@ class Membership_Component_Controller_Index extends Phpfox_Component
 			$this->url()->send('office');
 		}
 		$mod	= 'Buzzbiz Sign-up';
-		$img	= 'http://buzzlock.net/module/membership/static/image/';
 		$this->template()
 			->setTitle($mod)
 			->setBreadcrumb($mod)
@@ -33,14 +32,13 @@ class Membership_Component_Controller_Index extends Phpfox_Component
 									'msg.js'		=> 'module_membership'
 								)
 						)
-			->assign	(array	(	'buzzbizBG'		=> $img.'buzzbizBG.png',
-									'buzzbiz1'		=> $img.'buzzbiz1.png',
-									'buzzbiz2'		=> $img.'buzzbiz2.png',
-									'buzzbiz3'		=> $img.'buzzbiz3.png',
-									'buzzbizLogo'	=> $img.'buzzbizLogo.png',
-									'paypalLogo'	=> $img.'paypal.gif',
-									'payzaLogo'		=> $img.'payza.gif',
-									'irsLogo'		=> $img.'irsGov.png',
+			->assign	(array	(	'buzzbiz1'		=> 'url(../../../image/buzzbiz1.png)',
+									'buzzbiz2'		=> 'url(../../../image/buzzbiz2.png)',
+									'buzzbiz3'		=> 'url(../../../image/buzzbiz3.png)',
+									'buzzbizLogo'	=> 'url(../../../image/buzzbizLogo.png)',
+									'paypalLogo'	=> 'url(../../../image/paypal.gif)',
+									'payzaLogo'		=> 'url(../../../image/payza.gif)',
+									'irsLogo'		=> 'url(../../../image/irsGov.png)',
 									'paypal'		=> 'https://www.paypal.com/',
 									'payza'			=> 'https://secure.payza.com/signup/signup.aspx',
 									'irs'			=> 'http://www.irs.gov/Individuals/International-Taxpayers/Taxpayer-Identification-Numbers-%28TIN%29',

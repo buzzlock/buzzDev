@@ -71,7 +71,6 @@
   'rss' => 'rss',
   'search' => 'search',
   'share' => 'share',
-  'shoutbox' => 'shoutbox',
   'socialbridge' => 'socialbridge',
   'socialmediaimporter' => 'socialmediaimporter',
   'socialpublishers' => 'socialpublishers',

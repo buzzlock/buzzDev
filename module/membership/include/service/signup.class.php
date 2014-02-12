@@ -39,7 +39,7 @@ class Membership_Service_Signup extends Phpfox_Service
 			'address'	=> $val['address'],
 			'state'		=> $this->state_name($val['country_child_id']),
 			'country'	=> $val['country_iso'],
-			'password'	=> string md5(string $val['password1']),
+			'password'	=> string (md5(string ($val['password1']))),
 			'gate'		=> $val['gate'],
 			'gateMail'	=> $val['gateMail']
 		);

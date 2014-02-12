@@ -42,7 +42,7 @@
 .apps_dev_menu ul li a.active,
 .apps_dev_menu ul li a.active:hover
 {
-	font-weight:bold;	
+	font-weight:bold;
 	background:#333 url('../image/layout/sub_section_menu_active.png') repeat-x;
 	color:#fff;
 }
@@ -64,7 +64,7 @@
 	font-weight:bold;
 	border-bottom:1px #dfdfdf solid;
 	padding-bottom:5px;
-	margin-bottom:10px;	
+	margin-bottom:10px;
 	color:#4096EE;
 }
 
@@ -103,16 +103,16 @@
 {
 	background:#f2f2f2;
 	border:1px #CFCFCF solid;
-	padding:10px;	
+	padding:10px;
 	overflow:auto;
-	
+
  	-moz-box-shadow:3px 3px 3px #EFEFEF;
   	-webkit-box-shadow:3px 3px 3px #EFEFEF;
-  	box-shadow:3px 3px 3px #EFEFEF;		
-	
+  	box-shadow:3px 3px 3px #EFEFEF;
+
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
-  	border-radius:6px;	
+  	border-radius:6px;
 }
 
 .apps_method_holder

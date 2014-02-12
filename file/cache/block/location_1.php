@@ -14,7 +14,6 @@
     'suggestion.events' => '3',
     'poke.display' => '3',
     'suggestion.pages' => '3',
-    'shoutbox.display' => '3',
     'core.welcome' => '7',
     'announcement.index' => '7',
     'tag.cloud' => '3',
@@ -158,7 +157,6 @@
     'pages.menu' => '1',
     'pages.widget' => '3',
     'pages.admin' => '3',
-    'shoutbox.display' => '3',
     'profile.logo' => '13',
     'feed.display' => '4',
   ),
@@ -525,7 +523,6 @@
     'forum.parent' => '1',
     'photo.parent' => '2',
     'advancedphoto.parent' => '2',
-    'shoutbox.display' => '0',
     'feed.display' => '2',
   ),
   'photo.view' => 
