@@ -206,17 +206,6 @@
       'user.featured' => NULL,
     ),
   ),
-  '' => 
-  array (
-    11 => 
-    array (
-      'user.register-top' => NULL,
-    ),
-    3 => 
-    array (
-      'fblike.fblike' => NULL,
-    ),
-  ),
   'forum' => 
   array (
     4 => 
@@ -1008,9 +997,16 @@
     array (
       'user.register' => NULL,
     ),
-    2 => 
+  ),
+  '' => 
+  array (
+    11 => 
     array (
-      'contactimporter.home_contact_visiter' => NULL,
+      'user.register-top' => NULL,
+    ),
+    3 => 
+    array (
+      'fblike.fblike' => 'a:1:{i:0;s:1:"4";}',
     ),
   ),
   'blog.index' => 

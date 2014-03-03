@@ -67,7 +67,7 @@
   array (
     'type_id' => 'large_string',
     'var_name' => 'description',
-    'value_actual' => 'Some information about your site...',
+    'value_actual' => 'How much are your other social accounts worth?',
     'module_name' => 'core',
   ),
   10 => 
@@ -176,7 +176,7 @@
   array (
     'type_id' => 'drop',
     'var_name' => 'csrf_protection_level',
-    'value_actual' => 'medium',
+    'value_actual' => 'high',
     'module_name' => 'core',
   ),
   20 => 
@@ -204,14 +204,14 @@
   array (
     'type_id' => 'string',
     'var_name' => 'site_copyright',
-    'value_actual' => 'Buzzlock ©',
+    'value_actual' => 'Buzzlock © 2014',
     'module_name' => 'core',
   ),
   24 => 
   array (
     'type_id' => 'string',
     'var_name' => 'default_time_zone_offset',
-    'value_actual' => '0',
+    'value_actual' => 'z132',
     'module_name' => 'core',
   ),
   25 => 
@@ -260,29 +260,29 @@
   array (
     'type_id' => 'string',
     'var_name' => 'email_from_email',
-    'value_actual' => '',
+    'value_actual' => 'admin@buzzlock.net',
     'module_name' => 'core',
   ),
   32 => 
   array (
     'type_id' => 'large_string',
     'var_name' => 'mail_signature',
-    'value_actual' => 'Kind Regards,
-Site Name',
+    'value_actual' => 'Best Regards,
+Buzzlock',
     'module_name' => 'core',
   ),
   33 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'log_site_activity',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   34 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'cache_js_css',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   35 => 
@@ -429,7 +429,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'image_text',
-    'value_actual' => 'www.yoursite.com',
+    'value_actual' => 'www.buzzlock.net',
     'module_name' => 'core',
   ),
   56 => 
@@ -450,14 +450,14 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'registration_enable_location',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   59 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'registration_enable_timezone',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   60 => 
@@ -555,7 +555,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_getid3_check',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   74 => 
@@ -732,7 +732,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'site_wide_ajax_browsing',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   97 => 
@@ -823,7 +823,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'no_follow_on_external_links',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   110 => 
@@ -893,7 +893,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'keep_non_square_images',
-    'value_actual' => true,
+    'value_actual' => false,
     'module_name' => 'core',
   ),
   120 => 
@@ -916,7 +916,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'store_only_users_in_session',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   123 => 
@@ -930,7 +930,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'include_site_title_all_pages',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   125 => 
@@ -1014,7 +1014,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'check_body_offline_message',
-    'value_actual' => 'Site is under maintenance.',
+    'value_actual' => 'Buzzlock is under maintenance.',
     'module_name' => 'core',
   ),
   137 => 
@@ -1042,7 +1042,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'city_in_registration',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'core',
   ),
   141 => 
@@ -1266,14 +1266,14 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'theme_session_prefix',
-    'value_actual' => '52f9612905806',
+    'value_actual' => '530b83ab646cc',
     'module_name' => 'core',
   ),
   173 => 
   array (
     'type_id' => 'integer',
     'var_name' => 'css_edit_id',
-    'value_actual' => 10,
+    'value_actual' => 13,
     'module_name' => 'core',
   ),
   174 => 
@@ -1399,7 +1399,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'can_drag_drop_blocks_on_profile',
-    'value_actual' => true,
+    'value_actual' => false,
     'module_name' => 'profile',
   ),
   192 => 
@@ -1518,7 +1518,7 @@ Site Name',
   array (
     'type_id' => 'drop',
     'var_name' => 'login_type',
-    'value_actual' => 'email',
+    'value_actual' => 'both',
     'module_name' => 'user',
   ),
   207 => 
@@ -1546,7 +1546,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'multi_step_registration_form',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   211 => 
@@ -1588,7 +1588,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'verify_email_at_signup',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   217 => 
@@ -1686,7 +1686,7 @@ Site Name',
   array (
     'type_id' => 'drop',
     'var_name' => 'on_register_privacy_setting',
-    'value_actual' => 'anyone',
+    'value_actual' => 'friends_only',
     'module_name' => 'user',
   ),
   231 => 
@@ -1763,14 +1763,14 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'force_user_to_upload_on_sign_up',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   242 => 
   array (
     'type_id' => 'boolean',
     'var_name' => 'hide_main_menu',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   243 => 
@@ -1784,7 +1784,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'new_user_terms_confirmation',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   245 => 
@@ -1854,7 +1854,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'points_conversion_rate',
-    'value_actual' => '',
+    'value_actual' => '{"USD":"","EUR":"","GBP":""}',
     'module_name' => 'user',
   ),
   255 => 
@@ -1875,7 +1875,7 @@ Site Name',
   array (
     'type_id' => 'boolean',
     'var_name' => 'prevent_profile_photo_cache',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'user',
   ),
   258 => 
@@ -2084,7 +2084,7 @@ Site Name',
   array (
     'type_id' => 'large_string',
     'var_name' => 'blog_meta_description',
-    'value_actual' => 'Read up on the latest blogs on Site Name.',
+    'value_actual' => 'Read up on the latest blogs on Buzzlock.',
     'module_name' => 'blog',
   ),
   287 => 
@@ -2336,7 +2336,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'facebook_app_id',
-    'value_actual' => '',
+    'value_actual' => '446275248780720',
     'module_name' => 'facebook',
   ),
   323 => 
@@ -2350,7 +2350,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'facebook_secret',
-    'value_actual' => '',
+    'value_actual' => 'a64ec861f3eb955251ef31ad7b576c6d',
     'module_name' => 'facebook',
   ),
   325 => 
@@ -3332,7 +3332,7 @@ Site Name',
   array (
     'type_id' => 'large_string',
     'var_name' => 'poll_meta_description',
-    'value_actual' => 'New polls on Site Name daily.',
+    'value_actual' => 'New polls on Buzzlock daily.',
     'module_name' => 'poll',
   ),
   462 => 
@@ -3402,7 +3402,7 @@ Site Name',
   array (
     'type_id' => 'large_string',
     'var_name' => 'quiz_meta_description',
-    'value_actual' => 'Take Free Fun Quizzes & Tests. Cool Online Fun Quiz & Test. Fun Quizzes and Fun Tests by Site Name.',
+    'value_actual' => 'Take Free Fun Quizzes & Tests. Cool Online Fun Quiz & Test. Fun Quizzes and Fun Tests by Buzzlock.',
     'module_name' => 'quiz',
   ),
   472 => 
@@ -3998,7 +3998,7 @@ Site Name',
   array (
     'type_id' => 'integer',
     'var_name' => 'subcategories_to_show_at_first',
-    'value_actual' => 12,
+    'value_actual' => 20,
     'module_name' => 'contest',
   ),
   554 => 
@@ -4257,7 +4257,7 @@ Site Name',
   array (
     'type_id' => 'integer',
     'var_name' => 'subcategories_to_show_at_first',
-    'value_actual' => 10,
+    'value_actual' => 20,
     'module_name' => 'fundraising',
   ),
   591 => 
@@ -4292,7 +4292,7 @@ Site Name',
   array (
     'type_id' => 'string',
     'var_name' => 'subcategories_to_show_at_first',
-    'value_actual' => '5',
+    'value_actual' => '20',
     'module_name' => 'jobposting',
   ),
   596 => 
@@ -4609,7 +4609,7 @@ Sincerely,
   array (
     'type_id' => 'boolean',
     'var_name' => 'enable_flvtool2',
-    'value_actual' => false,
+    'value_actual' => true,
     'module_name' => 'videochannel',
   ),
   638 => 
@@ -4658,7 +4658,7 @@ Sincerely,
   array (
     'type_id' => 'large_string',
     'var_name' => 'video_meta_description',
-    'value_actual' => 'Share your videos with friends, family, and the world on Site Name.',
+    'value_actual' => 'Share your videos with friends, family, and the world on Buzzlock.',
     'module_name' => 'videochannel',
   ),
   645 => 

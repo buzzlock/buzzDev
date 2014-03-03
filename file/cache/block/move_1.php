@@ -119,11 +119,6 @@
     'user.filter' => false,
     'user.featured' => false,
   ),
-  '' => 
-  array (
-    'user.register-top' => false,
-    'fblike.fblike' => true,
-  ),
   'forum' => 
   array (
     'forum.timezone' => false,
@@ -568,7 +563,11 @@
   'core.index-visitor' => 
   array (
     'user.register' => false,
-    'contactimporter.home_contact_visiter' => false,
+  ),
+  '' => 
+  array (
+    'user.register-top' => false,
+    'fblike.fblike' => false,
   ),
   'blog.index' => 
   array (

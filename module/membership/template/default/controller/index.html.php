@@ -8,28 +8,22 @@
 		<div id="buzzbiz_2">
 			<a href="#" id="pop2">{img theme= 'buzzbiz/buzzbiz2.png' alt='2. Buzz	  - Share your link.'}</a>
 		</div>		
-		<div id="buzzbiz_3">
-			<a href="#" id="pop3">{img theme= 'buzzbiz/buzzbiz2.png' alt='3. Lock	  - Lock-in your income.'}</a>
-		</div>
+		<!--<div id="buzzbiz_3">
+			<a href="#" id="pop3">{img theme= 'buzzbiz/buzzbiz3.png' alt='3. Lock	  - Lock-in your income.'}</a>
+		</div>-->
 		<div id="buzzbiz_form">			
 			<form  method="post" action="{url link='membership.index'}" autocomplete="off">
 				<br>
-				<div id="buzzbiz_logo">{img theme= 'buzzbiz/buzzbizLogo.png'}
-				</div>
-				<div class="separate">
-				</div>
+				<div id="buzzbiz_logo">{img theme= 'buzzbiz/buzzbizLogo.png'}</div>
+				<div class="separate"></div>
 				<span id="buzzbiz_error">
 					<strong>{$error}</strong>
 				</span><br/>	
 				<div class="table">
 					<div class="table_left">
-						<label for="first_name">
-							{required}{phrase var='user.first_name'}: <a href="#" id="name">[ ? ]</a>
-						</label>
+						<label for="first_name">{required}{phrase var='user.first_name'}: <a href="#" id="name">[ ? ]</a></label>
 					</div>
-					<div class="table_right">
-						<input type="text" name="val[firstname]" id="firstname" maxlength="20">
-					</div>
+					<div class="table_right"><input type="text" name="val[firstname]" id="firstname" maxlength="20"></div>
 				</div>
 				<div class="table">
 					<div class="table_left">			

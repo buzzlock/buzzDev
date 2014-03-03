@@ -1,6 +1,6 @@
 <div class="table">
 	<div class="table_left">
-		Thank you for joining BUZZbiz. <a href = "{url link=''}">Home</a> <a href = "{url link='office.index'}">Office</a>
+		Thank you for joining BUZZbiz. <strong><a href = "{url link=''}">Home</a> <a href = "{url link='office.index'}">Office</a></strong>
 	</div>
 	<br>
 	<div class="table_right">

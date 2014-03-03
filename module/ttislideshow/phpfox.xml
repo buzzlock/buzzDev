@@ -1,0 +1,19 @@
+<module>
+	<data>
+		<module_id>ttislideshow</module_id>
+		<product_id>TTI-MOD0234</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:33:"ttislideshow.admin_menu_add_slide";a:1:{s:3:"url";a:2:{i:0;s:12:"ttislideshow";i:1;s:8:"addslide";}}s:37:"ttislideshow.admin_menu_manage_slides";a:1:{s:3:"url";a:2:{i:0;s:12:"ttislideshow";i:1;s:5:"index";}}}]]></menu>
+		<phrase_var_name>module_ttislideshow</phrase_var_name>
+	</data>
+	<components>
+		<component module_id="ttislideshow" component="display" m_connection="" module="ttislideshow" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="ttislideshow" version_id="2.0.5" var_name="module_ttislideshow" added="1285611770">Slideshow</phrase>
+		<phrase module_id="ttislideshow" version_id="2.0.7" var_name="admin_menu_add_slide" added="1293485610">Add Slide</phrase>
+		<phrase module_id="ttislideshow" version_id="2.0.7" var_name="admin_menu_manage_slides" added="1293485649">Manage Slides</phrase>
+	</phrases>
+</module>

@@ -1314,4 +1314,7 @@ To see the comment thread, follow the link below:
   'the_php_function_exec_is_disabled_and_needed_to_run_this_check_and_convert_uploaded_videos' => 'The PHP function "exec" is disabled and needed to run this check and convert uploaded videos',
   'must_set_the_path_to_ffmpeg_before_enabling_uploading_of_videos' => 'Must set the path to FFMPEG before enabling uploading of videos.',
   'setting_use_youtube_iframe' => '<title>Use Youtube iFrame</title><info>If enabled the script will use an iFrame instead of an object when displaying a video from Youtube.</info>',
+  'module_ttislideshow' => 'Slideshow',
+  'admin_menu_add_slide' => 'Add Slide',
+  'admin_menu_manage_slides' => 'Manage Slides',
 ); ?>

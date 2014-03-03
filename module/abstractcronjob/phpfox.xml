@@ -1,0 +1,16 @@
+<module>
+	<data>
+		<module_id>abstractcronjob</module_id>
+		<product_id>abstractcronjob</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:33:"abstractcronjob.admin_menu_manage";a:1:{s:3:"url";a:2:{i:0;s:15:"abstractcronjob";i:1;s:6:"manage";}}s:34:"abstractcronjob.admin_menu_add_new";a:1:{s:3:"url";a:2:{i:0;s:15:"abstractcronjob";i:1;s:3:"add";}}}]]></menu>
+		<phrase_var_name>module_abstractcronjob</phrase_var_name>
+	</data>
+	<phrases>
+		<phrase module_id="abstractcronjob" version_id="2.0.5" var_name="admin_menu_manage" added="1277960894">Manage</phrase>
+		<phrase module_id="abstractcronjob" version_id="2.0.5" var_name="admin_menu_add_new" added="1277960894">Add New</phrase>
+		<phrase module_id="abstractcronjob" version_id="2.0.5" var_name="module_abstractcronjob" added="1277960894">Manage Your Cronjobs!</phrase>
+	</phrases>
+</module>

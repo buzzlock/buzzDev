@@ -10,13 +10,13 @@ div#buzzbiz_1
 {
 	position:absolute;
 	left:53px;
-	top:225px;
+	top:250px;
 }
 div#buzzbiz_2
 {
 	position:absolute;
 	left:50px;
-	top:275px;
+	top:300px;
 }
 div#buzzbiz_3
 {
@@ -30,7 +30,7 @@ div#buzzbiz_form
 	height:420px;
 	top:auto;
 	float:right;
-	overflow:scroll;
+	overflow:auto;
 	z-index:1;
 }
 div#buzzbiz_logo

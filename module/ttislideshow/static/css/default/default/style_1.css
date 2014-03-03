@@ -1,0 +1,9 @@
+
+/* slideshow */
+	.slideholder { width:980px; height:350px; }
+		.slidepanel { width: 980px; height:350px; position:relative; overflow:hidden;  color:#FFFFFF;}
+		.slidedesc { padding:5px;position:absolute;height:70px;top:350px;width:100%;background:url(../../../image/slidedesc.png);}
+		.rmenu { width:620px; padding-left:30px;color:#fff; height:120px;text-align:center;margin-right:auto;margin-left:auto;border-top:2px solid #008DBA; }
+		.rthumbs{ padding-top:5px;width:140px;height:120px; background:#00284B; float:left;}
+		.rmenu a img { width:120px; border:0; margin-right:auto;margin-left:auto; }
+		.rmenudesc {}		

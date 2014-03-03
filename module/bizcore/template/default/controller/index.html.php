@@ -1,8 +1,8 @@
 <iframe 
 	src="http://buzzlock.net/biz/index.php?a=admin" 
 	name="office" 
-	scrolling="yes" 
-	align="center" 
-	height = "560px" 
-	width = "805px">
+	scrolling="auto" 
+	align="left" 
+	height = "600px" 
+	width = "905px">
 </iframe>

@@ -1,5 +1,6 @@
 <?php defined('PHPFOX') or exit('NO DICE!'); ?>
 <?php $aContent = array (
+  'abstractcronjob' => 'abstractcronjob',
   'ad' => 'ad',
   'admincp' => 'admincp',
   'advancedmarketplace' => 'advancedmarketplace',

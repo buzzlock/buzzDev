@@ -1,0 +1,17 @@
+<product>
+	<data>
+		<product_id>abstractcronjob</product_id>
+		<is_core>0</is_core>
+		<title>Abstract Enterprises: Cron Manager</title>
+		<description>Manage Your Crons!</description>
+		<version>3.00</version>
+		<latest_version></latest_version>
+		<last_check>0</last_check>
+		<is_active>1</is_active>
+		<url>http://phpfoxmods.net</url>
+		<url_version_check></url_version_check>
+	</data>
+	<modules>
+		<module_id>abstractcronjob</module_id>
+	</modules>
+</product>

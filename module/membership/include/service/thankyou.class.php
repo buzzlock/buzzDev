@@ -1,5 +1,5 @@
 <?php
-class Bizsignup_Service_Thankyou extends Phpfox_Service  
+class Membership_Service_Thankyou extends Phpfox_Service  
 {
 	public function get_refid($refName)
 	{
@@ -19,13 +19,13 @@ class Bizsignup_Service_Thankyou extends Phpfox_Service
 	}
 	public function get_usr()
 	{ 
-		$id 			= Phpfox::getUserId();
+		$id 		= Phpfox::getUserId();
 		$adm 		= Phpfox::getService('bizcore.admin')->get_admin();
 		$sDriver	= 'phpfox.database.driver.mysql';
 		Phpfox::getLibClass('phpfox.database.dba');
 		Phpfox::getLibClass($sDriver);
 		$oDb2 = Phpfox::getLib($sDriver);
-		$oDb2->connect($adm['host'], $adm['user'], $adm['pass'],	$adm['dbase']);
+		$oDb2->connect($adm['host'], $adm['user'], $adm['pass'], $adm['dbase']);
 		$val =  $oDb2->select	
 		('	fullname,
 			address,
@@ -34,7 +34,7 @@ class Bizsignup_Service_Thankyou extends Phpfox_Service
 			alertpay,
 			paypal
 		')
-		->from('ezygold_users')
+		->from('biz_users')
 		->where('id='.$id)
 		->execute('getRow');
 		$oDb2->close();
@@ -42,7 +42,7 @@ class Bizsignup_Service_Thankyou extends Phpfox_Service
 	}
 	public function get_xtd()
 	{
-		$id 			= Phpfox::getUserId();
+		$id 		= Phpfox::getUserId();
 		$adm 		= Phpfox::getService('bizcore.admin')->get_admin();
 		$sDriver	= 'phpfox.database.driver.mysql';
 		Phpfox::getLibClass('phpfox.database.dba');
@@ -57,7 +57,7 @@ class Bizsignup_Service_Thankyou extends Phpfox_Service
 			apt,
 			ssn
 		')
-		->from('ezygold_usersxtd')
+		->from('biz_usersxtd')
 		->where('idmbr='.$id)
 		->execute('getRow');
 		$oDb2->close();

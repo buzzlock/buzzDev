@@ -1,0 +1,42 @@
+div#space
+{
+   width: 1px;
+   height: 50%;
+   margin-bottom: -245px;
+   float:left
+}
+div#container
+{
+   width: 648px;
+   height: 490px;
+   margin: 0 auto;
+   position: relative;
+   clear: left;
+}
+div#SlideShow
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:548px;
+	height:409px;
+	border:20px #0000FF ridge;
+	z-index:0;
+}
+div#slideImg1
+{
+	border-width:0;
+	left:0px;
+	top:0px;
+	width:548px;
+	height:409px;
+}
+div#slideImg
+{
+	border-width:0;
+	left:0px;
+	top:0px;
+	width:548px;
+	height:409px;
+	display:none;
+}

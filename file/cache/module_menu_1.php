@@ -2,6 +2,23 @@
 <?php $aContent = array (
   0 => 
   array (
+    'module_id' => 'abstractcronjob',
+    'is_menu' => '1',
+    'menu' => 
+    array (
+      'abstractcronjob.admin_menu_manage' => 
+      array (
+        'url' => 'abstractcronjob/manage',
+      ),
+      'abstractcronjob.admin_menu_add_new' => 
+      array (
+        'url' => 'abstractcronjob/add',
+      ),
+    ),
+    'url_name' => 'abstractcronjob',
+  ),
+  1 => 
+  array (
     'module_id' => 'ad',
     'is_menu' => '1',
     'menu' => 
@@ -33,7 +50,7 @@
     ),
     'url_name' => 'ad',
   ),
-  1 => 
+  2 => 
   array (
     'module_id' => 'advancedmarketplace',
     'is_menu' => '1',
@@ -70,7 +87,7 @@
     ),
     'url_name' => 'advancedmarketplace',
   ),
-  2 => 
+  3 => 
   array (
     'module_id' => 'advancedphoto',
     'is_menu' => '1',
@@ -83,7 +100,7 @@
     ),
     'url_name' => 'advancedphoto',
   ),
-  3 => 
+  4 => 
   array (
     'module_id' => 'announcement',
     'is_menu' => '1',
@@ -100,7 +117,7 @@
     ),
     'url_name' => 'announcement',
   ),
-  4 => 
+  5 => 
   array (
     'module_id' => 'attachment',
     'is_menu' => '1',
@@ -117,7 +134,7 @@
     ),
     'url_name' => 'attachment',
   ),
-  5 => 
+  6 => 
   array (
     'module_id' => 'birthdayreminder',
     'is_menu' => '1',
@@ -134,7 +151,7 @@
     ),
     'url_name' => 'birthdayreminder',
   ),
-  6 => 
+  7 => 
   array (
     'module_id' => 'bizcore',
     'is_menu' => '1',
@@ -147,7 +164,7 @@
     ),
     'url_name' => 'bizcore',
   ),
-  7 => 
+  8 => 
   array (
     'module_id' => 'blog',
     'is_menu' => '1',
@@ -172,7 +189,7 @@
     ),
     'url_name' => 'blog',
   ),
-  8 => 
+  9 => 
   array (
     'module_id' => 'contact',
     'is_menu' => '1',
@@ -185,7 +202,7 @@
     ),
     'url_name' => 'contact',
   ),
-  9 => 
+  10 => 
   array (
     'module_id' => 'contactimporter',
     'is_menu' => '1',
@@ -214,7 +231,7 @@
     ),
     'url_name' => 'contactimporter',
   ),
-  10 => 
+  11 => 
   array (
     'module_id' => 'contest',
     'is_menu' => '1',
@@ -243,7 +260,7 @@
     ),
     'url_name' => 'contest',
   ),
-  11 => 
+  12 => 
   array (
     'module_id' => 'donation',
     'is_menu' => '1',
@@ -264,7 +281,7 @@
     ),
     'url_name' => 'donation',
   ),
-  12 => 
+  13 => 
   array (
     'module_id' => 'egift',
     'is_menu' => '1',
@@ -285,7 +302,7 @@
     ),
     'url_name' => 'egift',
   ),
-  13 => 
+  14 => 
   array (
     'module_id' => 'fevent',
     'is_menu' => '1',
@@ -322,7 +339,7 @@
     ),
     'url_name' => 'fevent',
   ),
-  14 => 
+  15 => 
   array (
     'module_id' => 'forum',
     'is_menu' => '1',
@@ -339,7 +356,7 @@
     ),
     'url_name' => 'forum',
   ),
-  15 => 
+  16 => 
   array (
     'module_id' => 'fundraising',
     'is_menu' => '1',
@@ -368,7 +385,7 @@
     ),
     'url_name' => 'fundraising',
   ),
-  16 => 
+  17 => 
   array (
     'module_id' => 'input',
     'is_menu' => '1',
@@ -385,7 +402,7 @@
     ),
     'url_name' => 'input',
   ),
-  17 => 
+  18 => 
   array (
     'module_id' => 'jobposting',
     'is_menu' => '1',
@@ -422,7 +439,7 @@
     ),
     'url_name' => 'jobposting',
   ),
-  18 => 
+  19 => 
   array (
     'module_id' => 'membership',
     'is_menu' => '1',
@@ -435,7 +452,7 @@
     ),
     'url_name' => 'membership',
   ),
-  19 => 
+  20 => 
   array (
     'module_id' => 'mfox',
     'is_menu' => '1',
@@ -456,7 +473,7 @@
     ),
     'url_name' => 'mfox',
   ),
-  20 => 
+  21 => 
   array (
     'module_id' => 'mobiletemplate',
     'is_menu' => '1',
@@ -481,7 +498,7 @@
     ),
     'url_name' => 'mobiletemplate',
   ),
-  21 => 
+  22 => 
   array (
     'module_id' => 'musicsharing',
     'is_menu' => '1',
@@ -522,7 +539,7 @@
     ),
     'url_name' => 'musicsharing',
   ),
-  22 => 
+  23 => 
   array (
     'module_id' => 'newsletter',
     'is_menu' => '1',
@@ -539,7 +556,7 @@
     ),
     'url_name' => 'newsletter',
   ),
-  23 => 
+  24 => 
   array (
     'module_id' => 'office',
     'is_menu' => '1',
@@ -552,7 +569,7 @@
     ),
     'url_name' => 'office',
   ),
-  24 => 
+  25 => 
   array (
     'module_id' => 'opensocialconnect',
     'is_menu' => '1',
@@ -569,7 +586,7 @@
     ),
     'url_name' => 'opensocialconnect',
   ),
-  25 => 
+  26 => 
   array (
     'module_id' => 'pages',
     'is_menu' => '1',
@@ -590,7 +607,7 @@
     ),
     'url_name' => 'pages',
   ),
-  26 => 
+  27 => 
   array (
     'module_id' => 'petition',
     'is_menu' => '1',
@@ -615,7 +632,7 @@
     ),
     'url_name' => 'petition',
   ),
-  27 => 
+  28 => 
   array (
     'module_id' => 'photo',
     'is_menu' => '1',
@@ -628,7 +645,7 @@
     ),
     'url_name' => 'photo',
   ),
-  28 => 
+  29 => 
   array (
     'module_id' => 'profilecompleteness',
     'is_menu' => '1',
@@ -645,7 +662,7 @@
     ),
     'url_name' => 'profilecompleteness',
   ),
-  29 => 
+  30 => 
   array (
     'module_id' => 'profilepopup',
     'is_menu' => '1',
@@ -666,7 +683,7 @@
     ),
     'url_name' => 'profilepopup',
   ),
-  30 => 
+  31 => 
   array (
     'module_id' => 'report',
     'is_menu' => '1',
@@ -687,7 +704,7 @@
     ),
     'url_name' => 'report',
   ),
-  31 => 
+  32 => 
   array (
     'module_id' => 'resume',
     'is_menu' => '1',
@@ -740,7 +757,7 @@
     ),
     'url_name' => 'resume',
   ),
-  32 => 
+  33 => 
   array (
     'module_id' => 'rss',
     'is_menu' => '1',
@@ -765,7 +782,7 @@
     ),
     'url_name' => 'rss',
   ),
-  33 => 
+  34 => 
   array (
     'module_id' => 'share',
     'is_menu' => '1',
@@ -782,7 +799,7 @@
     ),
     'url_name' => 'share',
   ),
-  34 => 
+  35 => 
   array (
     'module_id' => 'socialbridge',
     'is_menu' => '1',
@@ -795,7 +812,7 @@
     ),
     'url_name' => 'socialbridge',
   ),
-  35 => 
+  36 => 
   array (
     'module_id' => 'socialmediaimporter',
     'is_menu' => '1',
@@ -808,7 +825,7 @@
     ),
     'url_name' => 'socialmediaimporter',
   ),
-  36 => 
+  37 => 
   array (
     'module_id' => 'socialpublishers',
     'is_menu' => '1',
@@ -829,7 +846,7 @@
     ),
     'url_name' => 'socialpublishers',
   ),
-  37 => 
+  38 => 
   array (
     'module_id' => 'socialstream',
     'is_menu' => '1',
@@ -846,7 +863,7 @@
     ),
     'url_name' => 'socialstream',
   ),
-  38 => 
+  39 => 
   array (
     'module_id' => 'subscribe',
     'is_menu' => '1',
@@ -871,7 +888,7 @@
     ),
     'url_name' => 'subscribe',
   ),
-  39 => 
+  40 => 
   array (
     'module_id' => 'user',
     'is_menu' => '1',
@@ -884,7 +901,7 @@
     ),
     'url_name' => 'user',
   ),
-  40 => 
+  41 => 
   array (
     'module_id' => 'videochannel',
     'is_menu' => '1',
@@ -901,7 +918,7 @@
     ),
     'url_name' => 'videochannel',
   ),
-  41 => 
+  42 => 
   array (
     'module_id' => 'younetcore',
     'is_menu' => '1',
@@ -914,7 +931,7 @@
     ),
     'url_name' => 'younetcore',
   ),
-  42 => 
+  43 => 
   array (
     'module_id' => 'younetpaymentgateways',
     'is_menu' => '1',
