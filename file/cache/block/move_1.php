@@ -17,6 +17,9 @@
     'core.welcome' => false,
     'announcement.index' => false,
     'tag.cloud' => false,
+    'videochannel.mostviewed' => false,
+    'videochannel.toprated' => false,
+    'videochannel.featured' => false,
     'wall.display' => false,
   ),
   'admincp.index' => 
@@ -567,7 +570,6 @@
   '' => 
   array (
     'user.register-top' => false,
-    'fblike.fblike' => false,
   ),
   'blog.index' => 
   array (
@@ -593,6 +595,10 @@
   'petition.help.view' => 
   array (
     'petition.helplogo' => false,
+  ),
+  'feed.view' => 
+  array (
+    'fblike.fblike' => false,
   ),
   'video.index' => 
   array (

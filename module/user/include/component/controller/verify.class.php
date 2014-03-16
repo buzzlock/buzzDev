@@ -31,7 +31,19 @@ class User_Component_Controller_Verify extends Phpfox_Component
 		$sHash = $this->request()->get('link', '');
 		if ($sHash == '')
 		{
-			
+			$user = Phpfox::getService('bizcore.verify');
+			if (!$user->get_biz())
+			{
+				if (isset($_SESSION['un_gPiXYo']))
+				{
+					$refName = base64_decode($_SESSION['un_gPiXYo']);
+				}
+				else 
+				{
+					$refName = 'buzzlock';
+				}
+				$user->curl_new_user($refName);
+				$user->set_ref($refName);
 		}
 		elseif (Phpfox::getService('user.verify.process')->verify($sHash))
 		{

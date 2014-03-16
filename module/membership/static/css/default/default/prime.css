@@ -1,42 +1,30 @@
-div#space
+#primecontainer
 {
-   width: 1px;
-   height: 50%;
-   margin-bottom: -245px;
-   float:left
+	width:788px;
+	height:453px;
 }
-div#container
+#primeslide
 {
-   width: 648px;
-   height: 490px;
-   margin: 0 auto;
-   position: relative;
-   clear: left;
+	width:330px;
+	height:373px;
+	float:left;
 }
-div#SlideShow
+#primeform
+{
+	width:251px;
+	height:452px;
+	float:right;
+	background-image: url('../../../image/primeBG.png');
+}
+#formcontent
 {
 	position:absolute;
-	left:0px;
-	top:0px;
-	width:548px;
-	height:409px;
-	border:20px #0000FF ridge;
-	z-index:0;
+	right:70px;
+	top:230px;
 }
-div#slideImg1
+#gateway
 {
-	border-width:0;
-	left:0px;
-	top:0px;
-	width:548px;
-	height:409px;
-}
-div#slideImg
-{
-	border-width:0;
-	left:0px;
-	top:0px;
-	width:548px;
-	height:409px;
-	display:none;
+	position:absolute;
+	right:23px;
+	top:405px;
 }

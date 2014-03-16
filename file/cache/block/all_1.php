@@ -24,6 +24,9 @@
       'poke.display' => 'a:1:{i:0;s:1:"3";}',
       'suggestion.pages' => NULL,
       'tag.cloud' => NULL,
+      'videochannel.mostviewed' => NULL,
+      'videochannel.toprated' => NULL,
+      'videochannel.featured' => NULL,
     ),
     7 => 
     array (
@@ -1004,10 +1007,6 @@
     array (
       'user.register-top' => NULL,
     ),
-    3 => 
-    array (
-      'fblike.fblike' => 'a:1:{i:0;s:1:"4";}',
-    ),
   ),
   'blog.index' => 
   array (
@@ -1053,6 +1052,13 @@
     1 => 
     array (
       'petition.helplogo' => NULL,
+    ),
+  ),
+  'feed.view' => 
+  array (
+    3 => 
+    array (
+      'fblike.fblike' => 'a:2:{i:0;s:1:"3";i:1;s:1:"4";}',
     ),
   ),
   'video.index' => 
